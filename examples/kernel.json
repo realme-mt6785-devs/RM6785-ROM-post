@@ -1,9 +1,8 @@
 {
   "$schema": "https://raw.githubusercontent.com/realme-mt6785-devs/RM6785-ROM-post/tooling/schema/post.schema.json",
   "postType": "kernel",
-  "name": "Nexus Kernel",
+  "name": "Nexus Kernel v2.1",
   "tag": "NexusKernel",
-  "version": "v2.1",
   "stability": "BETA",
   "device": "salaa",
   "kernelVersion": "4.14.336",

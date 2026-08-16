@@ -77,7 +77,7 @@ export const posted = (post: Post, link: string, record: string): string =>
 
 [See it in the channel](${link}) — recorded as \`${record}\`.
 
-Thanks for building ${post.name} ${post.version}.`;
+Thanks for building ${post.name}.`;
 
 export const alreadyPosted = (link: string | null): string =>
   `### Already posted

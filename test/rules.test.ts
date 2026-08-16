@@ -127,6 +127,15 @@ describe("bullets", () => {
     expect(problems[0].warning).toBe(true);
     expect(problems[0].message).toContain("linter");
   });
+
+  test("an http inline link is refused", () => {
+    const post = clone(romExample);
+    post.author = "[Builder](http://example.com/builder)";
+
+    const problems = about(checkRules(post as Post), "author");
+    expect(problems).toHaveLength(1);
+    expect(problems[0].message).toContain("https://");
+  });
 });
 
 describe("length", () => {

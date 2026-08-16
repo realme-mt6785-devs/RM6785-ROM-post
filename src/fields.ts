@@ -3,8 +3,7 @@ import type { Post } from "./types";
 import { DEVICE_BLURB } from "./devices";
 
 /** Hashtag and folder name. */
-export const postTag = (post: Post): string =>
-  post.tag ?? post.name.replace(/\W+/g, "");
+export const postTag = (post: Post): string => post.tag;
 
 /** "16 QPR1" -> "16", for the #A16 hashtag and the folder name. */
 export const androidMajor = (post: Post): string =>
@@ -17,8 +16,7 @@ export const displayDate = (post: Post): string => {
 };
 
 /** The part of the title before "for", also used as the banner's caption. */
-export const shortTitle = (post: Post): string =>
-  `${post.name} ${post.version}`;
+export const shortTitle = (post: Post): string => post.name;
 
 export const titleLine = (post: Post): string =>
   `${shortTitle(post)} for ${DEVICE_BLURB[post.device]} [${post.stability}]`;

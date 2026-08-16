@@ -26,11 +26,11 @@ describe("where a record is filed", () => {
     );
   });
 
-  test("a name with spaces becomes a usable folder when no tag is given", () => {
+  test("the tag, rather than the displayed name, determines the folder", () => {
     const post = {
       ...(romExample as Post),
-      name: "Project Elixir",
-      tag: undefined,
+      name: "Project Elixir 5.0",
+      tag: "ProjectElixir",
     };
 
     expect(recordPath(post, issueSuffix(1))).toBe(

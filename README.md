@@ -31,6 +31,14 @@ bun run check:file examples/rom.json --preview
 
 Skips the network by default. Add `--banner` to fetch the banner URL too.
 
+`tag` is the one-word hashtag/folder name; `name` is the complete title text,
+including the release version. Author names and changelog, bug or note bullets
+may contain inline links written as `[visible text](https://example.com)`.
+
+For ROMs that publish GApps and Vanilla together, keep the paired values on one
+line: `"buildType": "GAPPS | VANILLA"` and
+`"fileSize": "2.0GB | 1.6GB"`.
+
 ## Switching post style
 
 `POST_STYLE` in `src/config.ts`, or the `POST_STYLE` repository variable to change it

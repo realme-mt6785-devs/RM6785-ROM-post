@@ -2,6 +2,7 @@ import type { Post, PostType, Problem } from "./types";
 
 import { CAPTION_LIMIT, POST_STYLE, RICH_SOFT_LIMIT } from "./config";
 import { hashtags } from "./fields";
+import { inlineSegments, visibleText } from "./inline";
 import { renderClassic, renderRich } from "./render";
 
 /** Fields that only make sense for some kinds of post. */
@@ -41,12 +42,33 @@ const bulletFields = (post: Post): [string, string[]][] => [
   ["notes", post.notes ?? []],
 ];
 
+const inlineFields = (post: Post): [string, string][] => [
+  ["author", post.author],
+  ...bulletFields(post).flatMap(([field, values]) =>
+    values.map((value, index): [string, string] => [
+      `${field}[${index}]`,
+      value,
+    ]),
+  ),
+];
+
 /**
  * Everything the schema cannot say, or cannot say clearly. Pure and offline, so
  * the tests can cover it; the banner is checked separately in banner.ts.
  */
 export const checkRules = (post: Post): Problem[] => {
   const problems: Problem[] = [];
+
+  for (const [field, value] of inlineFields(post)) {
+    for (const segment of inlineSegments(value)) {
+      if (segment.url && !segment.url.startsWith("https://")) {
+        problems.push({
+          where: field,
+          message: "contains a link that does not start with https://",
+        });
+      }
+    }
+  }
 
   for (const field of ONLY_FOR) {
     if (field.of(post) !== undefined && !field.kinds.includes(post.postType)) {
@@ -81,7 +103,7 @@ export const checkRules = (post: Post): Problem[] => {
 
   for (const [field, bullets] of bulletFields(post)) {
     bullets.forEach((bullet, index) => {
-      if (/^\s*[•\-*]\s/.test(bullet)) {
+      if (/^\s*[•\-*]\s/.test(visibleText(bullet))) {
         problems.push({
           where: `${field}[${index}]`,
           message:
@@ -96,7 +118,7 @@ export const checkRules = (post: Post): Problem[] => {
   const lastTag = hashtags(post).at(-1) ?? "";
   for (const [field, bullets] of bulletFields(post)) {
     bullets.forEach((bullet, index) => {
-      if (lastTag && bullet.includes(lastTag)) {
+      if (lastTag && visibleText(bullet).includes(lastTag)) {
         problems.push({
           where: `${field}[${index}]`,
           message: `repeats "${lastTag}", which confuses the channel's own linter — reword it if you can`,

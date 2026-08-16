@@ -8,7 +8,7 @@
   "required": [
     "postType",
     "name",
-    "version",
+    "tag",
     "stability",
     "device",
     "ruiVersion",
@@ -32,23 +32,16 @@
     "name": {
       "type": "string",
       "minLength": 2,
-      "maxLength": 64,
+      "maxLength": 96,
       "pattern": "^[^\\n]+$",
-      "description": "a single line, e.g. Pitch Black Recovery Project"
+      "description": "the complete displayed name, including version, e.g. Infinity-X 3.12"
     },
     "tag": {
       "type": "string",
       "minLength": 2,
       "maxLength": 32,
       "pattern": "^\\w+$",
-      "description": "letters, digits and underscores only, e.g. PBRP — defaults to name with the rest stripped out"
-    },
-    "version": {
-      "type": "string",
-      "minLength": 1,
-      "maxLength": 32,
-      "pattern": "^[^\\n#]+$",
-      "description": "a single line without #, e.g. v4.0 or 23"
+      "description": "the one-word hashtag and folder name without #, e.g. InfinityX or PBRP"
     },
     "stability": {
       "enum": ["STABLE", "BETA", "ALPHA"],
@@ -85,7 +78,7 @@
       "minLength": 2,
       "maxLength": 96,
       "pattern": "^[^\\n]+$",
-      "description": "a single line, e.g. Hakimi & Ansh"
+      "description": "a single line, e.g. Hakimi & Ansh; a linked name may use [ELOHIM](https://example.com)"
     },
     "buildDate": {
       "type": "string",
@@ -117,8 +110,8 @@
         },
         "fileSize": {
           "type": "string",
-          "pattern": "^\\d+(\\.\\d+)? ?(MB|GB|MiB|GiB)$",
-          "description": "a number and a unit, e.g. 1.5 GB or 69MB"
+          "pattern": "^\\d+(\\.\\d+)? ?(MB|GB|MiB|GiB)(\\s*\\|\\s*\\d+(\\.\\d+)? ?(MB|GB|MiB|GiB))*$",
+          "description": "one or more sizes, e.g. 1.5 GB or 2.0GB | 1.6GB"
         },
         "url": { "$ref": "#/definitions/httpsUrl" }
       }
@@ -178,7 +171,7 @@
         "minLength": 2,
         "maxLength": 300,
         "pattern": "^[^\\n]+$",
-        "description": "one line per bullet, with no line breaks inside it"
+        "description": "one line per bullet; inline links may use [text](https://example.com)"
       },
       "description": "One line per bullet. Blank lines are not allowed."
     }

@@ -8,8 +8,7 @@ export interface Post {
   $schema?: string;
   postType: PostType;
   name: string;
-  tag?: string;
-  version: string;
+  tag: string;
   stability: Stability;
   releaseType?: ReleaseType;
   device: Device;

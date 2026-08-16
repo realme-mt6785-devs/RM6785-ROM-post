@@ -30,6 +30,13 @@ describe("missing fields are named", () => {
     expect(problems[0].message).toContain("required");
   });
 
+  test("the hashtag name is required separately from the displayed name", () => {
+    const post = rom();
+    delete post.tag;
+
+    expect(at("tag")(checkSchema(post))).toBe(true);
+  });
+
   test("a dropped nested field", () => {
     const post = rom();
     delete post.download.url;
@@ -115,6 +122,20 @@ describe("malformed values are explained", () => {
     post.download.fileSize = "1500";
 
     expect(at("download.fileSize")(checkSchema(post))).toBe(true);
+  });
+
+  test("GApps and Vanilla sizes may share one line", () => {
+    const post = rom();
+    post.download.fileSize = "2.0GB | 1.6GB";
+
+    expect(checkSchema(post)).toEqual([]);
+  });
+
+  test("notes remain optional", () => {
+    const post = rom();
+    delete post.notes;
+
+    expect(checkSchema(post)).toEqual([]);
   });
 
   test("a stability that is not one of the three", () => {

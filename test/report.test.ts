@@ -31,7 +31,7 @@ describe("what a contributor sees", () => {
       "![banner](https://example.com/lineageos-23.png)",
     );
     expect(comment).toContain("#LineageOS #ROM #OFFICIAL #RM6785 #A16 #RUI3");
-    expect(comment).toContain("• Author: @yourhandle");
+    expect(comment).toContain("• Author: ELOHIM");
     expect(comment).toContain("`LineageOS/A16/x.json`");
     expect(comment).toContain("`approved`");
     expect(comment).toContain("`approved:5m`");

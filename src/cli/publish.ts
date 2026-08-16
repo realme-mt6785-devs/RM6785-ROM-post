@@ -70,7 +70,7 @@ const main = async (): Promise<void> => {
   await setOutput("record", relative);
   await setOutput(
     "commit-subject",
-    `${postTag(post)}: post ${post.version} for ${post.device}`,
+    `${postTag(post)}: post ${post.name} for ${post.device}`,
   );
 
   await thread.comment(posted(post, link, relative));

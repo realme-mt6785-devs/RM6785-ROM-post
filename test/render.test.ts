@@ -20,13 +20,13 @@ describe("classic rendering", () => {
       `#LineageOS #ROM #OFFICIAL #RM6785 #A16 #RUI3
 
 LineageOS 23 for Realme 6/6i(Indian)/6s/7/Narzo/Narzo 20 Pro/Narzo 30 4G [STABLE]
-• Author: @yourhandle
+• Author: ELOHIM
 • Android version: 16
 • Build date: 17-08-2026
 
 Changelog
 • Initial official build for Android 16
-• August 2026 security patches
+• Synced with latest source
 • Fixed VoLTE on Indian variants
 
 Bugs
@@ -34,16 +34,17 @@ Bugs
 
 Notes
 • Clean flash if you are coming from Android 15
-• Firmware must be RUI 3
+• KSU included (ReSukiSU)
 
 Downloads
-• Build type: Vanilla
-• File size: 1.5 GB
+• Build type: GAPPS | VANILLA
+• File size: 2.0GB | 1.6GB
 • Download
 
 Sources
 Screenshots
-Support group`,
+Support group
+Donate`,
     );
   });
 
@@ -126,6 +127,33 @@ Support group`,
         expect(entity.url).toMatch(/^https:\/\//);
     }
   });
+
+  test("inline Markdown becomes Telegram links without showing its syntax", () => {
+    const { caption, entities } = renderClassic(romExample as Post);
+    const links = entities
+      .filter((entity) => entity.type === "text_link")
+      .map((entity) => ({
+        text: caption.slice(entity.offset, entity.offset + entity.length),
+        url: entity.url,
+      }));
+
+    expect(caption).not.toContain("[ELOHIM](");
+    expect(links).toEqual(
+      expect.arrayContaining([
+        { text: "ELOHIM", url: "https://t.me/example_builder" },
+        { text: "latest source", url: "https://github.com/LineageOS" },
+        {
+          text: "third-party camera apps",
+          url: "https://example.com/camera-bug",
+        },
+        {
+          text: "ReSukiSU",
+          url: "https://github.com/ReSukiSU/ReSukiSU",
+        },
+        { text: "Donate", url: "https://example.com/donate" },
+      ]),
+    );
+  });
 });
 
 /**
@@ -153,11 +181,19 @@ describe("rich rendering", () => {
       "# LineageOS 23 for Realme 6/6i(Indian)/6s/7/Narzo/Narzo 20 Pro/Narzo 30 4G [STABLE]",
     );
     expect(markdown).toContain("## Changelog");
-    expect(markdown).toContain("- Author: @yourhandle");
+    expect(markdown).toContain(
+      '- Author: <a href="https://t.me/example_builder">ELOHIM</a>',
+    );
+    expect(markdown).toContain(
+      'Synced with <a href="https://github.com/LineageOS">latest source</a>',
+    );
     expect(markdown).toContain(
       '<sub><a href="https://t.me/example">Support group</a></sub>',
     );
     expect(markdown).not.toContain("• ");
+    expect(markdown).toContain(
+      '<sub><a href="https://example.com/donate">Donate</a></sub>',
+    );
   });
 
   test("a kernel post has no screenshots link", () => {

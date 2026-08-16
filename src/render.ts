@@ -4,6 +4,7 @@ import type { Link } from "./layout";
 import type { Post } from "./types";
 
 import { shortTitle } from "./fields";
+import { inlineSegments } from "./inline";
 import { buildLayout } from "./layout";
 
 export interface ClassicPost {
@@ -48,6 +49,14 @@ class Caption {
     return this.plain(label);
   }
 
+  inline(value: string): this {
+    for (const segment of inlineSegments(value)) {
+      if (segment.url) this.link({ label: segment.text, url: segment.url });
+      else this.plain(segment.text);
+    }
+    return this;
+  }
+
   done(): ClassicPost {
     return { caption: this.text, entities: this.entities };
   }
@@ -63,14 +72,14 @@ export const renderClassic = (post: Post): ClassicPost => {
   // exactly two newlines before the title, which the linter checks for
   out.plain("\n\n").bold(layout.title);
 
-  for (const line of layout.info) out.plain(`\n• ${line}`);
+  for (const line of layout.info) out.plain("\n• ").inline(line);
 
   for (const section of layout.sections) {
     out.plain("\n\n").bold(section.heading);
 
     for (const bullet of section.bullets) {
       out.plain("\n• ");
-      if (typeof bullet === "string") out.plain(bullet);
+      if (typeof bullet === "string") out.inline(bullet);
       else out.link(bullet);
     }
   }
@@ -87,6 +96,15 @@ export const renderClassic = (post: Post): ClassicPost => {
 const anchor = ({ label, url }: Link): string =>
   `<a href="${url}">${label}</a>`;
 
+const richInline = (value: string): string =>
+  inlineSegments(value)
+    .map((segment) =>
+      segment.url
+        ? anchor({ label: segment.text, url: segment.url })
+        : segment.text,
+    )
+    .join("");
+
 /**
  * Telegram's rich message format. Shaped to match what the bot's
  * parsePostAndConstructRichMarkdown produced during the channel's rich
@@ -100,7 +118,7 @@ export const renderRich = (post: Post): string => {
     "",
     `# ${layout.title}`,
     "",
-    ...layout.info.map((line) => `- ${line}`),
+    ...layout.info.map((line) => `- ${richInline(line)}`),
   ];
 
   for (const section of layout.sections) {
@@ -108,7 +126,9 @@ export const renderRich = (post: Post): string => {
 
     for (const bullet of section.bullets) {
       lines.push(
-        typeof bullet === "string" ? `- ${bullet}` : `- ${anchor(bullet)}`,
+        typeof bullet === "string"
+          ? `- ${richInline(bullet)}`
+          : `- ${anchor(bullet)}`,
       );
     }
   }
