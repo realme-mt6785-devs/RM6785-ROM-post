@@ -25,34 +25,36 @@ A passing check isn't a promise to post — nothing reaches the channel until an
 
 A ROM, a recovery and a kernel need slightly different things. Leave out anything marked `–`.
 
-| Key | ROM | Recovery | Kernel | What it is |
-| --- | :-: | :-: | :-: | --- |
-| `postType` | ✓ | ✓ | ✓ | `rom`, `recovery` or `kernel` |
-| `name` | ✓ | ✓ | ✓ | Full name, as it should read in the title — `Pitch Black Recovery Project` |
-| `tag` | | | | Short name for the hashtag and folder — `PBRP`. Defaults to `name` without spaces |
-| `version` | ✓ | ✓ | ✓ | Goes straight after the name — `v4.0`, `23`, `2.1-rc1` |
-| `stability` | ✓ | ✓ | ✓ | `STABLE`, `BETA` or `ALPHA` |
-| `releaseType` | ✓ | ✓ | – | `OFFICIAL` or `UNOFFICIAL` |
-| `device` | ✓ | ✓ | ✓ | `RM6785` for every device, or `nemo` / `salaa` for one family |
-| `androidVersion` | ✓ | – | – | `16`, or `16 QPR1` if you want to be specific |
-| `kernelVersion` | – | – | ✓ | `4.14.336` |
-| `ruiVersion` | ✓ | ✓ | ✓ | `1`, `2` or `3` |
-| `author` | ✓ | ✓ | ✓ | Your name or handle. `Hakimi & Ansh` if there's more than one of you |
-| `buildDate` | ✓ | ✓ | ✓ | `2026-08-17`. Shown in the post as `17-08-2026` |
-| `banner` | ✓ | ✓ | ✓ | Direct link to the image or GIF at the top of the post |
-| `changelog` | ✓ | ✓ | ✓ | List of lines, one per bullet |
-| `bugs` | ✓ | ✓ | ✓ | Same. Write `None known` rather than leaving it empty |
-| `notes` | | | | Same, optional |
-| `download.buildType` | ✓ | – | – | Which flavour this build is — `Vanilla`, `GApps` |
-| `download.fileSize` | ✓ | ✓ | ✓ | `1.5 GB`, `69MB` |
-| `download.url` | ✓ | ✓ | ✓ | Where the build downloads from |
-| `links.sources` | ✓ | ✓ | ✓ | |
-| `links.screenshots` | ✓ | ✓ | – | |
-| `links.supportGroup` | ✓ | ✓ | ✓ | |
-| `links.donate` | | | | Optional |
+| Key                  | ROM | Recovery | Kernel | What it is                                                             |
+| -------------------- | :-: | :------: | :----: | ---------------------------------------------------------------------- |
+| `postType`           |  ✓  |    ✓     |   ✓    | `rom`, `recovery` or `kernel`                                          |
+| `name`               |  ✓  |    ✓     |   ✓    | Complete displayed name, including version — `Infinity-X 3.12`         |
+| `tag`                |  ✓  |    ✓     |   ✓    | One-word hashtag and folder name, without `#` — `InfinityX`, `PBRP`    |
+| `stability`          |  ✓  |    ✓     |   ✓    | `STABLE`, `BETA` or `ALPHA`                                            |
+| `releaseType`        |  ✓  |    ✓     |   –    | `OFFICIAL` or `UNOFFICIAL`                                             |
+| `device`             |  ✓  |    ✓     |   ✓    | `RM6785` for every device, or `nemo` / `salaa` for one family          |
+| `androidVersion`     |  ✓  |    –     |   –    | `16`, or `16 QPR1` if you want to be specific                          |
+| `kernelVersion`      |  –  |    –     |   ✓    | `4.14.336`                                                             |
+| `ruiVersion`         |  ✓  |    ✓     |   ✓    | `1`, `2` or `3`                                                        |
+| `author`             |  ✓  |    ✓     |   ✓    | Your name or handle. Inline links work: `[ELOHIM](https://...)`        |
+| `buildDate`          |  ✓  |    ✓     |   ✓    | `2026-08-17`. Shown in the post as `17-08-2026`                        |
+| `banner`             |  ✓  |    ✓     |   ✓    | Direct link to the image or GIF at the top of the post                 |
+| `changelog`          |  ✓  |    ✓     |   ✓    | List of lines, one per bullet. Inline `[text](https://...)` links work |
+| `bugs`               |  ✓  |    ✓     |   ✓    | Same. Write `None known` rather than leaving it empty                  |
+| `notes`              |     |          |        | Same, optional                                                         |
+| `download.buildType` |  ✓  |    –     |   –    | `Vanilla`, or `GAPPS \| VANILLA` when both are available               |
+| `download.fileSize`  |  ✓  |    ✓     |   ✓    | `1.5 GB`, `69MB`, or paired as `2.0GB \| 1.6GB`                        |
+| `download.url`       |  ✓  |    ✓     |   ✓    | Where the build downloads from                                         |
+| `links.sources`      |  ✓  |    ✓     |   ✓    |                                                                        |
+| `links.screenshots`  |  ✓  |    ✓     |   –    |                                                                        |
+| `links.supportGroup` |  ✓  |    ✓     |   ✓    |                                                                        |
+| `links.donate`       |     |          |        | Optional                                                               |
 
 Every link must be `https`, and `banner` has to point at the file itself — a link to an album or
 a Drive preview page won't work.
+
+The same inline link syntax works in `author`, `changelog`, `bugs` and `notes`. `notes` is
+optional, and `links.donate` is optional; when supplied, Donate is added to the footer.
 
 `device` picks which phones the post says it's for. `RM6785` covers all of them; `nemo` is the
 Realme 6 family and `salaa` is the Realme 7 family. `RMX2001` and `RMX2151` are the old names for

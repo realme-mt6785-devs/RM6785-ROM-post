@@ -24,27 +24,28 @@ body:
       placeholder: |
         {
           "postType": "rom",
-          "name": "LineageOS",
-          "version": "23",
+          "name": "LineageOS 23",
+          "tag": "LineageOS",
           "stability": "STABLE",
           "releaseType": "OFFICIAL",
           "device": "RM6785",
           "androidVersion": "16",
           "ruiVersion": 3,
-          "author": "@yourhandle",
+          "author": "[ELOHIM](https://t.me/example_builder)",
           "buildDate": "2026-08-17",
           "banner": "https://example.com/banner.png",
-          "changelog": ["First official build"],
+          "changelog": ["Synced with [latest source](https://github.com/...)", "First official build"],
           "bugs": ["None known"],
           "download": {
-            "buildType": "Vanilla",
-            "fileSize": "1.5 GB",
+            "buildType": "GAPPS | VANILLA",
+            "fileSize": "2.0GB | 1.6GB",
             "url": "https://example.com/build.zip"
           },
           "links": {
             "sources": "https://github.com/...",
             "screenshots": "https://t.me/...",
-            "supportGroup": "https://t.me/..."
+            "supportGroup": "https://t.me/...",
+            "donate": "https://example.com/donate"
           }
         }
     validations:
