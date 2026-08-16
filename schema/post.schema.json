@@ -1,0 +1,186 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/realme-mt6785-devs/RM6785-ROM-post/tooling/schema/post.schema.json",
+  "title": "RM6785 channel post",
+  "description": "One ROM, recovery or kernel build, as announced in @RM6785.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "postType",
+    "name",
+    "version",
+    "stability",
+    "device",
+    "ruiVersion",
+    "author",
+    "buildDate",
+    "banner",
+    "changelog",
+    "bugs",
+    "download",
+    "links"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "Optional, for editor autocompletion."
+    },
+    "postType": {
+      "enum": ["rom", "recovery", "kernel"],
+      "description": "Which kind of build this is. Decides the post's shape."
+    },
+    "name": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 64,
+      "pattern": "^[^\\n]+$",
+      "description": "a single line, e.g. Pitch Black Recovery Project"
+    },
+    "tag": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 32,
+      "pattern": "^\\w+$",
+      "description": "letters, digits and underscores only, e.g. PBRP — defaults to name with the rest stripped out"
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 32,
+      "pattern": "^[^\\n#]+$",
+      "description": "a single line without #, e.g. v4.0 or 23"
+    },
+    "stability": {
+      "enum": ["STABLE", "BETA", "ALPHA"],
+      "description": "The bracketed word at the end of the title."
+    },
+    "releaseType": {
+      "enum": ["OFFICIAL", "UNOFFICIAL"],
+      "description": "Third hashtag. Not used by kernel posts."
+    },
+    "device": {
+      "enum": ["RM6785", "nemo", "salaa", "RMX2001", "RMX2151"],
+      "description": "RM6785 for every supported device; nemo (Realme 6 family) or salaa (Realme 7 family) for one. RMX2001 and RMX2151 are the retired names of nemo and salaa."
+    },
+    "androidVersion": {
+      "type": "string",
+      "pattern": "^1[0-7]( .+)?$",
+      "description": "ROM posts only — 10 to 17, optionally with detail, e.g. 16 or 16 QPR1"
+    },
+    "kernelVersion": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 48,
+      "pattern": "^[^\\n]+$",
+      "description": "kernel posts only, a single line, e.g. 4.14.336"
+    },
+    "ruiVersion": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 3,
+      "description": "RealmeUI major version. Becomes the #RUI3 hashtag."
+    },
+    "author": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 96,
+      "pattern": "^[^\\n]+$",
+      "description": "a single line, e.g. Hakimi & Ansh"
+    },
+    "buildDate": {
+      "type": "string",
+      "format": "date",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "an ISO date, e.g. 2026-08-17 — shown in the post as 17-08-2026"
+    },
+    "banner": {
+      "$ref": "#/definitions/httpsUrl",
+      "description": "Direct link to the image or GIF shown above the post."
+    },
+    "changelog": { "$ref": "#/definitions/bullets" },
+    "bugs": {
+      "$ref": "#/definitions/bullets",
+      "description": "Known bugs. Say \"None known\" rather than leaving it out."
+    },
+    "notes": { "$ref": "#/definitions/bullets" },
+    "download": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fileSize", "url"],
+      "properties": {
+        "buildType": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 48,
+          "pattern": "^[^\\n]+$",
+          "description": "ROM posts only. Which flavour this build is, e.g. Vanilla or GApps."
+        },
+        "fileSize": {
+          "type": "string",
+          "pattern": "^\\d+(\\.\\d+)? ?(MB|GB|MiB|GiB)$",
+          "description": "a number and a unit, e.g. 1.5 GB or 69MB"
+        },
+        "url": { "$ref": "#/definitions/httpsUrl" }
+      }
+    },
+    "links": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sources", "supportGroup"],
+      "properties": {
+        "sources": { "$ref": "#/definitions/httpsUrl" },
+        "screenshots": {
+          "$ref": "#/definitions/httpsUrl",
+          "description": "Required for ROM and recovery posts, unused by kernel posts."
+        },
+        "supportGroup": { "$ref": "#/definitions/httpsUrl" },
+        "donate": { "$ref": "#/definitions/httpsUrl" }
+      }
+    }
+  },
+  "if": {
+    "properties": { "postType": { "const": "kernel" } },
+    "required": ["postType"]
+  },
+  "then": {
+    "required": ["kernelVersion"]
+  },
+  "else": {
+    "required": ["releaseType"],
+    "properties": {
+      "links": { "required": ["screenshots"] }
+    },
+    "if": {
+      "properties": { "postType": { "const": "rom" } },
+      "required": ["postType"]
+    },
+    "then": {
+      "required": ["androidVersion"],
+      "properties": {
+        "download": { "required": ["buildType"] }
+      }
+    }
+  },
+  "definitions": {
+    "httpsUrl": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://",
+      "maxLength": 512,
+      "description": "a link starting with https://"
+    },
+    "bullets": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 40,
+      "items": {
+        "type": "string",
+        "minLength": 2,
+        "maxLength": 300,
+        "pattern": "^[^\\n]+$",
+        "description": "one line per bullet, with no line breaks inside it"
+      },
+      "description": "One line per bullet. Blank lines are not allowed."
+    }
+  }
+}

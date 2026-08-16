@@ -1,0 +1,34 @@
+{
+  "$schema": "https://raw.githubusercontent.com/realme-mt6785-devs/RM6785-ROM-post/tooling/schema/post.schema.json",
+  "postType": "rom",
+  "name": "LineageOS",
+  "version": "23",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "16",
+  "ruiVersion": 3,
+  "author": "@yourhandle",
+  "buildDate": "2026-08-17",
+  "banner": "https://example.com/lineageos-23.png",
+  "changelog": [
+    "Initial official build for Android 16",
+    "August 2026 security patches",
+    "Fixed VoLTE on Indian variants"
+  ],
+  "bugs": ["Video recording in third-party camera apps"],
+  "notes": [
+    "Clean flash if you are coming from Android 15",
+    "Firmware must be RUI 3"
+  ],
+  "download": {
+    "buildType": "Vanilla",
+    "fileSize": "1.5 GB",
+    "url": "https://example.com/lineage-23.0-20260817-nightly-RM6785-signed.zip"
+  },
+  "links": {
+    "sources": "https://github.com/LineageOS",
+    "screenshots": "https://t.me/example/1",
+    "supportGroup": "https://t.me/example"
+  }
+}

@@ -1,0 +1,16 @@
+name: Check tooling
+
+on:
+  push:
+    branches: [tooling]
+  pull_request:
+    branches: [tooling]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install --frozen-lockfile
+      - run: bun run check

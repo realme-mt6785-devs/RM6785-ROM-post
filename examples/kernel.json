@@ -1,0 +1,24 @@
+{
+  "$schema": "https://raw.githubusercontent.com/realme-mt6785-devs/RM6785-ROM-post/tooling/schema/post.schema.json",
+  "postType": "kernel",
+  "name": "Nexus Kernel",
+  "tag": "NexusKernel",
+  "version": "v2.1",
+  "stability": "BETA",
+  "device": "salaa",
+  "kernelVersion": "4.14.336",
+  "ruiVersion": 3,
+  "author": "@yourhandle",
+  "buildDate": "2026-08-15",
+  "banner": "https://example.com/nexus-kernel.png",
+  "changelog": ["Linux 4.14.336", "Reworked GPU governor defaults"],
+  "bugs": ["None known"],
+  "download": {
+    "fileSize": "24 MB",
+    "url": "https://example.com/NexusKernel-2.1-salaa.zip"
+  },
+  "links": {
+    "sources": "https://github.com/example/kernel_realme_mt6785",
+    "supportGroup": "https://t.me/example"
+  }
+}

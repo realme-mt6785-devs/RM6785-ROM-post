@@ -1,0 +1,32 @@
+{
+  "name": "rm6785-rom-post-tooling",
+  "description": "Validates build JSON from issues and posts it to the RM6785 channel",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check:file": "bun run src/cli/check.ts",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "bun run typecheck && bun run lint && bun run format:check && bun test"
+  },
+  "dependencies": {
+    "@octokit/rest": "^22.0.1",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "node-telegram-bot-api": "^1.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/bun": "^1.3.0",
+    "eslint": "^10.7.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-perfectionist": "^5.10.0",
+    "globals": "^17.7.0",
+    "jiti": "^2.7.0",
+    "prettier": "^3.9.6",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.65.0"
+  }
+}

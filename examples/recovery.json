@@ -1,0 +1,30 @@
+{
+  "$schema": "https://raw.githubusercontent.com/realme-mt6785-devs/RM6785-ROM-post/tooling/schema/post.schema.json",
+  "postType": "recovery",
+  "name": "Pitch Black Recovery Project",
+  "tag": "PBRP",
+  "version": "v4.0",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "RM6785",
+  "ruiVersion": 2,
+  "author": "Hakimi & Ansh",
+  "buildDate": "2026-08-10",
+  "banner": "https://example.com/pbrp-4.0.gif",
+  "changelog": ["Fixed decryption for AOSP ROMs with Android 12.1 and higher."],
+  "bugs": ["Flashlight"],
+  "notes": [
+    "Official",
+    "For realme UI 2.0-based ROMs",
+    "F2FS and EROFS supported"
+  ],
+  "download": {
+    "fileSize": "69MB",
+    "url": "https://example.com/PBRP-RM6785-4.0-20260810.img"
+  },
+  "links": {
+    "sources": "https://github.com/PitchBlackRecoveryProject",
+    "screenshots": "https://t.me/example/2",
+    "supportGroup": "https://t.me/example"
+  }
+}
