@@ -1,2 +1,5 @@
 # the tooling branch is checked out here by .github/workflows/post.yml
 .tooling/
+
+# left behind by switching to the tooling branch locally
+node_modules/

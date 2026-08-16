@@ -2,7 +2,7 @@ name: Validate post request
 
 on:
   issues:
-    types: [opened, edited]
+    types: [opened, edited, labeled]
 
 permissions:
   issues: write
@@ -13,7 +13,13 @@ concurrency:
 
 jobs:
   validate:
-    if: contains(github.event.issue.labels.*.name, 'post')
+    # `labeled` is here so a maintainer can add `post` to an issue that was not
+    # filed through the form. Approval labels are excluded: publishing handles
+    # those, and re-checking would strip the approval that was just given.
+    if: >-
+      contains(github.event.issue.labels.*.name, 'post')
+      && !(github.event.action == 'labeled'
+           && startsWith(github.event.label.name, 'approved'))
     runs-on: ubuntu-latest
     steps:
       # Only the tooling branch is needed: the script reads the issue through the
@@ -30,4 +36,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
+          EVENT_ACTION: ${{ github.event.action }}
           POST_STYLE: ${{ vars.POST_STYLE }}
