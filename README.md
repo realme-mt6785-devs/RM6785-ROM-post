@@ -72,8 +72,9 @@ Typecheck, lint, formatting and tests.
 
 ## Secrets and variables
 
-|                           |                                                                                                      |
-| ------------------------- | ---------------------------------------------------------------------------------------------------- |
-| `BOT_TOKEN`               | secret. The Telegram bot that posts to the channel                                                   |
-| `POST_STYLE`              | variable, optional. `classic` or `rich`                                                              |
-| `TELEGRAM_RM6785_CHANNEL` | variable, optional. Defaults to the live channel — point it at a test channel when trying things out |
+|                            |                                                                                                      |
+| -------------------------- | ---------------------------------------------------------------------------------------------------- |
+| `BOT_TOKEN`                | secret. The Telegram bot that posts to the channel                                                   |
+| `POST_STYLE`               | variable, optional. `classic` or `rich`                                                              |
+| `TELEGRAM_RM6785_CHANNEL`  | variable, optional. Defaults to the live channel — point it at a test channel when trying things out |
+| `TELEGRAM_STICKER_FILE_ID` | variable, optional. Overrides the sticker sent before delayed posts                                  |

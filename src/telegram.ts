@@ -7,6 +7,7 @@ import {
   COUNTDOWN_EDIT_INTERVAL,
   POST_STYLE,
   TELEGRAM_RM6785_CHANNEL,
+  TELEGRAM_STICKER_FILE_ID,
 } from "./config";
 import { renderClassic, renderRich } from "./render";
 
@@ -21,39 +22,61 @@ const countdownText = (remaining: string): string =>
  * into the finished post, but Telegram will not turn a text message into a media
  * one, so this deletes and sends instead — the same thing /postrich does.
  */
-const countdown = async (bot: TelegramBot, minutes: number): Promise<void> => {
-  const sent = await bot.sendMessage(
+export const countdown = async (
+  bot: TelegramBot,
+  minutes: number,
+): Promise<number> => {
+  const sticker = await bot.sendSticker(
     TELEGRAM_RM6785_CHANNEL,
-    countdownText(`${minutes}m`),
-    { parse_mode: "HTML" },
+    TELEGRAM_STICKER_FILE_ID,
   );
 
-  const endsAt = Date.now() + minutes * 60_000;
+  let countdownMessageId: number | undefined;
 
-  while (true) {
-    const left = endsAt - Date.now();
-    if (left <= 0) break;
+  try {
+    const sent = await bot.sendMessage(
+      TELEGRAM_RM6785_CHANNEL,
+      countdownText(`${minutes}m`),
+      { parse_mode: "HTML" },
+    );
+    countdownMessageId = sent.message_id;
 
-    await sleep(Math.min(COUNTDOWN_EDIT_INTERVAL, left));
+    const endsAt = Date.now() + minutes * 60_000;
 
-    const remaining = Math.max(0, endsAt - Date.now());
-    if (remaining <= 0) break;
+    while (true) {
+      const left = endsAt - Date.now();
+      if (left <= 0) break;
 
-    const label = `${Math.floor(remaining / 60_000)}m ${Math.floor(remaining / 1000) % 60}s`;
+      await sleep(Math.min(COUNTDOWN_EDIT_INTERVAL, left));
 
-    try {
-      await bot.editMessageText({
-        chat_id: TELEGRAM_RM6785_CHANNEL,
-        message_id: sent.message_id,
-        text: countdownText(label),
-        parse_mode: "HTML",
-      });
-    } catch {
-      // an unchanged edit or a momentary rate limit should not lose the post
+      const remaining = Math.max(0, endsAt - Date.now());
+      if (remaining <= 0) break;
+
+      const label = `${Math.floor(remaining / 60_000)}m ${Math.floor(remaining / 1000) % 60}s`;
+
+      try {
+        await bot.editMessageText({
+          chat_id: TELEGRAM_RM6785_CHANNEL,
+          message_id: sent.message_id,
+          text: countdownText(label),
+          parse_mode: "HTML",
+        });
+      } catch {
+        // an unchanged edit or a momentary rate limit should not lose the post
+      }
     }
-  }
 
-  await bot.deleteMessage(TELEGRAM_RM6785_CHANNEL, sent.message_id);
+    await bot.deleteMessage(TELEGRAM_RM6785_CHANNEL, sent.message_id);
+    return sticker.message_id;
+  } catch (error) {
+    await Promise.allSettled([
+      bot.deleteMessage(TELEGRAM_RM6785_CHANNEL, sticker.message_id),
+      ...(countdownMessageId === undefined
+        ? []
+        : [bot.deleteMessage(TELEGRAM_RM6785_CHANNEL, countdownMessageId)]),
+    ]);
+    throw error;
+  }
 };
 
 const sendClassic = async (bot: TelegramBot, post: Post): Promise<number> => {
@@ -86,10 +109,22 @@ export const publishToChannel = async (
   if (!token) throw new Error("BOT_TOKEN is not set");
 
   const bot = new TelegramBot(token, { polling: false });
+  let stickerMessageId: number | undefined;
 
-  if (delayMinutes > 0) await countdown(bot, delayMinutes);
+  try {
+    if (delayMinutes > 0) {
+      stickerMessageId = await countdown(bot, delayMinutes);
+    }
 
-  return POST_STYLE === "rich" ? sendRich(bot, post) : sendClassic(bot, post);
+    return POST_STYLE === "rich" ? sendRich(bot, post) : sendClassic(bot, post);
+  } catch (error) {
+    if (stickerMessageId !== undefined) {
+      await bot
+        .deleteMessage(TELEGRAM_RM6785_CHANNEL, stickerMessageId)
+        .catch(() => undefined);
+    }
+    throw error;
+  }
 };
 
 /** Works for members whether or not the channel has a public username. */

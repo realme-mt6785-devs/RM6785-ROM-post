@@ -28,6 +28,10 @@ export const TELEGRAM_RM6785_CHANNEL = intFromEnv(
   -1001384382397,
 );
 
+export const TELEGRAM_STICKER_FILE_ID =
+  process.env.TELEGRAM_STICKER_FILE_ID?.trim() ||
+  "CAACAgUAAxkBAAIX12Rci3DXLH_h_hjgvbkmM6YSMEhUAAIvBAAC3gABcVWicSZoSZsiti8E";
+
 /**
  * Telegram's photo caption limit, in UTF-16 code units. Hard limit: the API
  * rejects anything longer, so a post over it is a validation failure.
