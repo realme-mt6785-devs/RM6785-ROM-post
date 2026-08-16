@@ -1,0 +1,2 @@
+# the tooling branch is checked out here by .github/workflows/post.yml
+.tooling/

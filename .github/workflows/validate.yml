@@ -1,0 +1,33 @@
+name: Validate post request
+
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  issues: write
+
+concurrency:
+  group: validate-${{ github.event.issue.number }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    if: contains(github.event.issue.labels.*.name, 'post')
+    runs-on: ubuntu-latest
+    steps:
+      # Only the tooling branch is needed: the script reads the issue through the
+      # API rather than having the body interpolated into this file, which keeps
+      # untrusted text out of the shell entirely.
+      - uses: actions/checkout@v5
+        with:
+          ref: tooling
+
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install --frozen-lockfile
+
+      - run: bun run src/cli/validate.ts
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          POST_STYLE: ${{ vars.POST_STYLE }}

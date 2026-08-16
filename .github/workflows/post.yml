@@ -1,0 +1,59 @@
+name: Post to channel
+
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  issues: write
+  contents: write
+
+# Never cancelled: a run that has already sent the post must be allowed to finish
+# labelling and recording it.
+concurrency:
+  group: publish-${{ github.event.issue.number }}
+
+jobs:
+  publish:
+    if: github.event.label.name == 'approved' || startsWith(github.event.label.name, 'approved:')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/checkout@v5
+        with:
+          ref: tooling
+          path: .tooling
+
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install --frozen-lockfile
+        working-directory: .tooling
+
+      - id: publish
+        working-directory: .tooling
+        run: bun run src/cli/publish.ts
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          APPROVAL_LABEL: ${{ github.event.label.name }}
+          POST_STYLE: ${{ vars.POST_STYLE }}
+          TELEGRAM_RM6785_CHANNEL: ${{ vars.TELEGRAM_RM6785_CHANNEL }}
+          RECORD_ROOT: ${{ github.workspace }}
+
+      # The post is already in the channel by now. If this step fails the record is
+      # missing but nothing double-posts, because the issue is labelled `posted`.
+      - if: steps.publish.outputs.record != ''
+        env:
+          RECORD: ${{ steps.publish.outputs.record }}
+          SUBJECT: ${{ steps.publish.outputs.commit-subject }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- "$RECORD"
+          git commit --message "$SUBJECT"
+          for attempt in 1 2 3; do
+            git push && exit 0
+            git pull --rebase --autostash
+          done
+          exit 1

@@ -1,0 +1,61 @@
+name: Post a build
+description: Announce a ROM, recovery or kernel in the channel
+title: "[post] "
+labels: ["post"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe your build as JSON below. The bot will check it and reply with a preview of
+        the post, then an admin approves it.
+
+        The [README](../blob/main/README.md#what-goes-in-the-json) lists every field, and there
+        are ready-made examples to copy for a
+        [ROM](../blob/tooling/examples/rom.json),
+        [recovery](../blob/tooling/examples/recovery.json)
+        or [kernel](../blob/tooling/examples/kernel.json).
+
+  - type: textarea
+    id: json
+    attributes:
+      label: Build JSON
+      description: Just the JSON object — no explanation around it.
+      render: json
+      placeholder: |
+        {
+          "postType": "rom",
+          "name": "LineageOS",
+          "version": "23",
+          "stability": "STABLE",
+          "releaseType": "OFFICIAL",
+          "device": "RM6785",
+          "androidVersion": "16",
+          "ruiVersion": 3,
+          "author": "@yourhandle",
+          "buildDate": "2026-08-17",
+          "banner": "https://example.com/banner.png",
+          "changelog": ["First official build"],
+          "bugs": ["None known"],
+          "download": {
+            "buildType": "Vanilla",
+            "fileSize": "1.5 GB",
+            "url": "https://example.com/build.zip"
+          },
+          "links": {
+            "sources": "https://github.com/...",
+            "screenshots": "https://t.me/...",
+            "supportGroup": "https://t.me/..."
+          }
+        }
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: Before you submit
+      options:
+        - label: The download link works, and the banner URL opens the image or GIF itself
+          required: true
+        - label: I built this, or the maintainer is fine with me posting it
+          required: true
