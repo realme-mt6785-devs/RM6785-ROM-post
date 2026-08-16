@@ -18,11 +18,14 @@ const main = async (): Promise<void> => {
   const stopping = blockers(problems);
   const warn = warnings(problems);
 
-  // An edit after approval must not slip past the admin who approved the old
-  // text, so approving has to be done again.
-  for (const label of labels.filter(isApprovalLabel)) {
-    await thread.removeLabel(label);
-    console.log(`removed ${label}: the issue changed since it was approved`);
+  // An edit after approval must not slip past the admin who approved the older
+  // text, so approving has to happen again. Only an edit invalidates it — this
+  // also runs when a label is added, and that must leave approvals alone.
+  if (process.env.EVENT_ACTION === "edited") {
+    for (const label of labels.filter(isApprovalLabel)) {
+      await thread.removeLabel(label);
+      console.log(`removed ${label}: the issue changed since it was approved`);
+    }
   }
 
   const passed = post !== null && stopping.length === 0;
