@@ -39,6 +39,7 @@ jobs:
           APPROVAL_LABEL: ${{ github.event.label.name }}
           POST_STYLE: ${{ vars.POST_STYLE }}
           TELEGRAM_RM6785_CHANNEL: ${{ vars.TELEGRAM_RM6785_CHANNEL }}
+          TELEGRAM_STICKER_FILE_ID: ${{ vars.TELEGRAM_STICKER_FILE_ID }}
           RECORD_ROOT: ${{ github.workspace }}
 
       # The post is already in the channel by now. If this step fails the record is
