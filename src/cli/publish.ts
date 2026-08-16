@@ -4,23 +4,10 @@ import { dirname, resolve } from "node:path";
 
 import { postTag } from "../fields";
 import { blockers, inspect, warnings } from "../inspect";
-import { IssueThread, isApprovalLabel } from "../issue";
+import { approvalDelayMinutes, IssueThread, isApprovalLabel } from "../issue";
 import { issueSuffix, recordPath } from "../paths";
 import { alreadyPosted, posted, rejected } from "../report";
 import { messageLink, publishToChannel } from "../telegram";
-
-/** Long enough for a tease, short enough that the runner is not idling for free. */
-const MAX_DELAY_MINUTES = 30;
-
-const parseDelay = (label: string | undefined): number => {
-  const minutes = Number.parseInt(
-    label?.match(/^approved:(\d+)m$/)?.[1] ?? "",
-    10,
-  );
-  if (!Number.isFinite(minutes) || minutes <= 0) return 0;
-
-  return Math.min(minutes, MAX_DELAY_MINUTES);
-};
 
 const setOutput = async (name: string, value: string): Promise<void> => {
   const file = process.env.GITHUB_OUTPUT;
@@ -67,7 +54,7 @@ const main = async (): Promise<void> => {
     return;
   }
 
-  const delay = parseDelay(process.env.APPROVAL_LABEL);
+  const delay = approvalDelayMinutes(process.env.APPROVAL_LABEL);
   if (delay > 0) console.log(`counting down ${delay}m before posting`);
 
   const messageId = await publishToChannel(post, delay);

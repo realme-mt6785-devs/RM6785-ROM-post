@@ -1,6 +1,11 @@
 import { describe, expect, test } from "bun:test";
 
-import { extractJson, isApprovalLabel } from "../src/issue";
+import {
+  approvalDelayMinutes,
+  extractJson,
+  isApprovalLabel,
+  MAX_DELAY_MINUTES,
+} from "../src/issue";
 
 describe("finding the JSON in an issue body", () => {
   test("the shape the issue form produces", () => {
@@ -69,5 +74,28 @@ describe("approval labels", () => {
     expect(isApprovalLabel("lint:pass")).toBe(false);
     expect(isApprovalLabel("posted")).toBe(false);
     expect(isApprovalLabel("not-approved")).toBe(false);
+  });
+});
+
+describe("how long to wait before posting", () => {
+  test("a plain approval posts straight away", () => {
+    expect(approvalDelayMinutes("approved")).toBe(0);
+  });
+
+  test("a delay is honoured", () => {
+    expect(approvalDelayMinutes("approved:5m")).toBe(5);
+    expect(approvalDelayMinutes("approved:1m")).toBe(1);
+  });
+
+  test("an unreasonable delay is capped rather than refused", () => {
+    expect(approvalDelayMinutes("approved:600m")).toBe(MAX_DELAY_MINUTES);
+  });
+
+  test("nonsense posts straight away instead of failing", () => {
+    expect(approvalDelayMinutes("approved:soon")).toBe(0);
+    expect(approvalDelayMinutes("approved:0m")).toBe(0);
+    expect(approvalDelayMinutes("approved:5")).toBe(0);
+    expect(approvalDelayMinutes("approved:-5m")).toBe(0);
+    expect(approvalDelayMinutes(undefined)).toBe(0);
   });
 });

@@ -101,6 +101,24 @@ export class IssueThread {
 export const isApprovalLabel = (name: string): boolean =>
   name === "approved" || name.startsWith("approved:");
 
+/** Long enough for a tease, short enough that a runner is not idling for free. */
+export const MAX_DELAY_MINUTES = 30;
+
+/**
+ * `approved` posts straight away; `approved:5m` teases it first. Anything else,
+ * including a nonsense delay, posts straight away rather than failing.
+ */
+export const approvalDelayMinutes = (label: string | undefined): number => {
+  const minutes = Number.parseInt(
+    label?.match(/^approved:(\d+)m$/)?.[1] ?? "",
+    10,
+  );
+
+  if (!Number.isFinite(minutes) || minutes <= 0) return 0;
+
+  return Math.min(minutes, MAX_DELAY_MINUTES);
+};
+
 /**
  * Pulls the JSON out of an issue body. The form wraps it in a ```json fence;
  * people editing by hand sometimes paste it bare.
