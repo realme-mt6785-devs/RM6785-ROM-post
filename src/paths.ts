@@ -26,5 +26,8 @@ export const issueSuffix = (issueNumber: number): string => `i${issueNumber}`;
 export const contentSuffix = (json: string): string =>
   `h${createHash("sha256").update(json).digest("hex").slice(0, 4)}`;
 
+/** Distinguishes an imported channel message from issue-backed records. */
+export const messageSuffix = (messageId: number): string => `m${messageId}`;
+
 export const recordPath = (post: Post, suffix: string): string =>
   `${recordDir(post)}/${postTag(post)}-${post.device}-${post.buildDate}-${suffix}.json`;

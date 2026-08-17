@@ -87,7 +87,14 @@
       "description": "an ISO date, e.g. 2026-08-17 — shown in the post as 17-08-2026"
     },
     "banner": {
-      "$ref": "#/definitions/httpsUrl",
+      "oneOf": [
+        { "$ref": "#/definitions/httpsUrl" },
+        {
+          "type": "string",
+          "pattern": "^telegram-message:-100[0-9]+:[0-9]+$",
+          "maxLength": 96
+        }
+      ],
       "description": "Direct link to the image or GIF shown above the post."
     },
     "changelog": { "$ref": "#/definitions/bullets" },

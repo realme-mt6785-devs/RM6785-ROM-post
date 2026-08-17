@@ -5,7 +5,12 @@ import type { Post } from "../src/types";
 import kernelExample from "../examples/kernel.json";
 import recoveryExample from "../examples/recovery.json";
 import romExample from "../examples/rom.json";
-import { contentSuffix, issueSuffix, recordPath } from "../src/paths";
+import {
+  contentSuffix,
+  issueSuffix,
+  messageSuffix,
+  recordPath,
+} from "../src/paths";
 
 describe("where a record is filed", () => {
   test("a ROM sorts by Android version", () => {
@@ -67,5 +72,9 @@ describe("suffixes", () => {
     expect(contentSuffix('{"a":1}')).toBe(contentSuffix('{"a":1}'));
     expect(contentSuffix('{"a":1}')).toMatch(/^h[0-9a-f]{4}$/);
     expect(contentSuffix('{"a":1}')).not.toBe(contentSuffix('{"a":2}'));
+  });
+
+  test("an imported record points back to its channel message", () => {
+    expect(messageSuffix(1234)).toBe("m1234");
   });
 });
