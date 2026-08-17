@@ -44,6 +44,9 @@ const bulletFields = (post: Post): [string, string[]][] => [
 
 const inlineFields = (post: Post): [string, string][] => [
   ["author", post.author],
+  ...(post.download.buildType
+    ? [["download.buildType", post.download.buildType] as [string, string]]
+    : []),
   ...bulletFields(post).flatMap(([field, values]) =>
     values.map((value, index): [string, string] => [
       `${field}[${index}]`,

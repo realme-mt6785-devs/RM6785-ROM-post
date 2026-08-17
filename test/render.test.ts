@@ -154,6 +154,37 @@ Support group`,
       ]),
     );
   });
+
+  test("bold and italic become overlapping Telegram entities", () => {
+    const post = structuredClone(romExample) as Post;
+    post.changelog = [
+      "Use **bold**, *italic* and [***both***](https://example.com/details)",
+    ];
+    post.download.buildType = "**GAPPS** | *VANILLA*";
+
+    const { caption, entities } = renderClassic(post);
+    expect(caption).toContain("Use bold, italic and both");
+    expect(caption).toContain("Build type: GAPPS | VANILLA");
+    expect(caption).not.toContain("**");
+
+    const styles = entities
+      .filter((entity) => ["bold", "italic", "text_link"].includes(entity.type))
+      .map((entity) => ({
+        text: caption.slice(entity.offset, entity.offset + entity.length),
+        type: entity.type,
+      }));
+    expect(styles).toEqual(
+      expect.arrayContaining([
+        { text: "bold", type: "bold" },
+        { text: "italic", type: "italic" },
+        { text: "both", type: "bold" },
+        { text: "both", type: "italic" },
+        { text: "both", type: "text_link" },
+        { text: "GAPPS", type: "bold" },
+        { text: "VANILLA", type: "italic" },
+      ]),
+    );
+  });
 });
 
 /**
@@ -198,5 +229,19 @@ describe("rich rendering", () => {
 
   test("a kernel post has no screenshots link", () => {
     expect(renderRich(kernelExample as Post)).not.toContain("Screenshots");
+  });
+
+  test("keeps inline styles in rich messages", () => {
+    const post = structuredClone(romExample) as Post;
+    post.notes = [
+      "Use **bold**, *italic* and [***both***](https://example.com/details)",
+    ];
+
+    const markdown = renderRich(post);
+    expect(markdown).toContain("<b>bold</b>");
+    expect(markdown).toContain("<i>italic</i>");
+    expect(markdown).toContain(
+      '<a href="https://example.com/details"><b><i>both</i></b></a>',
+    );
   });
 });

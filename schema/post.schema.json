@@ -78,7 +78,7 @@
       "minLength": 2,
       "maxLength": 96,
       "pattern": "^[^\\n]+$",
-      "description": "a single line, e.g. Hakimi & Ansh; a linked name may use [ELOHIM](https://example.com)"
+      "description": "a single line, e.g. Hakimi & Ansh; supports [links](https://example.com), **bold** and *italic*"
     },
     "buildDate": {
       "type": "string",
@@ -106,7 +106,7 @@
           "minLength": 1,
           "maxLength": 48,
           "pattern": "^[^\\n]+$",
-          "description": "ROM posts only. Which flavour this build is, e.g. Vanilla or GApps."
+          "description": "ROM posts only. Which flavour this build is, e.g. Vanilla or GApps; supports inline links, bold and italic."
         },
         "fileSize": {
           "type": "string",
@@ -171,7 +171,7 @@
         "minLength": 2,
         "maxLength": 300,
         "pattern": "^[^\\n]+$",
-        "description": "one line per bullet; inline links may use [text](https://example.com)"
+        "description": "one line per bullet; supports [links](https://example.com), **bold** and *italic*"
       },
       "description": "One line per bullet. Blank lines are not allowed."
     }

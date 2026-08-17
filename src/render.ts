@@ -51,8 +51,30 @@ class Caption {
 
   inline(value: string): this {
     for (const segment of inlineSegments(value)) {
-      if (segment.url) this.link({ label: segment.text, url: segment.url });
-      else this.plain(segment.text);
+      const offset = this.text.length;
+      this.plain(segment.text);
+      if (segment.bold) {
+        this.entities.push({
+          type: "bold",
+          offset,
+          length: segment.text.length,
+        });
+      }
+      if (segment.italic) {
+        this.entities.push({
+          type: "italic",
+          offset,
+          length: segment.text.length,
+        });
+      }
+      if (segment.url) {
+        this.entities.push({
+          type: "text_link",
+          offset,
+          length: segment.text.length,
+          url: segment.url,
+        });
+      }
     }
     return this;
   }
@@ -98,11 +120,12 @@ const anchor = ({ label, url }: Link): string =>
 
 const richInline = (value: string): string =>
   inlineSegments(value)
-    .map((segment) =>
-      segment.url
-        ? anchor({ label: segment.text, url: segment.url })
-        : segment.text,
-    )
+    .map((segment) => {
+      let text = segment.text;
+      if (segment.italic) text = `<i>${text}</i>`;
+      if (segment.bold) text = `<b>${text}</b>`;
+      return segment.url ? anchor({ label: text, url: segment.url }) : text;
+    })
     .join("");
 
 /**
