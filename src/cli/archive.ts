@@ -5,7 +5,7 @@ import { dirname, resolve } from "node:path";
 
 import type { ArchiveEntity } from "../archive";
 
-import { archivePost } from "../archive";
+import { archivePost, archiveRichPost } from "../archive";
 import { messageSuffix, recordPath } from "../paths";
 
 interface Options {
@@ -160,27 +160,29 @@ const main = async (): Promise<void> => {
     })) {
       counts.messages++;
 
-      if (message.richMessage) {
-        counts.rich++;
-        console.log(
-          `? ${message.id}: rich message, review manually (${message.link})`,
-        );
-        continue;
-      }
-
       const entities: ArchiveEntity[] = message.entities.map((entity) => ({
         kind: entity.kind,
         length: entity.length,
         offset: entity.offset,
         url: entity.is("text_link") ? entity.params.url : undefined,
       }));
-      const result = archivePost({
-        chatId: message.chat.id,
-        entities,
-        id: message.id,
-        mediaType: message.media?.type ?? null,
-        text: message.text,
-      });
+      const result = message.richMessage
+        ? archiveRichPost({
+            blocks: message.richMessage.blocks,
+            chatId: message.chat.id,
+            id: message.id,
+            sentAt: message.date.toISOString(),
+          })
+        : archivePost({
+            chatId: message.chat.id,
+            entities,
+            id: message.id,
+            mediaType: message.media?.type ?? null,
+            sentAt: message.date.toISOString(),
+            text: message.text,
+          });
+
+      if (message.richMessage && result.eligible) counts.rich++;
 
       if (!result.eligible) {
         if (result.candidate) {
@@ -214,7 +216,7 @@ const main = async (): Promise<void> => {
       `scanned ${counts.messages}`,
       `${counts.eligible} eligible`,
       `${counts.rejected} rejected candidate(s)`,
-      `${counts.rich} rich message(s) for manual review`,
+      `${counts.rich} rich post(s) parsed`,
       options.write ? `${counts.written} written` : "dry run; nothing written",
     ].join("; "),
   );

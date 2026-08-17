@@ -23,6 +23,41 @@ const pathOf = (instancePath: string): string =>
 const join = (base: string, key: string): string =>
   base ? `${base}.${key}` : key;
 
+const missingModernFields = (data: unknown): Problem[] => {
+  const post = data as Record<string, any>;
+  if (
+    typeof post.banner === "string" &&
+    post.banner.startsWith("telegram-message:")
+  ) {
+    return [];
+  }
+
+  const required = [
+    ["download.fileSize", post.download?.fileSize],
+    ["download.url", post.download?.url],
+    ["links.sources", post.links?.sources],
+    ["links.supportGroup", post.links?.supportGroup],
+  ];
+
+  if (post.postType === "kernel") {
+    required.push(["kernelVersion", post.kernelVersion]);
+  } else if (post.postType === "rom" || post.postType === "recovery") {
+    required.push(["releaseType", post.releaseType]);
+    required.push(["links.screenshots", post.links?.screenshots]);
+    if (post.postType === "rom") {
+      required.push(["androidVersion", post.androidVersion]);
+      required.push(["download.buildType", post.download?.buildType]);
+    }
+  }
+
+  return required
+    .filter(([, value]) => value === undefined)
+    .map(([where]) => ({
+      where: where as string,
+      message: "is required but missing",
+    }));
+};
+
 const hint = (error: ErrorObject): string => {
   const description = (
     error.parentSchema as { description?: string } | undefined
@@ -100,7 +135,7 @@ const toProblem = (error: ErrorObject): Problem => {
 
 /** Structural validation: types, enums, patterns and per-kind requirements. */
 export const checkSchema = (data: unknown): Problem[] => {
-  if (validate(data)) return [];
+  if (validate(data)) return missingModernFields(data);
 
   const seen = new Set<string>();
   const problems: Problem[] = [];
@@ -117,5 +152,11 @@ export const checkSchema = (data: unknown): Problem[] => {
     problems.push(problem);
   }
 
-  return problems;
+  return [...problems, ...missingModernFields(data)].filter(
+    (problem, index, all) =>
+      all.findIndex(
+        (other) =>
+          other.where === problem.where && other.message === problem.message,
+      ) === index,
+  );
 };

@@ -106,7 +106,6 @@
     "download": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["fileSize", "url"],
       "properties": {
         "buildType": {
           "type": "string",
@@ -126,7 +125,6 @@
     "links": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["sources", "supportGroup"],
       "properties": {
         "sources": { "$ref": "#/definitions/httpsUrl" },
         "screenshots": {
@@ -135,29 +133,6 @@
         },
         "supportGroup": { "$ref": "#/definitions/httpsUrl" },
         "donate": { "$ref": "#/definitions/httpsUrl" }
-      }
-    }
-  },
-  "if": {
-    "properties": { "postType": { "const": "kernel" } },
-    "required": ["postType"]
-  },
-  "then": {
-    "required": ["kernelVersion"]
-  },
-  "else": {
-    "required": ["releaseType"],
-    "properties": {
-      "links": { "required": ["screenshots"] }
-    },
-    "if": {
-      "properties": { "postType": { "const": "rom" } },
-      "required": ["postType"]
-    },
-    "then": {
-      "required": ["androidVersion"],
-      "properties": {
-        "download": { "required": ["buildType"] }
       }
     }
   },

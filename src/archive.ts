@@ -1,7 +1,5 @@
 import type { Device, Post, PostType, ReleaseType, Stability } from "./types";
 
-import { DEVICE_BLURB } from "./devices";
-import { checkRules } from "./rules";
 import { checkSchema } from "./schema";
 
 export interface ArchiveEntity {
@@ -16,12 +14,25 @@ export interface ArchiveMessage {
   entities: readonly ArchiveEntity[];
   id: number;
   mediaType: string | null;
+  sentAt?: string;
   text: string;
+}
+
+export interface ArchiveRichMessage {
+  blocks: readonly unknown[];
+  chatId: number;
+  id: number;
+  sentAt?: string;
 }
 
 export type ArchiveResult =
   | { eligible: true; post: Post }
   | { candidate: boolean; eligible: false; reason: string };
+
+interface RichSegment {
+  text: string;
+  url?: string;
+}
 
 interface Line {
   start: number;
@@ -43,7 +54,7 @@ const DEVICES = new Set<Device>([
 ]);
 
 const MEDIA_TYPES = new Set(["document", "photo", "video"]);
-const SECTION_HEADINGS = new Set(["Bugs", "Changelog", "Downloads", "Notes"]);
+const HEADINGS = ["changelog", "bugs", "notes", "downloads"] as const;
 
 class NotEligible extends Error {}
 
@@ -53,11 +64,35 @@ const fail = (reason: string): never => {
 
 const splitLines = (text: string): Line[] => {
   let start = 0;
-  return text.split("\n").map((line) => {
-    const result = { start, text: line };
-    start += line.length + 1;
-    return result;
+  return text.split("\n").map((text) => {
+    const line = { start, text };
+    start += text.length + 1;
+    return line;
   });
+};
+
+const normalizedUrl = (url: string | undefined): string | undefined => {
+  if (!url) return undefined;
+  if (url.startsWith("https://")) return url;
+  if (url.startsWith("http://")) return `https://${url.slice(7)}`;
+
+  const domain = url.match(/^tg:\/\/resolve\?domain=([^&]+)/i)?.[1];
+  return domain ? `https://t.me/${domain}` : undefined;
+};
+
+const richSegments = (value: unknown, url?: string): RichSegment[] => {
+  if (!value || typeof value !== "object") return [];
+  const node = value as Record<string, any>;
+
+  if (node._ === "textPlain") return [{ text: String(node.text ?? ""), url }];
+  if (node._ === "textConcat") {
+    return (node.texts as unknown[]).flatMap((part) => richSegments(part, url));
+  }
+  if (node._ === "textUrl") {
+    return richSegments(node.text, normalizedUrl(node.url) ?? url);
+  }
+  if (node.text) return richSegments(node.text, url);
+  return [];
 };
 
 const inlineText = (
@@ -66,6 +101,7 @@ const inlineText = (
   entities: readonly ArchiveEntity[],
 ): string => {
   const links = entities
+    .map((entity) => ({ ...entity, url: normalizedUrl(entity.url) }))
     .filter(
       (entity) =>
         entity.kind === "text_link" &&
@@ -74,8 +110,6 @@ const inlineText = (
         entity.offset + entity.length <= start + value.length,
     )
     .sort((left, right) => left.offset - right.offset);
-
-  if (!links.length) return value;
 
   let cursor = 0;
   let result = "";
@@ -90,168 +124,437 @@ const inlineText = (
   return result + value.slice(cursor);
 };
 
-const lineValue = (
+const valueAfter = (
   line: Line,
-  prefix: string,
+  pattern: RegExp,
   entities: readonly ArchiveEntity[],
-): string => {
-  if (!line.text.startsWith(prefix)) fail(`missing "${prefix.trim()}" line`);
-  const value = line.text.slice(prefix.length).trim();
-  if (!value) fail(`empty "${prefix.trim()}" value`);
-  const leading = line.text.slice(prefix.length).search(/\S/);
-  return inlineText(value, line.start + prefix.length + leading, entities);
+): string | undefined => {
+  const match = line.text.match(pattern);
+  if (!match) return undefined;
+
+  const raw = line.text.slice(match[0].length);
+  const leading = raw.search(/\S/);
+  if (leading < 0) return undefined;
+  const value = raw.slice(leading).trim();
+  return inlineText(value, line.start + match[0].length + leading, entities);
 };
 
-const linkOnLine = (line: Line, entities: readonly ArchiveEntity[]): string => {
-  const prefixLength = line.text.startsWith("• ") ? 2 : 0;
-  const labelStart = line.start + prefixLength;
-  const labelLength = line.text.length - prefixLength;
-  const entity = entities.find(
-    (item) =>
-      item.kind === "text_link" &&
-      item.url &&
-      item.offset <= labelStart &&
-      item.offset + item.length >= labelStart + labelLength,
-  );
-  if (!entity || !entity.url)
-    throw new NotEligible(`"${line.text}" is not a link`);
-  return entity.url;
+const plainAfter = (line: Line, pattern: RegExp): string | undefined => {
+  const match = line.text.match(pattern);
+  const value = match ? line.text.slice(match[0].length).trim() : "";
+  return value || undefined;
 };
 
-const chooseDevice = (tags: string[]): Device => {
-  const devices = tags.filter((tag): tag is Device =>
+const linkInRange = (
+  start: number,
+  end: number,
+  entities: readonly ArchiveEntity[],
+): string | undefined =>
+  entities
+    .filter(
+      (entity) =>
+        entity.kind === "text_link" &&
+        entity.offset < end &&
+        entity.offset + entity.length > start,
+    )
+    .map((entity) => normalizedUrl(entity.url))
+    .find((url): url is string => Boolean(url));
+
+const linkOnLine = (
+  line: Line,
+  entities: readonly ArchiveEntity[],
+): string | undefined =>
+  linkInRange(line.start, line.start + line.text.length + 1, entities);
+
+const chooseDevice = (hashtags: string[]): Device => {
+  const devices = hashtags.filter((tag): tag is Device =>
     DEVICES.has(tag as Device),
   );
+  const unique = new Set(devices);
+
+  if (unique.has("RM6785")) return "RM6785";
   if (
-    devices.length !== tags.length ||
-    devices.length < 1 ||
-    devices.length > 2
+    (unique.has("nemo") || unique.has("RMX2001")) &&
+    (unique.has("salaa") || unique.has("RMX2151"))
   ) {
-    fail("device hashtags are ambiguous");
+    return "RM6785";
   }
-
-  if (devices.length === 2) {
-    const pair = new Set(devices);
-    const matchesAlias =
-      (pair.has("nemo") && pair.has("RMX2001")) ||
-      (pair.has("salaa") && pair.has("RMX2151"));
-    if (!matchesAlias) fail("device hashtags disagree");
-  }
-
-  return (
-    devices.find((device) => device === "nemo" || device === "salaa") ??
-    devices[0]
-  );
+  if (unique.has("nemo")) return "nemo";
+  if (unique.has("salaa")) return "salaa";
+  if (unique.has("RMX2001")) return "RMX2001";
+  if (unique.has("RMX2151")) return "RMX2151";
+  return fail("no supported device hashtag was found");
 };
 
-const bulletsBetween = (
+const headingName = (line: Line): (typeof HEADINGS)[number] | undefined => {
+  const normalized = line.text.trim().toLowerCase();
+  return HEADINGS.find((heading) => heading === normalized);
+};
+
+const sectionBullets = (
   lines: Line[],
-  headingIndex: number,
-  endIndex: number,
+  start: number,
+  end: number,
   entities: readonly ArchiveEntity[],
 ): string[] => {
-  const bullets = lines
-    .slice(headingIndex + 1, endIndex)
-    .filter((line) => line.text);
-  if (!bullets.length || bullets.some((line) => !line.text.startsWith("• "))) {
-    fail(`invalid ${lines[headingIndex].text} section`);
+  const bullets: string[] = [];
+
+  for (const line of lines.slice(start, end)) {
+    if (!line.text.trim()) continue;
+    const marker = line.text.match(/^\s*•\s*/);
+    if (!marker) {
+      if (!bullets.length) fail("section text appears before its first bullet");
+      bullets[bullets.length - 1] += ` ${line.text.trim()}`;
+      continue;
+    }
+
+    const value = line.text.slice(marker[0].length).trim();
+    if (!value) continue;
+    const leading = line.text.slice(marker[0].length).search(/\S/);
+    bullets.push(
+      inlineText(
+        value,
+        line.start + marker[0].length + Math.max(leading, 0),
+        entities,
+      ),
+    );
   }
 
-  return bullets.map((line) =>
-    inlineText(line.text.slice(2), line.start + 2, entities),
+  if (!bullets.length) fail("section has no bullets");
+  return bullets;
+};
+
+const normalizeSize = (value: string): string | undefined => {
+  const trimmed = value.trim();
+  if (
+    /^\d+(?:\.\d+)? ?(?:MB|GB|MiB|GiB)(?:\s*\|\s*\d+(?:\.\d+)? ?(?:MB|GB|MiB|GiB))*$/.test(
+      trimmed,
+    )
+  ) {
+    return trimmed;
+  }
+
+  const sizes = [
+    ...value.matchAll(/\d+(?:\.\d+)?\s*(?:GiB|MiB|GB|MB|G|M)\b/gi),
+  ];
+  if (!sizes.length) return undefined;
+
+  return sizes
+    .map((match) => {
+      const compact = match[0].replace(/\s+/g, "");
+      return compact
+        .replace(/MiB$/i, "MiB")
+        .replace(/GiB$/i, "GiB")
+        .replace(/MB$/i, "MB")
+        .replace(/GB$/i, "GB")
+        .replace(/M$/i, "MB")
+        .replace(/G$/i, "GB");
+    })
+    .join(" | ");
+};
+
+const footerName = (line: Line): keyof Post["links"] | undefined => {
+  const label = line.text.trim().toLowerCase();
+  if (label === "source" || label === "sources") return "sources";
+  if (label === "screenshot" || label === "screenshots") return "screenshots";
+  if (label === "support group") return "supportGroup";
+  if (label === "donate" || label === "donation") return "donate";
+  return undefined;
+};
+
+const buildDateFrom = (
+  value: string | undefined,
+  sentAt: string | undefined,
+): string => {
+  const numeric = value?.match(/(\d{1,2})[-./](\d{1,2})[-./](\d{2,4})/);
+  if (numeric) {
+    const year = numeric[3].length === 2 ? `20${numeric[3]}` : numeric[3];
+    return `${year}-${numeric[2].padStart(2, "0")}-${numeric[1].padStart(2, "0")}`;
+  }
+
+  const written = value ? new Date(value) : new Date(Number.NaN);
+  if (!Number.isNaN(written.getTime()))
+    return written.toISOString().slice(0, 10);
+  if (sentAt) return new Date(sentAt).toISOString().slice(0, 10);
+  return fail("build date could not be determined");
+};
+
+const legacySection = (
+  lines: Line[],
+  startPattern: RegExp,
+  entities: readonly ArchiveEntity[],
+): string[] | undefined => {
+  const start = lines.findIndex((line) => startPattern.test(line.text.trim()));
+  if (start < 0) return undefined;
+
+  const stop = lines.findIndex(
+    (line, index) =>
+      index > start &&
+      /^(?:bugs?|known issues?|notes?|downloads?|sources?|screenshots?|support(?: group)?|credits?)\b/i.test(
+        line.text.trim(),
+      ),
   );
+  const end = stop < 0 ? lines.length : stop;
+  const values: string[] = [];
+
+  for (const line of lines.slice(start + 1, end)) {
+    const marker = line.text.match(/^\s*[•*-]\s*/);
+    if (!marker) continue;
+    const value = line.text.slice(marker[0].length).trim();
+    if (!value) continue;
+    values.push(
+      inlineText(value, line.start + marker[0].length, entities).slice(0, 300),
+    );
+  }
+
+  return values.length ? values.slice(0, 40) : undefined;
+};
+
+const legacyValue = (
+  lines: Line[],
+  pattern: RegExp,
+  entities: readonly ArchiveEntity[],
+): string | undefined => {
+  const line = lines.find((item) => pattern.test(item.text));
+  return line ? valueAfter(line, pattern, entities) : undefined;
+};
+
+const parseLegacy = (message: ArchiveMessage, hashtags: string[]): Post => {
+  if (!MEDIA_TYPES.has(message.mediaType ?? ""))
+    fail("post has no banner media");
+  const postType = POST_TYPES[hashtags[1]?.toUpperCase()];
+  if (!postType) fail("second hashtag is not a supported post type");
+
+  const lines = splitLines(message.text);
+  const releaseTag = hashtags.find((tag) => /^(un)?official$/i.test(tag));
+  const releaseType = releaseTag?.toUpperCase() as ReleaseType | undefined;
+
+  let device: Device;
+  try {
+    device = chooseDevice(hashtags);
+  } catch {
+    if (/\bRMX200[12]\b|\bwasabi\b/i.test(message.text)) device = "RMX2001";
+    else if (/\bRMX2151\b/i.test(message.text)) device = "RMX2151";
+    else if (/Realme 7|Narzo 20 Pro|Narzo 30/i.test(message.text)) {
+      device = "RM6785";
+    } else device = "RMX2001";
+  }
+
+  const androidTag = hashtags
+    .map((tag) => tag.match(/^A(1[0-7])([A-Za-z0-9.]*)$/i))
+    .find((match) => match !== null);
+  const androidText = message.text.match(
+    /Android\s*(?::|version:?)?\s*(1[0-7])/i,
+  );
+  const namedAndroid = message.text.match(/\b(Eleven|Twelve|Thirteen)\b/i)?.[1];
+  const namedMajor: Record<string, string> = {
+    eleven: "11",
+    thirteen: "13",
+    twelve: "12",
+  };
+  const androidMajor =
+    androidTag?.[1] ??
+    androidText?.[1] ??
+    (namedAndroid ? namedMajor[namedAndroid.toLowerCase()] : undefined) ??
+    message.text
+      .match(/LineageOS[- ](18|19|20|21|22)/i)?.[1]
+      ?.replace(/^(18|19|20|21|22)$/, (version) => String(Number(version) - 7));
+  if (postType === "rom" && !androidMajor) {
+    fail("Android version could not be determined");
+  }
+  const androidVersion =
+    postType === "rom"
+      ? `${androidMajor}${androidTag?.[2] ? ` ${androidTag[2]}` : ""}`
+      : undefined;
+
+  const ruiTag = hashtags
+    .map((tag) => tag.match(/^RUI([1-3])/i))
+    .find((match) => match !== null);
+  const ruiText = message.text.match(/(?:RUI|Realme\s*UI)[\s.-]*([1-3])/i);
+  const ruiVersion = Number(ruiTag?.[1] ?? ruiText?.[1] ?? 2) as 1 | 2 | 3;
+
+  const titleLine = lines.find(
+    (line, index) =>
+      index > 0 &&
+      /\b(?:for\s+Realme|kernel|recovery|OS\b|ROM\b)/i.test(line.text) &&
+      !/^(?:build type|download|changelog)/i.test(line.text.trim()),
+  );
+  const version = legacyValue(lines, /^\s*Version\s*:\s*/i, message.entities);
+  let name = titleLine?.text.match(/^(.*?)\s+for\s+Realme\b/i)?.[1].trim();
+  if (!name && titleLine && !/new build available/i.test(titleLine.text)) {
+    name = titleLine.text
+      .replace(/\[(?:STABLE|BETA|ALPHA)\]/gi, "")
+      .replace(/\b(?:OFFICIAL|UNOFFICIAL)\b/gi, "")
+      .trim();
+  }
+  name ||= `${hashtags[0]}${version ? ` ${version}` : ""}`;
+  name = name.slice(0, 96);
+
+  const stabilityTag = hashtags.find((tag) =>
+    /^(stable|beta|alpha)$/i.test(tag),
+  );
+  const stability =
+    ((
+      message.text.match(/\[(STABLE|BETA|ALPHA)\]/i)?.[1] ?? stabilityTag
+    )?.toUpperCase() as Stability | undefined) ?? "STABLE";
+
+  const author =
+    legacyValue(
+      lines,
+      /^\s*(?:•\s*)?(?:Build\s+)?Author\s*(?::|-)\s*/i,
+      message.entities,
+    ) ??
+    legacyValue(lines, /^\s*Maintainer\s*:\s*/i, message.entities) ??
+    legacyValue(lines, /^\s*(?:By\s*:|by)\s*/i, message.entities) ??
+    message.text.match(/👤\s*by\s+([^\n]+)/i)?.[1].trim() ??
+    "Unknown";
+
+  const displayedDate =
+    legacyValue(
+      lines,
+      /^\s*(?:📅\s*)?(?:•\s*)?Build date\s*:\s*/i,
+      message.entities,
+    ) ?? legacyValue(lines, /^\s*Build Date\s*:\s*/i, message.entities);
+  const buildDate = buildDateFrom(displayedDate, message.sentAt);
+
+  const changelog = legacySection(
+    lines,
+    /^(?:device\s+|rom\s+)?changelogs?\s*:?(?:\s+HERE)?$/i,
+    message.entities,
+  ) ?? ["See original channel post"];
+  const bugs = legacySection(
+    lines,
+    /^(?:bugs?|known issues?)\s*:?.*$/i,
+    message.entities,
+  ) ?? ["Not listed in original post"];
+  const notes = legacySection(lines, /^notes?\s*:?.*$/i, message.entities);
+
+  const buildTypeLine = lines.find((line) =>
+    /^\s*(?:•\s*)?Build Type\s*:/i.test(line.text),
+  );
+  const buildType = buildTypeLine
+    ? plainAfter(buildTypeLine, /^\s*(?:•\s*)?Build Type\s*:\s*/i)?.slice(0, 48)
+    : undefined;
+  const fileSizeLine = lines.find((line) =>
+    /^\s*(?:📎\s*)?(?:•\s*)?File Size\s*:/i.test(line.text),
+  );
+  const rawSize = fileSizeLine
+    ? plainAfter(fileSizeLine, /^\s*(?:📎\s*)?(?:•\s*)?File Size\s*:\s*/i)
+    : undefined;
+  const fileSize = rawSize ? normalizeSize(rawSize) : undefined;
+
+  const downloadLine = lines.find((line) => /download/i.test(line.text));
+  const downloadUrl = downloadLine
+    ? linkInRange(downloadLine.start, message.text.length, message.entities)
+    : undefined;
+  if (!downloadUrl) fail("download link could not be determined");
+
+  const links: Record<string, string> = {};
+  for (const line of lines) {
+    const name = footerName(line);
+    const url = name ? linkOnLine(line, message.entities) : undefined;
+    if (name && url && !links[name]) links[name] = url;
+  }
+
+  let kernelVersion: string | undefined;
+  if (postType === "kernel") {
+    kernelVersion =
+      legacyValue(
+        lines,
+        /^\s*(?:•\s*)?Kernel Version\s*:\s*/i,
+        message.entities,
+      ) ?? message.text.match(/\b\d+\.\d+\.\d+\b/)?.[0];
+  }
+
+  const post = {
+    postType,
+    name,
+    tag: hashtags[0],
+    stability,
+    releaseType,
+    device,
+    androidVersion,
+    kernelVersion,
+    ruiVersion,
+    author: author.slice(0, 96),
+    buildDate,
+    banner: `telegram-message:${message.chatId}:${message.id}`,
+    changelog,
+    bugs,
+    notes,
+    download: { buildType, fileSize, url: downloadUrl },
+    links: {
+      sources: links.sources,
+      screenshots: links.screenshots,
+      supportGroup: links.supportGroup,
+      donate: links.donate,
+    },
+  } as Post;
+
+  const cleaned = JSON.parse(JSON.stringify(post)) as Post;
+  const problems = checkSchema(cleaned);
+  if (problems.length) {
+    fail(
+      problems
+        .map((problem) => `${problem.where || "post"}: ${problem.message}`)
+        .join("; "),
+    );
+  }
+  return cleaned;
 };
 
 const parse = (message: ArchiveMessage, hashtags: string[]): Post => {
   if (!MEDIA_TYPES.has(message.mediaType ?? ""))
     fail("post has no banner media");
 
-  const postType = POST_TYPES[hashtags[1]];
+  const postType = POST_TYPES[hashtags[1]?.toUpperCase()];
   if (!postType) fail("second hashtag is not a supported post type");
 
-  let releaseType: ReleaseType | undefined;
-  let deviceTags: string[];
-  let androidVersion: string | undefined;
-  let ruiTag: string;
+  const releaseTag = hashtags.find((tag) => /^(un)?official$/i.test(tag));
+  const releaseType = releaseTag?.toUpperCase() as ReleaseType | undefined;
+  const device = chooseDevice(hashtags);
 
-  if (postType === "rom") {
-    releaseType = hashtags[2] as ReleaseType;
-    if (releaseType !== "OFFICIAL" && releaseType !== "UNOFFICIAL") {
-      fail("ROM release hashtag is invalid");
-    }
-    androidVersion = hashtags.at(-2)?.match(/^A(1[0-7])$/)?.[1];
-    if (!androidVersion) fail("ROM Android hashtag is invalid");
-    ruiTag = hashtags.at(-1) ?? "";
-    deviceTags = hashtags.slice(3, -2);
-  } else if (postType === "recovery") {
-    releaseType = hashtags[2] as ReleaseType;
-    if (releaseType !== "OFFICIAL" && releaseType !== "UNOFFICIAL") {
-      fail("recovery release hashtag is invalid");
-    }
-    ruiTag = hashtags.at(-1) ?? "";
-    deviceTags = hashtags.slice(3, -1);
-  } else {
-    ruiTag = hashtags.at(-1) ?? "";
-    deviceTags = hashtags.slice(2, -1);
+  const androidTag = hashtags
+    .map((tag) => tag.match(/^A(1[0-7])([A-Za-z0-9.]*)$/i))
+    .find((match) => match !== null);
+  const androidVersion = androidTag
+    ? `${androidTag[1]}${androidTag[2] ? ` ${androidTag[2]}` : ""}`
+    : undefined;
+  if (postType === "rom" && !androidVersion) {
+    fail("no supported Android hashtag was found");
   }
 
-  const ruiVersion = Number(ruiTag.match(/^RUI([1-3])$/)?.[1]);
-  if (!ruiVersion) fail("RealmeUI hashtag is invalid");
-  const device = chooseDevice(deviceTags);
+  const ruiTag = hashtags
+    .map((tag) => tag.match(/^RUI([1-3])$/i))
+    .find((match) => match !== null);
+  const inferredRui = message.text.match(/(?:RUI|Realme\s*UI)[\s.-]*([1-3])/i);
+  const ruiVersion = Number(ruiTag?.[1] ?? inferredRui?.[1]);
+  if (!ruiVersion) fail("RealmeUI version could not be determined");
 
   const lines = splitLines(message.text);
-  if (lines[0]?.text !== hashtags.map((tag) => `#${tag}`).join(" ")) {
-    fail("hashtag line contains unexpected text");
-  }
-  if (lines[1]?.text !== "" || !lines[2]?.text) {
-    fail("title is not separated from hashtags by one blank line");
-  }
-
-  const titlePattern = new RegExp(
-    `^(.*?) for ${DEVICE_BLURB[device].replace(/[.*+?^${}()|[\]\\]/g, "\\$&")} \\[(STABLE|BETA|ALPHA)\\]$`,
+  const titleIndex = lines.findIndex(
+    (line, index) => index > 0 && Boolean(line.text.trim()),
   );
-  const title = lines[2].text.match(titlePattern);
-  if (!title) throw new NotEligible("title does not match the device hashtag");
-  const name = title[1].trim();
-  const stability = title[2] as Stability;
+  if (titleIndex < 0) fail("title is missing");
+  const title = lines[titleIndex].text.trim();
+  const name = title.match(/^(.*?)\s+for\s+Realme\b/i)?.[1].trim();
+  if (!name) fail("title does not identify a build name");
+  const stability =
+    (title.match(/\[(STABLE|BETA|ALPHA)\]/i)?.[1].toUpperCase() as
+      Stability | undefined) ?? "STABLE";
 
-  const firstHeading = lines.findIndex(
-    (line, index) => index > 2 && line.text === "Changelog",
-  );
-  if (firstHeading < 0) fail("missing Changelog section");
-  const info = lines.slice(3, firstHeading).filter((line) => line.text);
-  const expectedInfo = postType === "recovery" ? 2 : 3;
-  if (info.length !== expectedInfo)
-    fail("build information block is ambiguous");
-
-  const author = lineValue(info[0], "• Author: ", message.entities);
-  let kernelVersion: string | undefined;
-  if (postType === "rom") {
-    const stated = lineValue(info[1], "• Android version: ", message.entities);
-    if (!stated.startsWith(androidVersion ?? "")) {
-      fail("Android version line disagrees with its hashtag");
-    }
-    androidVersion = stated;
-  } else if (postType === "kernel") {
-    kernelVersion = lineValue(info[1], "• Kernel version: ", message.entities);
-  }
-
-  const dateLine = info.at(-1) as Line;
-  const displayedDate = lineValue(dateLine, "• Build date: ", message.entities);
-  const date = displayedDate.match(/^(\d{2})-(\d{2})-(\d{4})$/);
-  if (!date) throw new NotEligible("build date is not DD-MM-YYYY");
-  const buildDate = `${date[3]}-${date[2]}-${date[1]}`;
-
-  const headingIndexes = new Map<string, number>();
+  const headingIndexes = new Map<(typeof HEADINGS)[number], number>();
   lines.forEach((line, index) => {
-    if (SECTION_HEADINGS.has(line.text)) headingIndexes.set(line.text, index);
+    const heading = headingName(line);
+    if (heading && !headingIndexes.has(heading))
+      headingIndexes.set(heading, index);
   });
-  const changelogIndex = headingIndexes.get("Changelog") ?? -1;
-  const bugsIndex = headingIndexes.get("Bugs") ?? -1;
-  const notesIndex = headingIndexes.get("Notes");
-  const downloadsIndex = headingIndexes.get("Downloads") ?? -1;
+  const changelogIndex = headingIndexes.get("changelog") ?? -1;
+  const bugsIndex = headingIndexes.get("bugs") ?? -1;
+  const notesIndex = headingIndexes.get("notes");
+  const downloadsIndex = headingIndexes.get("downloads") ?? -1;
   if (
-    changelogIndex !== firstHeading ||
+    changelogIndex <= titleIndex ||
     bugsIndex <= changelogIndex ||
     downloadsIndex <= bugsIndex ||
     (notesIndex !== undefined &&
@@ -260,80 +563,101 @@ const parse = (message: ArchiveMessage, hashtags: string[]): Post => {
     fail("required sections are missing or out of order");
   }
 
-  const changelog = bulletsBetween(
+  const info = lines.slice(titleIndex + 1, changelogIndex);
+  const authorLine = info.find((line) =>
+    /^\s*•?\s*Author\s*:/i.test(line.text),
+  );
+  const dateLine = info.find((line) =>
+    /^\s*•?\s*Build date\s*:/i.test(line.text),
+  );
+  if (!authorLine || !dateLine) {
+    throw new NotEligible("author or build date is missing");
+  }
+  const author = valueAfter(
+    authorLine,
+    /^\s*•?\s*Author\s*:\s*/i,
+    message.entities,
+  );
+  const displayedDate = valueAfter(
+    dateLine,
+    /^\s*•?\s*Build date\s*:\s*/i,
+    message.entities,
+  );
+  if (!author || !displayedDate) {
+    throw new NotEligible("author or build date is empty");
+  }
+  const date = displayedDate.match(/^(\d{1,2})-(\d{1,2})-(\d{4})$/);
+  if (!date) throw new NotEligible("build date is not DD-MM-YYYY");
+  const buildDate = `${date[3]}-${date[2].padStart(2, "0")}-${date[1].padStart(2, "0")}`;
+
+  let kernelVersion: string | undefined;
+  if (postType === "kernel") {
+    const versionLine = info.find((line) =>
+      /^\s*•?\s*Kernel version\s*:/i.test(line.text),
+    );
+    kernelVersion = versionLine
+      ? valueAfter(
+          versionLine,
+          /^\s*•?\s*Kernel version\s*:\s*/i,
+          message.entities,
+        )
+      : message.text.match(/\b\d+\.\d+\.\d+\b/)?.[0];
+  }
+
+  const changelog = sectionBullets(
     lines,
-    changelogIndex,
+    changelogIndex + 1,
     bugsIndex,
     message.entities,
   );
-  const bugs = bulletsBetween(
+  const bugs = sectionBullets(
     lines,
-    bugsIndex,
+    bugsIndex + 1,
     notesIndex ?? downloadsIndex,
     message.entities,
   );
   const notes =
     notesIndex === undefined
       ? undefined
-      : bulletsBetween(lines, notesIndex, downloadsIndex, message.entities);
+      : sectionBullets(lines, notesIndex + 1, downloadsIndex, message.entities);
 
-  const afterDownloads = lines.findIndex(
-    (line, index) => index > downloadsIndex && line.text === "",
+  const footerLines = lines
+    .map((line, index) => ({ index, line, name: footerName(line) }))
+    .filter(
+      (
+        item,
+      ): item is { index: number; line: Line; name: keyof Post["links"] } =>
+        item.index > downloadsIndex && item.name !== undefined,
+    );
+  const footerStart = footerLines[0]?.index ?? lines.length;
+  const downloadLines = lines.slice(downloadsIndex + 1, footerStart);
+  const buildTypeLine = downloadLines.find((line) =>
+    /^\s*•?\s*Build type\s*:/i.test(line.text),
   );
-  if (afterDownloads < 0) fail("Downloads section has no footer separator");
-  const downloadLines = lines
-    .slice(downloadsIndex + 1, afterDownloads)
-    .filter((line) => line.text);
-  const expectedDownloads = postType === "rom" ? 3 : 2;
-  if (
-    downloadLines.length !== expectedDownloads ||
-    downloadLines.some((line) => !line.text.startsWith("• "))
-  ) {
-    fail("Downloads section is ambiguous");
+  const fileSizeLine = downloadLines.find((line) =>
+    /^\s*•?\s*File size\s*:/i.test(line.text),
+  );
+  const buildType = buildTypeLine
+    ? plainAfter(buildTypeLine, /^\s*•?\s*Build type\s*:\s*/i)?.slice(0, 48)
+    : undefined;
+  const rawSize = fileSizeLine
+    ? plainAfter(fileSizeLine, /^\s*•?\s*File size\s*:\s*/i)
+    : undefined;
+  if (!rawSize) throw new NotEligible("file size is missing");
+  const fileSize = normalizeSize(rawSize);
+
+  const downloadStart = lines[downloadsIndex + 1]?.start ?? message.text.length;
+  const downloadEnd = lines[footerStart]?.start ?? message.text.length;
+  const downloadUrl = linkInRange(downloadStart, downloadEnd, message.entities);
+  if (!downloadUrl) fail("download link is missing");
+
+  const links: Record<string, string> = {};
+  for (const footer of footerLines) {
+    const url = linkOnLine(footer.line, message.entities);
+    if (url && !links[footer.name]) links[footer.name] = url;
   }
 
-  let downloadCursor = 0;
-  const buildType =
-    postType === "rom"
-      ? lineValue(
-          downloadLines[downloadCursor++],
-          "• Build type: ",
-          message.entities,
-        )
-      : undefined;
-  const fileSize = lineValue(
-    downloadLines[downloadCursor++],
-    "• File size: ",
-    message.entities,
-  );
-  const downloadLine = downloadLines[downloadCursor];
-  if (downloadLine.text !== "• Download")
-    fail("Download link label is invalid");
-  const downloadUrl = linkOnLine(downloadLine, message.entities);
-
-  const footer = lines.slice(afterDownloads + 1).filter((line) => line.text);
-  const footerLabels = footer.map((line) => line.text);
-  const expectedFooter = [
-    "Sources",
-    ...(postType === "kernel" ? [] : ["Screenshots"]),
-    "Support group",
-  ];
-  if (
-    footerLabels.length < expectedFooter.length ||
-    !expectedFooter.every((label, index) => footerLabels[index] === label) ||
-    (footerLabels.length > expectedFooter.length &&
-      !(
-        footerLabels.length === expectedFooter.length + 1 &&
-        footerLabels.at(-1) === "Donate"
-      ))
-  ) {
-    fail("footer links are missing or out of order");
-  }
-  const footerLinks = Object.fromEntries(
-    footer.map((line) => [line.text, linkOnLine(line, message.entities)]),
-  );
-
-  const post: Post = {
+  const post = {
     postType,
     name,
     tag: hashtags[0],
@@ -351,16 +675,15 @@ const parse = (message: ArchiveMessage, hashtags: string[]): Post => {
     notes,
     download: { buildType, fileSize, url: downloadUrl },
     links: {
-      sources: footerLinks.Sources,
-      screenshots: footerLinks.Screenshots,
-      supportGroup: footerLinks["Support group"],
-      donate: footerLinks.Donate,
+      sources: links.sources,
+      screenshots: links.screenshots,
+      supportGroup: links.supportGroup,
+      donate: links.donate,
     },
-  };
+  } as Post;
 
-  const problems = [...checkSchema(post), ...checkRules(post)].filter(
-    (problem) => !problem.warning,
-  );
+  const cleaned = JSON.parse(JSON.stringify(post)) as Post;
+  const problems = checkSchema(cleaned);
   if (problems.length) {
     fail(
       problems
@@ -369,15 +692,13 @@ const parse = (message: ArchiveMessage, hashtags: string[]): Post => {
     );
   }
 
-  return post;
+  return cleaned;
 };
 
 export const archivePost = (message: ArchiveMessage): ArchiveResult => {
-  const hashtags = message.text
-    .match(/^#\w+(?: #\w+)*/)?.[0]
-    .split(" ")
-    .map((tag) => tag.slice(1));
-  const candidate = Boolean(hashtags && POST_TYPES[hashtags[1]]);
+  const firstLine = message.text.split("\n", 1)[0] ?? "";
+  const hashtags = firstLine.match(/#\w+/g)?.map((tag) => tag.slice(1));
+  const candidate = Boolean(hashtags && POST_TYPES[hashtags[1]?.toUpperCase()]);
   if (!candidate || !hashtags) {
     return { candidate: false, eligible: false, reason: "not a build post" };
   }
@@ -386,8 +707,103 @@ export const archivePost = (message: ArchiveMessage): ArchiveResult => {
     return { eligible: true, post: parse(message, hashtags) };
   } catch (error) {
     if (error instanceof NotEligible) {
-      return { candidate: true, eligible: false, reason: error.message };
+      try {
+        return { eligible: true, post: parseLegacy(message, hashtags) };
+      } catch (legacyError) {
+        if (legacyError instanceof NotEligible) {
+          return {
+            candidate: true,
+            eligible: false,
+            reason: legacyError.message,
+          };
+        }
+        throw legacyError;
+      }
     }
     throw error;
   }
+};
+
+export const archiveRichPost = (message: ArchiveRichMessage): ArchiveResult => {
+  let text = "";
+  const entities: ArchiveEntity[] = [];
+  let mediaType: string | null = null;
+  let previous = "";
+
+  const blank = (): void => {
+    if (text && !text.endsWith("\n\n"))
+      text += text.endsWith("\n") ? "\n" : "\n\n";
+  };
+
+  const line = (segments: RichSegment[], prefix = ""): void => {
+    if (text && !text.endsWith("\n")) text += "\n";
+    text += prefix;
+    for (const segment of segments) {
+      const offset = text.length;
+      text += segment.text;
+      if (segment.url) {
+        entities.push({
+          kind: "text_link",
+          length: segment.text.length,
+          offset,
+          url: segment.url,
+        });
+      }
+    }
+    text += "\n";
+  };
+
+  for (const raw of message.blocks) {
+    if (!raw || typeof raw !== "object") continue;
+    const block = raw as Record<string, any>;
+
+    if (block._ === "pageBlockPhoto") {
+      mediaType = "photo";
+      continue;
+    }
+    if (block._ === "pageBlockVideo") {
+      mediaType = "video";
+      continue;
+    }
+    if (block._ === "pageBlockHeading1") {
+      blank();
+      line(richSegments(block.text));
+      previous = "heading1";
+      continue;
+    }
+    if (block._ === "pageBlockHeading2") {
+      blank();
+      line(richSegments(block.text));
+      previous = "heading2";
+      continue;
+    }
+    if (block._ === "pageBlockList") {
+      for (const item of block.items as Record<string, any>[]) {
+        line(richSegments(item.text), "• ");
+      }
+      previous = "list";
+      continue;
+    }
+    if (block._ === "pageBlockParagraph") {
+      const segments = richSegments(block.text);
+      const plain = segments.map((segment) => segment.text).join("");
+      if (!plain) continue;
+      if (plain.startsWith("#")) {
+        line(segments);
+      } else {
+        if (previous !== "paragraph") blank();
+        line(segments);
+      }
+      previous = "paragraph";
+    }
+  }
+
+  return archivePost({
+    chatId: message.chatId,
+    entities,
+    id: message.id,
+    mediaType,
+    sentAt: message.sentAt,
+    text: text.trimEnd(),
+  });
 };
