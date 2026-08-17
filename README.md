@@ -10,7 +10,7 @@ it only existing as a channel message.
 ## Posting a build
 
 1. [Open a post request.](../../issues/new?template=rom-post.yml)
-2. Paste your JSON into the box. Copy one of the examples to start from —
+2. Paste your JSON into the box. Copy one of the examples to start from
    [ROM](../../blob/tooling/examples/rom.json),
    [recovery](../../blob/tooling/examples/recovery.json),
    [kernel](../../blob/tooling/examples/kernel.json).
@@ -19,7 +19,7 @@ it only existing as a channel message.
 4. An admin adds the `approved` label and the bot posts it. Your JSON gets committed and the
    issue closes.
 
-A passing check isn't a promise to post — nothing reaches the channel until an admin approves it.
+A passing check isn't a promise to post, nothing reaches the channel until an admin approves it.
 
 ## What goes in the JSON
 
@@ -28,8 +28,8 @@ A ROM, a recovery and a kernel need slightly different things. Leave out anythin
 | Key                  | ROM | Recovery | Kernel | What it is                                                             |
 | -------------------- | :-: | :------: | :----: | ---------------------------------------------------------------------- |
 | `postType`           |  ✓  |    ✓     |   ✓    | `rom`, `recovery` or `kernel`                                          |
-| `name`               |  ✓  |    ✓     |   ✓    | Complete displayed name, including version — `Infinity-X 3.12`         |
-| `tag`                |  ✓  |    ✓     |   ✓    | One-word hashtag and folder name, without `#` — `InfinityX`, `PBRP`    |
+| `name`               |  ✓  |    ✓     |   ✓    | Complete displayed name, including version, e.g. `Infinity-X 3.12`     |
+| `tag`                |  ✓  |    ✓     |   ✓    | One-word hashtag and folder name, without `#`, e.g. `InfinityX`, `PBRP`|
 | `stability`          |  ✓  |    ✓     |   ✓    | `STABLE`, `BETA` or `ALPHA`                                            |
 | `releaseType`        |  ✓  |    ✓     |   –    | `OFFICIAL` or `UNOFFICIAL`                                             |
 | `device`             |  ✓  |    ✓     |   ✓    | `RM6785` for every device, or `nemo` / `salaa` for one family          |
@@ -50,7 +50,7 @@ A ROM, a recovery and a kernel need slightly different things. Leave out anythin
 | `links.supportGroup` |  ✓  |    ✓     |   ✓    |                                                                        |
 | `links.donate`       |     |          |        | Optional                                                               |
 
-Every link must be `https`, and `banner` has to point at the file itself — a link to an album or
+Every link must be `https`, and `banner` has to point at the file itself a link to an album or
 a Drive preview page won't work.
 
 ### Inline formatting
@@ -59,9 +59,9 @@ In `author`, ROM `download.buildType`, and each `changelog`, `bugs` or `notes` i
 `[text](https://example.com)` for links, `**text**` for bold and `*text*` for italic. Styles can
 be combined. `notes` and `links.donate` remain optional.
 
-`device` picks which phones the post says it's for. `RM6785` covers all of them; `nemo` is the
+`device` picks which phones the post says it's for. `RM6785` covers all of them, `nemo` is the
 Realme 6 family and `salaa` is the Realme 7 family. `RMX2001` and `RMX2151` are the old names for
-those two and still work.
+those two and still work, but please use `salaa` and `nemo` instead.
 
 ## Where builds end up
 
