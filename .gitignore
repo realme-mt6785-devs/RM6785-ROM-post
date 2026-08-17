@@ -3,3 +3,4 @@
 
 # left behind by switching to the tooling branch locally
 node_modules/
+.archive-session*
