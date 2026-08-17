@@ -32,9 +32,13 @@ bun run check:file examples/rom.json --preview
 Skips the network by default. Add `--banner` to fetch the banner URL too.
 
 `tag` is the one-word hashtag/folder name; `name` is the complete title text,
-including the release version. Author names, ROM build types and changelog, bug
-or note bullets may use `[visible text](https://example.com)` for links,
-`**bold text**` for bold and `*italic text*` for italic.
+including the release version.
+
+### Inline formatting
+
+In `author`, ROM `download.buildType`, and each `changelog`, `bugs` or `notes`
+item, use `[text](https://example.com)` for links, `**text**` for bold and
+`*text*` for italic. Styles can be combined.
 
 For ROMs that publish GApps and Vanilla together, keep the paired values on one
 line: `"buildType": "GAPPS | VANILLA"` and
