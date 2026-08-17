@@ -1,0 +1,24 @@
+{
+  "postType": "rom",
+  "name": "/*Descendant OS Android 11",
+  "tag": "Descendant",
+  "stability": "STABLE",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 2,
+  "author": "@ashu_1109",
+  "buildDate": "2021-02-23",
+  "banner": "telegram-message:-1001384382397:737",
+  "changelog": [
+    "Initial build",
+    "Safetynet passes out of the box",
+    "Dt2w is weirdly broken (will fix in next build)"
+  ],
+  "bugs": [
+    "Night light"
+  ],
+  "download": {
+    "url": "https://drive.google.com/uc?id=1Gy5cRN8Qp2OfHf_Sct1UH55Ps8ENhoZk&export=download"
+  },
+  "links": {}
+}

@@ -1,0 +1,29 @@
+{
+  "postType": "rom",
+  "name": "ArrowOS",
+  "tag": "ArrowOS",
+  "stability": "STABLE",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 2,
+  "author": "Unknown",
+  "buildDate": "2021-09-20",
+  "banner": "telegram-message:-1001384382397:1355",
+  "changelog": [
+    "See original channel post"
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "notes": [
+    "Use [WeebGapps](https://t.me/WeebGAppsChannel/613) for vanilla build",
+    "@officialputuid @tatanstfu for help",
+    "@SamarV121 for the trees",
+    "All R6 devs"
+  ],
+  "download": {
+    "fileSize": "691MB | 02GB",
+    "url": "https://drive.google.com/uc?id=1BmrgUirEidlJY6MrPnGnENX-7NaaL7KL&export=download"
+  },
+  "links": {}
+}

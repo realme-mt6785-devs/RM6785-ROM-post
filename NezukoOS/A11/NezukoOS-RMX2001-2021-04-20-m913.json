@@ -1,0 +1,23 @@
+{
+  "postType": "rom",
+  "name": "NezukoOS",
+  "tag": "NezukoOS",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 2,
+  "author": "@UdayRocker",
+  "buildDate": "2021-04-20",
+  "banner": "telegram-message:-1001384382397:913",
+  "changelog": [
+    "See original channel post"
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "download": {
+    "url": "https://mirrorbot.thecloverly.workers.dev/0://NEZUKO_RMX2001-11.0-20210420-0741-STABLE-UNOFFICIAL.zip"
+  },
+  "links": {}
+}

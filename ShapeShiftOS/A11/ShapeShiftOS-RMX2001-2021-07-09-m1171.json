@@ -1,0 +1,24 @@
+{
+  "postType": "rom",
+  "name": "📲 New build available",
+  "tag": "ShapeShiftOS",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 2,
+  "author": "@UdayRocker",
+  "buildDate": "2021-07-09",
+  "banner": "telegram-message:-1001384382397:1171",
+  "changelog": [
+    "See original channel post"
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "download": {
+    "fileSize": "1.04 GB",
+    "url": "https://drive.google.com/uc?id=1xnhuA4hWvjd6a0tDfySOyCgENlF7U1TW&export=download"
+  },
+  "links": {}
+}

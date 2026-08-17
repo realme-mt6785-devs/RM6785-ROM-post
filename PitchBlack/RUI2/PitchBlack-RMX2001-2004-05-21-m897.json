@@ -1,0 +1,24 @@
+{
+  "postType": "recovery",
+  "name": "PitchBlack Recovery",
+  "tag": "PitchBlack",
+  "stability": "STABLE",
+  "device": "RMX2001",
+  "ruiVersion": 2,
+  "author": "Yusuf Sözdutmaz",
+  "buildDate": "2004-05-21",
+  "banner": "telegram-message:-1001384382397:897",
+  "changelog": [
+    "Fixed padding (Punch hole won't cover stuff anymore)",
+    "Fixed temperature not being displayed",
+    "Add modem related partitions to \"Backup\" section",
+    "Sync latest PBRP source"
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "download": {
+    "url": "https://pitchblackrecovery.com/RMX2001"
+  },
+  "links": {}
+}

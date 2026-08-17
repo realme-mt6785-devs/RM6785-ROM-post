@@ -1,0 +1,35 @@
+{
+  "postType": "rom",
+  "name": "Android 11",
+  "tag": "EvolutionX",
+  "stability": "STABLE",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 2,
+  "author": "- Tanmay (@tlas01) & @sarthakroy2002",
+  "buildDate": "2021-03-26",
+  "banner": "telegram-message:-1001384382397:837",
+  "changelog": [
+    "Fixed Hotspot",
+    "Fixed screen recording",
+    "Fixed dt2w",
+    "Fixed battery usage info",
+    "Added NFC support ( obviously eu )",
+    "Selinux enforcing now",
+    "Safetynet passes out of the box",
+    "And some other improvements and bug fixes"
+  ],
+  "bugs": [
+    "As always ( Night light )"
+  ],
+  "notes": [
+    "See changelog first",
+    "Clean flash needed",
+    "GAPPS are included, so no need to flash them seperately"
+  ],
+  "download": {
+    "buildType": "UNOFFICIAL",
+    "url": "https://drive.google.com/file/d/1-Kqw1uaYQfbpEJvPwjAmizX4T8BTJ2zt/view?usp=sharing"
+  },
+  "links": {}
+}

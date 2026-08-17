@@ -1,0 +1,30 @@
+{
+  "postType": "rom",
+  "name": "Rom: MSM XTENDED XR v5.0 (Android 11)",
+  "tag": "MSM",
+  "stability": "STABLE",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 2,
+  "author": "@officialputuid",
+  "buildDate": "2021-02-23",
+  "banner": "telegram-message:-1001384382397:734",
+  "changelog": [
+    "Added AOD Support",
+    "Added NFC Tag + KPOC",
+    "Latest Sources & SecPatch",
+    "Change Gaaps Stock to Basic",
+    "Fixed Diplay Force Close on Settings",
+    "Redesign All Icon on Additional Settings",
+    "Fixed Ims Stopping / Volte Disappear After Reboot",
+    "Added Camera Go (Gcam GO Latest*) (inspired from LOS)"
+  ],
+  "bugs": [
+    "SELinux Permissive",
+    "Night Light (fliker)"
+  ],
+  "download": {
+    "url": "https://drive.google.com/file/d/1qiAt9T0jj8XqFAj5-HOajF7yrGpFZjiX/view?usp=sharing"
+  },
+  "links": {}
+}

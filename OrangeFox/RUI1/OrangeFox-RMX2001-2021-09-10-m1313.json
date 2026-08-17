@@ -1,0 +1,23 @@
+{
+  "postType": "recovery",
+  "name": "OrangeFox Recovery Project",
+  "tag": "OrangeFox",
+  "stability": "BETA",
+  "releaseType": "OFFICIAL",
+  "device": "RMX2001",
+  "ruiVersion": 1,
+  "author": "Yillié ( @Yilliee )",
+  "buildDate": "2021-09-10",
+  "banner": "telegram-message:-1001384382397:1313",
+  "changelog": [
+    "See original channel post"
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "download": {
+    "buildType": "Beta - Official",
+    "url": "https://orangefox.download/device/rmx2001"
+  },
+  "links": {}
+}

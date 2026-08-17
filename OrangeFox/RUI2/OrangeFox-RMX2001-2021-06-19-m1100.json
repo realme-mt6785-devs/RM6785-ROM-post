@@ -1,0 +1,27 @@
+{
+  "postType": "recovery",
+  "name": "OrangeFox Recovery R11.1 - STABLE",
+  "tag": "OrangeFox",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RMX2001",
+  "ruiVersion": 2,
+  "author": "@sharanpai",
+  "buildDate": "2021-06-19",
+  "banner": "telegram-message:-1001384382397:1100",
+  "changelog": [
+    "Synced with latest OrangeFox changes"
+  ],
+  "bugs": [
+    "OTG is dead",
+    "Flashlight  doesn't work",
+    "Vibration is dead"
+  ],
+  "notes": [
+    "Works on both RMUI as well as custom roms"
+  ],
+  "download": {
+    "url": "https://drive.google.com/file/d/1nJn30L-VKUu4kgq7UCWNxinyODZ7iR85/view?usp=sharing"
+  },
+  "links": {}
+}

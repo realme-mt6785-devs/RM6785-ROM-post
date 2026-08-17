@@ -1,0 +1,23 @@
+{
+  "postType": "rom",
+  "name": "Pixel Experience Plus Android 11",
+  "tag": "PixelExperience",
+  "stability": "STABLE",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 2,
+  "author": "@ctivity / dae / sundae",
+  "buildDate": "2021-04-25",
+  "banner": "telegram-message:-1001384382397:927",
+  "changelog": [
+    "Initial release",
+    "Source compiled kernel, don't use old patched boot images, use [magisk.zip](https://github.com/topjohnwu/Magisk/releases/download/v22.1/Magisk-v22.1.apk) instead!"
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "download": {
+    "url": "https://drive.google.com/file/d/1fD0cQbMhMiRadk6baIQONBN4UowmxA04/view?usp=drivesdk"
+  },
+  "links": {}
+}

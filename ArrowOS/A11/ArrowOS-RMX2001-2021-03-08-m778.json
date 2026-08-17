@@ -1,0 +1,32 @@
+{
+  "postType": "rom",
+  "name": "Rom: ArrowOS (Android 11)",
+  "tag": "ArrowOS",
+  "stability": "STABLE",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 2,
+  "author": "@officialputuid",
+  "buildDate": "2021-03-08",
+  "banner": "telegram-message:-1001384382397:778",
+  "changelog": [
+    "SELinux Enforcing",
+    "March Security Patch",
+    "Use Redfin Maret 2021 FP",
+    "ArrowOS Source Upstream (RQ2A.210305.007)",
+    "Added Always On Display, Gcam GO & Smart Charging",
+    "Recode Overlay, Density, Misc improvements and much more xD",
+    "Drop Additional Setting, Move Screen Refresh Rate to Display",
+    "Fixed Ok Google, Gallery Crash, Audio No Sound & Video Playback Issue"
+  ],
+  "bugs": [
+    "Night Light (fliker)"
+  ],
+  "notes": [
+    "No Need to Install Gapps, Already Included."
+  ],
+  "download": {
+    "url": "https://github.com/officialputuid/releases/releases/download/arrow_RMX2001.mk/Arrow-v11.0-RMX2001-UNOFFICIAL-20210308-GAPPS.zip"
+  },
+  "links": {}
+}

@@ -1,0 +1,22 @@
+{
+  "postType": "rom",
+  "name": "PixelExtended  Android 11 OFFICIAL Update",
+  "tag": "PixelExtended",
+  "stability": "STABLE",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 2,
+  "author": "- @UdayRocker",
+  "buildDate": "2021-05-21",
+  "banner": "telegram-message:-1001384382397:1022",
+  "changelog": [
+    "See original channel post"
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "download": {
+    "url": "https://www.pling.com/p/1526062/"
+  },
+  "links": {}
+}

@@ -1,0 +1,22 @@
+{
+  "postType": "rom",
+  "name": "Rom: Palladium OS (Android 11)",
+  "tag": "PalladiumOS",
+  "stability": "STABLE",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 2,
+  "author": "@officialputuid",
+  "buildDate": "2021-05-08",
+  "banner": "telegram-message:-1001384382397:959",
+  "changelog": [
+    "See original channel post"
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "download": {
+    "url": "https://drive.google.com/file/d/1L2TlU3wuRYlmUOcSEDoHl5NzIJnPOtgU/view?usp=sharing"
+  },
+  "links": {}
+}

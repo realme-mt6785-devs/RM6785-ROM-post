@@ -1,0 +1,24 @@
+{
+  "postType": "recovery",
+  "name": "PItchBlack Recovery - v3.1.0",
+  "tag": "PitchBlack",
+  "stability": "STABLE",
+  "device": "RMX2001",
+  "ruiVersion": 2,
+  "author": "@ctivity",
+  "buildDate": "2021-04-15",
+  "banner": "telegram-message:-1001384382397:890",
+  "changelog": [
+    "Sync with latest PBRP source (16/04/2021)",
+    "Fix External SD",
+    "Add NTFS and exFAT support",
+    "*Thanks to @TheMalachite for base trees, @SIDDK for helping."
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "download": {
+    "url": "https://drive.google.com/file/d/1vWkW0k91zzlfarDBKlyt1detsjgBlZe-/view?usp=sharing"
+  },
+  "links": {}
+}

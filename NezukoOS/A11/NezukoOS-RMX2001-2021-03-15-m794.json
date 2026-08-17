@@ -1,0 +1,28 @@
+{
+  "postType": "rom",
+  "name": "NezukoOS",
+  "tag": "NezukoOS",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 2,
+  "author": "@UdayRocker",
+  "buildDate": "2021-03-15",
+  "banner": "telegram-message:-1001384382397:794",
+  "changelog": [
+    "Selinux Enforced",
+    "Fixed dtw",
+    "Added AOD Support",
+    "Fixed fingerprint erase after reboot",
+    "Clean flash needed",
+    "For Root Flash magisk"
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "download": {
+    "url": "https://mirrorbot.thecloverly.workers.dev/0:/NEZUKO_RMX2001-11.0-20210314-1245-STABLE-UNOFFICIAL.zip"
+  },
+  "links": {}
+}

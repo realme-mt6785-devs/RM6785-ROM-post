@@ -1,0 +1,23 @@
+{
+  "postType": "recovery",
+  "name": "OrangeFox Recovery Project",
+  "tag": "OrangeFox",
+  "stability": "BETA",
+  "releaseType": "OFFICIAL",
+  "device": "RMX2001",
+  "ruiVersion": 2,
+  "author": "Yillié ( @Yilliee )",
+  "buildDate": "2021-08-05",
+  "banner": "telegram-message:-1001384382397:1232",
+  "changelog": [
+    "Flash as a normal zip file in any other custom recovery or fastboot boot the image and flash the zip."
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "download": {
+    "buildType": "Beta - Official",
+    "url": "https://orangefox.download/device/rmx2001"
+  },
+  "links": {}
+}

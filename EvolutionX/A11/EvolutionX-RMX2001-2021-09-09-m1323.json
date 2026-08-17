@@ -1,0 +1,23 @@
+{
+  "postType": "rom",
+  "name": "📲 New build available",
+  "tag": "EvolutionX",
+  "stability": "STABLE",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 2,
+  "author": "Tanmay (@tlas01)",
+  "buildDate": "2021-09-09",
+  "banner": "telegram-message:-1001384382397:1323",
+  "changelog": [
+    "See original channel post"
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "download": {
+    "fileSize": "1.29 GB",
+    "url": "https://evolution-x.org/device/RMX2001"
+  },
+  "links": {}
+}

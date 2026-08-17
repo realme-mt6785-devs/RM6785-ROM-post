@@ -1,0 +1,29 @@
+{
+  "postType": "rom",
+  "name": "Wave os",
+  "tag": "WaveOS",
+  "stability": "STABLE",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 2,
+  "author": "- Tanmay (@tlas01)",
+  "buildDate": "2021-03-08",
+  "banner": "telegram-message:-1001384382397:781",
+  "changelog": [
+    "Fixed insta and WhatsApp video issues",
+    "Fixed voice recorder",
+    "NFC Should work"
+  ],
+  "bugs": [
+    "As always ( Night light )"
+  ],
+  "notes": [
+    "Clean flash needed",
+    "GAPPS are included, so no need to flash them seperately"
+  ],
+  "download": {
+    "buildType": "UNOFFICIAL",
+    "url": "https://drive.google.com/file/d/1n6mUvL9qKH8L84lKCu2nca_mA0R_asux/view?usp=sharing"
+  },
+  "links": {}
+}

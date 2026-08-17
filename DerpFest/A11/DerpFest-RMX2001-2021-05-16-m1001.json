@@ -1,0 +1,28 @@
+{
+  "postType": "rom",
+  "name": "DerpFest",
+  "tag": "DerpFest",
+  "stability": "STABLE",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 2,
+  "author": "@TheCloverly",
+  "buildDate": "2021-05-16",
+  "banner": "telegram-message:-1001384382397:1001",
+  "changelog": [
+    "See original channel post"
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "notes": [
+    "Weirdly hotspot is ded.(will fix later)",
+    "Gapps are included.",
+    "Selinux is Enforcing",
+    "Don't report bugs without logs"
+  ],
+  "download": {
+    "url": "https://sourceforge.net/projects/derpfest/files/RMX2001/DerpFest-11-Official-Beta-RMX2001-20210516-1225.zip/download"
+  },
+  "links": {}
+}

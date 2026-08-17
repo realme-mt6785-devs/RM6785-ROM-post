@@ -1,0 +1,23 @@
+{
+  "postType": "rom",
+  "name": "Project Sakura ROM 5.1 | Android 11",
+  "tag": "ProjectSakura",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 2,
+  "author": "Tanmay & Sharan",
+  "buildDate": "2021-06-22",
+  "banner": "telegram-message:-1001384382397:1116",
+  "changelog": [
+    "See original channel post"
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "download": {
+    "url": "https://projectsakura.xyz/download.html"
+  },
+  "links": {}
+}

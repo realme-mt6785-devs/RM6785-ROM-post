@@ -1,0 +1,27 @@
+{
+  "postType": "rom",
+  "name": "Rom: Pixel Experience Plus (Android 11)",
+  "tag": "PixelExperiencePlus",
+  "stability": "STABLE",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 2,
+  "author": "@officialputuid",
+  "buildDate": "2021-03-11",
+  "banner": "telegram-message:-1001384382397:785",
+  "changelog": [
+    "SELinux Enforcing",
+    "March Security Patch",
+    "Recode Overlay, Density, Now Look Good"
+  ],
+  "bugs": [
+    "Night Light (fliker)"
+  ],
+  "notes": [
+    "No Need to Install Gapps, Already Included."
+  ],
+  "download": {
+    "url": "https://github.com/officialputuid/releases/releases/download/aosp_RMX2001.mk/PixelExperience_Plus_RMX2001-11.0-20210311-1229-UNOFFICIAL.zip"
+  },
+  "links": {}
+}

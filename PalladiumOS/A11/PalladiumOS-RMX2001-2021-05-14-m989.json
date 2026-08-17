@@ -1,0 +1,22 @@
+{
+  "postType": "rom",
+  "name": "Rom: Palladium OS (Android 11)",
+  "tag": "PalladiumOS",
+  "stability": "STABLE",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 2,
+  "author": "@officialputuid",
+  "buildDate": "2021-05-14",
+  "banner": "telegram-message:-1001384382397:989",
+  "changelog": [
+    "See original channel post"
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "download": {
+    "url": "https://www.pling.com/p/1513489/"
+  },
+  "links": {}
+}

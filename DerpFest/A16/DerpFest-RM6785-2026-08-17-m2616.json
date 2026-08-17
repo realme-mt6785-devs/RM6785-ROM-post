@@ -1,0 +1,37 @@
+{
+  "postType": "rom",
+  "name": "DerpFest-16.2",
+  "tag": "DerpFest",
+  "stability": "ALPHA",
+  "releaseType": "OFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "16",
+  "ruiVersion": 2,
+  "author": "[MeowDroider](https://t.me/MuhammadIJC)",
+  "buildDate": "2026-08-17",
+  "banner": "telegram-message:-1001384382397:2616",
+  "changelog": [
+    "August Patch",
+    "Add 60fps video support",
+    "Fixed EIS",
+    "Other small improvements in camera"
+  ],
+  "bugs": [
+    "OPPO CAMERA has some bugs still.",
+    "SELinux is still permissive, cat and owl really want enforcing"
+  ],
+  "notes": [
+    "Thanks to ELOHIM for trees",
+    "Realme UI 2.0 based"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "2.7GB",
+    "url": "https://drive.google.com/drive/folders/1TXULIaVcLNbfbd_mHJ79uUd5p4v1-29_?usp=drive_link"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs/android_device_realme_RM6785/tree/lineage-23.2-camera",
+    "screenshots": "https://t.me/derprm6785/2149",
+    "supportGroup": "https://t.me/+9c3pZqVwyKU3Mzdk"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "postType": "recovery",
+  "name": "Realme UI 1.0  Stock Recovery",
+  "tag": "Stock_Recovery",
+  "stability": "STABLE",
+  "device": "RMX2001",
+  "ruiVersion": 1,
+  "author": "Unknown",
+  "buildDate": "2021-01-28",
+  "banner": "telegram-message:-1001384382397:548",
+  "changelog": [
+    "See original channel post"
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "download": {
+    "url": "https://drive.google.com/uc?id=1dUL-msZ9IDZKAcVsPeNag5cHnFKqUwYO&export=download"
+  },
+  "links": {}
+}

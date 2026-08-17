@@ -1,0 +1,21 @@
+{
+  "postType": "recovery",
+  "name": "PItchBlack Recovery - v3.x",
+  "tag": "PitchBlack",
+  "stability": "STABLE",
+  "device": "RMX2001",
+  "ruiVersion": 2,
+  "author": "Unknown",
+  "buildDate": "2021-04-18",
+  "banner": "telegram-message:-1001384382397:900",
+  "changelog": [
+    "See original channel post"
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "download": {
+    "url": "https://pitchblackrecovery.com/RMX2001"
+  },
+  "links": {}
+}

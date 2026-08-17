@@ -1,0 +1,27 @@
+{
+  "postType": "rom",
+  "name": "Android 11",
+  "tag": "POSP",
+  "stability": "STABLE",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 2,
+  "author": "- Tanmay (@tlas01)",
+  "buildDate": "2021-02-10",
+  "banner": "telegram-message:-1001384382397:649",
+  "changelog": [
+    "See original channel post"
+  ],
+  "bugs": [
+    "As always ( Night light )"
+  ],
+  "notes": [
+    "Clean flash needed",
+    "GAPPS are included, so no need to flash them seperately"
+  ],
+  "download": {
+    "buildType": "UNOFFICIAL",
+    "url": "https://drive.google.com/file/d/1v1B5b-H0v8ojPEpwmii-ML2H_Rs8I_ZK/view?usp=sharing"
+  },
+  "links": {}
+}

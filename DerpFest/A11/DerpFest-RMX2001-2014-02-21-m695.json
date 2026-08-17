@@ -1,0 +1,23 @@
+{
+  "postType": "rom",
+  "name": "DerpFest",
+  "tag": "DerpFest",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 2,
+  "author": "Unknown",
+  "buildDate": "2014-02-21",
+  "banner": "telegram-message:-1001384382397:695",
+  "changelog": [
+    "See original channel post"
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "download": {
+    "url": "https://forum.xda-developers.com/t/rom-11-0-alpha-derpfest-for-realme-6-series-official-2020-02-15.4233907/"
+  },
+  "links": {}
+}

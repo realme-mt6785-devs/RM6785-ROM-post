@@ -1,0 +1,24 @@
+{
+  "postType": "recovery",
+  "name": "Sky Hawk Recovery Project",
+  "tag": "SkyHawk",
+  "stability": "STABLE",
+  "device": "RMX2001",
+  "ruiVersion": 2,
+  "author": "@ctivity",
+  "buildDate": "2021-05-19",
+  "banner": "telegram-message:-1001384382397:1015",
+  "changelog": [
+    "Initial build, everything working so far :)"
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "notes": [
+    "Initial build, everything working so far :)"
+  ],
+  "download": {
+    "url": "https://drive.google.com/file/d/1Fi9fa15_y_lLNABNPw32bdH88A6PxIv7/view?usp=sharing"
+  },
+  "links": {}
+}

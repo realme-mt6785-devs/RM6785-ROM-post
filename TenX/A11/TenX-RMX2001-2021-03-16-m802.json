@@ -1,0 +1,29 @@
+{
+  "postType": "rom",
+  "name": "TenX",
+  "tag": "TenX",
+  "stability": "STABLE",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 2,
+  "author": "Sarthak Roy",
+  "buildDate": "2021-03-16",
+  "banner": "telegram-message:-1001384382397:802",
+  "changelog": [
+    "Initial Build",
+    "March Security Patch"
+  ],
+  "bugs": [
+    "Night Light",
+    "You tell more"
+  ],
+  "notes": [
+    "GApps included",
+    "Clean flash needed",
+    "No log, no issue"
+  ],
+  "download": {
+    "url": "https://sourceforge.net/projects/sarthak-android-projects/files/ROMs/RMX2001/TenX-OS_RMX2001-11.0-20210316-0908-Cyan-UnOfficial.zip/download"
+  },
+  "links": {}
+}

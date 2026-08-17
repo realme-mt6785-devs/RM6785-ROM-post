@@ -1,0 +1,23 @@
+{
+  "postType": "rom",
+  "name": "Fluid Os V1.1 Rum -  |Android 11.",
+  "tag": "FluidOs",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 2,
+  "author": "-@ManshuTyagi",
+  "buildDate": "2021-01-14",
+  "banner": "telegram-message:-1001384382397:458",
+  "changelog": [
+    "See original channel post"
+  ],
+  "bugs": [
+    "Night light flickers."
+  ],
+  "download": {
+    "url": "https://drive.google.com/file/d/1--kjoTg6F0pszabHmm8t4jzyRunEHpN1/view"
+  },
+  "links": {}
+}

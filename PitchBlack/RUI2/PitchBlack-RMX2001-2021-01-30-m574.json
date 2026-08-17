@@ -1,0 +1,25 @@
+{
+  "postType": "recovery",
+  "name": "PItchBlack Recovery - v3.0.0",
+  "tag": "PitchBlack",
+  "stability": "STABLE",
+  "device": "RMX2001",
+  "ruiVersion": 2,
+  "author": "@TheMalachite",
+  "buildDate": "2021-01-30",
+  "banner": "telegram-message:-1001384382397:574",
+  "changelog": [
+    "Add fastbootd support",
+    "Add ozip support",
+    "Fix data decryption for RealmeUI V1.0",
+    "Update to PBRP 30/01/21 source",
+    "Cleanup tree"
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "download": {
+    "url": "https://drive.google.com/file/d/1-ikxCCZVFnV_WX3hwHOhyVIMx5WEG8IO/view?usp=sharing"
+  },
+  "links": {}
+}

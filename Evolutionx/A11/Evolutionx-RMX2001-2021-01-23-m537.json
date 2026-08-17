@@ -1,0 +1,22 @@
+{
+  "postType": "rom",
+  "name": "EVOLUTION X 5.2 UNOFFICIAL Android 11",
+  "tag": "Evolutionx",
+  "stability": "STABLE",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 2,
+  "author": "@Ishant86",
+  "buildDate": "2021-01-23",
+  "banner": "telegram-message:-1001384382397:537",
+  "changelog": [
+    "See original channel post"
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "download": {
+    "url": "https://drive.google.com/uc?id=1xH14Ap1u2tBrEoyt_bJPDxXL77jIapLg&export=download"
+  },
+  "links": {}
+}

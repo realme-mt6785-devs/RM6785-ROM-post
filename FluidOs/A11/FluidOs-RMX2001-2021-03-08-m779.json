@@ -1,0 +1,27 @@
+{
+  "postType": "rom",
+  "name": "Fluid Os V1.3 Rum -  |Android 11.",
+  "tag": "FluidOs",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 2,
+  "author": "-@ManshuTyagi",
+  "buildDate": "2021-03-08",
+  "banner": "telegram-message:-1001384382397:779",
+  "changelog": [
+    "SELinux Enforced",
+    "March Security Patch",
+    "Fixed Volte / ims stopping issue",
+    "NFC Support ( EU )",
+    "Misc Improvements"
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "download": {
+    "url": "https://ghostmirror.hitesh920.workers.dev/Fluid-1.3-Rum-UNOFFICIAL-RMX2001-20210308.zip"
+  },
+  "links": {}
+}

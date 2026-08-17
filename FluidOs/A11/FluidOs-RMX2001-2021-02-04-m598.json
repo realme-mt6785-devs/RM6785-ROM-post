@@ -1,0 +1,26 @@
+{
+  "postType": "rom",
+  "name": "Fluid Os V1.2 Rum -  |Android 11.",
+  "tag": "FluidOs",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 2,
+  "author": "-@ManshuTyagi",
+  "buildDate": "2021-02-04",
+  "banner": "telegram-message:-1001384382397:598",
+  "changelog": [
+    "Fixed Date Disappeared in •Notification Pannel",
+    "Fixed Brightness level",
+    "Removed SRGB ( Realme Settings )",
+    "Add Refresh Rate Option in Display Settings"
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "download": {
+    "url": "https://mirrorbot.thecloverly.workers.dev/0:/Fluid-1.2-Rum-UNOFFICIAL-RMX2001-20210203-gapped.zip"
+  },
+  "links": {}
+}

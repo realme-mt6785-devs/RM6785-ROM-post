@@ -1,0 +1,28 @@
+{
+  "postType": "rom",
+  "name": "SUPERIOR OS XCALIBUR |  | Android 11",
+  "tag": "Superior",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 2,
+  "author": "Tanmay (@tlas01)",
+  "buildDate": "2021-01-07",
+  "banner": "telegram-message:-1001384382397:417",
+  "changelog": [
+    "See original channel post"
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "notes": [
+    "Initial build based on Android R",
+    "Core GApps don't cause any issue.",
+    "Need [Magisk](https://t.me/Realme6SeriesUpdates/376) to pass SafetyNet."
+  ],
+  "download": {
+    "url": "https://sourceforge.net/projects/nikgapps/files/Releases/NikGapps-R/31-Dec-2020/NikGapps-core-arm64-11-20201231-signed.zip/download"
+  },
+  "links": {}
+}

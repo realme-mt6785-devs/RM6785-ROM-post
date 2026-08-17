@@ -1,0 +1,31 @@
+{
+  "postType": "rom",
+  "name": "Rom: Pixel Experience (Android 11)",
+  "tag": "PixelExperience",
+  "stability": "STABLE",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 2,
+  "author": "@officialputuid",
+  "buildDate": "2021-02-14",
+  "banner": "telegram-message:-1001384382397:689",
+  "changelog": [
+    "Feb Security Patch",
+    "Update to Latest Soruces",
+    "Fixed \"Ok Google Detection\"",
+    "Fixed NFC (on EU varient ofc)",
+    "Fixed KPOC(offline charging animation)",
+    "Change \"ro.sf.lcd_density=450\"",
+    "Remove Minimum Screen Rate on Display",
+    "Recode Realme Settings to Additional Settings",
+    "Some misc perf improvement"
+  ],
+  "bugs": [
+    "SELinux Permissive",
+    "Night Light (fliker)"
+  ],
+  "download": {
+    "url": "https://bit.ly/PE-RMX2001-140221"
+  },
+  "links": {}
+}

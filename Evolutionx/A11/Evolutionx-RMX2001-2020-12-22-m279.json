@@ -1,0 +1,24 @@
+{
+  "postType": "rom",
+  "name": "EVOLUTION X 5.2 UNOFFICIAL Android 11",
+  "tag": "Evolutionx",
+  "stability": "STABLE",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 2,
+  "author": "@Ishant86",
+  "buildDate": "2020-12-22",
+  "banner": "telegram-message:-1001384382397:279",
+  "changelog": [
+    "See original channel post"
+  ],
+  "bugs": [
+    "Hotspot (Will be fixed soon)",
+    "Night Light flickers(will fix in next build)",
+    "Magisk :("
+  ],
+  "download": {
+    "url": "https://sourceforge.net/projects/inderrom/files/wasabi/EvolutionX_5.2_RMX2001-11-20201222-1654-UNOFFICIAL.zip/download"
+  },
+  "links": {}
+}

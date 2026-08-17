@@ -1,0 +1,22 @@
+{
+  "postType": "rom",
+  "name": "Rom: FlokoROM (Android 11)",
+  "tag": "Floko",
+  "stability": "STABLE",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 2,
+  "author": "@officialputuid",
+  "buildDate": "2021-05-24",
+  "banner": "telegram-message:-1001384382397:1040",
+  "changelog": [
+    "See original channel post"
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "download": {
+    "url": "https://github.com/officialputuid/officialputuid/releases/download/Floko-v4.0/Floko-v4.0-RMX2001-20210523-UNOFFICIAL.zip"
+  },
+  "links": {}
+}

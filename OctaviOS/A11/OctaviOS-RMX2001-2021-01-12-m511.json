@@ -1,0 +1,22 @@
+{
+  "postType": "rom",
+  "name": "OctaviOS",
+  "tag": "OctaviOS",
+  "stability": "STABLE",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 2,
+  "author": "Unknown",
+  "buildDate": "2021-01-12",
+  "banner": "telegram-message:-1001384382397:511",
+  "changelog": [
+    "See original channel post"
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "download": {
+    "url": "https://www.pling.com/p/1469835/"
+  },
+  "links": {}
+}

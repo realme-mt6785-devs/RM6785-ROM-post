@@ -1,0 +1,29 @@
+{
+  "postType": "rom",
+  "name": "Android 11",
+  "tag": "EvolutionX",
+  "stability": "STABLE",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 2,
+  "author": "- Tanmay (@tlas01)",
+  "buildDate": "2021-04-30",
+  "banner": "telegram-message:-1001384382397:936",
+  "changelog": [
+    "See original channel post"
+  ],
+  "bugs": [
+    "As always ( Night light )"
+  ],
+  "notes": [
+    "You can dirty flash if on kernel evox build",
+    "GAPPS are included, so no need to flash them seperately",
+    "Use magisk img for root",
+    "Join @EvoX_RMX2001"
+  ],
+  "download": {
+    "buildType": "UNOFFICIAL",
+    "url": "https://drive.google.com/file/d/1_gIos4VBX7zTb8p8PfP23H5XprCmrsWn/view?usp=sharing"
+  },
+  "links": {}
+}

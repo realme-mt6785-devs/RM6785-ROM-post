@@ -1,0 +1,29 @@
+{
+  "postType": "rom",
+  "name": "PixelExperience",
+  "tag": "PixelExperience",
+  "stability": "STABLE",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 2,
+  "author": "@ashu_1109",
+  "buildDate": "2020-12-24",
+  "banner": "telegram-message:-1001384382397:291",
+  "changelog": [
+    "Fixed hotspot",
+    "Tried to fix up status bar height and padding",
+    "Removed device settings",
+    "Moved refresh rate to display settings"
+  ],
+  "bugs": [
+    "Night light ( will fix later)"
+  ],
+  "notes": [
+    "Its PE so obio no need to flash GAPPS",
+    "Safetynet passes out of the box"
+  ],
+  "download": {
+    "url": "https://drive.google.com/uc?id=1WhrVmWq3yYaVfSDsdPg0qZWDQsDXpCFD&export=download"
+  },
+  "links": {}
+}

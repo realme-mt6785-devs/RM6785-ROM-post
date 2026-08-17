@@ -1,0 +1,28 @@
+{
+  "postType": "rom",
+  "name": "Android 11",
+  "tag": "EvolutionX",
+  "stability": "STABLE",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 2,
+  "author": "- Tanmay (@tlas01)",
+  "buildDate": "2021-05-15",
+  "banner": "telegram-message:-1001384382397:998",
+  "changelog": [
+    "See original channel post"
+  ],
+  "bugs": [
+    "As always ( Night light )"
+  ],
+  "notes": [
+    "Clean flash always recommended",
+    "GAPPS are included, so no need to flash them seperately",
+    "For root check grp ( @evox_RMX2001)"
+  ],
+  "download": {
+    "buildType": "UNOFFICIAL",
+    "url": "https://drive.google.com/file/d/1N8CH77Jf7d85aaO-lRs2MKmHquJliqpZ/view?usp=sharing"
+  },
+  "links": {}
+}

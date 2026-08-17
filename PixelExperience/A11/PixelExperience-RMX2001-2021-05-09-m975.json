@@ -1,0 +1,28 @@
+{
+  "postType": "rom",
+  "name": "Pixel Experience Android 11",
+  "tag": "PixelExperience",
+  "stability": "STABLE",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 2,
+  "author": "@ctivity",
+  "buildDate": "2021-05-09",
+  "banner": "telegram-message:-1001384382397:975",
+  "changelog": [
+    "Pixel Experience Plus is dropped. Continuing from Pixel Experience.",
+    "May security patch & Pixel Experience source upstream",
+    "Fixed green blocks appearing during SetupWizard or Google Account adding",
+    "Added Realme Settings (Smart charging, Ambient display gestures, Game mode etc.)",
+    "Added performance profile (Enable Game Mode from Realme Settings to activate it)",
+    "Added charging limit control",
+    "Fixed \"can't wakeup device in offline charging mode\""
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "download": {
+    "url": "https://drive.google.com/file/d/1sgwaTasF6vrqjg8A6hGktoDR12uWdk-o/view?usp=sharing"
+  },
+  "links": {}
+}

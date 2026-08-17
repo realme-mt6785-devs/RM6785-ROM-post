@@ -1,0 +1,21 @@
+{
+  "postType": "recovery",
+  "name": "🔹Download:  recovery.img | recovery.zip",
+  "tag": "SkyHawk",
+  "stability": "STABLE",
+  "device": "RMX2001",
+  "ruiVersion": 2,
+  "author": "- @ManshuTyagi",
+  "buildDate": "2021-01-21",
+  "banner": "telegram-message:-1001384382397:492",
+  "changelog": [
+    "See original channel post"
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "download": {
+    "url": "https://www.dropbox.com/s/pi810ceaz36qezi/SHRP_v_3.0_Beta_UNOFFICIAL_RMX2001.img?dl=0"
+  },
+  "links": {}
+}

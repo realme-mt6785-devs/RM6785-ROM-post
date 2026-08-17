@@ -1,0 +1,23 @@
+{
+  "postType": "rom",
+  "name": "|BLISS OS for RMX2001|",
+  "tag": "Blissos",
+  "stability": "STABLE",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 2,
+  "author": "- @karivarkey",
+  "buildDate": "2021-06-21",
+  "banner": "telegram-message:-1001384382397:1113",
+  "changelog": [
+    "See original channel post"
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "download": {
+    "buildType": "- Unofficial, Vanilla",
+    "url": "https://drive.google.com/file/d/1keAEoJiqE9eqKMcAbULrh-IlNLVPnwL6/view?usp=sharing"
+  },
+  "links": {}
+}
