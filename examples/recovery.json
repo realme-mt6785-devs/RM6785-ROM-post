@@ -10,11 +10,13 @@
   "author": "Hakimi & Ansh",
   "buildDate": "2026-08-10",
   "banner": "https://example.com/pbrp-4.0.gif",
-  "changelog": ["Fixed decryption for AOSP ROMs with Android 12.1 and higher."],
+  "changelog": [
+    "Fixed **decryption** for AOSP ROMs with Android 12.1 and higher."
+  ],
   "bugs": ["Flashlight"],
   "notes": [
     "Official",
-    "For realme UI 2.0-based ROMs",
+    "For realme UI *2.0*-based ROMs",
     "F2FS and EROFS supported"
   ],
   "download": {

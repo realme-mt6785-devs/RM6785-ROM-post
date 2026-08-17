@@ -12,16 +12,16 @@
   "buildDate": "2026-08-17",
   "banner": "https://example.com/lineageos-23.png",
   "changelog": [
-    "Initial official build for Android 16",
+    "Initial **official build** for Android 16",
     "Synced with [latest source](https://github.com/LineageOS)",
-    "Fixed VoLTE on Indian variants"
+    "Fixed *VoLTE* on Indian variants"
   ],
   "bugs": [
     "Video recording in [third-party camera apps](https://example.com/camera-bug)"
   ],
   "notes": [
     "Clean flash if you are coming from Android 15",
-    "KSU included ([ReSukiSU](https://github.com/ReSukiSU/ReSukiSU))"
+    "KSU included ([**ReSukiSU**](https://github.com/ReSukiSU/ReSukiSU))"
   ],
   "download": {
     "buildType": "GAPPS | VANILLA",

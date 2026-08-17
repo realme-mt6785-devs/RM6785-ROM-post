@@ -10,7 +10,7 @@
   "author": "@yourhandle",
   "buildDate": "2026-08-15",
   "banner": "https://example.com/nexus-kernel.png",
-  "changelog": ["Linux 4.14.336", "Reworked GPU governor defaults"],
+  "changelog": ["Linux 4.14.336", "Reworked *GPU* governor **defaults**"],
   "bugs": ["None known"],
   "download": {
     "fileSize": "24 MB",
