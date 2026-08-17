@@ -53,8 +53,11 @@ A ROM, a recovery and a kernel need slightly different things. Leave out anythin
 Every link must be `https`, and `banner` has to point at the file itself — a link to an album or
 a Drive preview page won't work.
 
-The same inline link syntax works in `author`, `changelog`, `bugs` and `notes`. `notes` is
-optional, and `links.donate` is optional; when supplied, Donate is added to the footer.
+### Inline formatting
+
+In `author`, ROM `download.buildType`, and each `changelog`, `bugs` or `notes` item, use
+`[text](https://example.com)` for links, `**text**` for bold and `*text*` for italic. Styles can
+be combined. `notes` and `links.donate` remain optional.
 
 `device` picks which phones the post says it's for. `RM6785` covers all of them; `nemo` is the
 Realme 6 family and `salaa` is the Realme 7 family. `RMX2001` and `RMX2151` are the old names for
