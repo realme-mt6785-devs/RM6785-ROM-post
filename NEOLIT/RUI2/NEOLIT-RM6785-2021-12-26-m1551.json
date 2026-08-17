@@ -1,0 +1,36 @@
+{
+  "postType": "kernel",
+  "name": "NEOLIT V7 XMAS",
+  "tag": "NEOLIT",
+  "stability": "STABLE",
+  "device": "RM6785",
+  "kernelVersion": "4.14.258",
+  "ruiVersion": 2,
+  "author": "Sarthak Roy",
+  "buildDate": "2021-12-26",
+  "banner": "telegram-message:-1001384382397:1551",
+  "changelog": [
+    "Upstream to 4.14.258",
+    "Switch to Proton Clang",
+    "Remove decimal charging timeout",
+    "expose all gestures and fix gestures",
+    "Fix fast-charging delay",
+    "Disable few MTK debugging",
+    "Misc Optimize",
+    "Fix Deep sleep"
+  ],
+  "bugs": [
+    "None"
+  ],
+  "notes": [
+    "Realme UI 2.0 based",
+    "Thanks to everyone from whom i picked"
+  ],
+  "download": {
+    "fileSize": "17MB",
+    "url": "https://sourceforge.net/projects/sarthak-android-projects/files/kernels/wasabi/NEOLIT-V7-XMAS-KERNEL-RM6785-26122021.zip/download"
+  },
+  "links": {
+    "sources": "https://github.com/sarthakroy2002/kernel_realme_RMX2001"
+  }
+}

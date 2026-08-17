@@ -1,0 +1,45 @@
+{
+  "postType": "kernel",
+  "name": "ThunderStorm V-1.9 LTO",
+  "tag": "ThunderStorm",
+  "stability": "STABLE",
+  "device": "RM6785",
+  "kernelVersion": "4.14.277",
+  "ruiVersion": 2,
+  "author": "@Gorilla669",
+  "buildDate": "2022-05-05",
+  "banner": "telegram-message:-1001384382397:1765",
+  "changelog": [
+    "Merged 4.14.277 tag",
+    "f2fs/gc: Reduce GC thread urgent sleep time to 50ms",
+    "f2fs: set ioprio of GC kthread to idle",
+    "f2fs: Demote GC thread to idle scheduler class",
+    "kernel: Disable AEE feature",
+    "Fix usb tethering",
+    "GPU: Security errata backport patch",
+    "Fix cpufreq times memory leaks",
+    "arm64: debug: Disable self-hosted debug by default",
+    "mmc: Disable software crc check",
+    "mm: speed up mremap by 20x on large regions",
+    "sched/idle: Micro-optimize the idle loop",
+    "Optimized Console FrameBuffer for upto 70% increase in Performance",
+    "Silence few loggings",
+    "Check Source For More Info"
+  ],
+  "bugs": [
+    "None"
+  ],
+  "notes": [
+    "based on rui 2",
+    "Thanks to all the testers",
+    "thanks to @Exonxo for logo"
+  ],
+  "download": {
+    "fileSize": "17MB",
+    "url": "https://sourceforge.net/projects/rui2-kernel/files/ThunderStorm-1.9/ThunderStorm-lto-KERNEL-RM6785.zip/download"
+  },
+  "links": {
+    "sources": "https://github.com/anupamroy777/kernel_realme_RM6785",
+    "supportGroup": "https://t.me/anupamroy777"
+  }
+}

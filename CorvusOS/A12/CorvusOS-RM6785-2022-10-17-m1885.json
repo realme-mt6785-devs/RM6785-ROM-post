@@ -1,0 +1,41 @@
+{
+  "postType": "rom",
+  "name": "Corvus OS vS4.1-Eclipse",
+  "tag": "CorvusOS",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "12",
+  "ruiVersion": 2,
+  "author": "@P_AA_ii_N",
+  "buildDate": "2022-10-17",
+  "banner": "telegram-message:-1001384382397:1885",
+  "changelog": [
+    "October 2022 ASB",
+    "Sources upstream",
+    "Drop MediaTek Log dep",
+    "Introduce MtkInCallService",
+    "Added MTK input boosts (Touch Boost)",
+    "Update status bar start|top padding",
+    "Update status_bar_height from RMX2001_C19",
+    "Improve interaction power configurations",
+    "Reduce jitter while screen recording",
+    "Upstreamed kernel to 4.14.295",
+    "Improved Smoothness",
+    "Misc improvements"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)",
+    "USB Audio"
+  ],
+  "download": {
+    "buildType": "GAPPS/VANILLA",
+    "fileSize": "1.59GB | 1.09GB",
+    "url": "https://downloads.corvusrom.com/?dir=RM6785"
+  },
+  "links": {
+    "sources": "https://telegra.ph/Sources-04-27",
+    "screenshots": "https://t.me/PAiNsGALLeRYRM6785/554?single",
+    "supportGroup": "https://t.me/CorvusRM6785"
+  }
+}

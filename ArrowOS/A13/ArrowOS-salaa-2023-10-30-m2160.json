@@ -1,0 +1,32 @@
+{
+  "postType": "rom",
+  "name": "ArrowOS 13.1",
+  "tag": "ArrowOS",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "salaa",
+  "androidVersion": "13",
+  "ruiVersion": 3,
+  "author": "@kardebayan",
+  "buildDate": "2023-10-30",
+  "banner": "telegram-message:-1001384382397:2160",
+  "changelog": [
+    "Initial ArrowOS build based on realmeUI 3.0"
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "notes": [
+    "Report bugs with proper logs only! (Make sure to report in the actual support group)"
+  ],
+  "download": {
+    "buildType": "VANILLA",
+    "fileSize": "1.13GB",
+    "url": "https://mega-drive.rehan1rr22.workers.dev/2:/Arrow-v13.1-salaa-UNOFFICIAL-20231030-VANILLA.zip"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs",
+    "screenshots": "https://t.me/kardebayanchannel/71?single",
+    "supportGroup": "https://t.me/kardebayanchat"
+  }
+}

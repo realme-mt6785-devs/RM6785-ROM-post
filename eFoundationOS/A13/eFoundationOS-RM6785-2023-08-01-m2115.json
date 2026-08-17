@@ -1,0 +1,33 @@
+{
+  "postType": "rom",
+  "name": "/e/FoundationOS v1.14-t",
+  "tag": "eFoundationOS",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "13",
+  "ruiVersion": 2,
+  "author": "@NopeNopeGuy",
+  "buildDate": "2023-08-01",
+  "banner": "telegram-message:-1001384382397:2115",
+  "changelog": [
+    "Security Patch: July 5 2023",
+    "4.14.320 Lineage Kernel"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "MicroG based rom, don't even dare install gapps on this."
+  ],
+  "download": {
+    "buildType": "microG",
+    "fileSize": "1.50GB",
+    "url": "https://t.me/nopenoperoms/28"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs",
+    "screenshots": "https://t.me/noperoms/3750",
+    "supportGroup": "https://t.me/noperoms"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "postType": "rom",
+  "name": "RisingOS 6.0",
+  "tag": "risingOS",
+  "stability": "BETA",
+  "releaseType": "UNOFFICIAL",
+  "device": "RMX2001",
+  "androidVersion": "15",
+  "ruiVersion": 2,
+  "author": "@EvilAnsh",
+  "buildDate": "2024-12-21",
+  "banner": "telegram-message:-1001384382397:2355",
+  "changelog": [
+    "Initial Android 15 Build",
+    "Nov, 2024 Security Patch",
+    "Full Changelog: [RISING](https://github.com/RisingTechOSS/risingOS_changelogs)"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "4.14.351 Samar's Kernel",
+    "Clean Flash recommended"
+  ],
+  "download": {
+    "buildType": "VANILLA/GAPPS",
+    "fileSize": "1.4GB | 2.4GB",
+    "url": "https://t.me/FilesArchieve/250"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs/android_device_realme_RM6785-common",
+    "screenshots": "https://t.me/RisingOS_news/1495?single",
+    "supportGroup": "https://t.me/Anshbuilds"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "postType": "rom",
+  "name": "ProjectArcana-DREAM-4.0",
+  "tag": "ProjectArcana",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "12",
+  "ruiVersion": 2,
+  "author": "@P_AA_ii_N",
+  "buildDate": "2022-02-17",
+  "banner": "telegram-message:-1001384382397:1635",
+  "changelog": [
+    "February 2022 ASB",
+    "Sources upstream",
+    "Added Lawnchair, GCam(Wichaya)",
+    "Fix Display-colours",
+    "Fix built-in screen recording",
+    "Update BUILD_FP from C17",
+    "Import prop config* from C17",
+    "Import WifiResOverlay config* from C17",
+    "Added f2fs support for userdata/cache",
+    "Added realmeDirac",
+    "configs: Boost stune on app launch & top-app",
+    "Double-tap to wake (Move → Display) from",
+    "Fix smooth-display (realmeParts)",
+    "Misc improvement"
+  ],
+  "bugs": [
+    "Permissive SELinux",
+    "Native video calling (ViLTE)"
+  ],
+  "notes": [
+    "realmeDirac fix and kernel source (thanks to",
+    "Based on RealmeUI 2.0",
+    "CTS passed by default",
+    "Flashing Guide : [HERE](https://t.me/PAiNsHUB0/210)"
+  ],
+  "download": {
+    "buildType": "GAPPS/VANILLA",
+    "fileSize": "1.5GB | 1.0GB",
+    "url": "https://www.pling.com/p/1688669"
+  },
+  "links": {
+    "sources": "https://github.com/PAAiiN",
+    "screenshots": "https://t.me/PAiNsHUB0/252?single",
+    "supportGroup": "https://t.me/unofficial_PAiNsHUB"
+  }
+}

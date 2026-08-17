@@ -1,0 +1,49 @@
+{
+  "postType": "kernel",
+  "name": "ThunderStorm V-1.5 LTO",
+  "tag": "ThunderStorm",
+  "stability": "BETA",
+  "device": "RM6785",
+  "kernelVersion": "4.14.264",
+  "ruiVersion": 2,
+  "author": "@Gorilla669",
+  "buildDate": "2022-02-06",
+  "banner": "telegram-message:-1001384382397:1619",
+  "changelog": [
+    "Merged linux tag 264",
+    "unlocked all the gpu frequencies for mt6785 (r6 users now have 900mhz freq)",
+    "enable mtk io boost",
+    "Expose every possible gesture(dt2w working)",
+    "enable EROFS",
+    "treewide: Implement readahead filemap hooks",
+    "switch tick rate to 250",
+    "Drop all i2c dumping",
+    "Remove audit dependency",
+    "Disable CFG80211_DEVELOPER_WARNINGS",
+    "Disable NL80211_TESTMODE",
+    "disable IKHEADERS",
+    "Introduce OnePlus 3 fingerprintd thaw hack",
+    "thaw_fingerprintd: Use strstr() instead of memcmp()",
+    "reduce verbosity of logging",
+    "treewide: Remove fuse_shortcircuit",
+    "and more"
+  ],
+  "bugs": [
+    "None"
+  ],
+  "notes": [
+    "based on rui 2",
+    "Thanks to those from whom i took commits",
+    "Thanks to all the testers",
+    "Works on every RM6785 device",
+    "Thanks To @P_AA_ii_N for server"
+  ],
+  "download": {
+    "fileSize": "17MB",
+    "url": "https://sourceforge.net/projects/rui2-kernel/files/ThunderStorm-1.5/ThunderStorm-Lto-KERNEL-R6-Spacial-RM6785.zip/download"
+  },
+  "links": {
+    "sources": "https://github.com/anupamroy777/kernel_realme_RM6785.git",
+    "supportGroup": "https://t.me/anupamroy777"
+  }
+}

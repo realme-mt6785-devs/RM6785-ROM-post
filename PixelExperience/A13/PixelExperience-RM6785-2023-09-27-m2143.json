@@ -1,0 +1,32 @@
+{
+  "postType": "rom",
+  "name": "PixelExperience Plus",
+  "tag": "PixelExperience",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "13",
+  "ruiVersion": 2,
+  "author": "@No_PaiiN_No_GaiiN",
+  "buildDate": "2023-09-27",
+  "banner": "telegram-message:-1001384382397:2143",
+  "changelog": [
+    "Pixel sources upstream",
+    "Security Patch: September 1 2023",
+    "4.14.325 Lineage Kernel",
+    "Misc improvements"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "1.7GB",
+    "url": "https://drive.google.com/file/d/16ET97nzOFROIZ8RXyck7hxuhq14CpMUW/view?usp=drive_link"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs/",
+    "screenshots": "https://t.me/hmmmok/92?single",
+    "supportGroup": "https://t.me/RM6Official"
+  }
+}

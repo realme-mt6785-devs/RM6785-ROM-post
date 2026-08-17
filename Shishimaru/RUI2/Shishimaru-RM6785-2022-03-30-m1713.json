@@ -1,0 +1,31 @@
+{
+  "postType": "kernel",
+  "name": "Shishimaru Kernel",
+  "tag": "Shishimaru",
+  "stability": "STABLE",
+  "device": "RM6785",
+  "ruiVersion": 2,
+  "author": "@Alex9329",
+  "buildDate": "2022-03-30",
+  "banner": "telegram-message:-1001384382397:1713",
+  "changelog": [
+    "Initial Build"
+  ],
+  "bugs": [
+    "None Yet, If You Find Any Bugs Please Report Them With Proper Logs"
+  ],
+  "notes": [
+    "[Credits](https://t.me/alexssupport/999)",
+    "Flash Normally Through Recovery",
+    "Not Tested On Stock RMUI"
+  ],
+  "download": {
+    "buildType": "Kernel.Zip",
+    "fileSize": "18.4MB",
+    "url": "https://drive.google.com/file/d/1-5Cc1JBoUEDd6aEFtIbI8UF_Rq3568q5/view?usp=drivesdk"
+  },
+  "links": {
+    "sources": "https://github.com/Alex9329/android_kernel_realme_mt6785",
+    "supportGroup": "https://t.me/alexssupport"
+  }
+}

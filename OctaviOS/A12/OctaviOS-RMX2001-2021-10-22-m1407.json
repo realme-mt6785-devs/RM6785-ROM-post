@@ -1,0 +1,36 @@
+{
+  "postType": "rom",
+  "name": "Octavi OS  A12",
+  "tag": "OctaviOS",
+  "stability": "BETA",
+  "releaseType": "UNOFFICIAL",
+  "device": "RMX2001",
+  "androidVersion": "12",
+  "ruiVersion": 2,
+  "author": "Sharan Pai",
+  "buildDate": "2021-10-22",
+  "banner": "telegram-message:-1001384382397:1407",
+  "changelog": [
+    "See original channel post"
+  ],
+  "bugs": [
+    "Volte",
+    "Nightlight",
+    "Smart Charging",
+    "USB debugging",
+    "Data Encrypted in recovery"
+  ],
+  "notes": [
+    "RealmeParts prebuilt",
+    "Introduced a redesigned FPS meter",
+    "This is a beta build so there might be more bugs than whats mentioned above.",
+    "Use PBRP/LOS recovery",
+    "You won't be able to decrypt data in recovery so remove password and then continue",
+    "Along with reporting bugs, taking logs and sending is much much more appreciated"
+  ],
+  "download": {
+    "buildType": "Gapps",
+    "url": "https://github.com/sharanpai3/Releases/releases/download/v3.0/OctaviOS-v3.0-RMX2001-20211022-1130-GAPPS-Official.zip"
+  },
+  "links": {}
+}

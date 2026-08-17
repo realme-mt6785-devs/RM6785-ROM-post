@@ -1,0 +1,34 @@
+{
+  "postType": "rom",
+  "name": "RisingOS 3.1",
+  "tag": "risingOS",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "salaa",
+  "androidVersion": "14",
+  "ruiVersion": 3,
+  "author": "@EvilAnsh",
+  "buildDate": "2024-05-21",
+  "banner": "telegram-message:-1001384382397:2304",
+  "changelog": [
+    "May Security Patch",
+    "Full changelog: [DEVICE](https://raw.githubusercontent.com/RisingOSS-devices/android_vendor_RisingOTA/fourteen/changelog_salaa.txt) | [RISING](https://github.com/RisingTechOSS/risingOS_changelogs)"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "4.14.336 Stormbreaker Kernel",
+    "Clean Flash recommended (but dirty works)"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "2.09GB",
+    "url": "https://sourceforge.net/projects/risingos-official/files/3.x"
+  },
+  "links": {
+    "sources": "https://github.com/RisingOSS-Devices/android_device_realme_salaa",
+    "screenshots": "https://t.me/RisingOS_news/1150?single",
+    "supportGroup": "https://t.me/Anshbuilds"
+  }
+}

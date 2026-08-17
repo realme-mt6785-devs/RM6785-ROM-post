@@ -1,0 +1,38 @@
+{
+  "postType": "kernel",
+  "name": "Shishimaru Kernel",
+  "tag": "Shishimaru",
+  "stability": "STABLE",
+  "device": "RM6785",
+  "kernelVersion": "4.14.271",
+  "ruiVersion": 2,
+  "author": "@Alex9329",
+  "buildDate": "2022-03-31",
+  "banner": "telegram-message:-1001384382397:1718",
+  "changelog": [
+    "Changed CONFIG_LOCALVERSION to v1.1",
+    "Made new and perfectly working build script",
+    "Fixed thunderstorm kernel showing when flashing in recovery",
+    "Adapted anykernel tool for shishimaru",
+    "Increased touch boost from 100 ms to 500 ms and 100000000 to 500000000",
+    "Force arch as arm64",
+    "Optimized kernel for performance",
+    "This kernel also fixes 60hz,90hz and smooth display in realme settings"
+  ],
+  "bugs": [
+    "None yet, if you find any bugs please report them with proper logs"
+  ],
+  "notes": [
+    "Credits",
+    "Flash normally through recovery",
+    "Does not work in stock rmui"
+  ],
+  "download": {
+    "fileSize": "18.4MB",
+    "url": "https://drive.google.com/file/d/1BCEjNjnhk89QFnnRJQyWj0rsMVmVr7SM/view?usp=drivesdk"
+  },
+  "links": {
+    "sources": "https://github.com/Alex9329/android_kernel_realme_mt6785",
+    "supportGroup": "https://t.me/alexssupport"
+  }
+}

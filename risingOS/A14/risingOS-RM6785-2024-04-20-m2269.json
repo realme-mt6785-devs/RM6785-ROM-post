@@ -1,0 +1,35 @@
+{
+  "postType": "rom",
+  "name": "RisingOS 2.1",
+  "tag": "risingOS",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "14",
+  "ruiVersion": 2,
+  "author": "@EvilAnsh",
+  "buildDate": "2024-04-20",
+  "banner": "telegram-message:-1001384382397:2269",
+  "changelog": [
+    "Initial Build",
+    "April Security Patch",
+    "Full changelog: [DEVICE](https://raw.githubusercontent.com/RisingOSS-devices/android_vendor_RisingOTA/fourteen/changelog_RM6785.txt) | [RISING](https://github.com/RisingOS-staging/risingOS_changelogs)"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "4.14.341 Samar's Kernel",
+    "Clean Flash mandatory"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "2.00GB",
+    "url": "https://sourceforge.net/projects/risingos-official/files/2.x/GAPPS/RM6785/RisingOS-2.1-RELEASE-20240420-GAPPS-OFFICIAL-RM6785.zip/download"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs/android_device_realme_RM6785-common",
+    "screenshots": "https://t.me/AnshPrjkt/693?single",
+    "supportGroup": "https://t.me/Anshbuilds"
+  }
+}

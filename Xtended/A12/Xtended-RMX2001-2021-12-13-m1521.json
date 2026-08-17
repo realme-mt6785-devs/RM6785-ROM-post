@@ -1,0 +1,41 @@
+{
+  "postType": "rom",
+  "name": "Xtended-XS-First-Blood",
+  "tag": "Xtended",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RMX2001",
+  "androidVersion": "12",
+  "ruiVersion": 1,
+  "author": "@P_AA_ii_N",
+  "buildDate": "2021-12-13",
+  "banner": "telegram-message:-1001384382397:1521",
+  "changelog": [
+    "Initial build based on android S",
+    "sources upstream",
+    "December security patch",
+    "Fixed VoLTE",
+    "Fixed built-in screen recorder",
+    "Misc improvements"
+  ],
+  "bugs": [
+    "Native video calling",
+    "Night light",
+    "aux cameras"
+  ],
+  "notes": [
+    "Based on RealmeUI 1.0",
+    "Gapps are included",
+    "CTS passed by default"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "1.30 GB",
+    "url": "https://drive.google.com/file/d/1F-NJrQbPL94Nlv-2MFNwZ8jQrjSIrnWd/view?usp=drivesdk"
+  },
+  "links": {
+    "sources": "https://github.com/PAAiiN",
+    "screenshots": "https://t.me/CXC_RMX2001/7726?single",
+    "supportGroup": "https://t.me/CXC_RMX2001"
+  }
+}

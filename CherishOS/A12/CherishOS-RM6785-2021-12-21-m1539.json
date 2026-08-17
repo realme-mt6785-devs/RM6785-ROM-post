@@ -1,0 +1,45 @@
+{
+  "postType": "rom",
+  "name": "Cherish OS-3.2",
+  "tag": "CherishOS",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "12",
+  "ruiVersion": 2,
+  "author": "@P_AA_ii_N",
+  "buildDate": "2021-12-21",
+  "banner": "telegram-message:-1001384382397:1539",
+  "changelog": [
+    "Rebranded to RM6785 (Supported devices: Realme 6, 6i(Indian), 6s and Realme 7, Narzo 20 Pro, Narzo 30 4G)",
+    "Initial official build",
+    "Sources upstream",
+    "December security patch",
+    "Fixed VOOC charging delay",
+    "Fixed brightness slider behaviour",
+    "Fixed aux cameras",
+    "Misc improvements"
+  ],
+  "bugs": [
+    "Built-in screen recorder",
+    "NFC",
+    "Permissive SELinux"
+  ],
+  "notes": [
+    "Based on RealmeUI 2.0",
+    "Gapps are included",
+    "CTS passed by default",
+    "if you are flashing from rmui 2 no problem,you can flash normally as usual.",
+    "If you are flashing from RMUI 1.0 then first flash rom then twrp 2.0 then format then reboot."
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "1.68 GB",
+    "url": "https://drive.google.com/file/d/1VT8koKaYJUVoeMOL7ZwmhnKLcsGjukR3/view?usp=drivesdk"
+  },
+  "links": {
+    "sources": "https://github.com/PAAiiN",
+    "screenshots": "https://t.me/CXCPAiNHUB/63?single",
+    "supportGroup": "https://t.me/CherishOS_RM6785"
+  }
+}

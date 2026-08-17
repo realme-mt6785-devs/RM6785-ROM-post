@@ -1,0 +1,35 @@
+{
+  "postType": "rom",
+  "name": "Evolution-X 11.5.2",
+  "tag": "EvolutionX",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "nemo",
+  "androidVersion": "16",
+  "ruiVersion": 2,
+  "author": "@EvilAnsh",
+  "buildDate": "2025-01-20",
+  "banner": "telegram-message:-1001384382397:2488",
+  "changelog": [
+    "Synced with 11.5.2 changes",
+    "Full changelog: [DEVICE](https://raw.githubusercontent.com/Evolution-X/OTA/c9dd6ea83a1e0da08fbcac94bc38806930b5a487/changelogs/nemo.txt)"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "Realme UI 2.0 based",
+    "This won't work On Realme 7/Narzo 20 Pro/Narzo 30 4G",
+    "Recommended to use [recovery.img](https://cdn.evolution-x.org/nemo/16/recovery/recovery.img/download) or [OFOX](https://sourceforge.net/projects/evilanshbuild/files/recovery/RM6785/OrangeFox-R11.3_A12.1-APOCALYPSE-20250804-RMX2001L1.zip/download)"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "2.9GB",
+    "url": "https://evolution-x.org/devices/nemo"
+  },
+  "links": {
+    "sources": "https://github.com/Evolution-X-Devices/device_realme_nemo",
+    "screenshots": "https://t.me/AnshBuilds/77410?single",
+    "supportGroup": "https://t.me/AnshBuilds"
+  }
+}

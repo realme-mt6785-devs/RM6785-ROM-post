@@ -1,0 +1,29 @@
+{
+  "postType": "rom",
+  "name": "YAAP 16",
+  "tag": "YAAP",
+  "stability": "BETA",
+  "releaseType": "UNOFFICIAL",
+  "device": "salaa",
+  "androidVersion": "16",
+  "ruiVersion": 3,
+  "author": "Debayan Kar",
+  "buildDate": "2025-07-26",
+  "banner": "telegram-message:-1001384382397:2412",
+  "changelog": [
+    "Initial build"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "2.0GB",
+    "url": "https://sourceforge.net/projects/kardebayan/files/salaa/YAAP-16-HOMEMADE-salaa-20250726.zip/download"
+  },
+  "links": {
+    "sources": "https://github.com/PixelOS-Devices",
+    "screenshots": "https://t.me/kardebayanchannel/502",
+    "supportGroup": "https://t.me/rm6785Official"
+  }
+}

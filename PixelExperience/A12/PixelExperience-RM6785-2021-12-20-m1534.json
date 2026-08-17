@@ -1,0 +1,34 @@
+{
+  "postType": "rom",
+  "name": "PixelExperience-12.0",
+  "tag": "PixelExperience",
+  "stability": "BETA",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "12",
+  "ruiVersion": 2,
+  "author": "@tlas01",
+  "buildDate": "2021-12-20",
+  "banner": "telegram-message:-1001384382397:1534",
+  "changelog": [
+    "December ASB (android-12.0.0_r18)",
+    "Improved UI Performance",
+    "Fixed Outgoing messages",
+    "Introduced redesigned RealmeParts",
+    "Added support for AOD",
+    "Misc improvements"
+  ],
+  "bugs": [
+    "Built-in screen recorder",
+    "NFC",
+    "Permissive SELinux"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "1.6GB",
+    "url": "https://github.com/Atlas78/releases/releases/download/v12/PixelExperience_RM6785-12.0-20211219-1658-UNOFFICIAL.zip"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs/android_device_realme_RM6785"
+  }
+}

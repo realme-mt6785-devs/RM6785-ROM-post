@@ -1,0 +1,45 @@
+{
+  "postType": "rom",
+  "name": "Nusantara Project v4.4",
+  "tag": "NusantaraProject",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "12",
+  "ruiVersion": 2,
+  "author": "@officialputuid",
+  "buildDate": "2022-04-22",
+  "banner": "telegram-message:-1001384382397:1751",
+  "changelog": [
+    "April 2022 ASB",
+    "Enforcing SELinux",
+    "Tune ZRAM performance",
+    "Enabled ZRAM writeback",
+    "Kang AIDL vibrator service from Ronin",
+    "[POWER] Updated power HAL from R7 RUI3",
+    "[POWER] Boost stune on app launch",
+    "[POWER] Allow raising sched_boost to 6 levels",
+    "[POWER] Boost foreground to maximum when launching an app",
+    "[POWER] Added & Improve interaction hint",
+    "[POWER] Improve power HAL configs from Begonia",
+    "Fix/Cleanup deprecated overlays items",
+    "Fix KPOC/offline charging (w/Pixel-Charging)",
+    "Metadata partition corruption protection",
+    "Import props configuration from RMX2001_C18",
+    "More . . ."
+  ],
+  "bugs": [
+    "Native video calling (ViLTE)",
+    "Voice over WiFi (VoWiFi)"
+  ],
+  "download": {
+    "buildType": "VANILLA",
+    "fileSize": "1.1GB",
+    "url": "https://www.pling.com/p/1500429/"
+  },
+  "links": {
+    "sources": "https://github.com/psionicprjkt/",
+    "screenshots": "https://t.me/psionicprjkt",
+    "supportGroup": "https://t.me/psionicprjktchat"
+  }
+}

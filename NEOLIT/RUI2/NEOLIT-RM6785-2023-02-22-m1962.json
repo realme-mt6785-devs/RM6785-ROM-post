@@ -1,0 +1,44 @@
+{
+  "postType": "kernel",
+  "name": "N.E.O.L.I.T. Wasabi",
+  "tag": "NEOLIT",
+  "stability": "STABLE",
+  "device": "RM6785",
+  "kernelVersion": "4.14.305",
+  "ruiVersion": 2,
+  "author": "Sarthak Roy",
+  "buildDate": "2023-02-22",
+  "banner": "telegram-message:-1001384382397:1962",
+  "changelog": [
+    "Upstreamed to 4.14.305 from ACK 4.14-stable",
+    "Compiled using Proton Clang with ld.lld and LLVM binutils",
+    "Pixel 6 ported GPU adaptive power policies",
+    "Optimized Fingerprint unlock speed",
+    "Nuke Much Debugging",
+    "Fix UI/UX lag",
+    "Disable LTO",
+    "Improved/Optimized Sched",
+    "Optimized mm",
+    "disable IKHEADERS",
+    "Add GED_SKI support",
+    "Switch to -O3 optimization level",
+    "Enable Nintendo Joy-Con and Pro Controller support",
+    "enable CONFIG_OPLUS_FEATURE_FUSE_FS_SHORTCIRCUIT"
+  ],
+  "bugs": [
+    "None"
+  ],
+  "notes": [
+    "Realme UI 2.0 based",
+    "Thanks to everyone from whom I picked",
+    "Donations are highly encouraged to support the dev: UPI: neilchetty.fam@idfcbank PayPal: paypal.me/chettyneil Send a screenshot if you donate :)"
+  ],
+  "download": {
+    "fileSize": "17MB",
+    "url": "https://sourceforge.net/projects/sarthak-android-projects/files/kernels/wasabi/NEOLIT-wasabi-RM6785-22022023-RELEASE.zip/download"
+  },
+  "links": {
+    "sources": "https://github.com/sarthakroy2002/kernel_realme_wasabi",
+    "supportGroup": "https://t.me/neolitci"
+  }
+}

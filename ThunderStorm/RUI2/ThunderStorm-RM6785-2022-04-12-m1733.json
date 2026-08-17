@@ -1,0 +1,43 @@
+{
+  "postType": "kernel",
+  "name": "ThunderStorm V-1.8 LTO",
+  "tag": "ThunderStorm",
+  "stability": "BETA",
+  "device": "RM6785",
+  "kernelVersion": "4.14.275",
+  "ruiVersion": 2,
+  "author": "@Gorilla669",
+  "buildDate": "2022-04-12",
+  "banner": "telegram-message:-1001384382397:1733",
+  "changelog": [
+    "Fix usb tethering",
+    "Merged Tag 4.14.275",
+    "bdi: introduce BDI_CAP_SYNCHRONOUS_IO",
+    "sensors: do not actually close sensor if android need it",
+    "sched/fair: Implement synchonous PELT detach on load-balance migrate",
+    "arm64: Implement optimised checksum routine",
+    "arm64/lib: add accelerated crc32 routines",
+    "arm64/lib: improve CRC32 performance for deep pipelines",
+    "arm64: Import latest version of Cortex Strings' strcmp, strlen, strncmp, memcmp'",
+    "Switch to 100 timer frequency",
+    "arm64: relocatable: Tweak linker flags to yield a smaller Image with LLD",
+    "Built Using Azure Clang 15 + LLD 15 + Thinlto + Clang LTO",
+    "Check source for more info"
+  ],
+  "bugs": [
+    "None"
+  ],
+  "notes": [
+    "based on rui 2",
+    "Thanks to all the testers",
+    "thanks to @Exonxo for logo"
+  ],
+  "download": {
+    "fileSize": "17MB",
+    "url": "https://sourceforge.net/projects/rui2-kernel/files/ThunderStorm-1.8/ThunderStorm-lto-KERNEL-RM6785.zip/download"
+  },
+  "links": {
+    "sources": "https://github.com/anupamroy777/kernel_realme_RM6785.git",
+    "supportGroup": "https://t.me/anupamroy777"
+  }
+}

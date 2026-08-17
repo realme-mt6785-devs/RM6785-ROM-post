@@ -1,0 +1,42 @@
+{
+  "postType": "rom",
+  "name": "Pixel Project",
+  "tag": "PIXELPROJECT",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "14",
+  "ruiVersion": 2,
+  "author": "@WaitinnForUhh",
+  "buildDate": "2024-08-22",
+  "banner": "telegram-message:-1001384382397:2332",
+  "changelog": [
+    "Initial Release",
+    "QPR3 / August Security Patch",
+    "Circle to Search",
+    "Cinematic Wallpaper",
+    "Quick Tap",
+    "Magic Eraser",
+    "Component Spoofing"
+  ],
+  "bugs": [
+    "Native Video Calling (ViLTE) And Voice Over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "CTS Pass By Default [Basic | Device]",
+    "Openela Kernel [4.14.348]",
+    "Based on August ASB (QPR3)",
+    "Clean Flash Is Mandatory",
+    "Thanks to @Sid_Fr_01 and @mau5traps for testing out"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "2.8GB",
+    "url": "https://drive.google.com/file/d/1fU6MyhSz7tbMxTJ2dkJwVYgnVrZXlfVQ/view?usp=sharing"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs",
+    "screenshots": "https://t.me/ThePixelProject/59",
+    "supportGroup": "https://t.me/lucid_discussion_RM6785"
+  }
+}

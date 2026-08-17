@@ -1,0 +1,30 @@
+{
+  "postType": "rom",
+  "name": "AOSP-14",
+  "tag": "AOSP",
+  "stability": "BETA",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "14",
+  "ruiVersion": 2,
+  "author": "SamarV-121",
+  "buildDate": "2023-10-06",
+  "banner": "telegram-message:-1001384382397:2150",
+  "changelog": [
+    "Initial build"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "download": {
+    "buildType": "VANILLA",
+    "fileSize": "1GB",
+    "url": "https://samarv121.dev/aosp-14-RM6785"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs/",
+    "screenshots": "https://samarv121.dev/aosp-14-RM6785#screenshots",
+    "supportGroup": "https://t.me/lineage_RM6785",
+    "donate": "https://donate.samarv121.dev/"
+  }
+}

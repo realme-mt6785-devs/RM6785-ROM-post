@@ -1,0 +1,36 @@
+{
+  "postType": "rom",
+  "name": "Matrixx 11.5.0",
+  "tag": "Matrixx",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "salaa",
+  "androidVersion": "15",
+  "ruiVersion": 3,
+  "author": "@EvilAnsh",
+  "buildDate": "2025-05-19",
+  "banner": "telegram-message:-1001384382397:2398",
+  "changelog": [
+    "May, 2025 Security Patch",
+    "Dropped 32 bit DRM Stack",
+    "Switched to 64 bit C2 service",
+    "Full changelog: [MATRIXX](https://www.projectmatrixx.org/changelog)"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "4.14.336 Stormbreaker Kernel",
+    "Clean Flash recommended"
+  ],
+  "download": {
+    "buildType": "VANILLA/GAPPS",
+    "fileSize": "1.4GB | 2.4GB",
+    "url": "https://www.projectmatrixx.org/downloads/salaa"
+  },
+  "links": {
+    "sources": "https://github.com/Matrixx-Devices/device_realme_salaa",
+    "screenshots": "https://www.projectmatrixx.org/gallery",
+    "supportGroup": "https://t.me/Anshbuilds"
+  }
+}

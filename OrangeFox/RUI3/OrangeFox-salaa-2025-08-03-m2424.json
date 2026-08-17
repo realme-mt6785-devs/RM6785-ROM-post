@@ -1,0 +1,36 @@
+{
+  "postType": "recovery",
+  "name": "OrangeFox R11.3",
+  "tag": "OrangeFox",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "salaa",
+  "androidVersion": "12",
+  "ruiVersion": 3,
+  "author": "@EvilAnsh",
+  "buildDate": "2025-08-03",
+  "banner": "telegram-message:-1001384382397:2424",
+  "changelog": [
+    "Added support for Android 16",
+    "Updated kernel",
+    "Support decryption for AOSP ROMs with Android 12.1 and higher",
+    "Support FBE v2",
+    "[MORE](https://t.me/OrangeFoxNEWS/563)"
+  ],
+  "bugs": [
+    "You tell me"
+  ],
+  "notes": [
+    "Realme UI 3.0 based",
+    "This won't work On Realme 6/6i/6s/Narzo"
+  ],
+  "download": {
+    "fileSize": "75MB",
+    "url": "https://sourceforge.net/projects/evilanshbuild/files/recovery/salaa/OrangeFox-R11.3_A12.1-APOCALYPSE-20250803-salaa.zip/download"
+  },
+  "links": {
+    "sources": "https://gitlab.com/OrangeFox",
+    "screenshots": "https://t.me/FilesArchieve/267?single",
+    "supportGroup": "https://t.me/AnshBuilds"
+  }
+}

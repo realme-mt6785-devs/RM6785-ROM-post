@@ -1,0 +1,34 @@
+{
+  "postType": "rom",
+  "name": "risingTechOSS v1.4",
+  "tag": "risingTechOSS",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "salaa",
+  "androidVersion": "13",
+  "ruiVersion": 3,
+  "author": "@EvilAnsh",
+  "buildDate": "2023-11-06",
+  "banner": "telegram-message:-1001384382397:2174",
+  "changelog": [
+    "Initial Build",
+    "Full Changelog :- [Here](https://telegra.ph/Changelogs-as-compared-to-Superior-11-07)"
+  ],
+  "bugs": [
+    "You tell me"
+  ],
+  "notes": [
+    "Report bugs with proper logs only! (Make sure to report in the actual support group)",
+    "ITS FOR REALMEUI 3.0 FIRMWARE"
+  ],
+  "download": {
+    "buildType": "VANILLA/GAPPS",
+    "fileSize": "1.20GB | 1.83GB",
+    "url": "https://telegra.ph/risingTechOSS-for-salaa-11-07"
+  },
+  "links": {
+    "sources": "https://te.legra.ph/Sources-03-20",
+    "screenshots": "https://t.me/AnshPrjkts/436?single",
+    "supportGroup": "https://t.me/Anshbuilds"
+  }
+}

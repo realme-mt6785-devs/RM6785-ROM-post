@@ -1,0 +1,50 @@
+{
+  "postType": "rom",
+  "name": "Cherish OS-v3.4",
+  "tag": "CherishOS",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "12",
+  "ruiVersion": 2,
+  "author": "@P_AA_ii_N",
+  "buildDate": "2022-02-13",
+  "banner": "telegram-message:-1001384382397:1626",
+  "changelog": [
+    "Fabruary 2022 ASB",
+    "Sources upstream",
+    "Added Lawnchair, GCam(Wichaya)",
+    "Passed Safetynet by default",
+    "Fix Display-colours",
+    "Fix built-in screen recording",
+    "Update BUILD_FP from C17",
+    "Import prop config* from C17",
+    "Added f2fs support for userdata partition",
+    "Added f2fs support for cache partition",
+    "configs: Boost stune on app launch & top-app",
+    "Enable Quick Tap (System→Gestures)",
+    "Rebrand realmeParts to Additional Settings",
+    "(A.S) Cleanup & update icon",
+    "(A.S) Drop Double-tap to wake (Move → Display)",
+    "(A.S) Drop Screen refresh rate (Move → Display)",
+    "Misc improvement"
+  ],
+  "bugs": [
+    "Permissive SELinux"
+  ],
+  "notes": [
+    "Based on RealmeUI 2.0",
+    "CTS passed by default",
+    "Flashing Guide : [HERE](https://t.me/PAiNsHUB0/210)"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "1.75 GB",
+    "url": "https://www.pling.com/p/1669951/"
+  },
+  "links": {
+    "sources": "https://github.com/PAAiiN",
+    "screenshots": "https://t.me/PAiNsHUB0/217?single",
+    "supportGroup": "https://t.me/unofficial_PAiNsHUB"
+  }
+}

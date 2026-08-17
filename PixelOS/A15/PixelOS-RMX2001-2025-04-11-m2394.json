@@ -1,0 +1,33 @@
+{
+  "postType": "rom",
+  "name": "PixelOS 15",
+  "tag": "PixelOS",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "RMX2001",
+  "androidVersion": "15",
+  "ruiVersion": 2,
+  "author": "Debayan Kar",
+  "buildDate": "2025-04-11",
+  "banner": "telegram-message:-1001384382397:2394",
+  "changelog": [
+    "Fixed random reboots",
+    "Enable Userfaultfd GC to improve memory management. (should improve the experience on 4GB RAM variants)",
+    "Patched lk to allow booting to recovery mode via volume and power button combo",
+    "Updated DRM stack from salaa",
+    "Introduced FM Radio"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "2.1GB",
+    "url": "https://pixelos.net/download/RMX2001L1"
+  },
+  "links": {
+    "sources": "https://github.com/PixelOS-Devices",
+    "screenshots": "https://t.me/kardebayanchannel/162",
+    "supportGroup": "https://t.me/rm6785Official"
+  }
+}

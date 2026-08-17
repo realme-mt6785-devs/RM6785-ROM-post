@@ -1,0 +1,35 @@
+{
+  "postType": "rom",
+  "name": "Project Blaze-1.5 EOL",
+  "tag": "ProjectBlaze",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "12",
+  "ruiVersion": 2,
+  "author": "@P_AA_ii_N",
+  "buildDate": "2022-09-17",
+  "banner": "telegram-message:-1001384382397:1871",
+  "changelog": [
+    "Sep 2022 ASB",
+    "Last build of A12",
+    "Some improvements/fixes"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)",
+    "USB Audio"
+  ],
+  "notes": [
+    "After this build I'm (@P_AA_ii_N) dropping official support of this ROM"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "1.6GB",
+    "url": "https://www.pling.com/p/1831896/"
+  },
+  "links": {
+    "sources": "https://telegra.ph/Sources-04-27",
+    "screenshots": "https://t.me/PAiNsGALLeRYRM6785/523?single",
+    "supportGroup": "https://t.me/unofficial_PAiNsHUB"
+  }
+}

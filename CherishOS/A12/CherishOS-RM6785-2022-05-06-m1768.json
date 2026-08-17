@@ -1,0 +1,44 @@
+{
+  "postType": "rom",
+  "name": "CherishOS-3.7",
+  "tag": "CherishOS",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "12",
+  "ruiVersion": 2,
+  "author": "@P_AA_ii_N",
+  "buildDate": "2022-05-06",
+  "banner": "telegram-message:-1001384382397:1768",
+  "changelog": [
+    "May 2022 ASB",
+    "Enforcing SELinux",
+    "Tune ZRAM performance",
+    "Enabled ZRAM writeback",
+    "Kang AIDL vibrator service from Ronin",
+    "Updated power HAL from R7 RUI3",
+    "Boost stune on app launch",
+    "Allow raising sched_boost to 6 levels",
+    "Boost foreground to maximum when launching an app",
+    "Added & Improve interaction hint",
+    "Improve power HAL configs from Begonia",
+    "Fix/Cleanup deprecated overlays items",
+    "Fix KPOC/offline charging (w/Pixel-Charging)",
+    "Metadata partition corruption protection",
+    "Import props configuration from RMX2001_C18"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)",
+    "IPv6 Tethering"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "1.8GB",
+    "url": "https://www.pling.com/p/1669951/"
+  },
+  "links": {
+    "sources": "https://telegra.ph/Sources-04-27",
+    "screenshots": "https://t.me/PAiNsGALLeRYRM6785/218?single",
+    "supportGroup": "https://t.me/CherishOS_RM6785"
+  }
+}

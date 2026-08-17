@@ -1,0 +1,37 @@
+{
+  "postType": "rom",
+  "name": "risingTechOSS v1.3",
+  "tag": "risingTechOSS",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "13",
+  "ruiVersion": 2,
+  "author": "@EvilAnsh",
+  "buildDate": "2023-08-17",
+  "banner": "telegram-message:-1001384382397:2126",
+  "changelog": [
+    "Security Patch: August 5 2023",
+    "4.14.320 Lineage Plus Kernel",
+    "Enable sidefps performant auth by default",
+    "Kang bluetooth firmware from RMX3085_11_A.01",
+    "Enable auto-power-save modes",
+    "[Source Changelog](https://t.me/riceDroidNews/808)"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "Recommended Recoveries: [OFRP](https://t.me/AnshPrjkts/75) | [PBRP](https://t.me/AnshPrjkts/124) | [SHRP](https://t.me/AnshPrjkts/104)"
+  ],
+  "download": {
+    "buildType": "VANILLA/GAPPS",
+    "fileSize": "1.20GB | 1.83GB",
+    "url": "https://sourceforge.net/projects/evilanshbuild/files/RM6785/risingTechOSS/17-08-23/"
+  },
+  "links": {
+    "sources": "https://te.legra.ph/Sources-03-20",
+    "screenshots": "https://t.me/AnshPrjkts/284?single",
+    "supportGroup": "https://t.me/Anshbuilds"
+  }
+}

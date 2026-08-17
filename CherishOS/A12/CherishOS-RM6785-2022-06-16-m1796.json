@@ -1,0 +1,40 @@
+{
+  "postType": "rom",
+  "name": "CherishOS-3.8",
+  "tag": "CherishOS",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "12",
+  "ruiVersion": 2,
+  "author": "@P_AA_ii_N",
+  "buildDate": "2022-06-16",
+  "banner": "telegram-message:-1001384382397:1796",
+  "changelog": [
+    "June 2022 ASB",
+    "Sources upstream",
+    "Drop Boost stune on app launch",
+    "Drop Allow raising sched_boost to 6 levels",
+    "Drop Boost foreground to maximum when launching an app",
+    "Improved stability wifi network",
+    "Fixed Low Mic Issue",
+    "Improved Smoothness",
+    "Improved performance",
+    "Fixed 90hz reverts back to 60hz after reboot",
+    "Misc improvements"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)",
+    "IPv6 Tethering"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "1.8GB",
+    "url": "https://www.pling.com/p/1669951/"
+  },
+  "links": {
+    "sources": "https://telegra.ph/Sources-04-27",
+    "screenshots": "https://t.me/PAiNsGALLeRYRM6785/249?single",
+    "supportGroup": "https://t.me/CherishOS_RM6785"
+  }
+}

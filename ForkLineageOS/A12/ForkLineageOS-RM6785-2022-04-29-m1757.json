@@ -1,0 +1,44 @@
+{
+  "postType": "rom",
+  "name": "Fork LineageOS 19.1",
+  "tag": "ForkLineageOS",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "12",
+  "ruiVersion": 2,
+  "author": "@vadd999",
+  "buildDate": "2022-04-29",
+  "banner": "telegram-message:-1001384382397:1757",
+  "changelog": [
+    "April 2022 ASB",
+    "Enforcing SELinux",
+    "Tune ZRAM performance",
+    "Enabled ZRAM writeback",
+    "Kang AIDL vibrator service from Ronin",
+    "Updated power HAL from R7 RUI3",
+    "Boost stune on app launch",
+    "Allow raising sched_boost to 6 levels",
+    "Boost foreground to maximum when launching an app",
+    "Added & Improve interaction hint",
+    "Improve power HAL configs from Begonia",
+    "Fix/Cleanup deprecated overlays items",
+    "Fix offline charging (w/Pixel-Charging)",
+    "Metadata partition corruption protection",
+    "Import props configuration from RMX2001_C18"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)",
+    "IPv6 Tethering"
+  ],
+  "download": {
+    "buildType": "VANILLA",
+    "fileSize": "1.2GB",
+    "url": "https://drive.google.com/u/0/uc?id=1kcuQjxvGfCejjLl_qK427ioIXfZiYMca&export=download"
+  },
+  "links": {
+    "sources": "https://telegra.ph/Fork-lineageOS-source-04-28",
+    "screenshots": "https://t.me/realme7unofficial/25400?single",
+    "supportGroup": "https://t.me/realme7unofficial"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "postType": "rom",
+  "name": "DerpFest-16.2",
+  "tag": "DerpFest",
+  "stability": "ALPHA",
+  "releaseType": "OFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "16",
+  "ruiVersion": 2,
+  "author": "[MeowDroider](https://t.me/MuhammadIJC)",
+  "buildDate": "2026-07-17",
+  "banner": "telegram-message:-1001384382397:2592",
+  "changelog": [
+    "OPPO CAMERA"
+  ],
+  "bugs": [
+    "OPPO CAMERA has many bugs.",
+    "⚠️ SELinux is permissive, which means some banking apps may not work ⚠️"
+  ],
+  "notes": [
+    "❗️ Don't tell me about issues in OPPO CAM. I am actively fixing them so don't annoy me ❗️",
+    "❗️I'd like testers to: Take one photo at 1X ,5X ,10X in oppo cam. Send all three photos to the [DerpFest RM6785 Chat](https://t.me/derprm6785).  ❗️",
+    "Thanks to ELOHIM for trees",
+    "Realme UI 2.0 based"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "2.8GB",
+    "url": "https://drive.google.com/drive/folders/1V2tWFxpN1m9bbji2qkfN4S-lgB9L4bw2?usp=drive_link"
+  },
+  "links": {
+    "sources": "https://github.com/elohim-etz/android_device_realme_RM6785",
+    "screenshots": "https://t.me/derprm6785/2149",
+    "supportGroup": "https://t.me/+9c3pZqVwyKU3Mzdk"
+  }
+}

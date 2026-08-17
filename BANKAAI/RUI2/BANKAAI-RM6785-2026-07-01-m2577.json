@@ -1,0 +1,39 @@
+{
+  "postType": "kernel",
+  "name": "B-A-N-K-A-A-I Kernel OC",
+  "tag": "BANKAAI",
+  "stability": "STABLE",
+  "device": "RM6785",
+  "kernelVersion": "4.14.366",
+  "ruiVersion": 2,
+  "author": "[╰‿╯ ..Ꮪᴜ͢ᴋᴜɴᴀ..𒆜](https://t.me/sukuna567)",
+  "buildDate": "2026-07-01",
+  "banner": "telegram-message:-1001384382397:2577",
+  "changelog": [
+    "Gpu Oc freq 950mhz stable unlocked",
+    "increased gpu volt 1.1mV for OC",
+    "thermal protect off for gpu",
+    "CPU OC frequency 2.4ghz stable unlocked",
+    "Fastcharg enable 3.3mA",
+    "Thermal Trip point Rised to 70°C",
+    "ReSukiSU 4.1.0 included",
+    "SuSFS 2.0.1 included",
+    "some changes have befores one"
+  ],
+  "bugs": [
+    "You tell me..."
+  ],
+  "notes": [
+    "If the device feels laggy then clear Dalvik Art & Cache after flashing the kernel",
+    "[Resukisu manager](https://t.me/ReSukiSU/4/232855)",
+    "Susfs module"
+  ],
+  "download": {
+    "fileSize": "16.50 MB",
+    "url": "https://github.com/sukuna567/android_kernel_realme_nemo/releases/tag/v1.0"
+  },
+  "links": {
+    "sources": "https://github.com/sukuna567/android_kernel_realme_nemo",
+    "supportGroup": "https://t.me/RM6785_Discussion"
+  }
+}

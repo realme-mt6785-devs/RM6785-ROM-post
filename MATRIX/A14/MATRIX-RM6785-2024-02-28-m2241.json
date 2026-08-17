@@ -1,0 +1,33 @@
+{
+  "postType": "rom",
+  "name": "MatrixxOS v10.3.0",
+  "tag": "MATRIX",
+  "stability": "BETA",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "14",
+  "ruiVersion": 2,
+  "author": "@WaitinnForUhh",
+  "buildDate": "2024-02-28",
+  "banner": "telegram-message:-1001384382397:2241",
+  "changelog": [
+    "[Here](https://matrixx-devices.github.io/changelog.html)"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "Pitch Black Recovery Recommended.",
+    "Setup Apn if calling/data not working."
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "1.57GB",
+    "url": "https://drive.google.com/file/d/1fvIuP10XTTTcVcCEgm6OCvXzTaEs8XpQ/view?usp=sharing"
+  },
+  "links": {
+    "sources": "https://github.com/ProjectMatrixx",
+    "screenshots": "https://t.me/lucid_builds/11694",
+    "supportGroup": "https://t.me/lucid_builds"
+  }
+}

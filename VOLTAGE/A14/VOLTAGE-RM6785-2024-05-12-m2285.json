@@ -1,0 +1,44 @@
+{
+  "postType": "rom",
+  "name": "Voltage OS Version 3.4",
+  "tag": "VOLTAGE",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "14",
+  "ruiVersion": 2,
+  "author": "@WaitinnForUhh",
+  "buildDate": "2024-05-12",
+  "banner": "telegram-message:-1001384382397:2285",
+  "changelog": [
+    "Merged May Security Patch (android_14.0.0-r35)",
+    "Allow turning on WiFi and Bluetooth when pressing QS Tiles.",
+    "Restored Hide power menu on Secure Lockscreen.",
+    "Migrated Powerhub switches to new QPR2 style.",
+    "Fixed updater crash on WiFi-Only devices.",
+    "All new Firewall app from CalyxOS.",
+    "Added support for Global Cleartext penalties.",
+    "Added standalone preference for Sensors Off Tile.",
+    "Fixed Gapps issues.",
+    "Added \"Mark as Read\" button on Notification Toast."
+  ],
+  "bugs": [
+    "Native Video Calling (ViLTE) And Voice Over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "CTS Pass By Default [Basic | Device]",
+    "Openela Kernel [4.14.341]",
+    "NikGapps Core Recommended",
+    "Clean Flash Is Mandatory"
+  ],
+  "download": {
+    "buildType": "VANILLA",
+    "fileSize": "1.5GB",
+    "url": "https://drive.google.com/file/d/1Ru5Rd7y4Ps2qz9QTrlOpILrqqg8hgVMw/view?usp=sharing"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs",
+    "screenshots": "https://t.me/LucidGallery/72",
+    "supportGroup": "https://t.me/lucid_builds"
+  }
+}

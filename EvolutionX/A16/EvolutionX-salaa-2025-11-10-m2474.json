@@ -1,0 +1,35 @@
+{
+  "postType": "rom",
+  "name": "Evolution-X 11.2.1",
+  "tag": "EvolutionX",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "salaa",
+  "androidVersion": "16",
+  "ruiVersion": 3,
+  "author": "@EvilAnsh",
+  "buildDate": "2025-11-10",
+  "banner": "telegram-message:-1001384382397:2474",
+  "changelog": [
+    "Synced with latest 11.4 changes",
+    "Full changelog: [DEVICE](https://raw.githubusercontent.com/Evolution-X/OTA/7b1b76ab1840b2bebe9a5706f834e8714ab6a196/changelogs/salaa.txt)"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "Realme UI 3.0 based",
+    "This won't work On Realme 6/6i/6s/Narzo",
+    "Recommended to use [recovery.img](https://cdn.evolution-x.org/salaa/16/recovery/recovery.img/download) or [OFOX](https://sourceforge.net/projects/evilanshbuild/files/recovery/salaa/OrangeFox-R11.3_A12.1-APOCALYPSE-20250803-salaa.zip/download)"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "2.9GB",
+    "url": "https://evolution-x.org/devices/salaa"
+  },
+  "links": {
+    "sources": "https://github.com/Evolution-X-Devices/device_realme_salaa",
+    "screenshots": "https://t.me/AnshBuilds/76683",
+    "supportGroup": "https://t.me/AnshBuilds"
+  }
+}

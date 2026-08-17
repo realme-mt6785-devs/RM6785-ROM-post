@@ -1,0 +1,39 @@
+{
+  "postType": "rom",
+  "name": "Crdroid",
+  "tag": "CrDroid",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 1,
+  "author": "@No_PaiiN_No_GaiiN",
+  "buildDate": "2023-06-22",
+  "banner": "telegram-message:-1001384382397:2087",
+  "changelog": [
+    "Initial build",
+    "Security Patch: June 5 2023"
+  ],
+  "bugs": [
+    "Native video calling",
+    "Night light",
+    "Extra Cameras"
+  ],
+  "notes": [
+    "Uses RUI 1.0 Firmware",
+    "Safetynet pass by default",
+    "NikGapps core recommended",
+    "Used N.E.O.L.I.T.-V4",
+    "Realme 7/Narzo 20 Pro/Narzo 30 4G users don't flash!!"
+  ],
+  "download": {
+    "buildType": "VANILLA",
+    "fileSize": "0.76GB",
+    "url": "https://t.me/PythonBuilds/629"
+  },
+  "links": {
+    "sources": "https://github.com/pythonpy1997",
+    "screenshots": "https://t.me/PythonBuilds/598?single",
+    "supportGroup": "https://t.me/Python_Builds_chat"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "postType": "kernel",
+  "name": "ThunderStorm Kernel",
+  "tag": "ThunderStorm",
+  "stability": "BETA",
+  "device": "RM6785",
+  "kernelVersion": "4.14.222",
+  "ruiVersion": 2,
+  "author": "@Gorilla669",
+  "buildDate": "2021-12-11",
+  "banner": "telegram-message:-1001384382397:1519",
+  "changelog": [
+    "Built With Proton Clang 13",
+    "LTO kernel(Link Time Optimisation)",
+    "Merged ack tag v4.14.222",
+    "add NEON accelerated XOR implementation",
+    "Don't allow userspace to impose restrictions on CPU idle levels",
+    "Kill userspace CPU boosting entirely",
+    "Avoid userspace from changing maxfreq",
+    "Force applications to use TCP_NODELAY to improve network latency",
+    "Added FPS Meter support on ROMs",
+    "Make scheduling period more efficient",
+    "Add back drvgen and dtbo building",
+    "Globally silence connectivity logspam",
+    "Enable some performance features(MTK_PERFMGR_TOUCH_BOOST)",
+    "Switch sched scaling to linear",
+    "And More"
+  ],
+  "bugs": [
+    "None"
+  ],
+  "notes": [
+    "Will Not Work On Stock Rom",
+    "Only For Rui2 Based Custom Roms"
+  ],
+  "download": {
+    "fileSize": "17.1MB",
+    "url": "https://sourceforge.net/projects/rui2-kernel/files/ThunderStorm_LTO_1.2/ThunderStorm-lto-KERNEL-RMX2151.zip/download"
+  },
+  "links": {
+    "sources": "https://github.com/Johny8988/RMX2151_R"
+  }
+}

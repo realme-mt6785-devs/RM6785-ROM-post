@@ -1,0 +1,30 @@
+{
+  "postType": "kernel",
+  "name": "N.E.O.L.I.T.-V5 Yoko Kernel",
+  "tag": "NEOLIT",
+  "stability": "STABLE",
+  "device": "RMX2001",
+  "kernelVersion": "10.11.2021",
+  "ruiVersion": 2,
+  "author": "Sarthak Roy",
+  "buildDate": "2021-11-10",
+  "banner": "telegram-message:-1001384382397:1467",
+  "changelog": [
+    "Upstreamed to the latest 4.14.254 tag",
+    "Compiled using Clang 11 and Linaro GCC 7.5 as cross compiler",
+    "Don't select systracker by default for MT6785",
+    "Added FPS Meter support on ROMs with Realme Parts (finally!)",
+    "[Check here](https://github.com/sarthakroy2002/kernel_realme_wasabi/commits/R)"
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "notes": [
+    "\"wasabi\" is a unified kernel name for R6/7/N20P/N30",
+    "ONLY FOR REALME UI 2 BASED ROMs"
+  ],
+  "download": {
+    "url": "https://sourceforge.net/projects/sarthak-android-projects/files/kernels/wasabi/NEOLIT-V5-Yoko-KERNEL-wasabi-10112021.zip/download"
+  },
+  "links": {}
+}

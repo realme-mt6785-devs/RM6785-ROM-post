@@ -1,0 +1,46 @@
+{
+  "postType": "kernel",
+  "name": "ThunderStorm V-2.1 LTO",
+  "tag": "ThunderStorm",
+  "stability": "STABLE",
+  "device": "RM6785",
+  "kernelVersion": "4.14.286",
+  "ruiVersion": 2,
+  "author": "@Gorilla669",
+  "buildDate": "2022-08-06",
+  "banner": "telegram-message:-1001384382397:1842",
+  "changelog": [
+    "Upstreamed To 286",
+    "zsmalloc backports",
+    "vmscan: swappiness set to 45",
+    "Introduce kernelspace battery saver mode([guide](https://t.me/anupamroy777/24423) to enable or check notes in support group)",
+    "disabled few debuggings",
+    "silenced few logspams",
+    "cpumask: Add cpumasks for big and LITTLE CPU clusters",
+    "fpc1022: Affine IRQs to big CPU",
+    "touchscreen: affine touchscreen to big cpu",
+    "wakelock: Add a timeout to wakelocks globally",
+    "unix backports",
+    "time: Disable timer migration",
+    "sched: Reduce latency for better responsiveness",
+    "Switch To step_wise Thermal Governor",
+    "Dropped srandom",
+    "Enable HW_RANDOM"
+  ],
+  "bugs": [
+    "None"
+  ],
+  "notes": [
+    "based on rui 2",
+    "Thanks to all the testers",
+    "thanks to @Exonxo for banner"
+  ],
+  "download": {
+    "fileSize": "17MB",
+    "url": "https://sourceforge.net/projects/rui2-kernel/files/ThunderStorm-2.1/ThunderStorm-lto-KERNEL-RM6785-2022-08-05.zip/download"
+  },
+  "links": {
+    "sources": "https://github.com/anupamroy777/android_kernel_realme_RM6785",
+    "supportGroup": "https://t.me/anupamroy777"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "postType": "rom",
+  "name": "Infinity-X 3.12",
+  "tag": "InfinityX",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "16",
+  "ruiVersion": 2,
+  "author": "𝙴𝙻𝙾𝙷𝙸𝙼",
+  "buildDate": "2026-08-16",
+  "banner": "telegram-message:-1001384382397:2609",
+  "changelog": [
+    "Synced with latest source ([18-07-2026](https://t.me/ProjectInfinityX/1903))",
+    "Fix random reboots (Gopal, [Kimi](https://t.me/hakimifr), Claude)",
+    "Fix audio issue after disconnecting bt device",
+    "Fix YouTube scrolling lag",
+    "Fix lags on specific animation",
+    "Switch ro partitions to EROFS",
+    "Switch EROFS compression to lz4hc,12",
+    "Rewrite Lights AIDL to Rust",
+    "Fix checkelf for media blobs",
+    "Reapply mtk animation fix",
+    "Update doze with upstream",
+    "Switch to AVC 3.1 for screen recording",
+    "Apply dex2oat optimizations",
+    "Inherit MSSI common overlays",
+    "Drop some unused vendor blobs"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "KSU Included ([ReSukiSU](https://t.me/ReSukiSU/5/271277))",
+    "Ofox recovery",
+    "Clean flash is mandatory",
+    "Ship kaeru patched lk"
+  ],
+  "download": {
+    "buildType": "GAPPS | VANILLA",
+    "fileSize": "2.0GB | 1.6GB",
+    "url": "https://projectinfinity-x.com/downloads/RM6785"
+  },
+  "links": {
+    "sources": "https://github.com/Infinity-X-Devices/android_device_realme_RM6785",
+    "screenshots": "https://t.me/ProjectInfinityX/1892",
+    "supportGroup": "https://t.me/RM6785_Chat"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "postType": "rom",
+  "name": "ApolloOS v1.3",
+  "tag": "ApolloOS",
+  "stability": "BETA",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "14",
+  "ruiVersion": 2,
+  "author": "@WaitinnForUhh",
+  "buildDate": "2024-02-14",
+  "banner": "telegram-message:-1001384382397:2222",
+  "changelog": [
+    "Initial Release"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)",
+    "Gapps not flash-able on Vanilla",
+    "Google backup not working on Gapps Build"
+  ],
+  "notes": [
+    "Pitch Black Recovery Recommended",
+    "Device Code Name Change From Recovery"
+  ],
+  "download": {
+    "buildType": "VANILLA/GAPPS",
+    "fileSize": "1.3GB | 1.6GB",
+    "url": "https://drive.google.com/drive/folders/1-1c2ybEfXSF2JChxOCPhHx3rF7_zVSzF"
+  },
+  "links": {
+    "sources": "https://github.com/HorizonDroidLab",
+    "screenshots": "https://t.me/lucid_builds/147",
+    "supportGroup": "https://t.me/lucid_builds"
+  }
+}

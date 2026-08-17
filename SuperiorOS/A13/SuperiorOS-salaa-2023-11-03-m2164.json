@@ -1,0 +1,33 @@
+{
+  "postType": "rom",
+  "name": "⚠️⚠️⚠️⚠️NOT",
+  "tag": "SuperiorOS",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "salaa",
+  "androidVersion": "13",
+  "ruiVersion": 3,
+  "author": "@EvilAnsh",
+  "buildDate": "2023-11-03",
+  "banner": "telegram-message:-1001384382397:2164",
+  "changelog": [
+    "Initial Build based upon RUI3",
+    "Full Changelog: [SUPERIOR](https://raw.githubusercontent.com/SuperiorOS-Devices/changelogs/thirteen/changelogs.txt)"
+  ],
+  "bugs": [
+    "You tell me"
+  ],
+  "notes": [
+    "ITS FOR REALMEUI 3.0 FIRMWARE"
+  ],
+  "download": {
+    "buildType": "VANILLA/GAPPS",
+    "fileSize": "1.2GB | 1.6GB",
+    "url": "https://telegra.ph/SuperiorOS-for-salaa-11-02"
+  },
+  "links": {
+    "sources": "https://github.com/CherishOS-Devices/android_device_realme_RM6785",
+    "screenshots": "https://t.me/AnshPrjkts/397?single",
+    "supportGroup": "https://t.me/Anshbuilds"
+  }
+}

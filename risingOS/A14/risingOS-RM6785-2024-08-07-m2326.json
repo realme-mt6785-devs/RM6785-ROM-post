@@ -1,0 +1,34 @@
+{
+  "postType": "rom",
+  "name": "RisingOS 4.2",
+  "tag": "risingOS",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "14",
+  "ruiVersion": 2,
+  "author": "@EvilAnsh",
+  "buildDate": "2024-08-07",
+  "banner": "telegram-message:-1001384382397:2326",
+  "changelog": [
+    "July Security Patch",
+    "Full changelog: [RISING](https://github.com/RisingOS-staging/risingOS_changelogs)"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "4.14.348 Samar's Kernel",
+    "Clean Flash recommended (but dirty works)"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "2.30GB",
+    "url": "https://sourceforge.net/projects/risingos-official/files/4.x/GAPPS/RM6785"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs/android_device_realme_RM6785-common",
+    "screenshots": "https://t.me/RisingOS_news/1277",
+    "supportGroup": "https://t.me/Anshbuilds"
+  }
+}

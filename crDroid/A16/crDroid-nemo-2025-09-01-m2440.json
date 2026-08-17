@@ -1,0 +1,34 @@
+{
+  "postType": "rom",
+  "name": "crDroid 12.0",
+  "tag": "crDroid",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "nemo",
+  "androidVersion": "16",
+  "ruiVersion": 2,
+  "author": "Debayan Kar",
+  "buildDate": "2025-09-01",
+  "banner": "telegram-message:-1001384382397:2440",
+  "changelog": [
+    "Re-enabled WPA3-SAE",
+    "Migrated to AIDL Bluetooth service",
+    "Switched to F2FS filesystem",
+    "Fixed video playback issues",
+    "Kernel built with full LLVM",
+    "Updated Dolby Atmos to v07.01.1813"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "download": {
+    "buildType": "Vanilla",
+    "fileSize": "1.6GB",
+    "url": "https://sourceforge.net/projects/crdroid/files/nemo/12.x/crDroidAndroid-16.0-20250901-nemo-v12.0.zip/download"
+  },
+  "links": {
+    "sources": "https://github.com/crdroidandroid/",
+    "screenshots": "https://t.me/kardebayanchannel/544",
+    "supportGroup": "https://t.me/rm6785Official"
+  }
+}

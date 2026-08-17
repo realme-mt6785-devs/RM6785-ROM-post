@@ -1,0 +1,30 @@
+{
+  "postType": "kernel",
+  "name": "neOliT CI builds",
+  "tag": "neOliT",
+  "stability": "STABLE",
+  "device": "RM6785",
+  "kernelVersion": "4.14.x",
+  "ruiVersion": 2,
+  "author": "Sarthak Roy",
+  "buildDate": "2023-06-02",
+  "banner": "telegram-message:-1001384382397:2075",
+  "changelog": [
+    "See original channel post"
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "notes": [
+    "You can experience kernel builds whenever i add something. It will be updated quite regularly.",
+    "All builds might not be stable but will be warned if its for testing."
+  ],
+  "download": {
+    "url": "https://t.me/sarthakci"
+  },
+  "links": {
+    "sources": "https://github.com/sarthakroy2002/kernel_realme_wasabi",
+    "supportGroup": "https://t.me/neolitci",
+    "donate": "https://graph.org/Payment-Details-02-23-2"
+  }
+}

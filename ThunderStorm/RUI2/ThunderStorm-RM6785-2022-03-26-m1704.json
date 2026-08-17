@@ -1,0 +1,47 @@
+{
+  "postType": "kernel",
+  "name": "ThunderStorm V-1.7 LTO",
+  "tag": "ThunderStorm",
+  "stability": "BETA",
+  "device": "RM6785",
+  "kernelVersion": "26.03.2022",
+  "ruiVersion": 2,
+  "author": "Gorilla669",
+  "buildDate": "2022-03-26",
+  "banner": "telegram-message:-1001384382397:1704",
+  "changelog": [
+    "mali_kbase: pm: Enhance power policy interface",
+    "mali_kbase: pm: Add adaptive power policy",
+    "Upstreamed to 4.14.273",
+    "cpufreq: fallback to schedutil if governor is not found",
+    "switched to Vortex clang 15",
+    "arm64: Increase kernel command line size",
+    "tcp: Increase max connections to accept",
+    "Gain 30% Linux Disk performance",
+    "included AR NM OBJCOPY OBJDUMP",
+    "reverted some commits",
+    "mtk-gpu: sync wakeup on event handoff from job done.",
+    "mm: only drain per-cpu pagevecs once per pagevec usage",
+    "pagevec: remove cold parameter for pagevecs",
+    "Increase touch boost period",
+    "disable trace_printk usage",
+    "check source for more changelogs"
+  ],
+  "bugs": [
+    "None"
+  ],
+  "notes": [
+    "based on rui 2",
+    "Thanks to @cyberknight777",
+    "Thanks to all the testers",
+    "thanks to @Exonxo for logo"
+  ],
+  "download": {
+    "fileSize": "17MB",
+    "url": "https://sourceforge.net/projects/rui2-kernel/files/ThunderStorm-1.7/ThunderStorm-lto-KERNEL-RM6785.zip/download"
+  },
+  "links": {
+    "sources": "https://github.com/anupamroy777/kernel_realme_RM6785",
+    "supportGroup": "https://t.me/anupamroy777"
+  }
+}

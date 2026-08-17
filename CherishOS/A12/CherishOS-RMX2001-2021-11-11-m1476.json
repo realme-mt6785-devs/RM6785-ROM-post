@@ -1,0 +1,27 @@
+{
+  "postType": "rom",
+  "name": "THIS ROM IS ONLY COMPATIBLE WITH REALME 6 SERIES",
+  "tag": "CherishOS",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RMX2001",
+  "androidVersion": "12",
+  "ruiVersion": 2,
+  "author": "@P_AA_ii_N",
+  "buildDate": "2021-11-11",
+  "banner": "telegram-message:-1001384382397:1476",
+  "changelog": [
+    "Initial build based on android S",
+    "November security patch"
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "notes": [
+    "volte not working"
+  ],
+  "download": {
+    "url": "https://drive.google.com/file/d/1zirvE0hiXEmU1EzwS0BTn_5Xa-7Ebdjf/view?usp=drivesdk"
+  },
+  "links": {}
+}

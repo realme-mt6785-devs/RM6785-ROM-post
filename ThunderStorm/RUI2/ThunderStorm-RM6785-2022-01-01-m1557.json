@@ -1,0 +1,40 @@
+{
+  "postType": "kernel",
+  "name": "ThunderStorm V-1.3 LTO",
+  "tag": "ThunderStorm",
+  "stability": "BETA",
+  "device": "RM6785",
+  "kernelVersion": "4.14.238",
+  "ruiVersion": 2,
+  "author": "@Gorilla669",
+  "buildDate": "2022-01-01",
+  "banner": "telegram-message:-1001384382397:1557",
+  "changelog": [
+    "Built With Proton Clang",
+    "LTO kernel(Link Time Optimisation)",
+    "Merged ack tag v4.14.238",
+    "Disable few debuggings",
+    "Use optimized spinning loop for arm64",
+    "Fix decimal charging timeout",
+    "Don't hog RCU read lock while optimistically spinning",
+    "Affine GPU IRQs to big cluster CPUs",
+    "Remove dependency on the profiling subsystem",
+    "Implement a simple task exit notifier when disabled",
+    "Inline the spin lock function family",
+    "Many more"
+  ],
+  "bugs": [
+    "None"
+  ],
+  "notes": [
+    "Only For Rui2 Based Custom Roms",
+    "Works on stock rom"
+  ],
+  "download": {
+    "fileSize": "17MB",
+    "url": "https://sourceforge.net/projects/rui2-kernel/files/ThunderStorm_LTO_1.3/?upload_just_completed=true"
+  },
+  "links": {
+    "sources": "https://github.com/anupamroy777/RMX2151_R"
+  }
+}

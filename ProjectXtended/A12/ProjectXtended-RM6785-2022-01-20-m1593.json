@@ -1,0 +1,49 @@
+{
+  "postType": "rom",
+  "name": "Xtended-XS-v2",
+  "tag": "ProjectXtended",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "12",
+  "ruiVersion": 2,
+  "author": "@P_AA_ii_N",
+  "buildDate": "2022-01-20",
+  "banner": "telegram-message:-1001384382397:1593",
+  "changelog": [
+    "Sources upstream",
+    "January security patch",
+    "Compiled with NEOLIT-v8 kernel with proton clang",
+    "Added bufferfix",
+    "Added F2FS support",
+    "Added Lawnchair, GCam (wichaya-v1.5) , Xrecorder, Alphabackup, Blackhole etc.",
+    "Added Natural and Boosted display color modes",
+    "Added Unlimited Google Photos storage",
+    "Improved performance",
+    "Fixed colour flicker",
+    "Fixed VOOC charging delay",
+    "Fixed brightness slider behaviour",
+    "Fixed NFC (EU)",
+    "Misc improvements"
+  ],
+  "bugs": [
+    "Built-in screen recorder",
+    "Permissive SELinux"
+  ],
+  "notes": [
+    "Based on RealmeUI 2.0",
+    "CTS passed by default",
+    "Use latest twrp recovery",
+    "Flashing Guide : [HERE](https://t.me/PAiNsHUB0/139)"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "1.5 GB",
+    "url": "https://drive.google.com/file/d/1HkzvwaiClC_iXJgLaVJxcve3c6uMzi3K/view?usp=drivesdk"
+  },
+  "links": {
+    "sources": "https://github.com/PAAiiN",
+    "screenshots": "https://t.me/PAiNsHUB0/162?single",
+    "supportGroup": "https://t.me/unofficial_PAiNsHUB"
+  }
+}

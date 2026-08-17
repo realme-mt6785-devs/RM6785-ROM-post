@@ -1,0 +1,29 @@
+{
+  "postType": "rom",
+  "name": "PixelOS 15",
+  "tag": "PixelOS",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "RMX2001",
+  "androidVersion": "15",
+  "ruiVersion": 2,
+  "author": "Debayan Kar",
+  "buildDate": "2025-02-17",
+  "banner": "telegram-message:-1001384382397:2374",
+  "changelog": [
+    "Initial Android 15 build"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "2.01GB",
+    "url": "https://pixelos.net/download/RMX2001L1"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs",
+    "screenshots": "https://t.me/kardebayanchannel/162",
+    "supportGroup": "https://t.me/rm6785Official"
+  }
+}

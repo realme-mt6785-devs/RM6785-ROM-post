@@ -1,0 +1,34 @@
+{
+  "postType": "kernel",
+  "name": "Stormbreaker Kernel",
+  "tag": "Stormbreaker",
+  "stability": "STABLE",
+  "device": "nemo",
+  "kernelVersion": "4.14.336",
+  "ruiVersion": 2,
+  "author": "[Debayan Kar](https://t.me/kardebayan)",
+  "buildDate": "2025-09-03",
+  "banner": "telegram-message:-1001384382397:2451",
+  "changelog": [
+    "Added Android 15/16 support",
+    "Added LLVM patches",
+    "Dropped many useless OPLUS/MediaTek debugging",
+    "Fixed WPA3 hotspot",
+    "Updated connectivity drivers from RMX2020",
+    "Added FM support",
+    "Disabled ikheaders",
+    "Built with clang 20",
+    "Removed test codes from touchscreen driver"
+  ],
+  "bugs": [
+    "You tell me..."
+  ],
+  "download": {
+    "fileSize": "18.40MB",
+    "url": "https://t.me/kardebayanchannel/568"
+  },
+  "links": {
+    "sources": "https://github.com/crdroidandroid/android_kernel_realme_nemo",
+    "supportGroup": "https://t.me/RM6Official"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "postType": "rom",
+  "name": "PixelOS 15",
+  "tag": "PixelOS",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "salaa",
+  "androidVersion": "15",
+  "ruiVersion": 3,
+  "author": "Debayan Kar",
+  "buildDate": "2025-02-20",
+  "banner": "telegram-message:-1001384382397:2380",
+  "changelog": [
+    "Initial Android 15"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "This won't work On Realme 6/6i/6s/Narzo"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "2.11GB",
+    "url": "https://pixelos.net/download/salaa"
+  },
+  "links": {
+    "sources": "https://github.com/PixelOS-Devices",
+    "screenshots": "https://t.me/kardebayanchannel/162",
+    "supportGroup": "https://t.me/rm6785Official"
+  }
+}

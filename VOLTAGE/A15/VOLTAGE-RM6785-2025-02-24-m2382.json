@@ -1,0 +1,40 @@
+{
+  "postType": "rom",
+  "name": "Voltage OS Version 4.2",
+  "tag": "VOLTAGE",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "15",
+  "ruiVersion": 2,
+  "author": "@ineffabletg",
+  "buildDate": "2025-02-24",
+  "banner": "telegram-message:-1001384382397:2382",
+  "changelog": [
+    "Merged Feb Security Patch",
+    "Disabled blur",
+    "No KSU NEXT support",
+    "[More details & tests](https://t.me/ineffablebuilds/36)",
+    "[Source changelogs](https://t.me/voltageos/126711)"
+  ],
+  "bugs": [
+    "Native Video Calling (ViLTE) And Voice Over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "Signed build",
+    "Openela Kernel [4.14.348]",
+    "NikGapps Core Recommended",
+    "Sandgapps support",
+    "GrapheneOS AppStore ([Click here](https://github.com/GrapheneOS/AppStore/releases/tag/26))"
+  ],
+  "download": {
+    "buildType": "VANILLA",
+    "fileSize": "1.6GB",
+    "url": "https://t.me/ineffablebuilds/38"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs",
+    "screenshots": "https://t.me/ineffablebuilds/36?single&comment=1642",
+    "supportGroup": "https://t.me/ineffablebuildschat"
+  }
+}

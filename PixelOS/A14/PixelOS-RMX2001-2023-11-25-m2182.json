@@ -1,0 +1,32 @@
+{
+  "postType": "rom",
+  "name": "PixelOS 14",
+  "tag": "PixelOS",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RMX2001",
+  "androidVersion": "14",
+  "ruiVersion": 2,
+  "author": "Debayan Kar",
+  "buildDate": "2023-11-25",
+  "banner": "telegram-message:-1001384382397:2182",
+  "changelog": [
+    "Initial build"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "Use this [recovery](https://index.sauraj.eu.org/ind69/recovery.img)"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "1.8GB",
+    "url": "https://index.sauraj.eu.org//PixelOS_RMX2001L1-14.0-20231125-1304.zip"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs",
+    "screenshots": "https://t.me/kardebayanchannel/162",
+    "supportGroup": "https://t.me/kardebayanchat"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "postType": "rom",
+  "name": "AxionOS 2.7",
+  "tag": "AxionOS",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "salaa",
+  "androidVersion": "16",
+  "ruiVersion": 3,
+  "author": "@EvilAnsh",
+  "buildDate": "2026-07-03",
+  "banner": "telegram-message:-1001384382397:2579",
+  "changelog": [
+    "Initial Build",
+    "Synced with the latest v2.7 changes"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "Realme UI 3.0 based",
+    "This won't work On Realme 6/6i/6s/Narzo",
+    "Includes Dolby Atmos, AxionFx",
+    "Wanna use root? Use this [kernel](https://t.me/AnshPrjktlogs/337)",
+    "Recommended to use [OrangeFox](https://t.me/FilesArchieve/348) recovery"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "2.4GB",
+    "url": "https://sourceforge.net/projects/evilanshbuild/files/salaa/AxionOS/03-07-2026/axion-2.7-PROXIMA_BETA-20260703-UNOFFICIAL-GMS-salaa.zip/download"
+  },
+  "links": {
+    "sources": "https://github.com/EvilAnsh/android_device_realme_salaa",
+    "screenshots": "https://photos.app.goo.gl/ZNGHQowNRouMezCy8",
+    "supportGroup": "https://t.me/AnshBuilds"
+  }
+}

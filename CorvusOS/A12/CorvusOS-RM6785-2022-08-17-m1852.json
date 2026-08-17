@@ -1,0 +1,40 @@
+{
+  "postType": "rom",
+  "name": "Corvus OS vS4.0-Leviathan",
+  "tag": "CorvusOS",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "12",
+  "ruiVersion": 2,
+  "author": "@P_AA_ii_N",
+  "buildDate": "2022-08-17",
+  "banner": "telegram-message:-1001384382397:1852",
+  "changelog": [
+    "August 2022 ASB",
+    "Sources upstream",
+    "Fixed IPv6 tethering",
+    "Fixed color flicker in one-handed mode",
+    "Fixed youtube lag while playing 1080p/2K video's",
+    "Added 7 new preset in Realme Dirac",
+    "Added back vibrator service from Ronin",
+    "Upstreamed kernel to 4.14.290",
+    "Updated vendor blobs and firmware images to RMX2002_11.C.19",
+    "Improved Smoothness",
+    "Misc improvements"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)",
+    "USB Audio"
+  ],
+  "download": {
+    "buildType": "GAPPS/VANILLA",
+    "fileSize": "1.6GB | 1.1GB",
+    "url": "https://downloads.corvusrom.com/?dir=RM6785"
+  },
+  "links": {
+    "sources": "https://telegra.ph/Sources-04-27",
+    "screenshots": "https://t.me/PAiNsGALLeRYRM6785/466?single",
+    "supportGroup": "https://t.me/CorvusRM6785"
+  }
+}

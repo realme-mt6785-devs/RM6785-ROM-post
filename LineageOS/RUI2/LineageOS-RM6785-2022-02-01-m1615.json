@@ -1,0 +1,25 @@
+{
+  "postType": "recovery",
+  "name": "Lineage Recovery",
+  "tag": "LineageOS",
+  "stability": "STABLE",
+  "device": "RM6785",
+  "ruiVersion": 2,
+  "author": "SamarV-121",
+  "buildDate": "2022-02-01",
+  "banner": "telegram-message:-1001384382397:1615",
+  "changelog": [
+    "See original channel post"
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "download": {
+    "fileSize": "64MB | 98MB",
+    "url": "https://github.com/SamarV-121/releases/releases/download/20220201_124024/RMX2001-LINEAGE-RECOVERY-RUI2.img"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs/",
+    "supportGroup": "https://t.me/lineage_RM6785"
+  }
+}

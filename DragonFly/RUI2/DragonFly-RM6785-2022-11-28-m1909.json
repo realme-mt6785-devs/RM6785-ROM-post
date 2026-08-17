@@ -1,0 +1,36 @@
+{
+  "postType": "kernel",
+  "name": "DragonFly V-1.0 LTO",
+  "tag": "DragonFly",
+  "stability": "STABLE",
+  "device": "RM6785",
+  "kernelVersion": "4.14.300",
+  "ruiVersion": 2,
+  "author": "@No_PaiiN_No_GaiiN",
+  "buildDate": "2022-11-28",
+  "banner": "telegram-message:-1001384382397:1909",
+  "changelog": [
+    "DragonFly Initial build",
+    "Upstream to 4.14.300",
+    "Switch to neutron-clang16",
+    "Disable charger logging",
+    "Disable AutoKprofiles",
+    "Silence usbtemp_volt logspam",
+    "Added Kprofiles with 3 modes - Guide",
+    "Decrease gyroscope delay"
+  ],
+  "bugs": [
+    "Find and Report"
+  ],
+  "notes": [
+    "Based on RealmeUI-2.0"
+  ],
+  "download": {
+    "fileSize": "18MB",
+    "url": "https://drive.google.com/file/d/1-1tQfYjKVjtAIykbZVRryU4JifSPB52P/view?usp=drivesdk"
+  },
+  "links": {
+    "sources": "https://github.com/pythonpy1997/android-kernel_Dragonfly-RM6785",
+    "supportGroup": "https://t.me/kernelspaceOT"
+  }
+}

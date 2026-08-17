@@ -1,0 +1,50 @@
+{
+  "postType": "rom",
+  "name": "ProjectArcana-FAERIE-6.0",
+  "tag": "ProjectArcana",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "12 L",
+  "ruiVersion": 2,
+  "author": "@P_AA_ii_N",
+  "buildDate": "2022-04-13",
+  "banner": "telegram-message:-1001384382397:1735",
+  "changelog": [
+    "April 2022 ASB",
+    "Sources upstream",
+    "Android-12L=(12.1)",
+    "Offline charging support",
+    "Include face unlock",
+    "SELinux Enforcing",
+    "Added GCam(Wichaya)",
+    "Added Quick tap",
+    "Fix Display-colours",
+    "Fix built-in screen recording",
+    "Unlimited Google Photos storage",
+    "Added realmeDirac",
+    "Double-tap to wake (Move → Display) from realme parts",
+    "Screen refresh rate (Move → Display) from realme parts",
+    "Fixed DRM Widevine L1",
+    "Misc improvement"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)",
+    "IPv6 Tethering"
+  ],
+  "notes": [
+    "Based on RealmeUI 2.0",
+    "CTS passed by default",
+    "Flashing Guide : HERE"
+  ],
+  "download": {
+    "buildType": "GAPPS/VANILLA",
+    "fileSize": "1.6GB | 1.1GB",
+    "url": "https://www.pling.com/p/1688669"
+  },
+  "links": {
+    "sources": "https://github.com/PAAiiN",
+    "screenshots": "https://t.me/PAiNsGALLeRYRM6785/150?single",
+    "supportGroup": "https://t.me/unofficial_PAiNsHUB"
+  }
+}

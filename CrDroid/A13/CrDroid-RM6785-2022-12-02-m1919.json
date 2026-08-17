@@ -1,0 +1,35 @@
+{
+  "postType": "rom",
+  "name": "CrDroid",
+  "tag": "CrDroid",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "13",
+  "ruiVersion": 2,
+  "author": "@lucifermorningstar733",
+  "buildDate": "2022-12-02",
+  "banner": "telegram-message:-1001384382397:1919",
+  "changelog": [
+    "Youtube shorts playback fix",
+    "In call proximity working",
+    "Bluetooth should work now",
+    "screen record lag for r7 fixed"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "Nov Security Patch"
+  ],
+  "download": {
+    "buildType": "GAPPS/VANILLA",
+    "fileSize": "1.28GB | 1.10GB",
+    "url": "https://bot1.megamirrorgroup.workers.dev/0:/crDroidAndroid-13.0-20221126-Gapps-RM6785-v9.0.zip"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs/",
+    "screenshots": "https://t.me/RM6785Gallery/738",
+    "supportGroup": "https://t.me/MARKROMS"
+  }
+}

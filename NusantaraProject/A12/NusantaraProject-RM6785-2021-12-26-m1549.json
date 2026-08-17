@@ -1,0 +1,45 @@
+{
+  "postType": "rom",
+  "name": "Nusantara Project v4.0-1",
+  "tag": "NusantaraProject",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "12",
+  "ruiVersion": 2,
+  "author": "@officialputuid",
+  "buildDate": "2021-12-26",
+  "banner": "telegram-message:-1001384382397:1549",
+  "changelog": [
+    "Rebranded RM6785",
+    "December 2021 ASB",
+    "Passed Safetynet by default",
+    "Included bufferfix (vf lens)",
+    "Added & Enable fpsInfoSysNode",
+    "Fixed brightness slider behaviour",
+    "Update blobs from RMX2001_11_C.15",
+    "Shipped Lawnchair, Doodle, Xrecorder",
+    "Added Freeform Multiwindow (dev option)",
+    "Added Always-On Display (off by default)",
+    "Added min-max refresh rate config (display)",
+    "Added Natural and Boosted display color modes",
+    "Fix coordinates physical power & fp sensor values"
+  ],
+  "bugs": [
+    "Permissive SELinux",
+    "Built-in screen recording"
+  ],
+  "notes": [
+    "Vanilla & GApps Build",
+    "For Vanilla Build, Use BitGApps (Only)"
+  ],
+  "download": {
+    "buildType": "VANILLA/GAPPS",
+    "fileSize": "988MB | 1.44GB",
+    "url": "https://www.pling.com/p/1500429/"
+  },
+  "links": {
+    "sources": "https://github.com/psionicprjkt/",
+    "screenshots": "https://t.me/psionicprjkt/277"
+  }
+}

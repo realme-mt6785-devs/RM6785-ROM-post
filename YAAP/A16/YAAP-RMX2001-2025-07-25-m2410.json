@@ -1,0 +1,29 @@
+{
+  "postType": "rom",
+  "name": "YAAP 16",
+  "tag": "YAAP",
+  "stability": "BETA",
+  "releaseType": "UNOFFICIAL",
+  "device": "RMX2001",
+  "androidVersion": "16",
+  "ruiVersion": 2,
+  "author": "Debayan Kar",
+  "buildDate": "2025-07-25",
+  "banner": "telegram-message:-1001384382397:2410",
+  "changelog": [
+    "Initial build"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "2.3GB",
+    "url": "https://sourceforge.net/projects/kardebayan/files/RMX2001L1/YAAP-16-HOMEMADE-RMX2001L1-20250725.zip/download"
+  },
+  "links": {
+    "sources": "https://github.com/PixelOS-Devices",
+    "screenshots": "https://t.me/kardebayanchannel/502",
+    "supportGroup": "https://t.me/rm6785Official"
+  }
+}

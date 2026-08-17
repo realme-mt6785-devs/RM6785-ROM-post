@@ -1,0 +1,29 @@
+{
+  "postType": "kernel",
+  "name": "N.E.O.L.I.T.-V4 Yoko kernel for RMX2001/02",
+  "tag": "NEOLIT",
+  "stability": "STABLE",
+  "device": "RMX2001",
+  "kernelVersion": "23.10.2021",
+  "ruiVersion": 2,
+  "author": "Sarthak Roy",
+  "buildDate": "2021-10-23",
+  "banner": "telegram-message:-1001384382397:1409",
+  "changelog": [
+    "Based on Linux Kernel version 4.14.148",
+    "Compiled using Clang 13",
+    "Compiled with ThinLTO",
+    "Introduce zram_entry to prepare dedup functionality",
+    "Enable zram deduplication feature that avoids duplicate pages to be stored on the zram disk thus improved memory savings.",
+    "Update LZ4 decompressor module",
+    "Fix kernel decompression speed",
+    "Minor kernel Optimizations"
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "download": {
+    "url": "https://sourceforge.net/projects/sarthak-android-projects/files/kernels/RMX2001/NEOLIT-V4-Yoko-KERNEL-RMX2001-23102021.zip/download"
+  },
+  "links": {}
+}

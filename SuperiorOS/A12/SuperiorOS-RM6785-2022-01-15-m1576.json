@@ -1,0 +1,48 @@
+{
+  "postType": "rom",
+  "name": "Superior OS",
+  "tag": "SuperiorOS",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "12",
+  "ruiVersion": 2,
+  "author": "@Gofaraway71",
+  "buildDate": "2022-01-15",
+  "banner": "telegram-message:-1001384382397:1576",
+  "changelog": [
+    "Sources upstream",
+    "December security patch",
+    "Compiled with Lineage 4.14.162",
+    "Added bufferfix",
+    "Added F2FS support",
+    "Added Telegram, Spotify, Vanced Manager, Xrecorder.",
+    "Added Natural and Boosted display color modes",
+    "Added Unlimited Google Photos storage",
+    "Fixed colour flicker",
+    "Fixed VOOC charging delay",
+    "Fixed brightness slider behaviour",
+    "Fixed NFC (EU)",
+    "Misc improvements"
+  ],
+  "bugs": [
+    "Built-in screen recorder",
+    "Permissive SELinux"
+  ],
+  "notes": [
+    "Based on RealmeUI 2.0",
+    "CTS passed by default",
+    "Use latest twrp/ofox recovery",
+    "Flashing Guide : Link"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "1.7 GB",
+    "url": "https://drive.google.com/file/d/1p64afhpw1zLvv4rP_L2EazcxWOY9M5hc/view?usp=sharing"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs",
+    "screenshots": "https://t.me/rm6785_gofaraway/64",
+    "supportGroup": "https://t.me/realme_6_gofaraway"
+  }
+}

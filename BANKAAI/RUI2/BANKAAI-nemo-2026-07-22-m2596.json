@@ -1,0 +1,44 @@
+{
+  "postType": "kernel",
+  "name": "B-A-N-K-A-A-I Kernel OC",
+  "tag": "BANKAAI",
+  "stability": "STABLE",
+  "device": "nemo",
+  "kernelVersion": "4.14.366",
+  "ruiVersion": 2,
+  "author": "[╰‿╯ ..Ꮪᴜ͢ᴋᴜɴᴀ..𒆜](https://t.me/sukuna567)",
+  "buildDate": "2026-07-22",
+  "banner": "telegram-message:-1001384382397:2596",
+  "changelog": [
+    "CPU OC frequency 2.2ghz stable unlocked (minimal heat)",
+    "Backported mglru from yorforger",
+    "CPU optimisation drivers updated",
+    "Added Optmisation for Zram",
+    "Updated Touch drivers",
+    "VOOC dropped by default (ofc with original charger)",
+    "Ghost touch fixed (Novatek NT36672C driver updated for crom)",
+    "ReSukiSU 4.1.0 included",
+    "susfs: Bump Version to v2.2.0",
+    "SUS_PATH: fix errno leaks for sub paths",
+    "some changes have befores one"
+  ],
+  "bugs": [
+    "All fixed befores one",
+    "Report after 2 days of use",
+    "If vooc fails sometimes then report",
+    "If you find any other tell me"
+  ],
+  "notes": [
+    "If the device feels laggy then clear Dalvik Art & Cache after flashing the kernel",
+    "[Resukisu manager](https://t.me/ReSukiSU/4/252586?single)",
+    "Susfs module"
+  ],
+  "download": {
+    "fileSize": "16.60 MB",
+    "url": "https://github.com/sukuna567/android_kernel_realme_nemo/releases/tag/V3.0"
+  },
+  "links": {
+    "sources": "https://github.com/sukuna567/android_kernel_realme_nemo",
+    "supportGroup": "https://t.me/RM6785_Discussion"
+  }
+}

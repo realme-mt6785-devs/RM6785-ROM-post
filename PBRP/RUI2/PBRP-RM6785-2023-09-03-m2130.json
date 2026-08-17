@@ -1,0 +1,32 @@
+{
+  "postType": "recovery",
+  "name": "Pitch Black Recovery Project v4.0",
+  "tag": "PBRP",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "RM6785",
+  "ruiVersion": 2,
+  "author": "Hakimi & Ansh",
+  "buildDate": "2023-09-03",
+  "banner": "telegram-message:-1001384382397:2130",
+  "changelog": [
+    "Fixed decryption for AOSP ROMs with Android 12.1 and higher."
+  ],
+  "bugs": [
+    "Flashlight"
+  ],
+  "notes": [
+    "Official",
+    "For realme UI 2.0-based ROMs",
+    "F2FS and EROFS supported"
+  ],
+  "download": {
+    "fileSize": "69MB",
+    "url": "https://telegra.ph/RM6685-PBRP-Downloads-09-03"
+  },
+  "links": {
+    "sources": "https://telegra.ph/RM6685-PBRP-Downloads-09-03",
+    "screenshots": "https://t.me/PBRP_RM6785/32?single",
+    "supportGroup": "https://t.me/PBRP_RM6785"
+  }
+}

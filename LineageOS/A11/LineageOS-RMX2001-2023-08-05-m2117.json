@@ -1,0 +1,38 @@
+{
+  "postType": "rom",
+  "name": "LineageOS v18.1",
+  "tag": "LineageOS",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 1,
+  "author": "@No_PaiiN_No_GaiiN",
+  "buildDate": "2023-08-05",
+  "banner": "telegram-message:-1001384382397:2117",
+  "changelog": [
+    "Initial build",
+    "Security Patch: July 5 2023"
+  ],
+  "bugs": [
+    "Native video calling",
+    "Night light",
+    "Extra Cameras"
+  ],
+  "notes": [
+    "Required fw \"B65\" realmeUI 1.0",
+    "Use Latest PBRP for realmeUI 1.0",
+    "NikGapps core recommended",
+    "Realme 7/Narzo 20 Pro/Narzo 30 4G users don't flash!!"
+  ],
+  "download": {
+    "buildType": "VANILLA",
+    "fileSize": "0.65GB",
+    "url": "https://drive.google.com/file/d/10myztrchayn-7c7uNJ4nBy6-l8rj1Dm7/view?usp=drive_link"
+  },
+  "links": {
+    "sources": "https://github.com/pythonpy1997",
+    "screenshots": "https://t.me/hmmmok/28?single",
+    "supportGroup": "https://t.me/RM6Official"
+  }
+}

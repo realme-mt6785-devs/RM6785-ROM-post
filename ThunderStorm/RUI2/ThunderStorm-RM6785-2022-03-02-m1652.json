@@ -1,0 +1,48 @@
+{
+  "postType": "kernel",
+  "name": "ThunderStorm V-1.6-EXOTIC LTO",
+  "tag": "ThunderStorm",
+  "stability": "BETA",
+  "device": "RM6785",
+  "kernelVersion": "02.03.2022",
+  "ruiVersion": 2,
+  "author": "@Gorilla669",
+  "buildDate": "2022-03-02",
+  "banner": "telegram-message:-1001384382397:1652",
+  "changelog": [
+    "Upstreamed to 267 tag",
+    "Improved battery backup",
+    "Disabled many loggings",
+    "Disabled few debugging options",
+    "Implemented fuse passthrough(forgot to mention on 1.5)",
+    "Enabled ZSTD",
+    "Disabled mtk io boost(causing heat in cr)",
+    "Reverted 900mhz to 800mhz freq for r6 users",
+    "Disabled audit",
+    "Switch to zstd as default zram compression algorithms",
+    "Disable dynamic debug",
+    "silence TEE logs from userspace",
+    "Optimize compiler specific instructions for coupled A76.A55",
+    "Do not select menu and ladder governors",
+    "Reduce log buffer to 4KB",
+    "mtk-gpu-bifrost: Increase frequency of DVFS sampling"
+  ],
+  "bugs": [
+    "None"
+  ],
+  "notes": [
+    "based on rui 2",
+    "Thanks to @cyberknight777 for fuse & zstd backports",
+    "Thanks to all the testers",
+    "Works on every RM6785 device",
+    "thanks to @Exonxo for logo"
+  ],
+  "download": {
+    "fileSize": "17MB",
+    "url": "https://sourceforge.net/projects/rui2-kernel/files/ThunderStorm-1.6-EXOTIC/ThunderStorm-Test-KERNEL-RM6785-2022-03-02-31.zip/download"
+  },
+  "links": {
+    "sources": "https://github.com/anupamroy777/kernel_realme_RM6785",
+    "supportGroup": "https://t.me/anupamroy777"
+  }
+}

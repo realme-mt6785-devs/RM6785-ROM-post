@@ -1,0 +1,35 @@
+{
+  "postType": "rom",
+  "name": "Project Blaze-1.4",
+  "tag": "ProjectBlaze",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "12",
+  "ruiVersion": 2,
+  "author": "@P_AA_ii_N",
+  "buildDate": "2022-08-14",
+  "banner": "telegram-message:-1001384382397:1848",
+  "changelog": [
+    "July 2022 ASB",
+    "Sources upstream",
+    "Fixed IPv6 tethering",
+    "Upstreamed kernel to 4.14.290",
+    "Updated vendor blobs and firmware images to RMX2002_11.C.19",
+    "Misc improvements"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)",
+    "USB Audio"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "1.9GB",
+    "url": "https://www.pling.com/p/1831896/"
+  },
+  "links": {
+    "sources": "https://telegra.ph/Sources-04-27",
+    "screenshots": "https://t.me/PAiNsGALLeRYRM6785/448?single",
+    "supportGroup": "https://t.me/unofficial_PAiNsHUB"
+  }
+}

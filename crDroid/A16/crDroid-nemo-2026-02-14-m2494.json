@@ -1,0 +1,40 @@
+{
+  "postType": "rom",
+  "name": "crDroid 12.7",
+  "tag": "crDroid",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "nemo",
+  "androidVersion": "16",
+  "ruiVersion": 2,
+  "author": "Debayan Kar",
+  "buildDate": "2026-02-14",
+  "banner": "telegram-message:-1001384382397:2494",
+  "changelog": [
+    "QPR2 release",
+    "Applied Expressive theme to doze",
+    "Backported 5.10 BPF on kernel",
+    "Switched to OSS MediaTek WiFi lib",
+    "Disabled Audio HAL PCM dumping",
+    "Dropped MediaTek remote submix HAL",
+    "Dropped muxreport binary",
+    "Added dynamic sensors HAL support",
+    "Dropped debug.sf.disable_client_composition_cache",
+    "Updated Video Telephony system blobs from rothko OS3.0.4.0.WNNEUXM",
+    "Updated AIDL Thermal HAL from android-16.0.0_r3"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "download": {
+    "buildType": "Vanilla",
+    "fileSize": "1.6GB",
+    "url": "https://crdroid.net/nemo/12"
+  },
+  "links": {
+    "sources": "https://github.com/crdroidandroid/",
+    "screenshots": "https://t.me/kardebayanchannel/544",
+    "supportGroup": "https://t.me/rm6785Official",
+    "donate": "https://t.me/kardebayanchannel/515"
+  }
+}

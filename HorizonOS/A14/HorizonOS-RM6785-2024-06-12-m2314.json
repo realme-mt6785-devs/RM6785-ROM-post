@@ -1,0 +1,37 @@
+{
+  "postType": "rom",
+  "name": "Horizon OS v6.5 - Harlequin",
+  "tag": "HorizonOS",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "14",
+  "ruiVersion": 2,
+  "author": "Julius | WaitinnForUhh",
+  "buildDate": "2024-06-12",
+  "banner": "telegram-message:-1001384382397:2314",
+  "changelog": [
+    "Initial Release",
+    "May Security Patch",
+    "CTS Pass By Default [Basic | Device]"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)",
+    "Don't use custom Lock Screen clocks over google clocks. RIP System UI"
+  ],
+  "notes": [
+    "It is a Personal Project of Julius",
+    "Clean flash is mandatory!!!",
+    "Setup the device and wait for the rom to settle"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "2.73GB",
+    "url": "https://sourceforge.net/projects/horizonui/files/Android%2014/RM6785/HorizonUI-6.5-Harlequin-Official-RM6785-20240612.zip/download"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs",
+    "screenshots": "https://t.me/LucidGallery/110",
+    "supportGroup": "https://t.me/lucid_discussion_RM6785"
+  }
+}

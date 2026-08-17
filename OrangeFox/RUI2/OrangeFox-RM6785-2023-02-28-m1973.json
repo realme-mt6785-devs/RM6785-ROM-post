@@ -1,0 +1,34 @@
+{
+  "postType": "recovery",
+  "name": "OrangeFox Recovery Project-R11.1",
+  "tag": "OrangeFox",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "ruiVersion": 2,
+  "author": "@sres_lk",
+  "buildDate": "2023-02-28",
+  "banner": "telegram-message:-1001384382397:1973",
+  "changelog": [
+    "Initial stable build for realme 6/6i(Indian)/6s",
+    "Added some twrp stuff that was missing in previous build",
+    "Flashlight option removed"
+  ],
+  "bugs": [
+    "Decryption on Android 11+ ROMs",
+    "Flashlight"
+  ],
+  "notes": [
+    "Realme UI 2.0 based",
+    "F2FS and EROFS supported",
+    "Do not flash on realme 7/Narzo 30/ Narzo 20 Pro"
+  ],
+  "download": {
+    "fileSize": "66MB",
+    "url": "https://github.com/Good-Shadow-XD/android_device_realme_RMX2001/releases"
+  },
+  "links": {
+    "sources": "https://github.com/Good-Shadow-XD/android_device_realme_RMX2001",
+    "supportGroup": "https://t.me/RM6Official"
+  }
+}

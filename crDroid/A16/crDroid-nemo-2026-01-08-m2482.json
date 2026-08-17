@@ -1,0 +1,31 @@
+{
+  "postType": "rom",
+  "name": "crDroid 12.5",
+  "tag": "crDroid",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "nemo",
+  "androidVersion": "16",
+  "ruiVersion": 2,
+  "author": "Debayan Kar",
+  "buildDate": "2026-01-08",
+  "banner": "telegram-message:-1001384382397:2482",
+  "changelog": [
+    "Dropped useless vendor audio configs",
+    "Bumped zram size to 70% of actual ram",
+    "Disabled high performance transitions"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "download": {
+    "buildType": "Vanilla",
+    "fileSize": "1.5GB",
+    "url": "https://crdroid.net/nemo/12"
+  },
+  "links": {
+    "sources": "https://github.com/crdroidandroid/",
+    "screenshots": "https://t.me/kardebayanchannel/544",
+    "supportGroup": "https://t.me/rm6785Official"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "postType": "rom",
+  "name": "Project Sakura V9",
+  "tag": "SAKURA",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "14",
+  "ruiVersion": 2,
+  "author": "@WaitinnForUhh",
+  "buildDate": "2024-05-06",
+  "banner": "telegram-message:-1001384382397:2279",
+  "changelog": [
+    "Initial Release",
+    "Full changelogs: Here"
+  ],
+  "bugs": [
+    "Native Video Calling (ViLTE) And Voice Over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "CTS Pass By Default [Basic | Device]",
+    "Openela Kernel [4.14.341]",
+    "Based on April ASB (QPR2)",
+    "Clean Flash Is Mandatory"
+  ],
+  "download": {
+    "buildType": "GAPPS/VANILLA",
+    "fileSize": "1.3GB",
+    "url": "https://drive.google.com/drive/folders/14jE9OYDUk-L8Bn2o8ZWv6QvuP3jFNp-F?usp=sharing"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs",
+    "screenshots": "https://t.me/LucidGallery/39",
+    "supportGroup": "https://t.me/lucid_builds"
+  }
+}

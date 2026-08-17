@@ -1,0 +1,35 @@
+{
+  "postType": "rom",
+  "name": "Matrixx 11.2.5",
+  "tag": "Matrixx",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RMX2001",
+  "androidVersion": "15",
+  "ruiVersion": 2,
+  "author": "@EvilAnsh",
+  "buildDate": "2025-03-04",
+  "banner": "telegram-message:-1001384382397:2390",
+  "changelog": [
+    "Feb, 2025 Security Patch",
+    "Added FM radio",
+    "Full changelog: [MATRIXX](https://www.projectmatrixx.org/changelog)"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "4.14.356 Samar's Kernel",
+    "Clean Flash recommended"
+  ],
+  "download": {
+    "buildType": "VANILLA/GAPPS",
+    "fileSize": "1.4GB | 2.4GB",
+    "url": "https://sourceforge.net/projects/evilanshbuild/files/RM6785/Matrixx/"
+  },
+  "links": {
+    "sources": "https://github.com/EvilAnsh/android_device_realme_RM6785-common",
+    "screenshots": "https://t.me/AnshPrjkt/979?single",
+    "supportGroup": "https://t.me/Anshbuilds"
+  }
+}

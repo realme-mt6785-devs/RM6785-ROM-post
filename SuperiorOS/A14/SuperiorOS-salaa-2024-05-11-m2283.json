@@ -1,0 +1,35 @@
+{
+  "postType": "rom",
+  "name": "SuperiorOS",
+  "tag": "SuperiorOS",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "salaa",
+  "androidVersion": "14",
+  "ruiVersion": 3,
+  "author": "@shitijnotop",
+  "buildDate": "2024-05-11",
+  "banner": "telegram-message:-1001384382397:2283",
+  "changelog": [
+    "Initial Build",
+    "April Security Patch",
+    "Superior OS Launcher"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "Strombreaker Kernel Latest",
+    "Clean Flash mandatory"
+  ],
+  "download": {
+    "buildType": "Vanilla/GApps",
+    "fileSize": "1.2GB | 1.8GB",
+    "url": "https://t.me/shitijsprojectschat/1426/3937"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs/android_device_realme_salaa",
+    "screenshots": "https://t.me/shitijsprojectschat/755/3823",
+    "supportGroup": "https://t.me/shitijsprojectschat"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "postType": "rom",
+  "name": "crDroid 11.8",
+  "tag": "crDroid",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "salaa",
+  "androidVersion": "15",
+  "ruiVersion": 3,
+  "author": "Debayan Kar",
+  "buildDate": "2025-08-26",
+  "banner": "telegram-message:-1001384382397:2432",
+  "changelog": [
+    "Drop BesLoudness",
+    "Drop mtk pkm service",
+    "Drop atcid stack",
+    "Shut hwcomposer spam",
+    "Silence HWUI logspam",
+    "Enable support for background blur",
+    "Disable FRP by default",
+    "Add BCR",
+    "Update light HAL",
+    "Silence gralloc4 logspam",
+    "Silence MDP logspam"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "download": {
+    "buildType": "Vanilla",
+    "fileSize": "1.4GB",
+    "url": "https://sourceforge.net/projects/crdroid/files/salaa/11.x/crDroidAndroid-15.0-20250826-salaa-v11.8.zip/download"
+  },
+  "links": {
+    "sources": "https://github.com/crdroidandroid/",
+    "screenshots": "https://t.me/kardebayanchannel/544",
+    "supportGroup": "https://t.me/rm6785Official"
+  }
+}

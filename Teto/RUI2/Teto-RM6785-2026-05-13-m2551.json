@@ -1,0 +1,39 @@
+{
+  "postType": "kernel",
+  "name": "Teto Kernel 1.1",
+  "tag": "Teto",
+  "stability": "STABLE",
+  "device": "RM6785",
+  "kernelVersion": "4.14.336",
+  "ruiVersion": 2,
+  "author": "[Prime TITAN CameraMan](https://github.com/prime-titan-cameraman)",
+  "buildDate": "2026-05-13",
+  "banner": "telegram-message:-1001384382397:2551",
+  "changelog": [
+    "path_umount backported",
+    "Fixed can't detect root issues for spoof LK users",
+    "Droidspace support, no Firewall Support (UFW/Fail2ban)",
+    "KernelSU-Next 3.2.0 | ReSukiSU 4.1.0 included",
+    "No SuSFS included",
+    "Changes from the previous version",
+    "Multi-manager support for ReSukiSU variant"
+  ],
+  "bugs": [
+    "ReZygisk may cause bootloop. If does, use NeoZygisk",
+    "You tell me..."
+  ],
+  "notes": [
+    "Thanks to [Elohim](https://github.com/elohim-etz), for the root detection issue fix/patch",
+    "If the device feels laggy after boot then clear Dalvik Art & Cache after flashing the kernel",
+    "[KernelSU-Next](https://github.com/KernelSU-Next/KernelSU-Next/releases/download/v3.2.0/KernelSU_Next_v3.2.0-spoofed_33129-release.apk) | [ReSukiSU](https://t.me/ReSukiSU/5/155022?single) Manager",
+    "[Droidspace App](https://github.com/ravindu644/Droidspaces-OSS)"
+  ],
+  "download": {
+    "fileSize": "16.50 MB",
+    "url": "https://github.com/Prime-TITAN-CameraMan/android_kernel_realme_nemo/releases/tag/v1.1"
+  },
+  "links": {
+    "sources": "https://github.com/Prime-TITAN-CameraMan/android_kernel_realme_nemo",
+    "supportGroup": "https://t.me/RM6Official"
+  }
+}

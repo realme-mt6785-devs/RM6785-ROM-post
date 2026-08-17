@@ -1,0 +1,34 @@
+{
+  "postType": "rom",
+  "name": "risingTechOSS v1.2.5",
+  "tag": "risingTechOSS",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "13",
+  "ruiVersion": 2,
+  "author": "@EvilAnsh",
+  "buildDate": "2023-07-29",
+  "banner": "telegram-message:-1001384382397:2113",
+  "changelog": [
+    "Security Patch: July 5 2023",
+    "4.14.320 Lineage Plus Kernel",
+    "[Source Changelog](https://t.me/riceDroidNews/781)"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "Recommended Recoveries: [OFRP](https://t.me/AnshPrjkts/75) | [PBRP](https://t.me/AnshPrjkts/124) | [SHRP](https://t.me/AnshPrjkts/104)"
+  ],
+  "download": {
+    "buildType": "VANILLA/GAPPS",
+    "fileSize": "1.20GB | 1.83GB",
+    "url": "https://sourceforge.net/projects/evilanshbuild/files/RM6785/risingTechOSS/29-07-23/"
+  },
+  "links": {
+    "sources": "https://te.legra.ph/Sources-03-20",
+    "screenshots": "https://t.me/AnshPrjkts/219?single",
+    "supportGroup": "https://t.me/Anshbuilds"
+  }
+}

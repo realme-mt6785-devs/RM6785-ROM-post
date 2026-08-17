@@ -1,0 +1,39 @@
+{
+  "postType": "rom",
+  "name": "crDroid 10.5",
+  "tag": "crDroid",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "salaa",
+  "androidVersion": "14",
+  "ruiVersion": 3,
+  "author": "@shitijnotop",
+  "buildDate": "2024-05-14",
+  "banner": "telegram-message:-1001384382397:2289",
+  "changelog": [
+    "[Full Changelog](https://crdroid.net/blog/2024-05-12-crDroid-10.5-released)",
+    "Initial Build",
+    "CTS Passed by default",
+    "May Security Patch",
+    "crDroid Launcherr"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "Strombreaker Kernel Latest",
+    "Clean Flash Mandatory",
+    "Firmware Included",
+    "Give some time to settle the rum"
+  ],
+  "download": {
+    "buildType": "Vanilla Only",
+    "fileSize": "1.3GB",
+    "url": "https://t.me/shitijsprojectschat/1426/4187"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs/android_device_realme_salaa",
+    "screenshots": "https://t.me/shitijsprojectschat/755/4179",
+    "supportGroup": "https://t.me/shitijsprojectschat"
+  }
+}

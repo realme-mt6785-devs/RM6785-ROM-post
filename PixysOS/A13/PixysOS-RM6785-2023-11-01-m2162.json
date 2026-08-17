@@ -1,0 +1,42 @@
+{
+  "postType": "rom",
+  "name": "PixysOS-v6.3.4",
+  "tag": "PixysOS",
+  "stability": "BETA",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "13",
+  "ruiVersion": 2,
+  "author": "@AbzRaider",
+  "buildDate": "2023-11-01",
+  "banner": "telegram-message:-1001384382397:2162",
+  "changelog": [
+    "Vendor and Firmware from RMX2001_11_C.16",
+    "Enabled sustainedPeformance Overlay Config.",
+    "Updated PowerHints from begonia ( Improved UI Performance and Battery Life )",
+    "Render ahead for 12 frames to fix QS lags",
+    "Add suspend mode to ram on deepsleep ( Better idle drain )",
+    "Added RealmeLab ( With new optimized Performance Scripts )",
+    "Improved Thermal Management with newer configs",
+    "Shipped LineagePlus Kernel (with several improvements and mtk-alps backports)",
+    "Reduced Audio Distortion Issues",
+    "Fixed RAM Management Issues",
+    "Fixed Logspam from GED,netd,hwc,etc. ( Improves Stability )"
+  ],
+  "bugs": [
+    "RealmeParts dead on enforcing."
+  ],
+  "notes": [
+    "Permissive for now"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "1.69GB | 1.96GB",
+    "url": "https://onedrive-vercel-index-kohl-eight-30.vercel.app/AbzROMS/PixysOS-v6.3.4-GAPPS-RM6785-UNOFFICIAL-COMMUNITY.zip"
+  },
+  "links": {
+    "sources": "https://gist.githubusercontent.com/AbzRaider/fd5f7320ecc98db5de8e5b6df8bdb3ae/raw/2f2a492d1df663ec444be1d580114c978649b973/gistfile1.txt",
+    "screenshots": "https://t.me/kernelspacedisc/7308/7756",
+    "supportGroup": "https://t.me/kernelspacedisc/7302"
+  }
+}

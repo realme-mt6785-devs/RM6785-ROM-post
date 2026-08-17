@@ -1,0 +1,34 @@
+{
+  "postType": "kernel",
+  "name": "Lineage Plus",
+  "tag": "LPlus",
+  "stability": "STABLE",
+  "device": "RM6785",
+  "kernelVersion": "4.14.326",
+  "ruiVersion": 2,
+  "author": "@AbzRaider",
+  "buildDate": "2023-10-10",
+  "banner": "telegram-message:-1001384382397:2156",
+  "changelog": [
+    "4.14.327 Stable Release",
+    "Patched KSU's Major vulnerability (Updated to 0.6.9)",
+    "Compiled with Proton Clang 16 ( Full Link Time Optimisation )"
+  ],
+  "bugs": [
+    "You Tell Me"
+  ],
+  "notes": [
+    "Hotfix Update",
+    "This is a balanced kernel which focuses on performance stability",
+    "If you wish to use Magisk instead of KernelSU , just dont install KSU apk , Magisk will work perfectly fine.",
+    "KSU APK - Link"
+  ],
+  "download": {
+    "fileSize": "20MB",
+    "url": "https://github.com/AbzRaider/android_kernel_realme_mt6785/releases/tag/Stable.R2"
+  },
+  "links": {
+    "sources": "https://github.com/AbzRaider/android_kernel_realme_mt6785/tree/Stable.R2",
+    "supportGroup": "https://t.me/kernelspacedisc"
+  }
+}

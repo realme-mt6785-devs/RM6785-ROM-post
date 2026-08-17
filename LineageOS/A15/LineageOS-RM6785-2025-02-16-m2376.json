@@ -1,0 +1,34 @@
+{
+  "postType": "rom",
+  "name": "LineageOS-22.0",
+  "tag": "LineageOS",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "15",
+  "ruiVersion": 2,
+  "author": "@Ineffabletg",
+  "buildDate": "2025-02-16",
+  "banner": "telegram-message:-1001384382397:2376",
+  "changelog": [
+    "Based on A15 Feb ASB"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "4.14.355-TakoYaki-R3 Kernel by @elohim_etz",
+    "No KSU next support",
+    "[Extra notes](https://t.me/ineffablebuilds/11)"
+  ],
+  "download": {
+    "buildType": "VANILLA",
+    "fileSize": "1.3GB",
+    "url": "https://t.me/ineffablebuilds/12"
+  },
+  "links": {
+    "sources": "https://github.com/elohim-etz/android_device_RM6785",
+    "screenshots": "https://t.me/ineffablebuilds/11?single&comment=136",
+    "supportGroup": "https://t.me/ineffablebuildschat"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "postType": "recovery",
+  "name": "OrangeFox Recovery Project-R11.1",
+  "tag": "OrangeFox",
+  "stability": "BETA",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "12",
+  "ruiVersion": 2,
+  "author": "@EvilAnsh",
+  "buildDate": "2023-06-12",
+  "banner": "telegram-message:-1001384382397:2080",
+  "changelog": [
+    "Initial beta build",
+    "Support decryption for AOSP ROMs with Android 12.1 and higher."
+  ],
+  "bugs": [
+    "F2FS and EROFS not working"
+  ],
+  "notes": [
+    "Realme UI 2.0 based"
+  ],
+  "download": {
+    "fileSize": "64MB | 98MB",
+    "url": "https://t.me/FilesArchieve/232?single"
+  },
+  "links": {
+    "sources": "https://github.com/OrangeFoxRecovery",
+    "screenshots": "https://t.me/FilesArchieve/230?single",
+    "supportGroup": "https://t.me/AnshBuilds"
+  }
+}

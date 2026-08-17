@@ -1,0 +1,48 @@
+{
+  "postType": "rom",
+  "name": "Cherish OS-3.3",
+  "tag": "CherishOS",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "12",
+  "ruiVersion": 2,
+  "author": "@P_AA_ii_N",
+  "buildDate": "2022-01-07",
+  "banner": "telegram-message:-1001384382397:1564",
+  "changelog": [
+    "Sources upstream",
+    "January 2022 ASB",
+    "Included bufferfix (vf lens)",
+    "Update blobs from RMX2001_11_C.15",
+    "Added GrapheneOS Camera, Xrecorder, PM Control",
+    "Added Freeform Multiwindow (dev option)",
+    "Added min-max refresh rate config (display)",
+    "Added Natural and Boosted display color modes",
+    "Fix coordinates physical power & fp sensor values",
+    "Fixed colour flicker",
+    "Fixed NFC ( EU )",
+    "Misc improvements"
+  ],
+  "bugs": [
+    "Built-in screen recorder",
+    "Permissive SELinux"
+  ],
+  "notes": [
+    "Based on RealmeUI 2.0",
+    "Gapps are included",
+    "CTS passed by default",
+    "if you are flashing from rmui 2 no problem,you can flash normally as usual.",
+    "If you are flashing from RMUI 1.0 then first flash rom then twrp 2.0 then format then reboot."
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "1.65 GB",
+    "url": "https://www.pling.com/p/1669951/"
+  },
+  "links": {
+    "sources": "https://github.com/PAAiiN",
+    "screenshots": "https://t.me/PAiNsHUB0/119?single",
+    "supportGroup": "https://t.me/CherishOS_RM6785"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "postType": "rom",
+  "name": "HorizonUI 6.5",
+  "tag": "HorizonOS",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "salaa",
+  "androidVersion": "14",
+  "ruiVersion": 3,
+  "author": "Julius / ジュリアス x [SHITIJ.dev](https://t.me/shitijnotop)",
+  "buildDate": "2024-06-12",
+  "banner": "telegram-message:-1001384382397:2316",
+  "changelog": [
+    "Initial Build",
+    "May Security Patch",
+    "PIxel Launcher"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)",
+    "Don't use custom Lock Screen clocks over google clocks. RIP System UI"
+  ],
+  "notes": [
+    "Strombreaker Kernel Latest",
+    "Flash Firmware",
+    "Give some time to settle the rum",
+    "Basic Call Recorder Included",
+    "Google Play Services Certification and Device Integrity passed by default"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "2.5GB",
+    "url": "https://t.me/shitijsprojectschat/1426/14156"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs/android_device_realme_salaa",
+    "screenshots": "https://t.me/shitijsprojectschat/755/14006",
+    "supportGroup": "https://t.me/shitijsprojectschat"
+  }
+}

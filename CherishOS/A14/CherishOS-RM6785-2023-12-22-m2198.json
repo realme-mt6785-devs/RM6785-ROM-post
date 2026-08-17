@@ -1,0 +1,35 @@
+{
+  "postType": "rom",
+  "name": "CherishOS 5.1",
+  "tag": "CherishOS",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "14",
+  "ruiVersion": 2,
+  "author": "@EvilAnsh",
+  "buildDate": "2023-12-22",
+  "banner": "telegram-message:-1001384382397:2198",
+  "changelog": [
+    "Initial Android 14 build for RM6785",
+    "Dec Security Patch",
+    "Full changelog: [DEVICE](https://graph.org/CherishOS-v51-12-23) | [CHERISH](https://t.me/CherishOS/1660)"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "4.14.334 psionic Kernel",
+    "Clean Flash is compulsory (for the users who are coming from Android 13.)"
+  ],
+  "download": {
+    "buildType": "VANILLA/GAPPS",
+    "fileSize": "1.12GB | 1.75GB",
+    "url": "https://www.pling.com/p/1669951/"
+  },
+  "links": {
+    "sources": "https://github.com/CherishOS-Devices/android_device_realme_RM6785",
+    "screenshots": "https://t.me/AnshPrjkts/581?single",
+    "supportGroup": "https://t.me/Anshbuilds"
+  }
+}

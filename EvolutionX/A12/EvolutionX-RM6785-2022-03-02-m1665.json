@@ -1,0 +1,45 @@
+{
+  "postType": "rom",
+  "name": "Evolution X Snow 6.1",
+  "tag": "EvolutionX",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "12",
+  "ruiVersion": 2,
+  "author": "@Gofaraway71",
+  "buildDate": "2022-03-02",
+  "banner": "telegram-message:-1001384382397:1665",
+  "changelog": [
+    "android-12.0.0_r32 build with Feb ASB",
+    "Included bufferfix",
+    "Added F2FS support",
+    "Offline charging support",
+    "Upstreamed to 4.14.266 kernel",
+    "Addons apps:CameraGo,Telegram,..",
+    "Unlimited Google Photos storage.",
+    "Prebuilt screen recorder.",
+    "Add Realme Dirac",
+    "Include face unlock"
+  ],
+  "bugs": [
+    "Permissive SELinux",
+    "Fingerprint",
+    "you tell"
+  ],
+  "notes": [
+    "Safety net pass by default",
+    "Includes RUI2 firmware",
+    "Flashing Guide: HERE",
+    "Latest TWRP"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "url": "https://drive.google.com/file/d/1fDCywyO8bMXeNk7gRy6BwcZtI4T5TfdN/view?usp=sharing"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs",
+    "screenshots": "https://t.me/rm6785_gofaraway/41608?single",
+    "supportGroup": "https://t.me/rm6785_gofaraway"
+  }
+}

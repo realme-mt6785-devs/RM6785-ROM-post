@@ -1,0 +1,41 @@
+{
+  "postType": "rom",
+  "name": "DerpFest-16.2",
+  "tag": "DerpFest",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "16",
+  "ruiVersion": 2,
+  "author": "[MeowDroider](https://t.me/MuhammadIJC)",
+  "buildDate": "2026-04-13",
+  "banner": "telegram-message:-1001384382397:2535",
+  "changelog": [
+    "Synced with latest Derp source",
+    "April Security update",
+    "Dynamic Bar(Like dynamic island)",
+    "Android 11 QS style with many icons shapes.",
+    "Much more stuff"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "Realme UI 2.0 based",
+    "A valid keybox is required to achieve play integrity.",
+    "Achieve strong integrity without modules using below steps:",
+    "Disable forcing strong (enable top toggle in spoofing settings)",
+    "Load valid keybox.xml and pif.json in spoofing",
+    "Get rid of any integrity related modules if you have any"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "2.4GB",
+    "url": "https://drive.google.com/drive/folders/1iKWnmCwZkWwBc2Njfhx-qu3vMdrLO_5-?usp=drive_link"
+  },
+  "links": {
+    "sources": "https://github.com/elohim-etz/android_device_realme_RM6785",
+    "screenshots": "https://derpfest.org/",
+    "supportGroup": "https://t.me/+9c3pZqVwyKU3Mzdk"
+  }
+}

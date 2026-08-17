@@ -1,0 +1,35 @@
+{
+  "postType": "rom",
+  "name": "Infinity-X 3.7",
+  "tag": "InfinityX",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "16",
+  "ruiVersion": 2,
+  "author": "𝙴𝙻𝙾𝙷𝙸𝙼",
+  "buildDate": "2026-02-19",
+  "banner": "telegram-message:-1001384382397:2501",
+  "changelog": [
+    "Synced with latest source (19-02-2026)",
+    "Full changelog: [DEVICE](https://raw.githubusercontent.com/ProjectInfinity-X/official_devices/refs/heads/16/changelog/RM6785.txt) | [SOURCE](https://t.me/ProjectInfinityX/1800)"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "Initial QPR2 release",
+    "KSU Included ([backslashxx](https://github.com/backslashxx/KernelSU/releases/latest))",
+    "Realme UI 2.0 based"
+  ],
+  "download": {
+    "buildType": "GAPPS | VANILLA",
+    "fileSize": "1.8GB | 1.4GB",
+    "url": "https://projectinfinity-x.com/downloads/RM6785"
+  },
+  "links": {
+    "sources": "https://github.com/Infinity-X-Devices/android_device_realme_RM6785",
+    "screenshots": "https://t.me/ProjectInfinityX/1775",
+    "supportGroup": "https://t.me/RM6785_Chat"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "postType": "rom",
+  "name": "RisingOS Revived 8.0",
+  "tag": "risingOS",
+  "stability": "BETA",
+  "releaseType": "UNOFFICIAL",
+  "device": "RMX2001",
+  "androidVersion": "16",
+  "ruiVersion": 2,
+  "author": "@EvilAnsh",
+  "buildDate": "2025-07-30",
+  "banner": "telegram-message:-1001384382397:2418",
+  "changelog": [
+    "Initial Build",
+    "July, 2025 Security Patch"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "4.14.348 openela Kernel",
+    "Clean Flash recommended"
+  ],
+  "download": {
+    "buildType": "MICROG/CORE",
+    "fileSize": "1.9GB | 2.1GB",
+    "url": "https://graph.org/RisingOS-Revived-for-RMX2001L1-07-30-3"
+  },
+  "links": {
+    "sources": "https://github.com/EvilAnsh/android_device_realme_RM6785-common",
+    "screenshots": "https://t.me/AnshPrjkt/1045?single",
+    "supportGroup": "https://t.me/Anshbuilds"
+  }
+}

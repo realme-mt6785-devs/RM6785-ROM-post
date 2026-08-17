@@ -1,0 +1,38 @@
+{
+  "postType": "rom",
+  "name": "BananaDroid",
+  "tag": "BananaDroid",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "13",
+  "ruiVersion": 2,
+  "author": "@No_PaiiN_No_GaiiN",
+  "buildDate": "2023-06-10",
+  "banner": "telegram-message:-1001384382397:2078",
+  "changelog": [
+    "Security Patch: May 5 2023",
+    "Import Cheetah's build fingerprint and description",
+    "Enable all of the MediaTek performance options",
+    "Enable all of the available colour modes",
+    "Enabled LTE Carrier Aggregation (CA)",
+    "Upstreamed kernel to 4.14.315",
+    "Source Changelog"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "NikGapps core recommended"
+  ],
+  "download": {
+    "buildType": "VANILLA",
+    "fileSize": "1.28GB",
+    "url": "https://t.me/PythonBuilds/575"
+  },
+  "links": {
+    "sources": "https://telegra.ph/Sources-02-23",
+    "screenshots": "https://t.me/PythonBuilds/525?single",
+    "supportGroup": "https://t.me/Python_Builds_chat"
+  }
+}

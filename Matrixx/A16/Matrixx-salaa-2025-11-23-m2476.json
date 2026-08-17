@@ -1,0 +1,35 @@
+{
+  "postType": "rom",
+  "name": "Matrixx 12.1.0",
+  "tag": "Matrixx",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "salaa",
+  "androidVersion": "16",
+  "ruiVersion": 3,
+  "author": "@EvilAnsh",
+  "buildDate": "2025-11-23",
+  "banner": "telegram-message:-1001384382397:2476",
+  "changelog": [
+    "Synced with latest v12.1.0 source",
+    "Full changelog: [DEVICE](https://github.com/Matrixx-Devices/android_vendor_MatrixxOTA/raw/refs/heads/16.0/changelogs/salaa.md)"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "Recommended GAPPS: [Here](https://github.com/BiTGApps/release/releases/download/v5.2-release/BiTGApps-arm64-16.0.0-v5.2-ROAR.zip)",
+    "4.14.336 Stormbreaker Kernel",
+    "Clean Flash recommended"
+  ],
+  "download": {
+    "buildType": "VANILLA",
+    "fileSize": "1.5GB",
+    "url": "https://sourceforge.net/projects/projectmatrixx/files/Android-16/salaa/Matrixx-v12.1.0-Official-salaa-Vanilla-20251122-2144.zip/download"
+  },
+  "links": {
+    "sources": "https://github.com/Matrixx-Devices/device_realme_salaa",
+    "screenshots": "https://t.me/AnshPrjkt/1103?single",
+    "supportGroup": "https://t.me/Anshbuilds"
+  }
+}

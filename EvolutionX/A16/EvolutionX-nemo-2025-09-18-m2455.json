@@ -1,0 +1,33 @@
+{
+  "postType": "rom",
+  "name": "Evolution-X 11.2",
+  "tag": "EvolutionX",
+  "stability": "BETA",
+  "releaseType": "UNOFFICIAL",
+  "device": "nemo",
+  "androidVersion": "16",
+  "ruiVersion": 2,
+  "author": "@EvilAnsh",
+  "buildDate": "2025-09-18",
+  "banner": "telegram-message:-1001384382397:2455",
+  "changelog": [
+    "September, 2025 security patch",
+    "Kernel built with full LLVM",
+    "Fixed \"Charging Rapidly\" info on lockscreen",
+    "Included new patched lk",
+    "Update S blobs to RMX2156 F.19"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "2.9GB",
+    "url": "https://my-index-azure.vercel.app/EvilAnsh/nemo/Evolution-X/EvolutionX-16.0-20250918-nemo-11.2-Unofficial.zip"
+  },
+  "links": {
+    "sources": "https://github.com/Evolution-X",
+    "screenshots": "https://t.me/EvolutionX/886582?single",
+    "supportGroup": "https://t.me/AnshBuilds"
+  }
+}

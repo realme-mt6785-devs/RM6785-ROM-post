@@ -1,0 +1,36 @@
+{
+  "postType": "rom",
+  "name": "Halcyon Bloom",
+  "tag": "Halcyon",
+  "stability": "BETA",
+  "releaseType": "OFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "16",
+  "ruiVersion": 2,
+  "author": "rypl.",
+  "buildDate": "2026-04-14",
+  "banner": "telegram-message:-1001384382397:2537",
+  "changelog": [
+    "Initial Build",
+    "Merged April secpatch",
+    "Other optimization included"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "LK locked patches shipped, thanks to @antagonizzzt and @R0rt1z2",
+    "No KSU Support",
+    "Based on Axion Trees, thanks to [𝙴𝙻𝙾𝙷𝙸𝙼](https://t.me/elohim152)"
+  ],
+  "download": {
+    "buildType": "VANILLA/GAPPS",
+    "fileSize": "1.29GB | 2.02GB",
+    "url": "https://wiki.hlcyn.org/devices/RM6785"
+  },
+  "links": {
+    "sources": "https://github.com/halcyonproject",
+    "screenshots": "https://t.me/ssplij",
+    "supportGroup": "https://t.me/sirkelrktdnt"
+  }
+}

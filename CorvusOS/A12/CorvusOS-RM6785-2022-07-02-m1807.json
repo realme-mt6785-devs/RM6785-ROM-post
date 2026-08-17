@@ -1,0 +1,41 @@
+{
+  "postType": "rom",
+  "name": "Corvus OS-vS3.2 Vindicate",
+  "tag": "CorvusOS",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "12",
+  "ruiVersion": 2,
+  "author": "@P_AA_ii_N",
+  "buildDate": "2022-07-02",
+  "banner": "telegram-message:-1001384382397:1807",
+  "changelog": [
+    "Initial Official Build",
+    "June 2022 ASB",
+    "Sources upstream",
+    "Drop Boost stune on app launch",
+    "Drop Allow raising sched_boost to 6 levels",
+    "Drop Boost foreground to maximum when launching an app",
+    "Improved stability wifi network",
+    "Fixed Low Mic Issue",
+    "Improved Smoothness",
+    "Improved performance",
+    "Fixed 90hz reverts back to 60hz after reboot",
+    "Misc improvements"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)",
+    "IPv6 Tethering"
+  ],
+  "download": {
+    "buildType": "GAPPS/VANILLA",
+    "fileSize": "1.57GB | 1.07GB",
+    "url": "https://downloads.corvusrom.com/?dir=RM6785"
+  },
+  "links": {
+    "sources": "https://telegra.ph/Sources-04-27",
+    "screenshots": "https://t.me/PAiNsGALLeRYRM6785/321?single",
+    "supportGroup": "https://t.me/CorvusRM6785"
+  }
+}

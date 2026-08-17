@@ -1,0 +1,37 @@
+{
+  "postType": "rom",
+  "name": "FluidOS-12.0 V Soda-2.0",
+  "tag": "FluidOS",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "12",
+  "ruiVersion": 2,
+  "author": "@adityashaw2",
+  "buildDate": "2021-11-28",
+  "banner": "telegram-message:-1001384382397:1501",
+  "changelog": [
+    "Rebranded to RM6785 (Supported devices: R6, R6i(Indian), R6s, R7, R Narzo 20 Pro, R Narzo 30 4G)",
+    "Fluid Sources Upstream",
+    "November Security Patch",
+    "Custom vendor and source built kernel",
+    "Fixed VoLTE",
+    "AUX Working"
+  ],
+  "bugs": [
+    "Built-in screen recording",
+    "NFC",
+    "Permissive SELinux"
+  ],
+  "notes": [
+    "Based on RealmeUI 2.0"
+  ],
+  "download": {
+    "buildType": "VANILLA",
+    "fileSize": "938MB",
+    "url": "https://drive.google.com/uc?id=1lK6SxaaKeGbakIE3qm2o2UgNfl7bsHn4&export=download"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs"
+  }
+}

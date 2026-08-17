@@ -1,0 +1,34 @@
+{
+  "postType": "rom",
+  "name": "Project Blaze 3.1",
+  "tag": "Blaze",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "14",
+  "ruiVersion": 2,
+  "author": "@EvilAnsh",
+  "buildDate": "2024-02-18",
+  "banner": "telegram-message:-1001384382397:2232",
+  "changelog": [
+    "Feb Security Patch",
+    "Full changelog: [DEVICE](https://raw.githubusercontent.com/ProjectBlaze/official_devices/14/device/RM6785.txt) | [BLAZE](https://github.com/ProjectBlaze/official_devices/blob/14/changelog.md)"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "4.14.336 psionic Kernel",
+    "Dirty flash from previous version only! (Otherwise do a clean flash)"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "1.98GB",
+    "url": "https://www.projectblaze.in/"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs/android_device_realme_RM6785-common",
+    "screenshots": "https://t.me/AnshPrjkts/635?single",
+    "supportGroup": "https://t.me/Anshbuilds"
+  }
+}

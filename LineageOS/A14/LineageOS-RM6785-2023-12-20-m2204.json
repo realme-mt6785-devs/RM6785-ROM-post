@@ -1,0 +1,36 @@
+{
+  "postType": "rom",
+  "name": "LineageOS-21.0",
+  "tag": "LineageOS",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "14",
+  "ruiVersion": 2,
+  "author": "SamarV-121",
+  "buildDate": "2023-12-20",
+  "banner": "telegram-message:-1001384382397:2204",
+  "changelog": [
+    "Based on QPR1 and Dec ASB (android-14.0.0_r17)",
+    "Lineage source upstream",
+    "Added customizable lockscreen clocks",
+    "Upstreamed kernel to 4.14.333"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "Use recovery mentioned in the post"
+  ],
+  "download": {
+    "buildType": "VANILLA/GAPPS",
+    "fileSize": "1.2GB | 1.5GB",
+    "url": "https://www.samarv121.dev/lineageos-21-RM6785"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs",
+    "screenshots": "https://www.samarv121.dev/lineageos-21-RM6785#screenshots",
+    "supportGroup": "https://telegram.dog/lineage_RM6785",
+    "donate": "https://donate.samarv121.dev/"
+  }
+}

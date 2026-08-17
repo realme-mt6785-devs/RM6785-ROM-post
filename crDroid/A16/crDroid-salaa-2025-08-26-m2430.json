@@ -1,0 +1,29 @@
+{
+  "postType": "rom",
+  "name": "crDroid 12.0-BETA",
+  "tag": "crDroid",
+  "stability": "BETA",
+  "releaseType": "UNOFFICIAL",
+  "device": "salaa",
+  "androidVersion": "16",
+  "ruiVersion": 3,
+  "author": "Debayan Kar",
+  "buildDate": "2025-08-26",
+  "banner": "telegram-message:-1001384382397:2430",
+  "changelog": [
+    "Initial build"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "download": {
+    "buildType": "Vanilla",
+    "fileSize": "1.4GB",
+    "url": "https://sourceforge.net/projects/kardebayan/files/salaa/crDroidAndroid-16.0-20250826-salaa-v12.0-BETA.zip/download"
+  },
+  "links": {
+    "sources": "https://github.com/crdroidandroid/",
+    "screenshots": "https://t.me/kardebayanchannel/544",
+    "supportGroup": "https://t.me/rm6785Official"
+  }
+}

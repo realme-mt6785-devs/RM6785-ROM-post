@@ -1,0 +1,23 @@
+{
+  "postType": "rom",
+  "name": "For tree and kernel: @SamarV121, @officialputuid",
+  "tag": "CherishOS",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 2,
+  "author": "@P_AA_ii_N",
+  "buildDate": "2021-11-03",
+  "banner": "telegram-message:-1001384382397:1442",
+  "changelog": [
+    "See original channel post"
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "download": {
+    "url": "https://drive.google.com/file/d/1qbihVRwjtSoHCcq3NSB1mXjz1V4uBa3o/view?usp=drivesdk"
+  },
+  "links": {}
+}

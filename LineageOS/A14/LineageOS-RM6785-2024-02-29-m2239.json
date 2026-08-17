@@ -1,0 +1,37 @@
+{
+  "postType": "rom",
+  "name": "LineageOS-21.0",
+  "tag": "LineageOS",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "14",
+  "ruiVersion": 2,
+  "author": "SamarV-121",
+  "buildDate": "2024-02-29",
+  "banner": "telegram-message:-1001384382397:2239",
+  "changelog": [
+    "February ASB (android-14.0.0_r25)",
+    "Fixed Play Integrity out-of-the-box (MEETS_DEVICE_INTEGRITY)",
+    "[LineageOS source upstream](https://lineageos.org/Changelog-28)",
+    "Upstreamed kernel to 4.14.336",
+    "Full changelog: [DEVICE](https://lineage.samarv121.dev/ota/RM6785/changes) | [LINEAGE](https://lineage.samarv121.dev/ota/changes)"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "Use recovery mentioned in the post"
+  ],
+  "download": {
+    "buildType": "VANILLA/GAPPS",
+    "fileSize": "1.3GB | 1.4GB",
+    "url": "https://www.samarv121.dev/lineageos-21-RM6785"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs",
+    "screenshots": "https://www.samarv121.dev/lineageos-21-RM6785#screenshots",
+    "supportGroup": "https://telegram.dog/lineage_RM6785",
+    "donate": "https://donate.samarv121.dev/"
+  }
+}

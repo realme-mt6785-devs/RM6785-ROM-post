@@ -1,0 +1,29 @@
+{
+  "postType": "rom",
+  "name": "Evolution-X 11.1",
+  "tag": "EvolutionX",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "nemo",
+  "androidVersion": "16",
+  "ruiVersion": 2,
+  "author": "@EvilAnsh",
+  "buildDate": "2025-09-01",
+  "banner": "telegram-message:-1001384382397:2444",
+  "changelog": [
+    "Initial Build"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "download": {
+    "buildType": "VANILLA/GAPPS",
+    "fileSize": "1.6GB | 2.6GB",
+    "url": "https://sourceforge.net/projects/evilanshbuild/files/RM6785/Evolution-X/01-09-2025/"
+  },
+  "links": {
+    "sources": "https://github.com/Evolution-X",
+    "screenshots": "https://t.me/AnshPrjkt/1059?single",
+    "supportGroup": "https://t.me/AnshBuilds"
+  }
+}

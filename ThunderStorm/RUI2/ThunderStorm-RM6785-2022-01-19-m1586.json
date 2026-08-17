@@ -1,0 +1,44 @@
+{
+  "postType": "kernel",
+  "name": "ThunderStorm V-1.4 LTO",
+  "tag": "ThunderStorm",
+  "stability": "BETA",
+  "device": "RM6785",
+  "kernelVersion": "4.14.238",
+  "ruiVersion": 2,
+  "author": "@Gorilla669",
+  "buildDate": "2022-01-19",
+  "banner": "telegram-message:-1001384382397:1586",
+  "changelog": [
+    "enable srandom",
+    "Set fingerprintd priority to max when screen is off",
+    "optimize file overwrites",
+    "mm: get 7% more pages in a pagevec",
+    "sched/tune: only force UX tasks to big cores",
+    "Added fsync on/off support.",
+    "zram: set default to lz4",
+    "int_sqrt: Improve 3x faster integer sqrt.",
+    "enable f2fs support (only for f2fs supported roms and recovery)",
+    "enable Clang Polly optimizations",
+    "cgroup: Implement Optionally killable freezer",
+    "disabled few loggings",
+    "and more"
+  ],
+  "bugs": [
+    "dt2w dead"
+  ],
+  "notes": [
+    "Only For Rui2 Based",
+    "Thanks to those from whom i took commits",
+    "Thanks to all the testers",
+    "Works on every RM6785 device"
+  ],
+  "download": {
+    "fileSize": "17MB",
+    "url": "https://sourceforge.net/projects/rui2-kernel/files/ThunderStorm-1.4/ThunderStorm-lto-KERNEL-RM6785.zip/download"
+  },
+  "links": {
+    "sources": "https://github.com/anupamroy777/kernel_realme_RM6785",
+    "supportGroup": "https://t.me/anupamroy777"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "postType": "rom",
+  "name": "CrDroid v10.2",
+  "tag": "CRDROID",
+  "stability": "BETA",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "14",
+  "ruiVersion": 2,
+  "author": "@WaitinnForUhh",
+  "buildDate": "2024-02-19",
+  "banner": "telegram-message:-1001384382397:2228",
+  "changelog": [
+    "[Here](https://telegra.ph/Cr-Droid-v102-02-19)"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "Pitch Black Recovery Recommended.",
+    "Change Device Code Name To RM6785 In Recovery.",
+    "Setup apn if calling/data not working.",
+    "Gallery is there."
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "2.17GB",
+    "url": "https://drive.google.com/file/d/1e9oUXrsh6XjbYnqjyDOUSErgi0hYrpCp/view?usp=sharing"
+  },
+  "links": {
+    "sources": "https://github.com/crdroidandroid/android",
+    "screenshots": "https://t.me/lucid_builds/2135",
+    "supportGroup": "https://t.me/lucid_builds"
+  }
+}

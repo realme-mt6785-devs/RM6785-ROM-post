@@ -1,0 +1,42 @@
+{
+  "postType": "rom",
+  "name": "LeafOS-2.0",
+  "tag": "LeafOS",
+  "stability": "BETA",
+  "releaseType": "OFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "13",
+  "ruiVersion": 2,
+  "author": "SamarV-121",
+  "buildDate": "2023-07-20",
+  "banner": "telegram-message:-1001384382397:2103",
+  "changelog": [
+    "Based on QPR3 and July ASB (android-13.0.0_r63)",
+    "Added option to switch QS panel styles (Now you can switch back to default android QS)",
+    "Added settings to configure QS column count",
+    "Added delete action to the screenshot chip",
+    "Enabled charger plug-in statusbar chip",
+    "Enabled shimmering waves effect on QS media player",
+    "Enabled haptics on lockscreen shortcuts",
+    "Transparent recents overview",
+    "Fixed crash in hotspot toggle in QS internet dialog when the device is connected",
+    "Added date, battery and clock click actions on QS header"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "Flash it using latest leaf recovery from Downloads"
+  ],
+  "download": {
+    "buildType": "VANILLA/microG/GAPPS",
+    "fileSize": "1.3GB | 1.4GB | 1.6GB",
+    "url": "https://forum.leafos.org/d/7-officialbeta130-leafos-20-for-realme-67-series"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs",
+    "screenshots": "https://www-preview.leafos.org/1725/",
+    "supportGroup": "https://t.me/leafos",
+    "donate": "https://donate.samarv121.wtf/"
+  }
+}

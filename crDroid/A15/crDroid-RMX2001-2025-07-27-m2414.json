@@ -1,0 +1,29 @@
+{
+  "postType": "rom",
+  "name": "crDroid 11.7",
+  "tag": "crDroid",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RMX2001",
+  "androidVersion": "15",
+  "ruiVersion": 2,
+  "author": "Debayan Kar",
+  "buildDate": "2025-07-27",
+  "banner": "telegram-message:-1001384382397:2414",
+  "changelog": [
+    "Initial build"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "download": {
+    "buildType": "Vanilla",
+    "fileSize": "1.5GB",
+    "url": "https://drive.google.com/open?id=1TWq8cpwlkpK1OyGg9zx5xudm_5rrx5V6"
+  },
+  "links": {
+    "sources": "https://github.com/PixelOS-Devices",
+    "screenshots": "https://t.me/kardebayanchannel/511?single",
+    "supportGroup": "https://t.me/rm6785Official"
+  }
+}

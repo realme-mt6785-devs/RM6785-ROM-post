@@ -1,0 +1,38 @@
+{
+  "postType": "rom",
+  "name": "PixelOS 16.2",
+  "tag": "PixelOS",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "nemo",
+  "androidVersion": "16",
+  "ruiVersion": 2,
+  "author": "Debayan Kar",
+  "buildDate": "2026-03-14",
+  "banner": "telegram-message:-1001384382397:2528",
+  "changelog": [
+    "Improved memory management and performance for 4GB ram users",
+    "Switched to common bugreport service definition",
+    "Drop unused wapi lib",
+    "Patched ImsService.apk extract time",
+    "Updated build fingerprint from RMX2001_11_C.18",
+    "Reduced heavy NFC debugging",
+    "Increased zram size to 75%",
+    "Stopped reserving space twice",
+    "Fixed touch screen gestures"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "2.25GB",
+    "url": "https://www.pixelos.net/download/nemo"
+  },
+  "links": {
+    "sources": "https://github.com/PixelOS-Devices",
+    "screenshots": "https://blog.pixelos.net/docs/resources/Screenshots",
+    "supportGroup": "https://t.me/rm6785Official",
+    "donate": "https://t.me/kardebayanchannel/515"
+  }
+}

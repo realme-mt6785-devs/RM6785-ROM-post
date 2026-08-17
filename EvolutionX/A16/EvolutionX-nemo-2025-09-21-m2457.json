@@ -1,0 +1,30 @@
+{
+  "postType": "rom",
+  "name": "Evolution-X 11.2",
+  "tag": "EvolutionX",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "nemo",
+  "androidVersion": "16",
+  "ruiVersion": 2,
+  "author": "@EvilAnsh",
+  "buildDate": "2025-09-21",
+  "banner": "telegram-message:-1001384382397:2457",
+  "changelog": [
+    "Initial Official build",
+    "Full changelog: [EVO-X](https://evolution-x.org/features) | [DEVICE](https://raw.githubusercontent.com/Evolution-X/OTA/4d57f4d85191cad9f1a344470e21729ca610ff48/changelogs/nemo.txt)"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "2.9GB",
+    "url": "https://evolution-x.org/devices/nemo"
+  },
+  "links": {
+    "sources": "https://github.com/Evolution-X-Devices/device_realme_nemo",
+    "screenshots": "https://t.me/AnshBuilds/75777",
+    "supportGroup": "https://discord.com/invite/evolution-x-670512508871639041"
+  }
+}

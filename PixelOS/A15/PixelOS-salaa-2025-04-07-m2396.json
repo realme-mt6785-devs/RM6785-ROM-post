@@ -1,0 +1,34 @@
+{
+  "postType": "rom",
+  "name": "PixelOS 14",
+  "tag": "PixelOS",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "salaa",
+  "androidVersion": "15",
+  "ruiVersion": 3,
+  "author": "Debayan Kar",
+  "buildDate": "2025-04-07",
+  "banner": "telegram-message:-1001384382397:2396",
+  "changelog": [
+    "Dropped 32 bit DRM Stack",
+    "Introduced FM Radio",
+    "Switched to 64 bit C2 service"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "This won't work On Realme 6/6i/6s/Narzo"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "2GB",
+    "url": "https://pixelos.net/download/salaa"
+  },
+  "links": {
+    "sources": "https://github.com/PixelOS-Devices",
+    "screenshots": "https://t.me/kardebayanchannel/162",
+    "supportGroup": "https://t.me/rm6785Official"
+  }
+}

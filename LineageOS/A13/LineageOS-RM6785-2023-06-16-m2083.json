@@ -1,0 +1,33 @@
+{
+  "postType": "rom",
+  "name": "LineageOS-20.0",
+  "tag": "LineageOS",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "13",
+  "ruiVersion": 2,
+  "author": "SamarV-121",
+  "buildDate": "2023-06-16",
+  "banner": "telegram-message:-1001384382397:2083",
+  "changelog": [
+    "Based on QPR3 and June ASB (android-13.0.0_r52)",
+    "Added charging control feature (Battery settings)",
+    "Upstreamed kernel to 4.14.318",
+    "Full changelog: [DEVICE](https://raw.githubusercontent.com/SamarV-121/lineage_OTA/master/changelog_RM6785.txt) | [LINEAGE](https://raw.githubusercontent.com/SamarV-121/lineage_OTA/master/changelog.txt)"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "download": {
+    "buildType": "VANILLA/GAPPS",
+    "fileSize": "1.1GB | 1.2GB",
+    "url": "https://www.samarv121.dev/lineageos-20-RM6785"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs",
+    "screenshots": "https://www.samarv121.dev/lineageos-20-RM6785#screenshots",
+    "supportGroup": "https://telegram.dog/lineage_RM6785",
+    "donate": "https://donate.samarv121.dev/"
+  }
+}

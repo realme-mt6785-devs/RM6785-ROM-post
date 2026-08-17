@@ -1,0 +1,42 @@
+{
+  "postType": "rom",
+  "name": "crDroid 11.7",
+  "tag": "crDroid",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "RMX2001",
+  "androidVersion": "15",
+  "ruiVersion": 2,
+  "author": "Debayan Kar",
+  "buildDate": "2025-08-02",
+  "banner": "telegram-message:-1001384382397:2420",
+  "changelog": [
+    "Initial official and signed build",
+    "Drop atcid stack",
+    "Surpress hwcomposer spam",
+    "Silence HWUI logspam",
+    "Add feature flag for IPSEC_TUNNEL_MIGRATION",
+    "Switch to AIDL Touch",
+    "Switch to non-lazy AIDL WiFi service",
+    "Enable Background blur",
+    "Show \"LTE\" instead of \"4G\"",
+    "Drop OPLUS Face Beauty configs",
+    "Drop unneeded vendor cacerts"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "Clean Flash needed"
+  ],
+  "download": {
+    "buildType": "Vanilla",
+    "fileSize": "1.6GB",
+    "url": "https://sourceforge.net/projects/crdroid/files/RMX2001L1/11.x/crDroidAndroid-15.0-20250802-RMX2001L1-v11.7.zip/download"
+  },
+  "links": {
+    "sources": "https://github.com/crdroidandroid/",
+    "screenshots": "https://t.me/kardebayanchannel/511?single",
+    "supportGroup": "https://t.me/rm6785Official"
+  }
+}

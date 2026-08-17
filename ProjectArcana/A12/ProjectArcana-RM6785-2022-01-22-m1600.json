@@ -1,0 +1,49 @@
+{
+  "postType": "rom",
+  "name": "Project Arcana-3.1 (CLAIR)",
+  "tag": "ProjectArcana",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "12",
+  "ruiVersion": 2,
+  "author": "@P_AA_ii_N",
+  "buildDate": "2022-01-22",
+  "banner": "telegram-message:-1001384382397:1600",
+  "changelog": [
+    "Sources upstream",
+    "January security patch",
+    "Compiled NEOLIT-v8 kernel with proton clang",
+    "Added bufferfix",
+    "Added F2FS support",
+    "Added lawnchair, GCam (wichaya-v1.5) , Xrecorder, Alphabackup, Blackhole etc.",
+    "Added Natural and Boosted display color modes",
+    "Added Unlimited Google Photos storage",
+    "Fixed colour flicker",
+    "Fixed VOOC charging delay",
+    "Fixed brightness slider behaviour",
+    "Fixed NFC (EU)",
+    "Misc improvements"
+  ],
+  "bugs": [
+    "Built-in screen recorder",
+    "Permissive SELinux",
+    "From ROM source (don't use QS vertical layout it causes freezing Q's panel)"
+  ],
+  "notes": [
+    "Based on RealmeUI 2.0",
+    "CTS passed by default",
+    "Use default launcher as lawnchair",
+    "Flashing Guide : [HERE](https://t.me/PAiNsHUB0/139)"
+  ],
+  "download": {
+    "buildType": "GAPPS || VANILLA",
+    "fileSize": "1.5GB | 1.1GB",
+    "url": "https://www.pling.com/p/1688669"
+  },
+  "links": {
+    "sources": "https://github.com/PAAiiN",
+    "screenshots": "https://t.me/PAiNsHUB0/174?single",
+    "supportGroup": "https://t.me/unofficial_PAiNsHUB"
+  }
+}

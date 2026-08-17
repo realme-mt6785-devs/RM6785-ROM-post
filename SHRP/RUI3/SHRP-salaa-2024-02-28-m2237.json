@@ -1,0 +1,34 @@
+{
+  "postType": "recovery",
+  "name": "SHRP v3.2-Reborn",
+  "tag": "SHRP",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "salaa",
+  "androidVersion": "12",
+  "ruiVersion": 3,
+  "author": "@EvilAnsh",
+  "buildDate": "2024-02-28",
+  "banner": "telegram-message:-1001384382397:2237",
+  "changelog": [
+    "Initial build",
+    "Support decryption for AOSP ROMs with Android 12.1 and higher",
+    "Support FBE v2"
+  ],
+  "bugs": [
+    "You tell me"
+  ],
+  "notes": [
+    "Realme UI 3.0 based",
+    "This won't work On Realme 6/6i/6s/Narzo"
+  ],
+  "download": {
+    "fileSize": "75MB",
+    "url": "https://sourceforge.net/projects/evilanshbuild/files/recovery/salaa/SHRP-Reborn_v3.2_Stable-Unofficial_salaa-28.02.24.zip/download"
+  },
+  "links": {
+    "sources": "https://github.com/SHRP-Reborn",
+    "screenshots": "https://t.me/AnshBuilds/30754?single",
+    "supportGroup": "https://t.me/AnshBuilds"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "postType": "rom",
+  "name": "VoltageOS v2.8 EOL",
+  "tag": "VoltageOS",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "13",
+  "ruiVersion": 2,
+  "author": "@No_PaiiN_No_GaiiN",
+  "buildDate": "2023-09-23",
+  "banner": "telegram-message:-1001384382397:2141",
+  "changelog": [
+    "Security Patch: September 1 2023",
+    "4.14.325 Lineage Kernel",
+    "Misc improvements",
+    "[Source changelog](https://t.me/voltageosannouncements/338)"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "Nikgapps core recommend"
+  ],
+  "download": {
+    "buildType": "VANILLA",
+    "fileSize": "1.3GB",
+    "url": "https://drive.google.com/file/d/1bMy5eNfyKAJHYBhjyIWi4Oftq0JUlmaO/view?usp=sharing"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs/",
+    "screenshots": "https://t.me/hmmmok/51?single",
+    "supportGroup": "https://t.me/RM6Official"
+  }
+}

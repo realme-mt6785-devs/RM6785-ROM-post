@@ -1,0 +1,22 @@
+{
+  "postType": "rom",
+  "name": "Havoc-OS v4.10 |  | Android 11",
+  "tag": "Havoc",
+  "stability": "STABLE",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 2,
+  "author": "@bx2nero",
+  "buildDate": "2021-10-28",
+  "banner": "telegram-message:-1001384382397:1430",
+  "changelog": [
+    "See original channel post"
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "download": {
+    "url": "https://havoc-os.com/device#RMX2001"
+  },
+  "links": {}
+}

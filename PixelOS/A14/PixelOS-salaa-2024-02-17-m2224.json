@@ -1,0 +1,33 @@
+{
+  "postType": "rom",
+  "name": "PixelOS 14",
+  "tag": "PixelOS",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "salaa",
+  "androidVersion": "14",
+  "ruiVersion": 3,
+  "author": "Debayan Kar",
+  "buildDate": "2024-02-17",
+  "banner": "telegram-message:-1001384382397:2224",
+  "changelog": [
+    "Updated blobs to F.17",
+    "Switched to OSS dtb"
+  ],
+  "bugs": [
+    "Setup apn if calling/data not working"
+  ],
+  "notes": [
+    "This won't work On Realme 6/6i/6s/Narzo"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "1.8GB",
+    "url": "https://pixelos.net/download/salaa"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs",
+    "screenshots": "https://t.me/kardebayanchannel/162",
+    "supportGroup": "https://t.me/kardebayanchat"
+  }
+}

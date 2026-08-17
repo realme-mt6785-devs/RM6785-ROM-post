@@ -1,0 +1,35 @@
+{
+  "postType": "rom",
+  "name": "PixelOS 16.2",
+  "tag": "PixelOS",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "salaa",
+  "androidVersion": "16",
+  "ruiVersion": 3,
+  "author": "Debayan Kar",
+  "buildDate": "2026-03-15",
+  "banner": "telegram-message:-1001384382397:2526",
+  "changelog": [
+    "Fixed USB detection on PC",
+    "Updated build fingerprint from RMX2156 F.19",
+    "Reworked over USB init based on GS201",
+    "Added MediaTek Gadget HAL",
+    "Imported missing sensor blobs",
+    "Dropped rttv"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "2.27GB",
+    "url": "https://www.pixelos.net/download/salaa"
+  },
+  "links": {
+    "sources": "https://github.com/PixelOS-Devices",
+    "screenshots": "https://blog.pixelos.net/docs/resources/Screenshots",
+    "supportGroup": "https://t.me/rm6785Official",
+    "donate": "https://t.me/kardebayanchannel/515"
+  }
+}

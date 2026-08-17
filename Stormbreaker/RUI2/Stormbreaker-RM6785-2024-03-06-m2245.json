@@ -1,0 +1,29 @@
+{
+  "postType": "kernel",
+  "name": "Stormbreaker Kernel",
+  "tag": "Stormbreaker",
+  "stability": "STABLE",
+  "device": "RM6785",
+  "kernelVersion": "4.14.336",
+  "ruiVersion": 2,
+  "author": "[Debayan Kar](https://t.me/kardebayan)",
+  "buildDate": "2024-03-06",
+  "banner": "telegram-message:-1001384382397:2245",
+  "changelog": [
+    "Initial build"
+  ],
+  "bugs": [
+    "You tell me..."
+  ],
+  "notes": [
+    "Won't work with realmeUI 3.0"
+  ],
+  "download": {
+    "fileSize": "21.60MB",
+    "url": "https://t.me/kardebayanchannel/366"
+  },
+  "links": {
+    "sources": "https://github.com/PixelOS-Devices/android_kernel_realme_mt6785",
+    "supportGroup": "https://t.me/kardebayanchat"
+  }
+}

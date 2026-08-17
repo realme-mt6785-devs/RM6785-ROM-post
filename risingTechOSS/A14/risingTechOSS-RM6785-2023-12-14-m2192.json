@@ -1,0 +1,34 @@
+{
+  "postType": "rom",
+  "name": "risingTechOSS v2.0",
+  "tag": "risingTechOSS",
+  "stability": "BETA",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "14",
+  "ruiVersion": 2,
+  "author": "@EvilAnsh",
+  "buildDate": "2023-12-14",
+  "banner": "telegram-message:-1001384382397:2192",
+  "changelog": [
+    "Security Patch: Nov 5 2023",
+    "4.14.329 Lineage Plus Kernel",
+    "[Source Changelog](https://github.com/RisingTechOSS/risingOS_changelogs/blob/fourteen/README.md)"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "Clean Flash Compulsory."
+  ],
+  "download": {
+    "buildType": "VANILLA/GAPPS",
+    "fileSize": "1.4GB | 1.9GB",
+    "url": "https://sourceforge.net/projects/evilanshbuild/files/RM6785/risingTechOSS/14-12-23/"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs",
+    "screenshots": "https://t.me/AnshPrjkts/556?single",
+    "supportGroup": "https://t.me/Anshbuilds"
+  }
+}

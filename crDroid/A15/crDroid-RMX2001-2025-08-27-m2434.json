@@ -1,0 +1,38 @@
+{
+  "postType": "rom",
+  "name": "crDroid 11.8",
+  "tag": "crDroid",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "RMX2001",
+  "androidVersion": "15",
+  "ruiVersion": 2,
+  "author": "Debayan Kar",
+  "buildDate": "2025-08-27",
+  "banner": "telegram-message:-1001384382397:2434",
+  "changelog": [
+    "Include Dolby Atmos",
+    "Switch to f2fs",
+    "Disable FRP by default",
+    "Add BCR",
+    "Enable back WPA3-SAE",
+    "Switch to AIDL bluetooth service"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "Clean flash mandatory",
+    "Use this [recovery](https://sourceforge.net/projects/crdroid/files/RMX2001L1/11.x/recovery/20250827-recovery.img/download)"
+  ],
+  "download": {
+    "buildType": "Vanilla",
+    "fileSize": "1.7GB",
+    "url": "https://sourceforge.net/projects/crdroid/files/RMX2001L1/11.x/crDroidAndroid-15.0-20250827-RMX2001L1-v11.8.zip/download"
+  },
+  "links": {
+    "sources": "https://github.com/crdroidandroid",
+    "screenshots": "https://t.me/kardebayanchannel/511?single",
+    "supportGroup": "https://t.me/rm6785Official"
+  }
+}

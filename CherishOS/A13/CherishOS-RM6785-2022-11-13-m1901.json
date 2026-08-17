@@ -1,0 +1,42 @@
+{
+  "postType": "rom",
+  "name": "CherishOS-4.2",
+  "tag": "CherishOS",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "13",
+  "ruiVersion": 2,
+  "author": "@P_AA_ii_N",
+  "buildDate": "2022-11-13",
+  "banner": "telegram-message:-1001384382397:1901",
+  "changelog": [
+    "Initial stable release",
+    "November 2022 ASB",
+    "Sources upstream",
+    "Fixed Faceunlock",
+    "Fixed Bluetooth",
+    "Fixed video playback crash",
+    "Passes SafetyNet out-of-the-box",
+    "No lag in screen recorder",
+    "Added RealmeDirac",
+    "Disabled boosts on power saving mode",
+    "Enabled AUX camera support on aperture camera app",
+    "Added support for Wifi display (Miracast)",
+    "Fixed buzzed brightness slider",
+    "Upstreamed kernel to 4.14.297"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "1.9GB",
+    "url": "https://www.pling.com/p/1669951"
+  },
+  "links": {
+    "sources": "https://telegra.ph/Sources-04-27",
+    "screenshots": "https://t.me/PAiNsGALLeRYRM6785/580?single",
+    "supportGroup": "https://t.me/CherishOS_RM6785"
+  }
+}

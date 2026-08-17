@@ -1,0 +1,35 @@
+{
+  "postType": "rom",
+  "name": "crDroid Android 10.4",
+  "tag": "crDroid",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "14",
+  "ruiVersion": 2,
+  "author": "@nx_neon69",
+  "buildDate": "2024-04-06",
+  "banner": "telegram-message:-1001384382397:2251",
+  "changelog": [
+    "Initial release"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE)",
+    "Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "Based on April ASB (QPR2)",
+    "Shipped with Lineage Kernel",
+    "Recommended gapps: [NikGapps](https://t.me/sourlemonrm6785/23206)"
+  ],
+  "download": {
+    "buildType": "VANILLA",
+    "fileSize": "1.31 GB",
+    "url": "https://drive.google.com/file/d/1_gQhdumWEU8Ws_DeKwWRm19zIae6BbUR/view?usp=sharing"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs",
+    "screenshots": "https://t.me/sourlemonrm6785/23143",
+    "supportGroup": "https://t.me/sourlemonrm6785"
+  }
+}

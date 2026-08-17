@@ -1,0 +1,34 @@
+{
+  "postType": "rom",
+  "name": "DerpFest-16.2",
+  "tag": "DerpFest",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "16",
+  "ruiVersion": 2,
+  "author": "[MeowDroider](https://t.me/MuhammadIJC)",
+  "buildDate": "2026-03-12",
+  "banner": "telegram-message:-1001384382397:2522",
+  "changelog": [
+    "Synced with latest Derp source",
+    "March Security update"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "Realme UI 2.0 based",
+    "Official now"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "2.3GB",
+    "url": "https://drive.google.com/drive/folders/1IGfVFkPKxOcO_P4rpaFmjXRtnjnlpG07?usp=drive_link"
+  },
+  "links": {
+    "sources": "https://github.com/elohim-etz/android_device_realme_RM6785",
+    "screenshots": "https://t.me/derprm6785/72",
+    "supportGroup": "https://t.me/+9c3pZqVwyKU3Mzdk"
+  }
+}

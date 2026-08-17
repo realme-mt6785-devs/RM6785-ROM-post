@@ -1,0 +1,45 @@
+{
+  "postType": "rom",
+  "name": "ArrowOS 13.1",
+  "tag": "ArrowOS",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "salaa",
+  "androidVersion": "13",
+  "ruiVersion": 3,
+  "author": "@kardebayan",
+  "buildDate": "2023-11-06",
+  "banner": "telegram-message:-1001384382397:2172",
+  "changelog": [
+    "Switched to FBE v2",
+    "Switched to f2fs userdata",
+    "Switched to AOSP audio service",
+    "Switched to open-source hostapd and wpa_supplicant",
+    "Fixed simultaneous wifi and hotspot",
+    "Fixed Bluetooth random disconnection",
+    "Updated multihal from realme 8s 5G",
+    "Fixed random IMS crashes",
+    "Dropped unneeded vendor cacerts",
+    "Added MTK EngineerMode",
+    "Dropped some useless blobs",
+    "Disabled unnecessary logging"
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "notes": [
+    "Report bugs with proper logs only! (Make sure to report in the actual support group)",
+    "ITS FOR REALMEUI 3.0 FIRMWARE",
+    "CLEAN FLASH IS MANADATORY USING [FBE v2 RECOVERY](https://t.me/kardebayanchannel/94)"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "1.56GB",
+    "url": "https://github.com/kardebayan/releases/releases/download/v10/Arrow-v13.1-salaa-UNOFFICIAL-20231106-GAPPS.zip"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs",
+    "screenshots": "https://t.me/kardebayanchannel/71?single",
+    "supportGroup": "https://t.me/kardebayanchat"
+  }
+}

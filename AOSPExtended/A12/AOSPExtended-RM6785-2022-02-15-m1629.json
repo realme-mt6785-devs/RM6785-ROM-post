@@ -1,0 +1,38 @@
+{
+  "postType": "rom",
+  "name": "AOSP Extended",
+  "tag": "AOSPExtended",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "12",
+  "ruiVersion": 2,
+  "author": "@sagarmakhar",
+  "buildDate": "2022-02-15",
+  "banner": "telegram-message:-1001384382397:1629",
+  "changelog": [
+    "February security patches",
+    "Merged 4.14.266 in kernel",
+    "Aex source upstream",
+    "Improved system stability",
+    "Fixed gray boot animation"
+  ],
+  "bugs": [
+    "Permissive SELinux",
+    "Built-in screen recorder"
+  ],
+  "notes": [
+    "Includes RUI2 firmware",
+    "MD5 of gapps build: c09dae4048ae94773d9a4271d9bb622c",
+    "MD5 of vanilla build: e55f704c973c9f2e59b5031f515659e6"
+  ],
+  "download": {
+    "buildType": "VANILLA/GAPPS",
+    "fileSize": "1.1GB",
+    "url": "https://drive.google.com/uc?id=1aqgWyIiXCDmWIVsCxIKhLgs4YZBLWYZo"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs",
+    "screenshots": "https://t.me/realme6pro/211563?single"
+  }
+}

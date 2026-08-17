@@ -1,0 +1,29 @@
+{
+  "postType": "rom",
+  "name": "LMODroid 4.1",
+  "tag": "LMODroid",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "13",
+  "ruiVersion": 2,
+  "author": "@NopeNopeGuy",
+  "buildDate": "2023-07-12",
+  "banner": "telegram-message:-1001384382397:2099",
+  "changelog": [
+    "Initial build"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "download": {
+    "buildType": "VANILLA",
+    "fileSize": "1.3GB",
+    "url": "https://t.me/RM6Official/1176050"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs",
+    "screenshots": "https://libremobileos.com/lmodroid",
+    "supportGroup": "https://t.me/nopenoperoms"
+  }
+}

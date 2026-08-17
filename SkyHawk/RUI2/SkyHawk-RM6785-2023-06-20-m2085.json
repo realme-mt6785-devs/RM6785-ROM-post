@@ -1,0 +1,34 @@
+{
+  "postType": "recovery",
+  "name": "SkyHawk Recovery Project-3.2",
+  "tag": "SkyHawk",
+  "stability": "BETA",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "12",
+  "ruiVersion": 2,
+  "author": "@EvilAnsh",
+  "buildDate": "2023-06-20",
+  "banner": "telegram-message:-1001384382397:2085",
+  "changelog": [
+    "Initial beta build",
+    "Support decryption for AOSP ROMs with Android 12.1 and higher.",
+    "F2FS and EROFS supported"
+  ],
+  "bugs": [
+    "You tell me"
+  ],
+  "notes": [
+    "Realme UI 2.0 based",
+    "If ext4 still showing after changing fs type to F2FS, don't worry it's a source side bug [[Proof](https://t.me/AnshPrjkts/101)]"
+  ],
+  "download": {
+    "fileSize": "67.3MB | 69.9MB",
+    "url": "https://t.me/FilesArchieve/235"
+  },
+  "links": {
+    "sources": "https://github.com/SHRP",
+    "screenshots": "https://t.me/AnshPrjkts/97?single",
+    "supportGroup": "https://t.me/AnshBuilds"
+  }
+}

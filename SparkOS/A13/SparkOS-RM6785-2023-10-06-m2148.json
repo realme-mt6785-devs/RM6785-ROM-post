@@ -1,0 +1,31 @@
+{
+  "postType": "rom",
+  "name": "Spark OS",
+  "tag": "SparkOS",
+  "stability": "BETA",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "13",
+  "ruiVersion": 2,
+  "author": "@Rohitsinh",
+  "buildDate": "2023-10-06",
+  "banner": "telegram-message:-1001384382397:2148",
+  "changelog": [
+    "Security Patch: September 1 2023",
+    "4.14.325 Lineage Kernel",
+    "Misc improvements"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "1.8GB",
+    "url": "https://sourceforge.net/projects/mt6785/files/spark/Spark-13.8-UNOFFICIAL-RM6785-20231005-gapps.zip/download"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs/",
+    "screenshots": "https://photos.app.goo.gl/V2oXLSoywK4GvsHA6",
+    "supportGroup": "https://t.me/RM6Official"
+  }
+}

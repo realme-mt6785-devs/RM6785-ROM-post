@@ -1,0 +1,38 @@
+{
+  "postType": "rom",
+  "name": "EverestOS 1.2 Gokyo",
+  "tag": "everestOS",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "salaa",
+  "androidVersion": "14",
+  "ruiVersion": 3,
+  "author": "@shitijnotop",
+  "buildDate": "2024-05-15",
+  "banner": "telegram-message:-1001384382397:2293",
+  "changelog": [
+    "[Full Changelog](https://t.me/shitijposts/278)",
+    "Second Build",
+    "May Security Patch",
+    "PIxel Launcher"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "Strombreaker Kernel Latest",
+    "Clean Flash Mandatory",
+    "Need to flash firmware",
+    "Give some time to settle the rum"
+  ],
+  "download": {
+    "buildType": "Vanilla | GApps",
+    "fileSize": "1.3GB | 2.2GB",
+    "url": "https://t.me/shitijsprojectschat/1426/4716"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs/android_device_realme_salaa",
+    "screenshots": "https://t.me/shitijsprojectschat/755/4512",
+    "supportGroup": "https://t.me/shitijsprojectschat"
+  }
+}

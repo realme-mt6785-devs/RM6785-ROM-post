@@ -1,0 +1,47 @@
+{
+  "postType": "rom",
+  "name": "PixelOS 16.2",
+  "tag": "PixelOS",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "nemo",
+  "androidVersion": "16",
+  "ruiVersion": 2,
+  "author": "Debayan Kar",
+  "buildDate": "2026-02-25",
+  "banner": "telegram-message:-1001384382397:2509",
+  "changelog": [
+    "QPR2 release",
+    "Disabled high performance transitions",
+    "Backported 5.10 BPF on kernel",
+    "Switched to OSS MediaTek WiFi lib",
+    "Switched to OSS AIDL multihal sensor service",
+    "Switched to OSS MediaTek HIDL bluetooth audio interfaces",
+    "Disabled Audio HAL PCM dumping",
+    "Dropped MediaTek remote submix HAL",
+    "Dropped MediaTek USB audio HAL",
+    "Dropped 32-bit NVRAM HAL",
+    "Dropped muxreport binary",
+    "Dropped MediaTek dplanner blobs",
+    "Dropped debug.sf.disable_client_composition_cache",
+    "Added dynamic sensors HAL support",
+    "Updated Video Telephony system blobs from rothko",
+    "Switched to common lights HAL",
+    "Disabled brightness slider gamma conversion",
+    "Reduced blur radius"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "2.4GB",
+    "url": "https://www.pixelos.net/download/nemo"
+  },
+  "links": {
+    "sources": "https://github.com/PixelOS-Devices",
+    "screenshots": "https://blog.pixelos.net/docs/resources/Screenshots",
+    "supportGroup": "https://t.me/rm6785Official",
+    "donate": "https://t.me/kardebayanchannel/515"
+  }
+}

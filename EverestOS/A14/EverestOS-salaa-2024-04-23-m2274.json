@@ -1,0 +1,36 @@
+{
+  "postType": "rom",
+  "name": "Everest 1.1",
+  "tag": "EverestOS",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "salaa",
+  "androidVersion": "14",
+  "ruiVersion": 3,
+  "author": "@shitijnotop",
+  "buildDate": "2024-04-23",
+  "banner": "telegram-message:-1001384382397:2274",
+  "changelog": [
+    "Initial Build",
+    "Implemented Beautiful Blur",
+    "April Security Patch"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)",
+    "Bluetooth Disconnect and Connect Problem in time intervals (Tester Reported)"
+  ],
+  "notes": [
+    "Strombreaker Kernel",
+    "Clean Flash mandatory"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "2.2GB",
+    "url": "https://drive.google.com/file/d/10kQIjjSlWRfKw__-_xxReilqgc9U_HdK/view?usp=drivesdk"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs/android_device_realme_salaa",
+    "screenshots": "https://t.me/shitijsprojectschat/755/1382",
+    "supportGroup": "https://t.me/shitijsprojectschat"
+  }
+}

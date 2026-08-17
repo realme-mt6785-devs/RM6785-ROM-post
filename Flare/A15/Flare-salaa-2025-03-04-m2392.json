@@ -1,0 +1,36 @@
+{
+  "postType": "rom",
+  "name": "Project Flare 1.1",
+  "tag": "Flare",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "salaa",
+  "androidVersion": "15",
+  "ruiVersion": 3,
+  "author": "@EvilAnsh",
+  "buildDate": "2025-03-04",
+  "banner": "telegram-message:-1001384382397:2392",
+  "changelog": [
+    "Initial Build",
+    "Feb, 2025 Security Patch",
+    "Added FM Radio",
+    "Full changelog: [FLARE](https://github.com/Project-Flare/changelogs/blob/main/Changelogs.md)"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "4.14.336 Stormbreaker Kernel",
+    "Clean Flash recommended"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "2.4GB",
+    "url": "https://sourceforge.net/projects/projectflare/files/salaa"
+  },
+  "links": {
+    "sources": "https://github.com/EvilAnsh/android_device_realme_salaa",
+    "screenshots": "https://t.me/AnshPrjkt/991?single",
+    "supportGroup": "https://t.me/Anshbuilds"
+  }
+}

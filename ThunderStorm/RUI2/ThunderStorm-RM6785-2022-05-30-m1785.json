@@ -1,0 +1,42 @@
+{
+  "postType": "kernel",
+  "name": "ThunderStorm V-2.0 LTO",
+  "tag": "ThunderStorm",
+  "stability": "STABLE",
+  "device": "RM6785",
+  "kernelVersion": "4.14.281",
+  "ruiVersion": 2,
+  "author": "@Gorilla669",
+  "buildDate": "2022-05-30",
+  "banner": "telegram-message:-1001384382397:1785",
+  "changelog": [
+    "Merged 4.14.281",
+    "Switch To Cubic As Default Congestion",
+    "Disable few loggings/debuggings",
+    "drop oppo health info",
+    "disable module loading and unloading",
+    "f2fs: Force strict fsync mode",
+    "sched: core: Minimize number of tasks to load balance",
+    "Disable DEBUG_KERNEL",
+    "OC Gpu To 900mhz For R6 And Others (900mhz OC is in the same download link)",
+    "PUBG 69 fps Constant",
+    "If You Are Using Oc Version Don't Complain For temperature",
+    "To Check More Changelogs Click On The Source Below"
+  ],
+  "bugs": [
+    "None"
+  ],
+  "notes": [
+    "based on rui 2",
+    "Thanks to all the testers",
+    "thanks to @Exonxo &  @Python_pyyy for banner"
+  ],
+  "download": {
+    "fileSize": "17MB",
+    "url": "https://sourceforge.net/projects/rui2-kernel/files/ThunderStorm-2.0/?upload_just_completed=true"
+  },
+  "links": {
+    "sources": "https://github.com/anupamroy777/kernel_realme_RM6785.git",
+    "supportGroup": "https://t.me/anupamroy777"
+  }
+}

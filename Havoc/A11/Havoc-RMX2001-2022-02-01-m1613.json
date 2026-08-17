@@ -1,0 +1,36 @@
+{
+  "postType": "rom",
+  "name": "Havoc-OS",
+  "tag": "Havoc",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 1,
+  "author": "bx2nero",
+  "buildDate": "2022-02-01",
+  "banner": "telegram-message:-1001384382397:1613",
+  "changelog": [
+    "January Security Patch",
+    "Wallpaper based Theming",
+    "Android 12 clock",
+    "Flashlight blink for incoming calls",
+    "Many Fixes & Improvements."
+  ],
+  "bugs": [
+    "Extra Cameras",
+    "Night Light",
+    "Carrier Video Calling"
+  ],
+  "notes": [
+    "Based On RUI-1."
+  ],
+  "download": {
+    "buildType": "VANILLA / GAPPS",
+    "fileSize": "667MB | 1.1GB",
+    "url": "https://havoc-os.com/device#RMX2001"
+  },
+  "links": {
+    "sources": "https://github.com/Havoc-Devices/android_device_realme_RMX2001"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "postType": "rom",
+  "name": "Corvus OS vT5.1-DejaVu",
+  "tag": "CorvusOS",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "13",
+  "ruiVersion": 2,
+  "author": "@P_AA_ii_N",
+  "buildDate": "2022-11-20",
+  "banner": "telegram-message:-1001384382397:1903",
+  "changelog": [
+    "Initial Android-13.0 stable release",
+    "November 2022 ASB",
+    "Sources upstream",
+    "Added RealmeDirac",
+    "Added support for Wifi display",
+    "Enabled AUX camera support on aperture camera app",
+    "Disabled boosts on power saving mode",
+    "Fixed video playback crash",
+    "Fixed lag in screen recorder",
+    "Fixed buzzed brightness slider",
+    "Passes SafetyNet out-of-the-box",
+    "Upstreamed kernel to 4.14.298-NucLeuS-X",
+    "Improved Smoothness",
+    "Misc improvements"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)",
+    "USB Audio",
+    "OTG"
+  ],
+  "download": {
+    "buildType": "VANILLA/GAPPS",
+    "fileSize": "1.0GB | 1.4GB",
+    "url": "https://downloads.corvusrom.com/?dir=RM6785"
+  },
+  "links": {
+    "sources": "https://telegra.ph/Sources-04-27",
+    "screenshots": "https://t.me/PAiNsGALLeRYRM6785/606?single",
+    "supportGroup": "https://t.me/CorvusRM6785"
+  }
+}

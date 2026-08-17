@@ -1,0 +1,35 @@
+{
+  "postType": "rom",
+  "name": "Evolution-X 11.6.1",
+  "tag": "EvolutionX",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "salaa",
+  "androidVersion": "16",
+  "ruiVersion": 3,
+  "author": "@EvilAnsh",
+  "buildDate": "2026-02-23",
+  "banner": "telegram-message:-1001384382397:2503",
+  "changelog": [
+    "Initial QPR2 release",
+    "Full Changelog: [DEVICE](https://github.com/Evolution-X/OTA/raw/refs/heads/bka/changelogs/salaa.txt)"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "Realme UI 3.0 based",
+    "This won't work On Realme 6/6i/6s/Narzo",
+    "Recommended to use [recovery.img](https://cdn.evolution-x.org/salaa/16/recovery/recovery.img/download)"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "2.9GB",
+    "url": "https://evolution-x.org/devices/salaa"
+  },
+  "links": {
+    "sources": "https://github.com/Evolution-X-Devices/device_realme_salaa",
+    "screenshots": "https://t.me/AnshBuilds/77549",
+    "supportGroup": "https://t.me/AnshBuilds"
+  }
+}

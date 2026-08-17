@@ -1,0 +1,45 @@
+{
+  "postType": "rom",
+  "name": "crDroid v8.2",
+  "tag": "crDoid",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "12",
+  "ruiVersion": 2,
+  "author": "@Gofaraway71",
+  "buildDate": "2022-03-09",
+  "banner": "telegram-message:-1001384382397:1663",
+  "changelog": [
+    "Android-12.0.29 build",
+    "Included bufferfix",
+    "F2FS support",
+    "Offline charging support",
+    "Upstreamed to 4.14.266 kernel",
+    "Addons apps:CameraGo,Telegram,..",
+    "Unlimited Google Photos storage.",
+    "Prebuilt screen recorder.",
+    "Add Realme Dirac",
+    "Include face unlock",
+    "Fixed Fingerprint"
+  ],
+  "bugs": [
+    "Permissive SELinux",
+    "tap to wake ( thunderstorm v1.6 for fix)"
+  ],
+  "notes": [
+    "Safety net pass by default",
+    "Includes RUI2 firmware",
+    "TWRP :  LINK",
+    "Flashing Guide : HERE"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "1.8GB",
+    "url": "https://drive.google.com/file/d/1W6d6-w-8xYebN5-qcemghehQmQ08Fg5h/view?usp=sharing"
+  },
+  "links": {
+    "screenshots": "https://t.me/rm6785_gofaraway/43938?single",
+    "supportGroup": "https://t.me/rm6785_gofaraway"
+  }
+}

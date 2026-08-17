@@ -1,0 +1,36 @@
+{
+  "postType": "rom",
+  "name": "CherishOS 4.12",
+  "tag": "CherishOS",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "13",
+  "ruiVersion": 2,
+  "author": "@EvilAnsh",
+  "buildDate": "2023-10-08",
+  "banner": "telegram-message:-1001384382397:2152",
+  "changelog": [
+    "Sep Security Patch",
+    "Added support for power off alarm",
+    "Fixed random bluetooth disconnection",
+    "Full changelog: [DEVICE](https://github.com/EvilAnsh/OTA/raw/tiramisu/changelogs/changelog_RM6785.txt) | [CHERISH](https://t.me/CherishOS/1618)"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "Recommended Recoveries: [OFRP](https://t.me/AnshPrjkts/75) | [PBRP](https://telegra.ph/RM6685-PBRP-Downloads-09-03) | [SHRP](https://t.me/AnshPrjkts/104)",
+    "4.14.325 Lineage Kernel"
+  ],
+  "download": {
+    "buildType": "VANILLA/GAPPS",
+    "fileSize": "1.12GB | 1.75GB",
+    "url": "https://www.pling.com/p/1669951/"
+  },
+  "links": {
+    "sources": "https://github.com/CherishOS-Devices/android_device_realme_RM6785",
+    "screenshots": "https://t.me/AnshPrjkts/342?single",
+    "supportGroup": "https://t.me/Anshbuilds"
+  }
+}

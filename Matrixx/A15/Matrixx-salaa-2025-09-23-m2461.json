@@ -1,0 +1,41 @@
+{
+  "postType": "rom",
+  "name": "Matrixx 11.8.0",
+  "tag": "Matrixx",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "salaa",
+  "androidVersion": "15",
+  "ruiVersion": 3,
+  "author": "@EvilAnsh",
+  "buildDate": "2025-09-23",
+  "banner": "telegram-message:-1001384382397:2461",
+  "changelog": [
+    "Synced with latest v11.8.0 source",
+    "September 2025 security patch",
+    "Set screen density to 420",
+    "Kernel built with full LLVM",
+    "Fixed \"Charging Rapidly\" info on lockscreen",
+    "STRONG integrity passes by default",
+    "Misc. Fixes and Improvements",
+    "Full changelog: [MATRIXX](https://www.projectmatrixx.org/changelog)"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "Recommended GAPPS: [Here](https://github.com/BiTGApps/release/releases/download/v5.1-release/BiTGApps-arm64-15.0.0-v5.1-OMNI.zip)",
+    "4.14.336 Stormbreaker Kernel",
+    "Clean Flash recommended"
+  ],
+  "download": {
+    "buildType": "VANILLA",
+    "fileSize": "1.5GB",
+    "url": "https://www.projectmatrixx.org/downloads/salaa"
+  },
+  "links": {
+    "sources": "https://github.com/Matrixx-Devices/device_realme_salaa",
+    "screenshots": "https://t.me/AnshPrjkt/1078?single",
+    "supportGroup": "https://t.me/Anshbuilds"
+  }
+}

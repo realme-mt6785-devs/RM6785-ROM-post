@@ -1,0 +1,36 @@
+{
+  "postType": "rom",
+  "name": "RisingOS Revived 7.1",
+  "tag": "risingOS",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "salaa",
+  "androidVersion": "15",
+  "ruiVersion": 3,
+  "author": "@EvilAnsh",
+  "buildDate": "2025-06-27",
+  "banner": "telegram-message:-1001384382397:2407",
+  "changelog": [
+    "Initial OFFICIAL Build",
+    "Likely to be A15 EOL release",
+    "June, 2025 Security Patch",
+    "Full changelog: [RISING](https://t.me/RisingRevived/200?single)"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "4.14.336 Stormbreaker Kernel",
+    "Clean Flash recommended"
+  ],
+  "download": {
+    "buildType": "MICROG/CORE",
+    "fileSize": "1.7GB | 2.1GB",
+    "url": "https://risingosrevived.tech/device/salaa"
+  },
+  "links": {
+    "sources": "https://github.com/RisingOS-Revived-devices/device_realme_salaa",
+    "screenshots": "https://t.me/AnshPrjkt/1013?single",
+    "supportGroup": "https://t.me/Anshbuilds"
+  }
+}

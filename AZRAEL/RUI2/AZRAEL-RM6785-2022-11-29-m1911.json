@@ -1,0 +1,45 @@
+{
+  "postType": "kernel",
+  "name": "Azrael V-1.0 LTO",
+  "tag": "AZRAEL",
+  "stability": "STABLE",
+  "device": "RM6785",
+  "kernelVersion": "4.14.300",
+  "ruiVersion": 2,
+  "author": "@AbzRaider",
+  "buildDate": "2022-11-29",
+  "banner": "telegram-message:-1001384382397:1911",
+  "changelog": [
+    "Initial Stable Build",
+    "Upstream to 4.14.300",
+    "Compiled with neutron-clang16",
+    "Disable charger logging",
+    "Disable AutoKprofiles",
+    "Introduce DevFreq Boost and Tuned for MT6785",
+    "Silence usbtemp_volt logspam",
+    "Disable Useless Erratums for  G90T",
+    "Set GED KPI Max FPS to 90 ( Better UI Perf)",
+    "Mark GED Boost KThread as  Performance Critical",
+    "Update MTK PPM sysboost Drivers from RUI3 Source",
+    "Tweak GED Drivers for optimal performance and efficiency",
+    "Decrease gyroscope delay in games",
+    "Fix Thermal Policy Issues on    MT6785",
+    "Update FP driver from RM7_RUI3",
+    "Added Kprofiles with 3 modes ([guide](https://t.me/kernelspace6785/9))"
+  ],
+  "bugs": [
+    "Find and Tell"
+  ],
+  "notes": [
+    "Based on RealmeUI 2.0",
+    "Performance Oriented Kernel"
+  ],
+  "download": {
+    "fileSize": "19.2 MB",
+    "url": "https://drive.google.com/file/d/1-CuC99irGWQlzZED9tqjpDG-gqV6MRlT/view?usp=drivesdk"
+  },
+  "links": {
+    "sources": "https://github.com/AbzRaider/android-kernel_Azrael-RM6785",
+    "supportGroup": "https://t.me/kernelspaceOT"
+  }
+}

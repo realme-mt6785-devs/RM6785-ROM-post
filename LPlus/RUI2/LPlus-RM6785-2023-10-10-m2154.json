@@ -1,0 +1,39 @@
+{
+  "postType": "kernel",
+  "name": "Lineage Plus",
+  "tag": "LPlus",
+  "stability": "STABLE",
+  "device": "RM6785",
+  "kernelVersion": "4.14.326",
+  "ruiVersion": 2,
+  "author": "@AbzRaider",
+  "buildDate": "2023-10-10",
+  "banner": "telegram-message:-1001384382397:2154",
+  "changelog": [
+    "4.14.326 Stable Release",
+    "KSU 0.6.8 Latest tag Merged",
+    "Improved Battery Life",
+    "mtk-fpsgo_v3 :  Update some code from begonia-r-oss ( Improved Perf )",
+    "BACKPORT: cgroup: cgroup v2 freezer",
+    "treewide: use power efficient workingqueues",
+    "treewide: Nuke OPLUS drivers that doesnt work on AOSP ( Causes logspam )",
+    "kernel: Introduce SBalance IRQ balancer",
+    "mtk-wifi: gen4m: Increase buffer size for txpowerctrl config ( Fix WiFi Crash from previous builds )  .... and more"
+  ],
+  "bugs": [
+    "You Tell Me"
+  ],
+  "notes": [
+    "This is a balanced kernel which focuses on performance stability",
+    "If you wish to use Magisk instead of KernelSU , just dont install KSU apk , Magisk will work perfectly fine.",
+    "KSU APK - Link"
+  ],
+  "download": {
+    "fileSize": "20MB",
+    "url": "https://github.com/AbzRaider/android_kernel_realme_mt6785/releases/tag/Stable.R2"
+  },
+  "links": {
+    "sources": "https://github.com/AbzRaider/android_kernel_realme_mt6785/tree/Stable.R2",
+    "supportGroup": "https://t.me/kernelspacedisc"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "postType": "rom",
+  "name": "LineageOS-18.1",
+  "tag": "LineageOS",
+  "stability": "STABLE",
+  "device": "RMX2001",
+  "androidVersion": "11",
+  "ruiVersion": 2,
+  "author": "Unknown",
+  "buildDate": "2021-11-04",
+  "banner": "telegram-message:-1001384382397:1448",
+  "changelog": [
+    "See original channel post"
+  ],
+  "bugs": [
+    "NFC",
+    "Permissive SELinux",
+    "Boot into any custom recovery",
+    "Format data",
+    "Flash latest build",
+    "Flash gapps package (optional)",
+    "Reboot"
+  ],
+  "download": {
+    "url": "https://drive.google.com/file/d/1S5947Ft_MODgXAjnY4woNffz5YBHAlJj"
+  },
+  "links": {}
+}

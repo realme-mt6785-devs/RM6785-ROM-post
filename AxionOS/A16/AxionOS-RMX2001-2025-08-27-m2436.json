@@ -1,0 +1,32 @@
+{
+  "postType": "rom",
+  "name": "AxionOS 2.0",
+  "tag": "AxionOS",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RMX2001",
+  "androidVersion": "16",
+  "ruiVersion": 2,
+  "author": "Debayan Kar",
+  "buildDate": "2025-08-27",
+  "banner": "telegram-message:-1001384382397:2436",
+  "changelog": [
+    "Initial build"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "Use this [recovery](https://sourceforge.net/projects/crdroid/files/RMX2001L1/11.x/recovery/20250827-recovery.img/download)"
+  ],
+  "download": {
+    "buildType": "Gapps",
+    "fileSize": "2.0GB",
+    "url": "https://sourceforge.net/projects/kardebayan/files/RMX2001L1/axion-2.0-BETA-20250827-COMMUNITY-GMS-RMX2001L1.zip/download"
+  },
+  "links": {
+    "sources": "https://github.com/crdroidandroid/",
+    "screenshots": "https://t.me/kardebayanchannel/558",
+    "supportGroup": "https://t.me/rm6785Official"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "postType": "rom",
+  "name": "CherishOS 4.11",
+  "tag": "CherishOS",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "13",
+  "ruiVersion": 2,
+  "author": "@EvilAnsh",
+  "buildDate": "2023-08-13",
+  "banner": "telegram-message:-1001384382397:2124",
+  "changelog": [
+    "Aug Security Patch",
+    "Full changelog: [DEVICE](https://github.com/EvilAnsh/OTA/raw/tiramisu/changelogs/changelog_RM6785.txt) | [CHERISH](https://t.me/CherishOS/1593)"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "Recommended Recoveries: [OFRP](https://t.me/AnshPrjkts/75) | [PBRP](https://t.me/AnshPrjkts/124) | [SHRP](https://t.me/AnshPrjkts/104)",
+    "4.14.320 LINEAGE-PLUS Kernel"
+  ],
+  "download": {
+    "buildType": "VANILLA/GAPPS",
+    "fileSize": "1.12GB | 1.75GB",
+    "url": "https://www.pling.com/p/1669951/"
+  },
+  "links": {
+    "sources": "https://github.com/CherishOS-Devices/android_device_realme_RM6785",
+    "screenshots": "https://t.me/AnshPrjkts/244?single",
+    "supportGroup": "https://t.me/Anshbuilds"
+  }
+}

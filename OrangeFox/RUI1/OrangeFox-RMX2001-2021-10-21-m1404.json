@@ -1,0 +1,25 @@
+{
+  "postType": "recovery",
+  "name": "OrangeFox Recovery Project",
+  "tag": "OrangeFox",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "RMX2001",
+  "ruiVersion": 1,
+  "author": "Yillié ( @Yilliee )",
+  "buildDate": "2021-10-21",
+  "banner": "telegram-message:-1001384382397:1404",
+  "changelog": [
+    "Updated tag to stable.",
+    "Added partial support for Android12. (Recovery splash issue fixed)",
+    "Flash as a normal zip file in any other custom recovery or fastboot boot the image and flash the zip."
+  ],
+  "bugs": [
+    "Not listed in original post"
+  ],
+  "download": {
+    "buildType": "Stable - Official",
+    "url": "https://orangefox.download/device/rmx2001"
+  },
+  "links": {}
+}

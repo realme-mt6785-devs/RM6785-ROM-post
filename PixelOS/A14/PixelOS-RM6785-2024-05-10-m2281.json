@@ -1,0 +1,37 @@
+{
+  "postType": "rom",
+  "name": "PixelOS 14",
+  "tag": "PixelOS",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "14",
+  "ruiVersion": 2,
+  "author": "@nx_neon69",
+  "buildDate": "2024-05-10",
+  "banner": "telegram-message:-1001384382397:2281",
+  "changelog": [
+    "Initial release",
+    "Added FaceUnlock",
+    "May ASB"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE)",
+    "Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "Based on May ASB (QPR2)",
+    "Shipped with Lineage Kernel",
+    "Recommended Recovery"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "2.0 GB",
+    "url": "https://drive.google.com/file/d/1-3gLTJ2mb7wau5TleTSwI7Hq26tOKo9k/view?usp=sharing"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs",
+    "screenshots": "https://t.me/sourlemonrm6785/56167",
+    "supportGroup": "https://t.me/sourlemonrm6785"
+  }
+}

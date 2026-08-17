@@ -1,0 +1,37 @@
+{
+  "postType": "rom",
+  "name": "Evolution-X 11.6.3",
+  "tag": "EvolutionX",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "nemo",
+  "androidVersion": "16",
+  "ruiVersion": 2,
+  "author": "@EvilAnsh",
+  "buildDate": "2026-04-18",
+  "banner": "telegram-message:-1001384382397:2546",
+  "changelog": [
+    "Synced with latest v11.6.3 changes",
+    "Introduced [VANILLA](https://cdn.evolution-x.org/nemo/16_vanilla) variant",
+    "Full changelog: [DEVICE](https://github.com/Evolution-X/OTA/raw/refs/heads/bka/changelogs/nemo.txt)"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "Realme UI 2.0 based",
+    "This won't work On Realme 7/Narzo 20 Pro/Narzo 30 4G",
+    "Recommended to use [recovery.img](https://cdn.evolution-x.org/nemo/16/recovery/recovery.img/download)",
+    "Recommended GApps: [NikGapps](https://nikgapps.com/)"
+  ],
+  "download": {
+    "buildType": "VANILLA/GAPPS",
+    "fileSize": "1.9GB | 2.4GB",
+    "url": "https://evolution-x.org/devices/nemo"
+  },
+  "links": {
+    "sources": "https://github.com/Evolution-X-Devices/device_realme_nemo",
+    "screenshots": "https://t.me/AnshPrjkt/1137?single",
+    "supportGroup": "https://t.me/AnshBuilds"
+  }
+}

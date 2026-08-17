@@ -1,0 +1,29 @@
+{
+  "postType": "rom",
+  "name": "crDroid 12.0-BETA",
+  "tag": "crDroid",
+  "stability": "BETA",
+  "releaseType": "OFFICIAL",
+  "device": "RMX2001",
+  "androidVersion": "16",
+  "ruiVersion": 2,
+  "author": "Debayan Kar",
+  "buildDate": "2025-08-02",
+  "banner": "telegram-message:-1001384382397:2422",
+  "changelog": [
+    "Initial Android 16 build"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "download": {
+    "buildType": "Vanilla",
+    "fileSize": "1.6GB",
+    "url": "https://sourceforge.net/projects/kardebayan/files/RMX2001L1/crDroidAndroid-16.0-20250802-RMX2001L1-v12.0-BETA.zip/download"
+  },
+  "links": {
+    "sources": "https://github.com/crdroidandroid/",
+    "screenshots": "https://t.me/kardebayanchannel/544",
+    "supportGroup": "https://t.me/rm6785Official"
+  }
+}

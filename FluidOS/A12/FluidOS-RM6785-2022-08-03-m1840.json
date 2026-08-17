@@ -1,0 +1,37 @@
+{
+  "postType": "rom",
+  "name": "Fluid OS-2.7 Soho",
+  "tag": "FluidOS",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "12",
+  "ruiVersion": 2,
+  "author": "@P_AA_ii_N ,@adityashaw2",
+  "buildDate": "2022-08-03",
+  "banner": "telegram-message:-1001384382397:1840",
+  "changelog": [
+    "July 2022 ASB",
+    "Sources upstream",
+    "Fixed youtube lag while playing 1080p/2K video's",
+    "Added 7 new preset in Realme Dirac",
+    "Added back vibrator service from Ronin",
+    "Improved Smoothness",
+    "Misc improvements"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)",
+    "IPv6 Tethering Note",
+    "dont ask for next update if i have time then i will build"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "1.5GB",
+    "url": "https://www.pling.com/p/1873785/"
+  },
+  "links": {
+    "sources": "https://telegra.ph/Sources-04-27",
+    "screenshots": "https://t.me/PAiNsGALLeRYRM6785/429?single",
+    "supportGroup": "https://t.me/unofficial_PAiNsHUB"
+  }
+}

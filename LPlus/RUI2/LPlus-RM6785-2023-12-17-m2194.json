@@ -1,0 +1,40 @@
+{
+  "postType": "kernel",
+  "name": "Lineage Plus 4.0 Christmas Release",
+  "tag": "LPlus",
+  "stability": "STABLE",
+  "device": "RM6785",
+  "kernelVersion": "4.14.333",
+  "ruiVersion": 2,
+  "author": "@AbzRaider",
+  "buildDate": "2023-12-17",
+  "banner": "telegram-message:-1001384382397:2194",
+  "changelog": [
+    "4.14.333 Stable Release",
+    "Fixed Performance Stability ( 30-50 % Better in heavy workloads )",
+    "Improved Performance/Watt ( Also fixed overheating issues ).",
+    "GPU: Checkout some changes from MTK-ALPS-12",
+    "GPU: Affine IRQ to Big CPUS.",
+    "Debloated Crappy OPLUS Drivers",
+    "Reduced VIdeoPlayback Drain while running 1080p60fps videos",
+    "FPSGO : Add FPSGO_RAMP_UP_FEATURE from MTK-ALPS-12.",
+    "Silenced many logspams   ( Reduces a lot of overhead on CPU ).",
+    "Compiled with Proton Clang 16 ( ThinLTO + Inline LTO Optimization)"
+  ],
+  "bugs": [
+    "You Tell Me"
+  ],
+  "notes": [
+    "This is a balanced kernel which focuses on performance stability",
+    "Clear Cache from recovery if ROM lags after flashing kernel",
+    "KSU App - [Here](https://github.com/tiann/KernelSU/releases/download/v0.7.1/KernelSU_v0.7.1_11366-release.apk)"
+  ],
+  "download": {
+    "fileSize": "22MB",
+    "url": "https://pixeldrain.com/u/HNwT7Dvh"
+  },
+  "links": {
+    "sources": "https://github.com/AbzRaider/android_kernel_realme_mt6785/tree/Stable.R2",
+    "supportGroup": "https://t.me/kernelspacedisc"
+  }
+}

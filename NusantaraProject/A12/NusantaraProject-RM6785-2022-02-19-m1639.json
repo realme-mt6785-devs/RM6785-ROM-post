@@ -1,0 +1,43 @@
+{
+  "postType": "rom",
+  "name": "Nusantara Project v4.2",
+  "tag": "NusantaraProject",
+  "stability": "STABLE",
+  "releaseType": "OFFICIAL",
+  "device": "RM6785",
+  "androidVersion": "12",
+  "ruiVersion": 2,
+  "author": "@officialputuid",
+  "buildDate": "2022-02-19",
+  "banner": "telegram-message:-1001384382397:1639",
+  "changelog": [
+    "February 2022 ASB",
+    "Added realmeDirac",
+    "Fixed DRM Widevine L1",
+    "Fixed built-in screen recorder",
+    "Fixed fingerprint (no need rename)",
+    "Fixed offline charging & use pixel animation",
+    "Import/Update Power HAL configs from stock",
+    "Import overlay & props from stock",
+    "Import apns-configs from stock",
+    "Switch & Update Lawnchair/icons",
+    "Misc & performance improvements"
+  ],
+  "bugs": [
+    "Permissive SELinux"
+  ],
+  "notes": [
+    "Vanilla & GApps Build",
+    "For Vanilla Build, Use BitGApps (Only)"
+  ],
+  "download": {
+    "buildType": "VANILLA/GAPPS",
+    "fileSize": "1GB | 1.5GB",
+    "url": "https://www.pling.com/p/1500429/"
+  },
+  "links": {
+    "sources": "https://github.com/psionicprjkt/",
+    "screenshots": "https://t.me/psionicprjkt/347",
+    "supportGroup": "https://t.me/psionicprjktchat"
+  }
+}

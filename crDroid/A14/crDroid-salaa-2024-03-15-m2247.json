@@ -1,0 +1,33 @@
+{
+  "postType": "rom",
+  "name": "crDroid 10.0",
+  "tag": "crDroid",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "salaa",
+  "androidVersion": "14",
+  "ruiVersion": 3,
+  "author": "@kardebayan",
+  "buildDate": "2024-03-15",
+  "banner": "telegram-message:-1001384382397:2247",
+  "changelog": [
+    "Initial build"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "Report bugs with proper logs only! (Make sure to report in the actual support group)",
+    "Clean flash is mandatory!!!"
+  ],
+  "download": {
+    "buildType": "VANILLA",
+    "fileSize": "1.20GB",
+    "url": "https://onedrive-vercel-index-kohl-eight-30.vercel.app/ok1/crDroidAndroid%2d14%2e0%2d20240315%2dsalaa%2dv10%2e2%2ezip"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs",
+    "screenshots": "https://t.me/kardebayanchat/108406?single",
+    "supportGroup": "https://t.me/kardebayanchat/"
+  }
+}

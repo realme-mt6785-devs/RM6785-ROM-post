@@ -1,0 +1,35 @@
+{
+  "postType": "rom",
+  "name": "Derpfest 14",
+  "tag": "DerpfestOS",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "salaa",
+  "androidVersion": "14",
+  "ruiVersion": 3,
+  "author": "@shitijnotop",
+  "buildDate": "2024-04-23",
+  "banner": "telegram-message:-1001384382397:2271",
+  "changelog": [
+    "Initial Build",
+    "April Security Patch",
+    "Full changelog : [Device ](https://t.me/shitijsprojectschat/1426/1576)| [Derpfest](https://t.me/shitijsprojectschat/1426/1576)"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "Strombreaker Kernel",
+    "Clean Flash mandatory"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "1.97GB",
+    "url": "https://t.me/shitijsprojectschat/1426/1648"
+  },
+  "links": {
+    "sources": "https://github.com/realme-mt6785-devs/android_device_realme_salaa",
+    "screenshots": "https://t.me/shitijsprojectschat/755/1504",
+    "supportGroup": "https://t.me/shitijsprojectschat"
+  }
+}
