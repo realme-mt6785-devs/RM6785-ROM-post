@@ -35,6 +35,9 @@ jobs:
       - run: bun run src/cli/validate.ts
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
           EVENT_ACTION: ${{ github.event.action }}
+          GITHUB_ACTOR: ${{ github.actor }}
           POST_STYLE: ${{ vars.POST_STYLE }}
+          TELEGRAM_DEV_GROUP: ${{ vars.TELEGRAM_DEV_GROUP }}

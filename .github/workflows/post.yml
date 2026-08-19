@@ -37,8 +37,10 @@ jobs:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
           APPROVAL_LABEL: ${{ github.event.label.name }}
+          GITHUB_ACTOR: ${{ github.actor }}
           POST_STYLE: ${{ vars.POST_STYLE }}
           TELEGRAM_RM6785_CHANNEL: ${{ vars.TELEGRAM_RM6785_CHANNEL }}
+          TELEGRAM_DEV_GROUP: ${{ vars.TELEGRAM_DEV_GROUP }}
           TELEGRAM_STICKER_FILE_ID: ${{ vars.TELEGRAM_STICKER_FILE_ID }}
           RECORD_ROOT: ${{ github.workspace }}
 
