@@ -7,7 +7,11 @@ import { blockers, inspect, warnings } from "../inspect";
 import { approvalDelayMinutes, IssueThread, isApprovalLabel } from "../issue";
 import { issueSuffix, recordPath } from "../paths";
 import { alreadyPosted, posted, rejected } from "../report";
-import { messageLink, publishToChannel } from "../telegram";
+import {
+  messageLink,
+  notifyDevGroupWithToken,
+  publishToChannel,
+} from "../telegram";
 
 const setOutput = async (name: string, value: string): Promise<void> => {
   const file = process.env.GITHUB_OUTPUT;
@@ -23,6 +27,9 @@ const main = async (): Promise<void> => {
 
   if (labels.includes("posted")) {
     await thread.comment(alreadyPosted(null));
+    await notifyDevGroupWithToken(
+      `INFO: Duplicate publish attempt ignored for #${thread.number}\n${thread.url}`,
+    );
     console.log("already published; refusing to send it twice");
     return;
   }
@@ -34,6 +41,10 @@ const main = async (): Promise<void> => {
     await thread.comment(rejected(stopping));
     for (const label of labels.filter(isApprovalLabel))
       await thread.removeLabel(label);
+
+    await notifyDevGroupWithToken(
+      `BLOCKED: Approval rejected because #${thread.number} no longer passes lint\n${thread.url}`,
+    );
 
     console.error("approved but no longer valid, nothing sent");
     process.exit(1);
@@ -50,6 +61,9 @@ const main = async (): Promise<void> => {
   // survived, this still stops a second post.
   if (existsSync(absolute)) {
     await thread.comment(alreadyPosted(null));
+    await notifyDevGroupWithToken(
+      `INFO: Existing archive record prevented a duplicate post for #${thread.number}\n${thread.url}`,
+    );
     console.log(`${relative} already exists; refusing to send it twice`);
     return;
   }
@@ -57,9 +71,14 @@ const main = async (): Promise<void> => {
   const delay = approvalDelayMinutes(process.env.APPROVAL_LABEL);
   if (delay > 0) console.log(`counting down ${delay}m before posting`);
 
+  await notifyDevGroupWithToken(
+    `APPROVED: #${thread.number} by ${process.env.GITHUB_ACTOR?.trim() || "an organization member"}\n${thread.url}`,
+  );
+
   const messageId = await publishToChannel(post, delay);
   const link = messageLink(messageId);
   console.log(`posted: ${link}`);
+  await notifyDevGroupWithToken(`PUBLISHED: #${thread.number}\n${link}`);
 
   // Claim it immediately. Everything below can be redone by hand; sending cannot.
   await thread.addLabels(["posted"]);

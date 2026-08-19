@@ -6,6 +6,7 @@ import { isAnimation, probeBanner } from "./banner";
 import {
   COUNTDOWN_EDIT_INTERVAL,
   POST_STYLE,
+  TELEGRAM_DEV_GROUP,
   TELEGRAM_RM6785_CHANNEL,
   TELEGRAM_STICKER_FILE_ID,
 } from "./config";
@@ -25,21 +26,30 @@ const countdownText = (remaining: string): string =>
 export const countdown = async (
   bot: TelegramBot,
   minutes: number,
-): Promise<number> => {
-  const sticker = await bot.sendSticker(
+  destinations: number[] = [
     TELEGRAM_RM6785_CHANNEL,
-    TELEGRAM_STICKER_FILE_ID,
-  );
-
-  let countdownMessageId: number | undefined;
+    ...(TELEGRAM_DEV_GROUP === null ? [] : [TELEGRAM_DEV_GROUP]),
+  ],
+): Promise<number[]> => {
+  const stickers: { message_id: number }[] = [];
+  const countdownMessages: { chatId: number; messageId: number }[] = [];
 
   try {
-    const sent = await bot.sendMessage(
-      TELEGRAM_RM6785_CHANNEL,
-      countdownText(`${minutes}m`),
-      { parse_mode: "HTML" },
+    for (const chatId of destinations) {
+      stickers.push(await bot.sendSticker(chatId, TELEGRAM_STICKER_FILE_ID));
+    }
+
+    const sent = await Promise.all(
+      destinations.map(async (chatId) => {
+        const message = await bot.sendMessage(
+          chatId,
+          countdownText(`${minutes}m`),
+          { parse_mode: "HTML" },
+        );
+        countdownMessages.push({ chatId, messageId: message.message_id });
+        return message;
+      }),
     );
-    countdownMessageId = sent.message_id;
 
     const endsAt = Date.now() + minutes * 60_000;
 
@@ -54,29 +64,95 @@ export const countdown = async (
 
       const label = `${Math.floor(remaining / 60_000)}m ${Math.floor(remaining / 1000) % 60}s`;
 
-      try {
-        await bot.editMessageText({
-          chat_id: TELEGRAM_RM6785_CHANNEL,
-          message_id: sent.message_id,
-          text: countdownText(label),
-          parse_mode: "HTML",
-        });
-      } catch {
-        // an unchanged edit or a momentary rate limit should not lose the post
-      }
+      await Promise.allSettled(
+        sent.map((message, index) =>
+          bot.editMessageText({
+            chat_id: destinations[index],
+            message_id: message.message_id,
+            text: countdownText(label),
+            parse_mode: "HTML",
+          }),
+        ),
+      );
     }
 
-    await bot.deleteMessage(TELEGRAM_RM6785_CHANNEL, sent.message_id);
-    return sticker.message_id;
+    await Promise.all(
+      countdownMessages.map(({ chatId, messageId }) =>
+        bot.deleteMessage(chatId, messageId),
+      ),
+    );
+    return stickers.map((sticker) => sticker.message_id);
   } catch (error) {
     await Promise.allSettled([
-      bot.deleteMessage(TELEGRAM_RM6785_CHANNEL, sticker.message_id),
-      ...(countdownMessageId === undefined
-        ? []
-        : [bot.deleteMessage(TELEGRAM_RM6785_CHANNEL, countdownMessageId)]),
+      ...stickers.map((sticker, index) =>
+        bot.deleteMessage(destinations[index], sticker.message_id),
+      ),
+      ...countdownMessages.map(({ chatId, messageId }) =>
+        bot.deleteMessage(chatId, messageId),
+      ),
     ]);
     throw error;
   }
+};
+
+const devSend = async (
+  action: (chatId: number) => Promise<unknown>,
+  chatId: number | null = TELEGRAM_DEV_GROUP,
+): Promise<void> => {
+  if (chatId === null) return;
+  try {
+    await action(chatId);
+  } catch (error) {
+    console.warn(`dev-group notification failed: ${(error as Error).message}`);
+  }
+};
+
+export const notifyDevGroup = async (
+  bot: TelegramBot,
+  text: string,
+  chatId: number | null = TELEGRAM_DEV_GROUP,
+): Promise<void> => devSend((target) => bot.sendMessage(target, text), chatId);
+
+export const previewToDevGroup = async (
+  bot: TelegramBot,
+  post: Post,
+): Promise<void> => {
+  if (TELEGRAM_DEV_GROUP === null) return;
+
+  try {
+    if (POST_STYLE === "rich") {
+      await bot.sendRichMessage(TELEGRAM_DEV_GROUP, {
+        markdown: renderRich(post),
+      });
+      return;
+    }
+
+    const { caption, entities } = renderClassic(post);
+    const probe = await probeBanner(post.banner);
+    const options = { caption, caption_entities: entities };
+    if (isAnimation(probe.contentType))
+      await bot.sendAnimation(TELEGRAM_DEV_GROUP, post.banner, options);
+    else await bot.sendPhoto(TELEGRAM_DEV_GROUP, post.banner, options);
+  } catch (error) {
+    console.warn(`dev-group preview failed: ${(error as Error).message}`);
+  }
+};
+
+const botFromEnv = (): TelegramBot | null => {
+  const token = process.env.BOT_TOKEN?.trim();
+  return token ? new TelegramBot(token, { polling: false }) : null;
+};
+
+export const notifyDevGroupWithToken = async (text: string): Promise<void> => {
+  const bot = botFromEnv();
+  if (!bot) return;
+  await notifyDevGroup(bot, text);
+};
+
+export const previewPostToDevGroup = async (post: Post): Promise<void> => {
+  const bot = botFromEnv();
+  if (!bot) return;
+  await previewToDevGroup(bot, post);
 };
 
 const sendClassic = async (bot: TelegramBot, post: Post): Promise<number> => {
@@ -109,19 +185,25 @@ export const publishToChannel = async (
   if (!token) throw new Error("BOT_TOKEN is not set");
 
   const bot = new TelegramBot(token, { polling: false });
-  let stickerMessageId: number | undefined;
+  let stickerMessageIds: number[] | undefined;
 
   try {
     if (delayMinutes > 0) {
-      stickerMessageId = await countdown(bot, delayMinutes);
+      stickerMessageIds = await countdown(bot, delayMinutes);
     }
 
     return POST_STYLE === "rich" ? sendRich(bot, post) : sendClassic(bot, post);
   } catch (error) {
-    if (stickerMessageId !== undefined) {
-      await bot
-        .deleteMessage(TELEGRAM_RM6785_CHANNEL, stickerMessageId)
-        .catch(() => undefined);
+    if (stickerMessageIds !== undefined) {
+      const destinations = [
+        TELEGRAM_RM6785_CHANNEL,
+        ...(TELEGRAM_DEV_GROUP === null ? [] : [TELEGRAM_DEV_GROUP]),
+      ];
+      await Promise.allSettled(
+        stickerMessageIds.map((messageId, index) =>
+          bot.deleteMessage(destinations[index], messageId),
+        ),
+      );
     }
     throw error;
   }

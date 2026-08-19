@@ -8,6 +8,14 @@ const intFromEnv = (name: string, fallback: number): number => {
   return Number.isFinite(parsed) ? parsed : fallback;
 };
 
+const optionalIntFromEnv = (name: string): number | null => {
+  const raw = process.env[name]?.trim();
+  if (!raw) return null;
+
+  const parsed = Number.parseInt(raw, 10);
+  return Number.isFinite(parsed) ? parsed : null;
+};
+
 /**
  * How posts reach the channel.
  *
@@ -27,6 +35,8 @@ export const TELEGRAM_RM6785_CHANNEL = intFromEnv(
   "TELEGRAM_RM6785_CHANNEL",
   -1001384382397,
 );
+
+export const TELEGRAM_DEV_GROUP = optionalIntFromEnv("TELEGRAM_DEV_GROUP");
 
 export const TELEGRAM_STICKER_FILE_ID =
   process.env.TELEGRAM_STICKER_FILE_ID?.trim() ||

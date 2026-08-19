@@ -2,6 +2,7 @@ import { blockers, inspect, warnings } from "../inspect";
 import { IssueThread, isApprovalLabel } from "../issue";
 import { issueSuffix, recordPath } from "../paths";
 import { failure, success } from "../report";
+import { previewPostToDevGroup, notifyDevGroupWithToken } from "../telegram";
 
 const STATUS_LABELS = ["lint:pass", "lint:fail"];
 
@@ -24,11 +25,21 @@ const main = async (): Promise<void> => {
   if (process.env.EVENT_ACTION === "edited") {
     for (const label of labels.filter(isApprovalLabel)) {
       await thread.removeLabel(label);
+      await notifyDevGroupWithToken(
+        `WARNING: Approval removed after submission #${thread.number} was edited\n${thread.url}`,
+      );
       console.log(`removed ${label}: the issue changed since it was approved`);
     }
   }
 
   const passed = post !== null && stopping.length === 0;
+
+  if (passed && post) {
+    await previewPostToDevGroup(post);
+    await notifyDevGroupWithToken(
+      `READY: Submission ${process.env.EVENT_ACTION === "opened" ? "received and" : "updated and"} passed lint for #${thread.number}\n${thread.url}`,
+    );
+  }
 
   await thread.stickyComment(
     passed

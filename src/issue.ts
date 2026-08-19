@@ -39,6 +39,12 @@ export class IssueThread {
     return { owner: this.owner, repo: this.repo, issue_number: this.number };
   }
 
+  get url(): string {
+    const server =
+      process.env.GITHUB_SERVER_URL?.trim() || "https://github.com";
+    return `${server}/${this.owner}/${this.repo}/issues/${this.number}`;
+  }
+
   async body(): Promise<string> {
     const issue = await this.api.issues.get(this.target);
     return issue.data.body ?? "";
