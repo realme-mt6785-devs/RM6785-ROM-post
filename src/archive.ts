@@ -124,6 +124,22 @@ const inlineText = (
   return result + value.slice(cursor);
 };
 
+/**
+ * Strips leading decoration so a line-anchored pattern still matches. Older
+ * posts prefix their labels with whatever emoji the author liked — `ℹ️ Version:`,
+ * `📅 Build date:`, `📎 File size:`, `👤 by` — and hardcoding each one is how
+ * `Version:` came to be missed on the EvolutionX posts.
+ */
+const undecorated = (line: Line): Line => {
+  const decoration = line.text.match(
+    /^(?:[\s\p{Extended_Pictographic}\p{So}\p{Sk}•▪◦*=|-]|\uFE0F|\u200D)+/u,
+  );
+  if (!decoration) return line;
+
+  const width = decoration[0].length;
+  return { start: line.start + width, text: line.text.slice(width) };
+};
+
 const valueAfter = (
   line: Line,
   pattern: RegExp,
@@ -262,11 +278,50 @@ const footerName = (line: Line): keyof Post["links"] | undefined => {
   return undefined;
 };
 
+/**
+ * Lines that look like a title but are not one: section labels, the "New build
+ * available" header used by posts that carry no title at all, and the all-caps
+ * device warnings that sat above the title before salaa-only posts were
+ * standardised.
+ */
+/** Android release names as some posts spell them, e.g. "Version: Eleven". */
+const ANDROID_CODENAME: Record<string, string> = {
+  eleven: "11",
+  thirteen: "13",
+  twelve: "12",
+};
+
+const notATitle = (text: string): boolean =>
+  /^(?:build type|download|changelog)/i.test(text) ||
+  /\bnew\b.*\bbuild available\b/i.test(text) ||
+  /\bnot\s+for\b/i.test(text) ||
+  /^(?:release|credits?|by|xda)\b/i.test(text);
+
+/** Drops the badges a title carries so only the build's name is left. */
+const bareName = (text: string): string =>
+  text
+    .replace(/\[(?:STABLE|BETA|ALPHA)\]/gi, "")
+    .replace(/\b(?:OFFICIAL|UNOFFICIAL|STABLE|BETA|ALPHA)\b/gi, "")
+    // "BLISS OS for RMX2001" and "DerpFest | ALPHA - OFFICIAL" both carry a
+    // device or badge tail that is already its own field.
+    .replace(/\s+for\s+\S.*$/i, "")
+    .replace(/[\s•▪◦*=|-]+$/u, "")
+    .trim();
+
 const buildDateFrom = (
   value: string | undefined,
   sentAt: string | undefined,
 ): string => {
-  const numeric = value?.match(/(\d{1,2})[-./](\d{1,2})[-./](\d{2,4})/);
+  // Try year-first before day-first. The day-first pattern cannot match at the
+  // start of "2021-02-14", but it does match two characters in, reading
+  // "21-02-14" as 21 February 2014 — which is how m695 and m897 were archived
+  // with dates in 2014 and 2004.
+  const iso = value?.match(/\b(\d{4})[-./](\d{1,2})[-./](\d{1,2})\b/);
+  if (iso) {
+    return `${iso[1]}-${iso[2].padStart(2, "0")}-${iso[3].padStart(2, "0")}`;
+  }
+
+  const numeric = value?.match(/\b(\d{1,2})[-./](\d{1,2})[-./](\d{2,4})\b/);
   if (numeric) {
     const year = numeric[3].length === 2 ? `20${numeric[3]}` : numeric[3];
     return `${year}-${numeric[2].padStart(2, "0")}-${numeric[1].padStart(2, "0")}`;
@@ -277,6 +332,24 @@ const buildDateFrom = (
     return written.toISOString().slice(0, 10);
   if (sentAt) return new Date(sentAt).toISOString().slice(0, 10);
   return fail("build date could not be determined");
+};
+
+/**
+ * A build cannot be newer than the post announcing it, and the channel does not
+ * carry builds from years before. Captions do sometimes claim otherwise —
+ * m2359 really does read 06-02-1969, and m897 gave a date two weeks after its
+ * own post — so an implausible result defers to when the message was sent.
+ */
+const plausibleDate = (parsed: string, sentAt: string | undefined): string => {
+  if (!sentAt) return parsed;
+
+  const sent = new Date(sentAt);
+  const built = new Date(`${parsed}T00:00:00Z`);
+  if (Number.isNaN(built.getTime())) return sent.toISOString().slice(0, 10);
+
+  const days = (built.getTime() - sent.getTime()) / 86_400_000;
+  if (days > 1 || days < -730) return sent.toISOString().slice(0, 10);
+  return parsed;
 };
 
 const legacySection = (
@@ -315,7 +388,7 @@ const legacyValue = (
   pattern: RegExp,
   entities: readonly ArchiveEntity[],
 ): string | undefined => {
-  const line = lines.find((item) => pattern.test(item.text));
+  const line = lines.map(undecorated).find((item) => pattern.test(item.text));
   return line ? valueAfter(line, pattern, entities) : undefined;
 };
 
@@ -347,15 +420,10 @@ const parseLegacy = (message: ArchiveMessage, hashtags: string[]): Post => {
     /Android\s*(?::|version:?)?\s*(1[0-7])/i,
   );
   const namedAndroid = message.text.match(/\b(Eleven|Twelve|Thirteen)\b/i)?.[1];
-  const namedMajor: Record<string, string> = {
-    eleven: "11",
-    thirteen: "13",
-    twelve: "12",
-  };
   const androidMajor =
     androidTag?.[1] ??
     androidText?.[1] ??
-    (namedAndroid ? namedMajor[namedAndroid.toLowerCase()] : undefined) ??
+    (namedAndroid ? ANDROID_CODENAME[namedAndroid.toLowerCase()] : undefined) ??
     message.text
       .match(/LineageOS[- ](18|19|20|21|22)/i)?.[1]
       ?.replace(/^(18|19|20|21|22)$/, (version) => String(Number(version) - 7));
@@ -373,20 +441,37 @@ const parseLegacy = (message: ArchiveMessage, hashtags: string[]): Post => {
   const ruiText = message.text.match(/(?:RUI|Realme\s*UI)[\s.-]*([1-3])/i);
   const ruiVersion = Number(ruiTag?.[1] ?? ruiText?.[1] ?? 2) as 1 | 2 | 3;
 
-  const titleLine = lines.find(
-    (line, index) =>
-      index > 0 &&
-      /\b(?:for\s+Realme|kernel|recovery|OS\b|ROM\b)/i.test(line.text) &&
-      !/^(?:build type|download|changelog)/i.test(line.text.trim()),
+  // "New build available for Realme 6 (RMX2001)" is a header, not a title, and
+  // the posts using it carry no title at all — so it has to be rejected here
+  // rather than after the "for Realme" split, which would otherwise yield a
+  // name of "New build available".
+  // `\b(?:...|OS\b|...)` needs a boundary *before* OS, so it finds a free-standing
+  // "OS" but never a suffix like "NezukoOS" — which is how a "• Source Built
+  // kernel" bullet came to win over the real title. Opening with the post's own
+  // tag is the reliable signal, and narrower than loosening that alternation.
+  const opensWithTag = (text: string): boolean =>
+    text.toLowerCase().startsWith(hashtags[0]!.toLowerCase());
+
+  const titleLine = lines.find((line, index) => {
+    if (index === 0) return false;
+    const bare = undecorated(line).text.trim();
+    if (notATitle(bare)) return false;
+    return (
+      opensWithTag(bare) ||
+      /\b(?:for\s+Realme|kernel|recovery|OS\b|ROM\b)/i.test(line.text)
+    );
+  });
+  const rawVersion = legacyValue(
+    lines,
+    /^\s*Version\s*:\s*/i,
+    message.entities,
   );
-  const version = legacyValue(lines, /^\s*Version\s*:\s*/i, message.entities);
+  const version =
+    rawVersion && rawVersion.toLowerCase() in ANDROID_CODENAME
+      ? undefined
+      : rawVersion;
   let name = titleLine?.text.match(/^(.*?)\s+for\s+Realme\b/i)?.[1].trim();
-  if (!name && titleLine && !/new build available/i.test(titleLine.text)) {
-    name = titleLine.text
-      .replace(/\[(?:STABLE|BETA|ALPHA)\]/gi, "")
-      .replace(/\b(?:OFFICIAL|UNOFFICIAL)\b/gi, "")
-      .trim();
-  }
+  if (!name && titleLine) name = bareName(undecorated(titleLine).text);
   name ||= `${hashtags[0]}${version ? ` ${version}` : ""}`;
   name = name.slice(0, 96);
 
@@ -415,7 +500,10 @@ const parseLegacy = (message: ArchiveMessage, hashtags: string[]): Post => {
       /^\s*(?:📅\s*)?(?:•\s*)?Build date\s*:\s*/i,
       message.entities,
     ) ?? legacyValue(lines, /^\s*Build Date\s*:\s*/i, message.entities);
-  const buildDate = buildDateFrom(displayedDate, message.sentAt);
+  const buildDate = plausibleDate(
+    buildDateFrom(displayedDate, message.sentAt),
+    message.sentAt,
+  );
 
   const changelog = legacySection(
     lines,
@@ -532,8 +620,13 @@ const parse = (message: ArchiveMessage, hashtags: string[]): Post => {
   if (!ruiVersion) fail("RealmeUI version could not be determined");
 
   const lines = splitLines(message.text);
+  // Not simply the first non-blank line: a warning banner sometimes sits above
+  // the title, and taking it wholesale is how m2164 was archived as "NOT".
   const titleIndex = lines.findIndex(
-    (line, index) => index > 0 && Boolean(line.text.trim()),
+    (line, index) =>
+      index > 0 &&
+      Boolean(line.text.trim()) &&
+      !notATitle(undecorated(line).text.trim()),
   );
   if (titleIndex < 0) fail("title is missing");
   const title = lines[titleIndex].text.trim();
@@ -588,7 +681,10 @@ const parse = (message: ArchiveMessage, hashtags: string[]): Post => {
   }
   const date = displayedDate.match(/^(\d{1,2})-(\d{1,2})-(\d{4})$/);
   if (!date) throw new NotEligible("build date is not DD-MM-YYYY");
-  const buildDate = `${date[3]}-${date[2].padStart(2, "0")}-${date[1].padStart(2, "0")}`;
+  const buildDate = plausibleDate(
+    `${date[3]}-${date[2].padStart(2, "0")}-${date[1].padStart(2, "0")}`,
+    message.sentAt,
+  );
 
   let kernelVersion: string | undefined;
   if (postType === "kernel") {
