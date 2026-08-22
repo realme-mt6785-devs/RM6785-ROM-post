@@ -60,3 +60,20 @@ jobs:
             git pull --rebase --autostash
           done
           exit 1
+
+      # Nudges the docs site to rebuild so the build shows up there straight
+      # away. Deliberately best-effort: the post is in the channel and the record
+      # is pushed by now, and RM6785-docs rebuilds nightly regardless, so a
+      # missing or expired token must not fail a run that already published.
+      - if: steps.publish.outputs.record != ''
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.DOCS_DISPATCH_TOKEN }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo 'DOCS_DISPATCH_TOKEN is not set; the site will pick this up on its next scheduled build'
+            exit 0
+          fi
+          gh api --method POST \
+            repos/${{ github.repository_owner }}/RM6785-docs/dispatches \
+            --field event_type=records-updated
