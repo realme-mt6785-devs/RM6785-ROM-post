@@ -1,0 +1,1229 @@
+[
+  {
+    "chatId": -1001384382397,
+    "id": 492,
+    "mediaType": "photo",
+    "sentAt": "2021-01-21T06:33:34.000Z",
+    "text": "#SkyHawk #Recovery Project #RMX2001 [UNOFFICIAL] BETA.\nRelease-20/01/2021[Reposted coz of some stuffs]\n\n\n🔹Initial Build.\n🔹This is Beta version Maybe Theme and Password shouldn't work Properly.\n🔹Download:  recovery.img | recovery.zip\n🔹Only for Custom Roms.\n\nBy- @ManshuTyagi\nXDA Thread- link\n\nCredits- @tlas01 for testing.\n\nFollow @RM6Updates\nJoin @Rm6Official",
+    "entities": [
+      {
+        "kind": "hashtag",
+        "length": 8,
+        "offset": 0
+      },
+      {
+        "kind": "bold",
+        "length": 1,
+        "offset": 8
+      },
+      {
+        "kind": "hashtag",
+        "length": 9,
+        "offset": 9
+      },
+      {
+        "kind": "bold",
+        "length": 1,
+        "offset": 9
+      },
+      {
+        "kind": "bold",
+        "length": 1,
+        "offset": 18
+      },
+      {
+        "kind": "bold",
+        "length": 1,
+        "offset": 26
+      },
+      {
+        "kind": "hashtag",
+        "length": 8,
+        "offset": 27
+      },
+      {
+        "kind": "bold",
+        "length": 1,
+        "offset": 27
+      },
+      {
+        "kind": "bold",
+        "length": 20,
+        "offset": 35
+      },
+      {
+        "kind": "text_link",
+        "length": 12,
+        "offset": 208,
+        "url": "https://www.dropbox.com/s/pi810ceaz36qezi/SHRP_v_3.0_Beta_UNOFFICIAL_RMX2001.img?dl=0"
+      },
+      {
+        "kind": "text_link",
+        "length": 13,
+        "offset": 223,
+        "url": "https://drive.google.com/file/d/1-H1q-85YPmOPB8gU1KDos2CbYtTSIEmy/view?usp=drivesdk"
+      },
+      {
+        "kind": "mention",
+        "length": 12,
+        "offset": 265
+      },
+      {
+        "kind": "text_link",
+        "length": 6,
+        "offset": 290,
+        "url": "https://forum.xda-developers.com/t/sky-hawk-recovery-project-unofficial-recovery-rmx2001-wasabi.4221017/"
+      },
+      {
+        "kind": "mention",
+        "length": 7,
+        "offset": 305
+      },
+      {
+        "kind": "mention",
+        "length": 11,
+        "offset": 334
+      },
+      {
+        "kind": "mention",
+        "length": 12,
+        "offset": 351
+      }
+    ]
+  },
+  {
+    "chatId": -1001384382397,
+    "id": 695,
+    "mediaType": "video",
+    "sentAt": "2021-02-15T11:52:16.000Z",
+    "text": "#DerpFest Alpha #ROM #R #RMX2001 #Official\n\nDerpFest | ALPHA - OFFICIAL\n• Android: 11 (R)\n\n• Device : Realme 6 Series (RMX2001)\n\n• By: @TheCloverly\n\n• Thanks to @ManshuTyagi\n\n• Build Date : 2021-02-14\n\n\n▪️ Download:  XDA THREAD\n▪️ Changelog\n\n\n\n• Notes \n- GApps Included\n-Night Light not fixed.",
+    "entities": [
+      {
+        "kind": "hashtag",
+        "length": 9,
+        "offset": 0
+      },
+      {
+        "kind": "hashtag",
+        "length": 4,
+        "offset": 16
+      },
+      {
+        "kind": "hashtag",
+        "length": 2,
+        "offset": 21
+      },
+      {
+        "kind": "hashtag",
+        "length": 8,
+        "offset": 24
+      },
+      {
+        "kind": "hashtag",
+        "length": 9,
+        "offset": 33
+      },
+      {
+        "kind": "bold",
+        "length": 28,
+        "offset": 44
+      },
+      {
+        "kind": "bold",
+        "length": 1,
+        "offset": 81
+      },
+      {
+        "kind": "mention",
+        "length": 12,
+        "offset": 135
+      },
+      {
+        "kind": "mention",
+        "length": 12,
+        "offset": 161
+      },
+      {
+        "kind": "text_link",
+        "length": 11,
+        "offset": 216,
+        "url": "https://forum.xda-developers.com/t/rom-11-0-alpha-derpfest-for-realme-6-series-official-2020-02-15.4233907/"
+      },
+      {
+        "kind": "text_link",
+        "length": 1,
+        "offset": 227,
+        "url": "https://t.me/wayneecloud/17"
+      },
+      {
+        "kind": "text_link",
+        "length": 9,
+        "offset": 231,
+        "url": "https://telegra.ph/Changelog-for-Derpfest-Alpha---RMX2001-02-15"
+      },
+      {
+        "kind": "text_link",
+        "length": 4,
+        "offset": 240,
+        "url": "https://forum.xda-developers.com/t/rom-11-0-alpha-derpfest-for-realme-6-series-official-2020-02-15.4233907/"
+      }
+    ]
+  },
+  {
+    "chatId": -1001384382397,
+    "id": 897,
+    "mediaType": "photo",
+    "sentAt": "2021-04-17T18:42:51.000Z",
+    "text": "#PitchBlack #Recovery #RMX2001\nPitchBlack Recovery for Realme 6/7, Narzo 20 Pro (RMX2001)\n\nInfo\n\nPitchBlack V3.1.0 Official\nBased on TWRP 3.5.2\nBuild Date: 2021/05/04\n\nMaintainer: Yusuf Sözdutmaz\nDOWNLOAD: Here\n\nChangelog:\n-Fixed padding (Punch hole won't cover stuff anymore)\n-Fixed temperature not being displayed \n-Add modem related partitions to \"Backup\" section\n-Sync latest PBRP source\n\nMD5: 75100608f7b5323f6db4de8d77df925e",
+    "entities": [
+      {
+        "kind": "hashtag",
+        "length": 11,
+        "offset": 0
+      },
+      {
+        "kind": "hashtag",
+        "length": 9,
+        "offset": 12
+      },
+      {
+        "kind": "hashtag",
+        "length": 8,
+        "offset": 22
+      },
+      {
+        "kind": "bold",
+        "length": 24,
+        "offset": 55
+      },
+      {
+        "kind": "code",
+        "length": 7,
+        "offset": 81
+      },
+      {
+        "kind": "bold",
+        "length": 6,
+        "offset": 91
+      },
+      {
+        "kind": "bold",
+        "length": 9,
+        "offset": 115
+      },
+      {
+        "kind": "bold",
+        "length": 10,
+        "offset": 144
+      },
+      {
+        "kind": "code",
+        "length": 12,
+        "offset": 156
+      },
+      {
+        "kind": "bold",
+        "length": 10,
+        "offset": 168
+      },
+      {
+        "kind": "bold",
+        "length": 10,
+        "offset": 196
+      },
+      {
+        "kind": "text_link",
+        "length": 6,
+        "offset": 206,
+        "url": "https://pitchblackrecovery.com/RMX2001"
+      },
+      {
+        "kind": "bold",
+        "length": 9,
+        "offset": 212
+      },
+      {
+        "kind": "bold",
+        "length": 3,
+        "offset": 393
+      }
+    ]
+  },
+  {
+    "chatId": -1001384382397,
+    "id": 992,
+    "mediaType": "photo",
+    "sentAt": "2021-05-14T16:55:35.000Z",
+    "text": "#NezukoOS #ROM #UNofficial #RMX2001\n=============================\n        NezukoOS 1.3 UNOFFICIAL\n                      Android 11\n=============================\n📆Update: 14-05-2021\n\nBy: @UdayRocker\n\n⬇️Download: Drive\n \n🆑Changelog\n• Source changelog \"here\"\n• May security patch\n• Source Built kernel\n• Added new features in realme settings\n• Updated Power Profile Config\n• Clean flash needed\n• For Root Flash magisk\n\n🌆 CHECK SCREENSHOTS HERE\n\nBugs:\n1.Night light\n\nThanks to my bro @sarthakroy2002 for server!\nThanks to @SamarV121 for trees\nthanks to @tlas01 for help\n\nDevice Group: @RM6official\nChannel: @RM6Updates",
+    "entities": [
+      {
+        "kind": "hashtag",
+        "length": 9,
+        "offset": 0
+      },
+      {
+        "kind": "hashtag",
+        "length": 4,
+        "offset": 10
+      },
+      {
+        "kind": "hashtag",
+        "length": 11,
+        "offset": 15
+      },
+      {
+        "kind": "hashtag",
+        "length": 8,
+        "offset": 27
+      },
+      {
+        "kind": "mention",
+        "length": 11,
+        "offset": 187
+      },
+      {
+        "kind": "text_link",
+        "length": 5,
+        "offset": 212,
+        "url": "https://drive.google.com/uc?id=1H4_yv28X0v7OvnkM2tHH2TQX1NItp_h3&export=download"
+      },
+      {
+        "kind": "text_link",
+        "length": 4,
+        "offset": 252,
+        "url": "https://t.me/NezukoOSUpdates/286"
+      },
+      {
+        "kind": "text_link",
+        "length": 4,
+        "offset": 439,
+        "url": "https://t.me/udayinfoo/23?single"
+      },
+      {
+        "kind": "mention",
+        "length": 15,
+        "offset": 483
+      },
+      {
+        "kind": "mention",
+        "length": 10,
+        "offset": 521
+      },
+      {
+        "kind": "mention",
+        "length": 7,
+        "offset": 552
+      },
+      {
+        "kind": "mention",
+        "length": 12,
+        "offset": 584
+      },
+      {
+        "kind": "mention",
+        "length": 11,
+        "offset": 606
+      }
+    ]
+  },
+  {
+    "chatId": -1001384382397,
+    "id": 1078,
+    "mediaType": "photo",
+    "sentAt": "2021-06-13T06:46:10.000Z",
+    "text": "#EvolutionX #ROM #RMX2001\n\n📲 New Official build available for Realme 6 Series (RMX2001)\n👤 by Tanmay (@tlas01)\n\nℹ️ Version: Eleven\n📅 Build date: 2021 June 12 16:16\n📎 File size: 1 GB\n\n⬇️  Download now ⬇️ \n\n📃 Changelog 📃\n\n📱 XDA Thread\n\n#RMX2001 #KeepEvolving",
+    "entities": [
+      {
+        "kind": "hashtag",
+        "length": 11,
+        "offset": 0
+      },
+      {
+        "kind": "hashtag",
+        "length": 4,
+        "offset": 12
+      },
+      {
+        "kind": "hashtag",
+        "length": 8,
+        "offset": 17
+      },
+      {
+        "kind": "bold",
+        "length": 62,
+        "offset": 27
+      },
+      {
+        "kind": "text_link",
+        "length": 18,
+        "offset": 95,
+        "url": "https://t.me/tlas01"
+      },
+      {
+        "kind": "text_link",
+        "length": 22,
+        "offset": 186,
+        "url": "https://evolution-x.org/device/RMX2001"
+      },
+      {
+        "kind": "text_link",
+        "length": 17,
+        "offset": 208,
+        "url": "https://raw.githubusercontent.com/Evolution-X-Devices/official_devices/master/changelogs/RMX2001/EvolutionX_5.8_RMX2001-11-20210612-0719-OFFICIAL.zip.txt"
+      },
+      {
+        "kind": "text_link",
+        "length": 15,
+        "offset": 225,
+        "url": "https://forum.xda-developers.com/t/rom-11-rmx2001-official-evolutionx-5-8-12-06-2021.4291013/"
+      },
+      {
+        "kind": "hashtag",
+        "length": 8,
+        "offset": 240
+      },
+      {
+        "kind": "hashtag",
+        "length": 13,
+        "offset": 249
+      }
+    ]
+  },
+  {
+    "chatId": -1001384382397,
+    "id": 1113,
+    "mediaType": "photo",
+    "sentAt": "2021-06-21T17:05:33.000Z",
+    "text": "#Blissos #ROM #RMX2001\n\n|BLISS OS for RMX2001|\n\nRom: BlissOs (Android11)\nDevice: Realme 6, 6i, 6s, Nazro\n\nBuild Type:- Unofficial, Vanilla\nBy:- @karivarkey\n\n📆 Build Date:-  June 21, 2021\n\n⬇️Download:- Here\n📷SS:- Here\n\nChangelog:- Initial Build\n\nNote:-\nPatched  boot image:- Here\nBugs:- Nightlight\n\nSpecial Hearts:\n❤️Thx to @bx2_nero ,  @Arneesh for help, and @tlas01 for Trees and @SamarV121\n❤️To all the testers and devs who helped me",
+    "entities": [
+      {
+        "kind": "hashtag",
+        "length": 8,
+        "offset": 0
+      },
+      {
+        "kind": "hashtag",
+        "length": 4,
+        "offset": 9
+      },
+      {
+        "kind": "hashtag",
+        "length": 8,
+        "offset": 14
+      },
+      {
+        "kind": "bold",
+        "length": 20,
+        "offset": 25
+      },
+      {
+        "kind": "mention",
+        "length": 11,
+        "offset": 144
+      },
+      {
+        "kind": "text_link",
+        "length": 5,
+        "offset": 202,
+        "url": "https://drive.google.com/file/d/1keAEoJiqE9eqKMcAbULrh-IlNLVPnwL6/view?usp=sharing"
+      },
+      {
+        "kind": "text_link",
+        "length": 6,
+        "offset": 214,
+        "url": "https://t.me/RM6Official/641746"
+      },
+      {
+        "kind": "bold",
+        "length": 9,
+        "offset": 220
+      },
+      {
+        "kind": "text_link",
+        "length": 5,
+        "offset": 276,
+        "url": "https://drive.google.com/file/d/1WEjXbKDDanxNiSmMTiyqJ906USG68knr/view?usp=sharing"
+      },
+      {
+        "kind": "bold",
+        "length": 16,
+        "offset": 300
+      },
+      {
+        "kind": "mention",
+        "length": 9,
+        "offset": 325
+      },
+      {
+        "kind": "mention",
+        "length": 8,
+        "offset": 338
+      },
+      {
+        "kind": "mention",
+        "length": 7,
+        "offset": 361
+      },
+      {
+        "kind": "mention",
+        "length": 10,
+        "offset": 383
+      }
+    ]
+  },
+  {
+    "chatId": -1001384382397,
+    "id": 1163,
+    "mediaType": "photo",
+    "sentAt": "2021-07-08T10:21:48.000Z",
+    "text": "#EvolutionX #ROM #RMX2001\n\n📲 New build available for Realme 6 (RMX2001)\n👤 by Tanmay (@tlas01)\n\n\nℹ️ Version: Eleven\n📅 Build date: 2021 July 08 17:21\n📎 File size: 1.3 GB\n\n⬇️  Download now ⬇️ \n\n📃 Changelog 📃\n\n📱 XDA Thread\n\nJoin :- @EvolutionXRMX2001\nSS :- Here \n\n#RMX2001 #KeepEvolving",
+    "entities": [
+      {
+        "kind": "hashtag",
+        "length": 11,
+        "offset": 0
+      },
+      {
+        "kind": "hashtag",
+        "length": 4,
+        "offset": 12
+      },
+      {
+        "kind": "hashtag",
+        "length": 8,
+        "offset": 17
+      },
+      {
+        "kind": "mention",
+        "length": 7,
+        "offset": 87
+      },
+      {
+        "kind": "text_link",
+        "length": 12,
+        "offset": 177,
+        "url": "https://evolution-x.org/device/RMX2001"
+      },
+      {
+        "kind": "text_link",
+        "length": 9,
+        "offset": 198,
+        "url": "https://raw.githubusercontent.com/Evolution-X-Devices/official_devices/master/changelogs/RMX2001/EvolutionX_5.9_RMX2001-11-20210708-0823-OFFICIAL.zip.txt"
+      },
+      {
+        "kind": "text_link",
+        "length": 12,
+        "offset": 215,
+        "url": "https://forum.xda-developers.com/t/rom-11-rmx2001-official-evolutionx-5-9-08-07-2021.4291013/"
+      },
+      {
+        "kind": "mention",
+        "length": 18,
+        "offset": 235
+      },
+      {
+        "kind": "text_link",
+        "length": 4,
+        "offset": 260,
+        "url": "https://t.me/EvolutionXRMX2001/13977"
+      },
+      {
+        "kind": "hashtag",
+        "length": 8,
+        "offset": 267
+      },
+      {
+        "kind": "hashtag",
+        "length": 13,
+        "offset": 276
+      }
+    ]
+  },
+  {
+    "chatId": -1001384382397,
+    "id": 1171,
+    "mediaType": "photo",
+    "sentAt": "2021-07-10T07:18:11.000Z",
+    "text": "#ShapeShiftOS #ROM #RMX2001 #Unofficial\n\n📲 New build available for Realme 6 (RMX2001)\n👤 by @UdayRocker\n\nℹ️ Version: Eleven\n📅 Build date: 2021 July 10\n📎 File size: 1.04 GB\n\n⬇️  Download now ⬇️ | Mirror\n\n📃 Changelog 📃\n• Initial build\n• Added performance profile config\n• Moved RealmeParts to system\n\nJoin :- @UdayRockerHub\nSS :- Here \n\nThanks to: @I_am_pronoob for server\n@sarthakroy2002 for help",
+    "entities": [
+      {
+        "kind": "hashtag",
+        "length": 13,
+        "offset": 0
+      },
+      {
+        "kind": "hashtag",
+        "length": 4,
+        "offset": 14
+      },
+      {
+        "kind": "hashtag",
+        "length": 8,
+        "offset": 19
+      },
+      {
+        "kind": "hashtag",
+        "length": 11,
+        "offset": 28
+      },
+      {
+        "kind": "mention",
+        "length": 11,
+        "offset": 93
+      },
+      {
+        "kind": "text_link",
+        "length": 12,
+        "offset": 180,
+        "url": "https://drive.google.com/uc?id=1xnhuA4hWvjd6a0tDfySOyCgENlF7U1TW&export=download"
+      },
+      {
+        "kind": "text_link",
+        "length": 8,
+        "offset": 198,
+        "url": "https://cloud.minati.workers.dev/ShapeShiftOS-2.6-Sceptile-UNOFFICIAL-RMX2001-20210710-0604.zip"
+      },
+      {
+        "kind": "mention",
+        "length": 14,
+        "offset": 312
+      },
+      {
+        "kind": "text_link",
+        "length": 5,
+        "offset": 332,
+        "url": "https://t.me/UdayRockerHub/4289?single"
+      },
+      {
+        "kind": "mention",
+        "length": 13,
+        "offset": 351
+      },
+      {
+        "kind": "mention",
+        "length": 15,
+        "offset": 376
+      }
+    ]
+  },
+  {
+    "chatId": -1001384382397,
+    "id": 1228,
+    "mediaType": "photo",
+    "sentAt": "2021-08-03T15:22:32.000Z",
+    "text": "#EvolutionX #ROM #RMX2001\n\n📲 New build available for Realme 6 (RMX2001)\n👤 by Tanmay (@tlas01)\n\nℹ️ Version: Eleven\n📅 Build date: 2021 August 03 20:08\n📎 File size: 1.29 GB\n\n⬇️  Download now ⬇️ \n\n📃 Changelog 📃\n\n📱 XDA Thread\n\nJoin :- @EvolutionXRMX2001",
+    "entities": [
+      {
+        "kind": "hashtag",
+        "length": 11,
+        "offset": 0
+      },
+      {
+        "kind": "hashtag",
+        "length": 4,
+        "offset": 12
+      },
+      {
+        "kind": "hashtag",
+        "length": 8,
+        "offset": 17
+      },
+      {
+        "kind": "bold",
+        "length": 46,
+        "offset": 27
+      },
+      {
+        "kind": "text_link",
+        "length": 18,
+        "offset": 79,
+        "url": "https://t.me/tlas01"
+      },
+      {
+        "kind": "text_link",
+        "length": 22,
+        "offset": 175,
+        "url": "https://evolution-x.org/device/RMX2001"
+      },
+      {
+        "kind": "text_link",
+        "length": 17,
+        "offset": 197,
+        "url": "https://raw.githubusercontent.com/Evolution-X-Devices/official_devices/master/changelogs/RMX2001/evolution_RMX2001-ota-rq3a.210805.001.a1-08031108.zip.txt"
+      },
+      {
+        "kind": "text_link",
+        "length": 15,
+        "offset": 214,
+        "url": "https://forum.xda-developers.com/t/rom-11-rmx2001-official-evolutionx-5-9-08-07-2021.4291013/"
+      },
+      {
+        "kind": "mention",
+        "length": 18,
+        "offset": 237
+      }
+    ]
+  },
+  {
+    "chatId": -1001384382397,
+    "id": 1282,
+    "mediaType": "photo",
+    "sentAt": "2021-08-24T16:23:39.000Z",
+    "text": "#ShapeShiftOS #ROM #RMX2001 #Unofficial\n\n📲 New build available for Realme 6  Series\n👤 by @UdayRocker\n\nℹ️ Version: Eleven\n📅 Build date: 2021 Aug 24\n📎 File size: 1.05 GB\n\n⬇️  Download: GDrive | Mirror\n\n📃 Changelog 📃\n• August security Patch.\n• Added RealmeDirac Support.\n• Fixed KPOC.\n• Improved Padding.\n• Engineering mode Exists but band crashes fix on next build stfu band fappers.\n• Improved Performance\n•Misc improvements.\n\nJoin :- @UdayRockerHub\nSS :- Here\n\nThanks to: @I_am_pronoob for server\n@sarthakroy2002 and @officialputuid for help!",
+    "entities": [
+      {
+        "kind": "hashtag",
+        "length": 13,
+        "offset": 0
+      },
+      {
+        "kind": "hashtag",
+        "length": 4,
+        "offset": 14
+      },
+      {
+        "kind": "hashtag",
+        "length": 8,
+        "offset": 19
+      },
+      {
+        "kind": "hashtag",
+        "length": 11,
+        "offset": 28
+      },
+      {
+        "kind": "bold",
+        "length": 51,
+        "offset": 40
+      },
+      {
+        "kind": "mention",
+        "length": 11,
+        "offset": 91
+      },
+      {
+        "kind": "bold",
+        "length": 11,
+        "offset": 91
+      },
+      {
+        "kind": "bold",
+        "length": 67,
+        "offset": 104
+      },
+      {
+        "kind": "text_link",
+        "length": 6,
+        "offset": 187,
+        "url": "https://drive.google.com/uc?id=16w6D9MMKGfz9YuVr8Hr8JeUk8Re5BTE6&export=download"
+      },
+      {
+        "kind": "text_link",
+        "length": 6,
+        "offset": 196,
+        "url": "https://true-mirror-69.gitsauraj.workers.dev/0:/ShapeShiftOS-2.7-Solosis-UNOFFICIAL-RMX2001-20210824-0828.zip"
+      },
+      {
+        "kind": "bold",
+        "length": 9,
+        "offset": 207
+      },
+      {
+        "kind": "mention",
+        "length": 14,
+        "offset": 440
+      },
+      {
+        "kind": "text_link",
+        "length": 4,
+        "offset": 461,
+        "url": "https://t.me/UdayRockerHub/11847?single"
+      },
+      {
+        "kind": "mention",
+        "length": 13,
+        "offset": 478
+      },
+      {
+        "kind": "mention",
+        "length": 15,
+        "offset": 503
+      },
+      {
+        "kind": "mention",
+        "length": 15,
+        "offset": 523
+      }
+    ]
+  },
+  {
+    "chatId": -1001384382397,
+    "id": 1323,
+    "mediaType": "photo",
+    "sentAt": "2021-09-10T16:15:21.000Z",
+    "text": "#EvolutionX #ROM #RMX2001\n\n📲 New build available for Realme 6 (RMX2001)\n👤 by Tanmay (@tlas01)\n\nℹ️ Version: Eleven\n📅 Build date: 2021 September 10\n📎 File size: 1.29 GB\n\n⬇️  Download now ⬇️ \n\n📃 Changelog 📃\n\n📱 XDA Thread\n\nScreenShots  :- Here\n\nJoin :- @EvolutionXRMX2001",
+    "entities": [
+      {
+        "kind": "hashtag",
+        "length": 11,
+        "offset": 0
+      },
+      {
+        "kind": "hashtag",
+        "length": 4,
+        "offset": 12
+      },
+      {
+        "kind": "hashtag",
+        "length": 8,
+        "offset": 17
+      },
+      {
+        "kind": "bold",
+        "length": 46,
+        "offset": 27
+      },
+      {
+        "kind": "text_link",
+        "length": 18,
+        "offset": 79,
+        "url": "https://t.me/tlas01"
+      },
+      {
+        "kind": "text_link",
+        "length": 22,
+        "offset": 172,
+        "url": "https://evolution-x.org/device/RMX2001"
+      },
+      {
+        "kind": "text_link",
+        "length": 17,
+        "offset": 194,
+        "url": "https://raw.githubusercontent.com/Evolution-X-Devices/official_devices/master/changelogs/RMX2001/evolution_RMX2001-ota-rq3a.210905.001-09101426.zip.txt"
+      },
+      {
+        "kind": "text_link",
+        "length": 12,
+        "offset": 214,
+        "url": "https://forum.xda-developers.com/t/rom-11-rmx2001-official-evolutionx-5-9-2-10-09-2021.4291013/"
+      },
+      {
+        "kind": "text_link",
+        "length": 6,
+        "offset": 242,
+        "url": "https://t.me/EvolutionXRMX2001/25047"
+      },
+      {
+        "kind": "mention",
+        "length": 18,
+        "offset": 256
+      }
+    ]
+  },
+  {
+    "chatId": -1001384382397,
+    "id": 1384,
+    "mediaType": "photo",
+    "sentAt": "2021-10-16T01:19:47.000Z",
+    "text": "#EvolutionX #ROM #RMX2001\n\n📲 New build available for Realme 6 (RMX2001)\n👤 by Tanmay (@tlas01)\n\nℹ️ Version: Eleven\n📅 Build date: 2021 October 15 01:55\n📎 File size: 1.3 GB\n\n⬇️  Download now ⬇️ \n\n📃 Changelog 📃\n\n📱 XDA Thread\n\nScreenShots  :- Here\n\nJoin :- @EvolutionXRMX2001",
+    "entities": [
+      {
+        "kind": "hashtag",
+        "length": 11,
+        "offset": 0
+      },
+      {
+        "kind": "hashtag",
+        "length": 4,
+        "offset": 12
+      },
+      {
+        "kind": "hashtag",
+        "length": 8,
+        "offset": 17
+      },
+      {
+        "kind": "mention",
+        "length": 7,
+        "offset": 87
+      },
+      {
+        "kind": "text_link",
+        "length": 12,
+        "offset": 179,
+        "url": "https://evolution-x.org/device/RMX2001"
+      },
+      {
+        "kind": "text_link",
+        "length": 9,
+        "offset": 200,
+        "url": "https://raw.githubusercontent.com/Evolution-X-Devices/official_devices/master/changelogs/RMX2001/evolution_RMX2001-ota-rq3a.211001.001-10141658.zip.txt"
+      },
+      {
+        "kind": "text_link",
+        "length": 10,
+        "offset": 217,
+        "url": "https://forum.xda-developers.com/t/rom-11-rmx2001-official-evolutionx-5-9-3-15-10-2021.4291013/"
+      },
+      {
+        "kind": "text_link",
+        "length": 4,
+        "offset": 245,
+        "url": "https://t.me/EvolutionXRMX2001/25050?single"
+      },
+      {
+        "kind": "mention",
+        "length": 18,
+        "offset": 259
+      }
+    ]
+  },
+  {
+    "chatId": -1001384382397,
+    "id": 2164,
+    "mediaType": "photo",
+    "sentAt": "2023-11-03T14:07:55.000Z",
+    "text": "#SuperiorOS #ROM #UNOFFICIAL #salaa #A13 #RUI3\n\n⚠️⚠️⚠️⚠️NOT FOR REALME 6⚠️⚠️⚠️⚠️\n\nSuperiorOS Thirteen for Realme 7/Narzo 20 Pro/Narzo 30 4G ONLY [BETA]\n• Author: @EvilAnsh\n• Android version: 13.0 (T)\n• Build date: 03-11-2023\n\nChangelog \n• Initial Build based upon RUI3 \n• Full Changelog: SUPERIOR\n\nBugs\n• You tell me\n\nNotes\n• ITS FOR REALMEUI 3.0 FIRMWARE\n\nDownloads\n• Build type: VANILLA/GAPPS\n• File size: 1.2GB/1.6GB\n• Download\n\nSources\nScreenshots\nSupport group",
+    "entities": [
+      {
+        "kind": "hashtag",
+        "length": 11,
+        "offset": 0
+      },
+      {
+        "kind": "hashtag",
+        "length": 4,
+        "offset": 12
+      },
+      {
+        "kind": "hashtag",
+        "length": 11,
+        "offset": 17
+      },
+      {
+        "kind": "hashtag",
+        "length": 6,
+        "offset": 29
+      },
+      {
+        "kind": "hashtag",
+        "length": 4,
+        "offset": 36
+      },
+      {
+        "kind": "hashtag",
+        "length": 5,
+        "offset": 41
+      },
+      {
+        "kind": "bold",
+        "length": 70,
+        "offset": 82
+      },
+      {
+        "kind": "mention",
+        "length": 9,
+        "offset": 162
+      },
+      {
+        "kind": "bold",
+        "length": 11,
+        "offset": 226
+      },
+      {
+        "kind": "text_link",
+        "length": 8,
+        "offset": 288,
+        "url": "https://raw.githubusercontent.com/SuperiorOS-Devices/changelogs/thirteen/changelogs.txt"
+      },
+      {
+        "kind": "text_link",
+        "length": 2,
+        "offset": 296,
+        "url": "https://t.me/CherishOS/1436"
+      },
+      {
+        "kind": "bold",
+        "length": 5,
+        "offset": 298
+      },
+      {
+        "kind": "bold",
+        "length": 5,
+        "offset": 318
+      },
+      {
+        "kind": "bold",
+        "length": 10,
+        "offset": 357
+      },
+      {
+        "kind": "text_link",
+        "length": 8,
+        "offset": 422,
+        "url": "https://telegra.ph/SuperiorOS-for-salaa-11-02"
+      },
+      {
+        "kind": "text_link",
+        "length": 7,
+        "offset": 432,
+        "url": "https://github.com/CherishOS-Devices/android_device_realme_RM6785"
+      },
+      {
+        "kind": "text_link",
+        "length": 1,
+        "offset": 439,
+        "url": "https://telegra.ph/Sources-02-23"
+      },
+      {
+        "kind": "text_link",
+        "length": 11,
+        "offset": 440,
+        "url": "https://t.me/AnshPrjkts/397?single"
+      },
+      {
+        "kind": "text_link",
+        "length": 1,
+        "offset": 451,
+        "url": "https://t.me/FilesArchieve/170?single"
+      },
+      {
+        "kind": "text_link",
+        "length": 13,
+        "offset": 452,
+        "url": "https://t.me/Anshbuilds"
+      }
+    ]
+  },
+  {
+    "chatId": -1001384382397,
+    "id": 2359,
+    "mediaType": "photo",
+    "sentAt": "2025-02-06T07:19:00.000Z",
+    "text": "#Matrixx #ROM #UNOFFICIAL #salaa #A15 #RUI3\n\nMatrixx 11.1.0 for Realme 7/Narzo 20 Pro/Narzo 30 4G ONLY [STABLE]\n• Author: @EvilAnsh\n• Android version: 15.0 (V)\n• Build date: 06-02-1969\n\nChangelog\n• Initial Build\n• Jan, 2025 Security Patch\n• Full changelog: MATRIXX\n\nBugs\n• Native video calling (ViLTE) and Voice over WiFi (VoWiFi)\n\nNotes\n• 4.14.336 Stormbreaker Kernel\n• Clean Flash recommended\n\nDownloads\n• Build type: VANILLA/GAPPS\n• File size: 1.4GB/2.4GB\n• Download\n\nSources\nScreenshots\nSupport group",
+    "entities": [
+      {
+        "kind": "hashtag",
+        "length": 8,
+        "offset": 0
+      },
+      {
+        "kind": "hashtag",
+        "length": 4,
+        "offset": 9
+      },
+      {
+        "kind": "hashtag",
+        "length": 11,
+        "offset": 14
+      },
+      {
+        "kind": "hashtag",
+        "length": 6,
+        "offset": 26
+      },
+      {
+        "kind": "hashtag",
+        "length": 4,
+        "offset": 33
+      },
+      {
+        "kind": "hashtag",
+        "length": 5,
+        "offset": 38
+      },
+      {
+        "kind": "bold",
+        "length": 67,
+        "offset": 45
+      },
+      {
+        "kind": "mention",
+        "length": 9,
+        "offset": 122
+      },
+      {
+        "kind": "bold",
+        "length": 12,
+        "offset": 186
+      },
+      {
+        "kind": "bold",
+        "length": 1,
+        "offset": 211
+      },
+      {
+        "kind": "text_link",
+        "length": 7,
+        "offset": 257,
+        "url": "https://www.projectmatrixx.org/changelog"
+      },
+      {
+        "kind": "text_link",
+        "length": 2,
+        "offset": 264,
+        "url": "https://t.me/CherishOS/1436"
+      },
+      {
+        "kind": "bold",
+        "length": 5,
+        "offset": 266
+      },
+      {
+        "kind": "bold",
+        "length": 5,
+        "offset": 332
+      },
+      {
+        "kind": "bold",
+        "length": 10,
+        "offset": 396
+      },
+      {
+        "kind": "text_link",
+        "length": 8,
+        "offset": 461,
+        "url": "https://t.me/FilesArchieve/253?single"
+      },
+      {
+        "kind": "text_link",
+        "length": 7,
+        "offset": 471,
+        "url": "http://github.com/EvilAnsh/android_device_realme_salaa"
+      },
+      {
+        "kind": "text_link",
+        "length": 1,
+        "offset": 478,
+        "url": "https://telegra.ph/Sources-02-23"
+      },
+      {
+        "kind": "text_link",
+        "length": 11,
+        "offset": 479,
+        "url": "https://t.me/AnshPrjkt/932?single"
+      },
+      {
+        "kind": "text_link",
+        "length": 1,
+        "offset": 490,
+        "url": "https://t.me/FilesArchieve/170?single"
+      },
+      {
+        "kind": "text_link",
+        "length": 13,
+        "offset": 491,
+        "url": "https://t.me/Anshbuilds"
+      }
+    ]
+  },
+  {
+    "chatId": -1001384382397,
+    "id": 2616,
+    "mediaType": "photo",
+    "sentAt": "2026-08-17T19:06:27.000Z",
+    "text": "#DerpFest #ROM #OFFICIAL #RM6785 #A16 #RUI2 #OPPOCAM\n\nDerpFest-16.2 for Realme 6/6i(Indian)/6s/7/Narzo/Narzo 20 Pro/Narzo 30 4G [ALPHA]\n• Author: MeowDroider\n• Android version: 16.2 (B)\n• Build date: 17-08-2026\n\nChangelog\n• August Patch\n• Add 60fps video support\n• Fixed EIS\n• Other small improvements in camera\n\nBugs\n• OPPO CAMERA has some bugs still.\n• SELinux is still permissive, cat and owl really want enforcing\n\nNotes\n• Thanks to ELOHIM for trees\n• Realme UI 2.0 based\n\nDownloads\n• Build type: GAPPS\n• File size: 2.7GB\n• Download\n\nSources\nScreenshots\nSupport group",
+    "entities": [
+      {
+        "kind": "hashtag",
+        "length": 9,
+        "offset": 0
+      },
+      {
+        "kind": "hashtag",
+        "length": 4,
+        "offset": 10
+      },
+      {
+        "kind": "hashtag",
+        "length": 9,
+        "offset": 15
+      },
+      {
+        "kind": "hashtag",
+        "length": 7,
+        "offset": 25
+      },
+      {
+        "kind": "hashtag",
+        "length": 4,
+        "offset": 33
+      },
+      {
+        "kind": "hashtag",
+        "length": 5,
+        "offset": 38
+      },
+      {
+        "kind": "hashtag",
+        "length": 8,
+        "offset": 44
+      },
+      {
+        "kind": "bold",
+        "length": 81,
+        "offset": 54
+      },
+      {
+        "kind": "text_link",
+        "length": 11,
+        "offset": 146,
+        "url": "https://t.me/MuhammadIJC"
+      },
+      {
+        "kind": "bold",
+        "length": 9,
+        "offset": 212
+      },
+      {
+        "kind": "bold",
+        "length": 4,
+        "offset": 313
+      },
+      {
+        "kind": "italic",
+        "length": 62,
+        "offset": 355
+      },
+      {
+        "kind": "underline",
+        "length": 62,
+        "offset": 355
+      },
+      {
+        "kind": "bold",
+        "length": 5,
+        "offset": 419
+      },
+      {
+        "kind": "bold",
+        "length": 9,
+        "offset": 477
+      },
+      {
+        "kind": "text_link",
+        "length": 8,
+        "offset": 528,
+        "url": "https://drive.google.com/drive/folders/1TXULIaVcLNbfbd_mHJ79uUd5p4v1-29_?usp=drive_link"
+      },
+      {
+        "kind": "text_link",
+        "length": 7,
+        "offset": 538,
+        "url": "https://github.com/realme-mt6785-devs/android_device_realme_RM6785/tree/lineage-23.2-camera"
+      },
+      {
+        "kind": "text_link",
+        "length": 11,
+        "offset": 546,
+        "url": "https://t.me/derprm6785/2149"
+      },
+      {
+        "kind": "text_link",
+        "length": 13,
+        "offset": 558,
+        "url": "https://t.me/+9c3pZqVwyKU3Mzdk"
+      }
+    ]
+  }
+]

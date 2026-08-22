@@ -327,9 +327,17 @@ const buildDateFrom = (
     return `${year}-${numeric[2].padStart(2, "0")}-${numeric[1].padStart(2, "0")}`;
   }
 
+  // A written date like "2021 October 15 01:55" names a calendar day, with no
+  // timezone in it. Date parses that as local midnight, so converting through
+  // toISOString shifts it a day west of UTC — the same archiver run produced
+  // 2021-10-14 on a +08 machine and 2021-10-15 in CI. Read the fields back off
+  // the parsed date instead, which is what the caption meant either way.
   const written = value ? new Date(value) : new Date(Number.NaN);
-  if (!Number.isNaN(written.getTime()))
-    return written.toISOString().slice(0, 10);
+  if (!Number.isNaN(written.getTime())) {
+    const month = String(written.getMonth() + 1).padStart(2, "0");
+    const day = String(written.getDate()).padStart(2, "0");
+    return `${written.getFullYear()}-${month}-${day}`;
+  }
   if (sentAt) return new Date(sentAt).toISOString().slice(0, 10);
   return fail("build date could not be determined");
 };
