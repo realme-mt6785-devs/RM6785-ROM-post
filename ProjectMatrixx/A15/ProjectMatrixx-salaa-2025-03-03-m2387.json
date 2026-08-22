@@ -1,34 +1,35 @@
 {
   "postType": "rom",
-  "name": "Matrixx 11.2.0",
-  "tag": "Matrixx",
+  "name": "Matrixx 11.2.5",
+  "tag": "ProjectMatrixx",
   "stability": "STABLE",
-  "releaseType": "UNOFFICIAL",
-  "device": "RMX2001",
+  "releaseType": "OFFICIAL",
+  "device": "salaa",
   "androidVersion": "15",
-  "ruiVersion": 2,
+  "ruiVersion": 3,
   "author": "@EvilAnsh",
-  "buildDate": "2025-02-13",
-  "banner": "telegram-message:-1001384382397:2372",
+  "buildDate": "2025-03-03",
+  "banner": "telegram-message:-1001384382397:2387",
   "changelog": [
     "Feb, 2025 Security Patch",
+    "Added FM Radio",
     "Full changelog: [MATRIXX](https://www.projectmatrixx.org/changelog)"
   ],
   "bugs": [
     "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
   ],
   "notes": [
-    "4.14.348 Samar's Kernel",
+    "4.14.336 Stormbreaker Kernel",
     "Clean Flash recommended"
   ],
   "download": {
     "buildType": "VANILLA/GAPPS",
     "fileSize": "1.4GB | 2.4GB",
-    "url": "https://sourceforge.net/projects/evilanshbuild/files/RM6785/Matrixx/"
+    "url": "https://www.projectmatrixx.org/downloads/salaa"
   },
   "links": {
-    "sources": "https://github.com/EvilAnsh/android_device_realme_RM6785-common",
-    "screenshots": "https://t.me/AnshPrjkt/960?single",
+    "sources": "https://github.com/Matrixx-Devices/device_realme_salaa",
+    "screenshots": "https://t.me/AnshPrjkt/979?single",
     "supportGroup": "https://t.me/Anshbuilds"
   }
 }

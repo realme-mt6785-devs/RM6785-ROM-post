@@ -1,18 +1,18 @@
 {
   "postType": "rom",
-  "name": "Matrixx 11.7.0",
-  "tag": "Matrixx",
+  "name": "Matrixx 11.1.0",
+  "tag": "ProjectMatrixx",
   "stability": "STABLE",
-  "releaseType": "OFFICIAL",
+  "releaseType": "UNOFFICIAL",
   "device": "salaa",
   "androidVersion": "15",
   "ruiVersion": 3,
   "author": "@EvilAnsh",
-  "buildDate": "2025-09-02",
-  "banner": "telegram-message:-1001384382397:2442",
+  "buildDate": "1969-02-06",
+  "banner": "telegram-message:-1001384382397:2359",
   "changelog": [
-    "EOL release for A15",
-    "August, 2025 Security Patch",
+    "Initial Build",
+    "Jan, 2025 Security Patch",
     "Full changelog: [MATRIXX](https://www.projectmatrixx.org/changelog)"
   ],
   "bugs": [
@@ -24,12 +24,12 @@
   ],
   "download": {
     "buildType": "VANILLA/GAPPS",
-    "fileSize": "1.5GB | 2.5GB",
-    "url": "https://www.projectmatrixx.org/downloads/salaa"
+    "fileSize": "1.4GB | 2.4GB",
+    "url": "https://t.me/FilesArchieve/253?single"
   },
   "links": {
-    "sources": "https://github.com/Matrixx-Devices/device_realme_salaa",
-    "screenshots": "https://www.projectmatrixx.org/gallery",
+    "sources": "https://github.com/EvilAnsh/android_device_realme_salaa",
+    "screenshots": "https://t.me/AnshPrjkt/932?single",
     "supportGroup": "https://t.me/Anshbuilds"
   }
 }

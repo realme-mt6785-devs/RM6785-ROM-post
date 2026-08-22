@@ -1,18 +1,19 @@
 {
   "postType": "rom",
-  "name": "Matrixx 11.2.5",
-  "tag": "Matrixx",
+  "name": "Matrixx 11.5.0",
+  "tag": "ProjectMatrixx",
   "stability": "STABLE",
   "releaseType": "OFFICIAL",
   "device": "salaa",
   "androidVersion": "15",
   "ruiVersion": 3,
   "author": "@EvilAnsh",
-  "buildDate": "2025-03-03",
-  "banner": "telegram-message:-1001384382397:2387",
+  "buildDate": "2025-05-19",
+  "banner": "telegram-message:-1001384382397:2398",
   "changelog": [
-    "Feb, 2025 Security Patch",
-    "Added FM Radio",
+    "May, 2025 Security Patch",
+    "Dropped 32 bit DRM Stack",
+    "Switched to 64 bit C2 service",
     "Full changelog: [MATRIXX](https://www.projectmatrixx.org/changelog)"
   ],
   "bugs": [
@@ -29,7 +30,7 @@
   },
   "links": {
     "sources": "https://github.com/Matrixx-Devices/device_realme_salaa",
-    "screenshots": "https://t.me/AnshPrjkt/979?single",
+    "screenshots": "https://www.projectmatrixx.org/gallery",
     "supportGroup": "https://t.me/Anshbuilds"
   }
 }

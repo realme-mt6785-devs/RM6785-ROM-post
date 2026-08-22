@@ -1,7 +1,7 @@
 {
   "postType": "rom",
   "name": "Project Blaze 3.1",
-  "tag": "Blaze",
+  "tag": "ProjectBlaze",
   "stability": "STABLE",
   "releaseType": "OFFICIAL",
   "device": "RM6785",

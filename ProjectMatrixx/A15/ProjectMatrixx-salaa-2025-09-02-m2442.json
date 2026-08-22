@@ -1,19 +1,18 @@
 {
   "postType": "rom",
-  "name": "Matrixx 11.5.0",
-  "tag": "Matrixx",
+  "name": "Matrixx 11.7.0",
+  "tag": "ProjectMatrixx",
   "stability": "STABLE",
   "releaseType": "OFFICIAL",
   "device": "salaa",
   "androidVersion": "15",
   "ruiVersion": 3,
   "author": "@EvilAnsh",
-  "buildDate": "2025-05-19",
-  "banner": "telegram-message:-1001384382397:2398",
+  "buildDate": "2025-09-02",
+  "banner": "telegram-message:-1001384382397:2442",
   "changelog": [
-    "May, 2025 Security Patch",
-    "Dropped 32 bit DRM Stack",
-    "Switched to 64 bit C2 service",
+    "EOL release for A15",
+    "August, 2025 Security Patch",
     "Full changelog: [MATRIXX](https://www.projectmatrixx.org/changelog)"
   ],
   "bugs": [
@@ -25,7 +24,7 @@
   ],
   "download": {
     "buildType": "VANILLA/GAPPS",
-    "fileSize": "1.4GB | 2.4GB",
+    "fileSize": "1.5GB | 2.5GB",
     "url": "https://www.projectmatrixx.org/downloads/salaa"
   },
   "links": {

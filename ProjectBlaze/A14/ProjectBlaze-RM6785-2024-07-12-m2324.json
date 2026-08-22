@@ -1,25 +1,25 @@
 {
   "postType": "rom",
-  "name": "Project Blaze 3.2",
-  "tag": "Blaze",
+  "name": "Project Blaze 3.6",
+  "tag": "ProjectBlaze",
   "stability": "STABLE",
   "releaseType": "OFFICIAL",
   "device": "RM6785",
   "androidVersion": "14",
   "ruiVersion": 2,
   "author": "@EvilAnsh",
-  "buildDate": "2024-04-17",
-  "banner": "telegram-message:-1001384382397:2262",
+  "buildDate": "2024-07-12",
+  "banner": "telegram-message:-1001384382397:2324",
   "changelog": [
-    "April Security Patch",
+    "July Security Patch",
     "Full changelog: [DEVICE](https://raw.githubusercontent.com/ProjectBlaze/official_devices/14/device/RM6785.txt) | [BLAZE](https://github.com/ProjectBlaze/official_devices/blob/14/changelog.md)"
   ],
   "bugs": [
     "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
   ],
   "notes": [
-    "4.14.341 Samar's Kernel",
-    "Clean Flash mandatory"
+    "4.14.348 Samar's openela Kernel",
+    "Clean Flash recommended"
   ],
   "download": {
     "buildType": "GAPPS",
@@ -28,7 +28,7 @@
   },
   "links": {
     "sources": "https://github.com/realme-mt6785-devs/android_device_realme_RM6785-common",
-    "screenshots": "https://t.me/projectblaze/94304",
+    "screenshots": "https://t.me/projectblaze/113767",
     "supportGroup": "https://t.me/Anshbuilds"
   }
 }
