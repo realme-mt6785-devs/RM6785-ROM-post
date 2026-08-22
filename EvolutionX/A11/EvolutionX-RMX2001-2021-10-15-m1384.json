@@ -7,8 +7,8 @@
   "androidVersion": "11",
   "ruiVersion": 2,
   "author": "Tanmay (@tlas01)",
-  "buildDate": "2021-09-09",
-  "banner": "telegram-message:-1001384382397:1323",
+  "buildDate": "2021-10-15",
+  "banner": "telegram-message:-1001384382397:1384",
   "changelog": [
     "See original channel post"
   ],
@@ -16,7 +16,7 @@
     "Not listed in original post"
   ],
   "download": {
-    "fileSize": "1.29 GB",
+    "fileSize": "1.3 GB",
     "url": "https://evolution-x.org/device/RMX2001"
   },
   "links": {}
