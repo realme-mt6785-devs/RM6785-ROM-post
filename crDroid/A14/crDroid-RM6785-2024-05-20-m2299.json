@@ -1,7 +1,7 @@
 {
   "postType": "rom",
   "name": "CrDroid 10.5",
-  "tag": "CrDroid",
+  "tag": "crDroid",
   "stability": "STABLE",
   "releaseType": "UNOFFICIAL",
   "device": "RM6785",
