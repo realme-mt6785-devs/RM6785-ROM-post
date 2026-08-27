@@ -1,7 +1,7 @@
 {
   "postType": "rom",
   "name": "DerpFest",
-  "tag": "DERPFEST",
+  "tag": "DerpFest",
   "stability": "STABLE",
   "releaseType": "UNOFFICIAL",
   "device": "RM6785",
