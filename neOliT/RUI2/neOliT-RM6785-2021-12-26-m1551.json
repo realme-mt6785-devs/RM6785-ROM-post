@@ -1,7 +1,7 @@
 {
   "postType": "kernel",
   "name": "NEOLIT V7 XMAS",
-  "tag": "NEOLIT",
+  "tag": "neOliT",
   "stability": "STABLE",
   "device": "RM6785",
   "kernelVersion": "4.14.258",

@@ -1,7 +1,7 @@
 {
   "postType": "kernel",
   "name": "N.E.O.L.I.T.-V4 Yoko kernel for RMX2001/02",
-  "tag": "NEOLIT",
+  "tag": "neOliT",
   "stability": "STABLE",
   "device": "RMX2001",
   "kernelVersion": "23.10.2021",
