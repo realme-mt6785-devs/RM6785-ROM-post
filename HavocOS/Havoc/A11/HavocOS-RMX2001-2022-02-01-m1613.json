@@ -1,7 +1,7 @@
 {
   "postType": "rom",
   "name": "Havoc-OS",
-  "tag": "Havoc",
+  "tag": "HavocOS",
   "stability": "STABLE",
   "releaseType": "OFFICIAL",
   "device": "RMX2001",

@@ -1,7 +1,7 @@
 {
   "postType": "rom",
   "name": "Havoc-OS v4.10 |  | Android 11",
-  "tag": "Havoc",
+  "tag": "HavocOS",
   "stability": "STABLE",
   "device": "RMX2001",
   "androidVersion": "11",
