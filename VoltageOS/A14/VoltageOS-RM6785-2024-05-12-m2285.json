@@ -1,7 +1,7 @@
 {
   "postType": "rom",
   "name": "Voltage OS Version 3.4",
-  "tag": "VOLTAGE",
+  "tag": "VoltageOS",
   "stability": "STABLE",
   "releaseType": "UNOFFICIAL",
   "device": "RM6785",
