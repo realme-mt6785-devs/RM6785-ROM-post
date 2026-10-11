@@ -1,0 +1,36 @@
+{
+  "postType": "rom",
+  "name": "AxionAOSP-2.9",
+  "tag": "AxionOS",
+  "stability": "STABLE",
+  "releaseType": "UNOFFICIAL",
+  "device": "salaa",
+  "androidVersion": "16",
+  "ruiVersion": 3,
+  "author": "@EvilAnsh",
+  "buildDate": "2026-10-11",
+  "banner": "https://i.postimg.cc/XX6ZsTs8/Untitled-1-(4)-2x.png",
+  "changelog": [
+    "Synced with the latest v2.9 changes",
+    "Implement torch light strength control"
+  ],
+  "bugs": [
+    "Native video calling (ViLTE) and Voice over WiFi (VoWiFi)"
+  ],
+  "notes": [
+    "Realme UI 3.0 based",
+    "This won't work On Realme 6/6i/6s/Narzo",
+    "Includes Dolby Atmos, AxionFx",
+    "Recommended to use OrangeFox recovery"
+  ],
+  "download": {
+    "buildType": "GAPPS",
+    "fileSize": "2.3GB",
+    "url": "https://sourceforge.net/projects/evilanshbuild/files/salaa/AxionOS/11-10-2026/axion-2.9-NOESIS-20261011-UNOFFICIAL-GMS-salaa.zip/download"
+  },
+  "links": {
+    "sources": "https://github.com/EvilAnsh/android_device_realme_salaa",
+    "screenshots": "https://t.me/AnshPrjkt/1169?single",
+    "supportGroup": "https://t.me/AnshBuilds"
+  }
+}
